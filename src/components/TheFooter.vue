@@ -9,18 +9,21 @@
           </div>
           <div class="tw-w-full tw-text-center md:tw-w-1/3">
             Built with 
-            <a class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
+            <a
+                class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
                 href="//www.vuejs.org"
                 title="Vue.js 3"
             >Vue.js</a>,
-            <a class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
+            <a
+                class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
                 href="//www.tailwindcss.com"
                 title="TailwindCSS"
             >
               TailwindCSS
             </a> 
             and deployed with 
-            <a class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
+            <a
+                class="tw-text-sm tw-font-bold tw-text-blue hover:tw-text-purple-600 md:tw-text-base"
                 href="//www.netlify.com/"
                 title="netlify"
             >
