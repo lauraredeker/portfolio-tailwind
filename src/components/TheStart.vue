@@ -1,11 +1,9 @@
 <template>
-  <article class="tw-container tw-relative tw-mx-auto tw-px-4">
+  <article class="tw-container tw-relative tw-mx-auto">
     <svg
-      width="100%"
-      height="100%"
       viewBox="0 0 705 705"
       fill="none"
-      class="custom-svg-animation tw-absolute -tw-left-[15%] -tw-top-10 tw-z-0 tw-w-[130%] sm:tw-w-[100%] md:-tw-left-[25%] md:-tw-top-[2%] md:tw-w-[90%]"
+      class="custom-svg-animation tw-absolute -tw-left-[15%] -tw-top-10 tw-z-0 tw-w-[130%] sm:tw-w-[100%] md:-tw-left-[35%] md:-tw-top-[10%] md:tw-w-[90%]"
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle
@@ -19,9 +17,9 @@
     <section class="tw-flex tw-h-screen tw-flex-col">
       <div class="tw-relative tw-z-50 tw-my-auto">
         <h1
-          class="custom-text-gradient tw-font-serif tw-text-5xl tw-leading-tight sm:tw-text-7xl md:tw-mt-10 md:tw-text-8xl lg:tw-text-9xl"
+          class="custom-text-gradient tw-font-display tw-text-5xl sm:tw-text-7xl md:tw-text-8xl xl:tw-text-9xl md:-tw-mt-20 tw-transition-all"
         >
-          <span class="md:tw-ml-20">
+          <span class="tw-ml-10 lg:tw-ml-20">
             Hello,<br>
           </span>
           <span class="">
@@ -29,7 +27,7 @@
           </span>
         </h1>
         <h3
-          class="tw-mt-10 tw-text-xl tw-font-medium !tw-leading-normal md:tw-max-w-2xl md:tw-text-3xl lg:tw-max-w-3xl lg:tw-text-3xl"
+          class="tw-mt-10 tw-text-xl tw-font-medium md:tw-max-w-2xl md:tw-text-3xl xl:tw-max-w-3xl lg:tw-text-3xl xl:tw-text-4xl"
         >
           I am a 
           <a
@@ -47,14 +45,25 @@
         </h3>
       </div>
 
+ 
+      <svg xmlns="http://www.w3.org/2000/svg" class="tw-absolute -tw-right-[15%] motion-safe:tw-animate-spin-slow" width="352" height="352" overflow="visible">
+          <circle 
+            cx="176" cy="176" r="174" 
+            fill="none" 
+            class="tw-stroke-blue-100 hover:tw-stroke-indigo tw-stroke-2"
+            stroke-width="2" 
+            stroke-miterlimit="10" 
+            stroke-dasharray="12.921,11.9271"/>
+        </svg>
       <img
-        class="tw-mx-auto tw-mb-20 tw-w-2/3 sm:tw-w-2/5 md:tw-absolute md:-tw-bottom-52 md:-tw-right-36 md:tw-mt-10 md:tw-w-1/3 xl:-tw-bottom-40 xl:-tw-right-24" 
+        class="tw-relative tw-mx-auto tw-mb-20 tw-w-2/3 custom-image-animation sm:tw-z-6 sm:tw-w-96 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-mt-16 lg:tw-w-1/3 xl:-tw-bottom-[20%] xl:-tw-right-24" 
         title="Picture of Laura sneaking around the corner." 
         src="/img/pictures/moi.png"
       >
     </section>
 
     <next-section-link
+      containerClass="-tw-mt-[10%]"
       target="#about"
       title="About me"
     />

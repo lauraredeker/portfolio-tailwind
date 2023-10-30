@@ -6,7 +6,7 @@
     <div class="tw-flex tw-justify-between md:tw-p-1 lg:tw-py-2 2xl:tw-px-0">
       <div class="tw-px-3 tw-py-2 tw-font-medium sm:tw-hidden">
         <a
-          class="tw-bg-gradient-to-r tw-from-purple tw-to-blue tw-bg-clip-text tw-font-serif tw-font-bold tw-text-transparent"
+          class="tw-bg-gradient-to-r tw-from-purple tw-to-blue tw-bg-clip-text tw-font-display tw-font-bold tw-text-transparent"
           title="scroll to top"
           href="#"
         >

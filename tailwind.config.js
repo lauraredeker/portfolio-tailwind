@@ -7,6 +7,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.vue', './src/**/*.ts'],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 30s linear infinite',
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -78,9 +81,42 @@ module.exports = {
         '4xl': '2rem',
       },
     }, 
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.5rem',
+      '2xl': ['1.875rem', {
+      }],
+      '3xl': ['2.25rem', {
+      }],
+      '5xl': ['3rem', {
+        lineHeight: '3.25rem',
+      }],
+      '6xl': ['4.5rem', {
+        lineHeight: '4.75rem',
+      }],
+      '7xl': ['6rem', {
+        lineHeight: '0.9',
+      }],
+      '8xl': ['8rem', {
+        lineHeight: '0.9',
+      }],
+      '9xl': ['9.875rem', {
+        lineHeight: '0.9',
+      }],
+    },
     fontFamily: {
       sans: ['Roboto Mono', ...defaultTheme.fontFamily.sans],
-      serif: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
+      display: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
   },
   plugins: [
