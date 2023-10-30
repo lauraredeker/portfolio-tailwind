@@ -28,6 +28,13 @@ module.exports = {
     },
   },
   rules: {
+    'vue/html-indent': ['warn', 2, {
+      'attribute': 2,
+      'baseIndent': 2,
+      'closeBracket': 0,
+      'alignAttributesVertically': true,
+      'ignores': [],
+    }],
     'vue/component-tags-order': [
       'warn',
       {

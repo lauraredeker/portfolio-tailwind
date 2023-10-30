@@ -1,7 +1,7 @@
 <template>
-  <div class="">
-    <h1>Imprint</h1>
-  </div>
+    <div class="">
+      <h1>Imprint</h1>
+    </div>
 </template>
 
 <script lang="ts">

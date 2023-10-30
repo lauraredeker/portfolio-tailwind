@@ -1,7 +1,7 @@
 <template>
-  <div class="tw-overflow-x-hidden tw-relative tw-w-screen tw-scroll-smooth focus:tw-scroll-auto tw-font-sans">
-    <router-view />
-  </div>
+    <div class="tw-relative tw-w-screen tw-overflow-x-hidden tw-scroll-smooth tw-font-sans focus:tw-scroll-auto">
+      <router-view />
+    </div>
 </template>
 
 <script lang="ts">
