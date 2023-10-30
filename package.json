@@ -6,6 +6,7 @@
     "build": "vite build",
     "start": "npm run dev",
     "lint": "eslint . --ext .js,.ts,.vue",
+    "lint:debug": "eslint ./src --debug",
     "lint:fix": "eslint . --ext .js,.ts,.vue --fix",
     "prepare": "husky install"
   },
@@ -14,11 +15,12 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
-    "@vitejs/plugin-vue": "^2.2.2",
+    "@vitejs/plugin-vue": "^4.4.0",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@angular-eslint/template-parser": "^16.2.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vue/compiler-sfc": "^3.2.31",
@@ -26,6 +28,7 @@
     "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.9.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-vue": "^8.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",

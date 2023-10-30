@@ -23,7 +23,7 @@ export default defineComponent({
 </script>
 
 <style>
-  .text-has-gradient {
+  .custom-text-gradient {
       @apply tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-blue-700 tw-bg-clip-text tw-text-transparent;
       background-size: 140% auto;
       animation: textShine 5s ease-in-out infinite alternate;
@@ -33,7 +33,7 @@ export default defineComponent({
     }
   }
 
-  .svg-animation {
+  .custom-svg-animation {
     animation: rotate 40s linear infinite alternate-reverse;
     transform-origin: 48% 60%;
   }

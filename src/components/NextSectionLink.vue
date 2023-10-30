@@ -1,12 +1,12 @@
 <template>
-  <div class="tw-text-center -tw-mt-10">
+  <div class="-tw-mt-10 tw-text-center">
     <a
       :href="target" 
       :title="title"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="tw-stroke-purple hover:tw-stroke-blue tw-transition tw-inline-block motion-safe:tw-animate-bounce tw-w-10 md:tw-w-16 lg:tw-w-20 tw-h-10 md:tw-h-16 lg:tw-h-20 hover:tw-full-blue tw-rounded-lg" 
+        class="tw-inline-block tw-h-10 tw-w-10 tw-rounded-lg tw-stroke-purple tw-transition hover:tw-stroke-blue motion-safe:tw-animate-bounce md:tw-h-16 md:tw-w-16 lg:tw-h-20 lg:tw-w-20" 
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -31,6 +31,7 @@
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
+    components: {},
     props: {
         target: {
             type: String,
