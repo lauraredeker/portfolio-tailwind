@@ -6,7 +6,8 @@
 
 @layer base {
     html {
-        font-family: "Roboto Mono", system-ui, sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
     }
 
     body {
@@ -19,32 +20,29 @@
       --color-secondary: 111 114 185;
     }
 
-    @media all {
-        /* bungee-shade-regular - latin */
-        @font-face {
-          font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-          font-family: 'Bungee Shade';
-          font-style: normal;
-          font-weight: 400;
-          src: url('fonts/bungee-shade-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-      
-        /* roboto-mono-regular - latin */
-        @font-face {
-          font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-          font-family: 'Roboto Mono';
-          font-style: normal;
-          font-weight: 400;
-          src: url('fonts/roboto-mono-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-        /* roboto-mono-600 - latin */
-        @font-face {
-          font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-          font-family: 'Roboto Mono';
-          font-style: normal;
-          font-weight: 600;
-          src: url('fonts/roboto-mono-v23-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        }
-      }
-      
+    /* bungee-shade-regular - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Bungee Shade';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/bungee-shade-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+  
+    /* roboto-mono-regular - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/roboto-mono-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* roboto-mono-600 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 600;
+      src: url('fonts/roboto-mono-v23-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
   }

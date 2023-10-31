@@ -58,14 +58,14 @@
               cy="276"
               r="274" 
               fill="none" 
-              class="hover:tw-stroke-indigo-600 tw-cursor-pointer tw-stroke-blue-100 tw-stroke-2"
+              class="tw-cursor-pointer tw-stroke-blue-100 tw-stroke-2 hover:tw-stroke-indigo-600"
               stroke-width="2" 
               stroke-miterlimit="10" 
               stroke-dasharray="12.921,11.9271"
           />
         </svg>
         <img
-            class="custom-image-animation sm:tw-z-10 tw-relative tw-mx-auto tw-mb-20 tw-w-2/3 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-mt-16 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] xl:-tw-right-24" 
+            class="custom-image-animation tw-relative tw-mx-auto tw-mb-20 tw-w-2/3 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-16 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] xl:-tw-right-24" 
             title="Picture of Laura sneaking around the corner." 
             src="/img/pictures/moi.png"
         >
