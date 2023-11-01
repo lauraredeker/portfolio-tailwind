@@ -14,21 +14,21 @@
         >
           lauraredeker.ux@gmail.com
         </a>
-     
+
         <p
             class="tw-mb-6 tw-mt-4 tw-text-center tw-text-xl tw-font-medium md:tw-mt-10 md:tw-text-xl"
         >
-          Also, feel free to connect with me on the following platforms: 
+          Also, feel free to connect with me on the following platforms:
         </p>
-        <a 
+        <a
             class="tw-mb-2 tw-mr-2 tw-inline-block tw-rounded-full tw-border-2 tw-border-indigo-400 tw-px-6 tw-py-3 tw-text-base tw-font-semibold tw-text-indigo-700 tw-transition-all hover:tw-border-indigo-800 hover:tw-bg-slate-200 hover:tw-text-indigo-900 sm:tw-mr-4 sm:tw-text-xl md:tw-text-xl"
             href="//www.linkedin.com/in/laura-a-redeker/"
         >
-          linkedin 
+          linkedin
         </a>
         <a
             class="tw-mb-2 tw-mr-2 tw-inline-block tw-rounded-full tw-border-2 tw-border-red-400 tw-px-6 tw-py-3 tw-text-base tw-font-semibold tw-text-red-700 tw-transition-all hover:tw-border-red-800 hover:tw-bg-slate-200 hover:tw-text-red-900 sm:tw-mr-4 sm:tw-text-xl md:tw-text-xl"
-            href="https://www.malt.de/profile/lauraredeker" 
+            href="https://www.malt.de/profile/lauraredeker"
         >
           <span>
             malt
@@ -36,17 +36,17 @@
         </a>
         <a
             class="tw-mb-2 tw-mr-2 tw-inline-block tw-rounded-full tw-border-2 tw-border-purple-400 tw-px-6 tw-py-3 tw-text-base tw-font-semibold tw-text-purple-700 tw-transition-all hover:tw-border-purple-800 hover:tw-bg-slate-200 hover:tw-text-purple-900 sm:tw-mr-4 sm:tw-text-xl md:tw-text-xl"
-            href="https://www.junico.de/freelancer/laura-131" 
+            href="https://www.junico.de/freelancer/laura-131"
         >
           <span>
             junico
           </span>
         </a>
-        <a 
+        <a
             class="tw-mb-2 tw-mr-2 tw-inline-block tw-rounded-full tw-border-2 tw-border-emerald-400 tw-px-6 tw-py-3 tw-text-base tw-font-semibold tw-text-emerald-700 tw-transition-all hover:tw-border-emerald-800 hover:tw-bg-slate-200 hover:tw-text-emerald-900 sm:tw-mr-4 sm:tw-text-xl md:tw-text-xl"
             href="//www.freelancermap.de/profil/frontend-developer-with-ui-ux-skills"
         >
-          freelancermap 
+          freelancermap
         </a>
       </div>
     </section>

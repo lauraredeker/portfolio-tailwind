@@ -7,12 +7,11 @@ module.exports = {
     'plugin:vue/essential',
     'plugin:vue/vue3-recommended',
     '@vue/typescript/recommended',
-    'plugin:tailwindcss/recommended',
   ],
   parserOptions: {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
-    ecmaVersion: 'latest',
+    ecmaVersion: 2018,
   },
   plugins: ['tailwindcss'],
   settings: {
@@ -42,36 +41,59 @@ module.exports = {
       },
     ],
     'comma-dangle': ['warn', 'always-multiline'],
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'quotes': ['error', 'single'],
     'semi': ['error', 'never'],
     'tailwindcss/classnames-order': 'warn',
     'tailwindcss/no-contradicting-classname': 'error',
+    'no-unused-vars':                  'warn',
+    'vue/multi-word-component-names':  'off',
+    'vue/no-reserved-component-names': 'warn',
+    'prefer-const':                    'warn',
+    'space-before-function-paren':     'warn',
+    'spaced-comment':                  'warn',
+    'comma-dangle':                    [
+      'error',
+      {
+        objects: 'always-multiline',
+      }
+    ],
+    'no-trailing-spaces':          'warn',
+    'no-param-reassign':           'warn',
+    'no-multiple-empty-lines': [2, {'max': 2}],
+    'vue/no-multi-spaces': ['warn', {
+      ignoreProperties: true
+    }],
+    'vue/no-multi-spaces':         ['off'],
+    'brace-style':                 ['off'],
+    'vue/v-on-event-hyphenation':  'off',
+    'vue/attribute-hyphenation':   'off',
+    'vue/max-attributes-per-line': [
+      'warn',
+      {
+        singleline: {
+          max: 5,
+        },
+        multiline: {
+          max: 1,
+        },
+      }
+    ],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: ['_uid', '_jv'],
+      }
+    ],
   },
   overrides: [
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '.eslintrc.js',
         '**/tests/unit/**/*.spec.{j,t}s?(x)',
       ],
-      parser: 'vue-eslint-parser',
       env: {
         mocha: true,
       },
-    },
-    {
-      files: [
-        '*.vue',
-      ],
-      parser: 'vue-eslint-parser',
-    },
-    {
-      files: [
-        '*.html',
-      ],
-      parser: '@angular-eslint/template-parser',
     },
   ],
 }

@@ -4,8 +4,8 @@
         <div class="tw-container tw-mx-auto tw-py-72">
           <div class="tw-text-center">
             <a
-                href="vita.html" 
-                title="work experience of laura" 
+                href="vita.html"
+                title="work experience of laura"
                 class="tw-mt-4 tw-inline-block tw-rounded-full tw-border-2 tw-border-white tw-px-6 tw-py-3 tw-text-base tw-font-semibold tw-text-white tw-transition-all hover:tw-bg-blue-600 md:tw-px-10 md:tw-py-4 md:tw-text-xl"
             >
               my work experience

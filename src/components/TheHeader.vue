@@ -15,7 +15,7 @@
         </div>
         <div class="md:tw-visible">
           <a
-              class="tw-hidden tw-rounded-lg tw-px-3 tw-py-2 tw-text-base tw-font-semibold hover:tw-bg-slate-200 hover:tw-text-blue sm:tw-block md:tw-text-2xl"
+              class="tw-hidden tw-rounded-lg tw-px-3 tw-text-base tw-font-semibold hover:tw-bg-slate-200 hover:tw-text-blue dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-100 sm:tw-block md:tw-text-xl lg:tw-text-2xl"
               title="scroll to top"
               href="#"
           >
@@ -23,26 +23,39 @@
           </a>
         </div>
 
-        <nav class="tw-flex tw-justify-center tw-px-3 tw-text-base tw-font-semibold sm:tw-space-x-4 md:tw-text-2xl">
+        <nav class="tw-flex tw-justify-center tw-px-3 tw-text-base tw-font-semibold sm:tw-space-x-4 md:tw-text-xl lg:tw-text-2xl">
           <a
               href="#about"
-              class="tw-rounded-lg tw-px-3 tw-py-2 hover:tw-bg-slate-200 hover:tw-text-blue"
+              class="tw-rounded-lg tw-px-3 hover:tw-bg-slate-200 hover:tw-text-blue dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-100"
           >
             about
           </a>
           <a
               href="#expertise"
-              class="tw-rounded-lg tw-px-3 tw-py-2 hover:tw-bg-slate-200 hover:tw-text-blue"
+              class="tw-rounded-lg tw-px-3 hover:tw-bg-slate-200 hover:tw-text-blue dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-100"
           >
             expertise
           </a>
           <a
               href="#contact"
-              class="tw-rounded-lg tw-px-3 tw-py-2 hover:tw-bg-slate-200 hover:tw-text-blue"
+              class="tw-rounded-lg tw-px-3 hover:tw-bg-slate-200 hover:tw-text-blue dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-100"
           >
             contact
           </a>
+
+          <dark-btn />
         </nav>
       </div>
     </header>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import DarkBtn from './DarkBtn.vue'
+
+export default defineComponent({
+    components: {
+      DarkBtn,
+     },
+})
+</script>

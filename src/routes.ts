@@ -7,5 +7,5 @@ export const routes = [
   { path: '/', component: HomeView, meta: { title: 'Home' }},
   { path: '/impressum', component: ImprintView, meta: { title: 'Impressum' }},
   { path: '/datenschutz', component: PrivacyView, meta: { title: 'Datenschutz' }},
-  { path: '/:pathMatch(.*)*', component: NotFound, meta: { title: 'Page not found' }},
+  { path: '/:pathMatch(.*)*', component: NotFound, meta: { title: 'Page not found' }}
 ]

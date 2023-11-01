@@ -1,18 +1,18 @@
 <template>
-    <div 
+    <div
         :class="['tw-text-center', containerClass]"
     >
       <a
-          :href="target" 
+          :href="target"
           :title="title"
       >
-        <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke-width="1.5" 
-            stroke="currentColor" 
-            class="tw-inline-block tw-h-10 tw-w-10 tw-rounded-lg tw-stroke-purple tw-transition hover:tw-stroke-blue motion-safe:tw-animate-bounce lg:tw-h-16 lg:tw-w-16" 
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="tw-inline-block tw-h-10 tw-w-10 tw-rounded-lg tw-stroke-purple tw-transition hover:tw-stroke-blue motion-safe:tw-animate-bounce lg:tw-h-16 lg:tw-w-16"
         >
           <path
               fill-rule="evenodd"
@@ -43,7 +43,7 @@ export default defineComponent({
             default: '',
         },
     },
-    setup() {
+    setup () {
         return {
             name: ref(''),
         }

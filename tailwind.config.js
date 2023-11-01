@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  darkMode: 'class',
   prefix: 'tw-', // add this as a prefix to all tailwind classes
   content: ['./index.html', './src/**/*.vue', './src/**/*.ts'],
   theme: {

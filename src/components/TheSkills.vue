@@ -18,7 +18,7 @@
             <p class="tw-mt-2 tw-text-justify">
               With a keen eye for design and a focus on user experience, I'm great at creating delightful interfaces that
               seamlessly blend aesthetics with functionality. <br>
-              I also know my way around design systems and <span class="tw-whitespace-nowrap">living style guides</span>, making it easier 
+              I also know my way around design systems and <span class="tw-whitespace-nowrap">living style guides</span>, making it easier
               for teams to build and maintain scalable and consistent UIs.
             </p>
           </div>
@@ -32,8 +32,8 @@
               Development
             </h3>
             <p class="tw-mt-2 tw-text-justify">
-              As an architect of user interfaces, I make sure that every button click, animation, and design element responds intuitively. 
-              I've got a versatile technical skill set and I'm experienced in different front-end frameworks and libraries. This means I can pick the perfect tools for each project. 
+              As an architect of user interfaces, I make sure that every button click, animation, and design element responds intuitively.
+              I've got a versatile technical skill set and I'm experienced in different front-end frameworks and libraries. This means I can pick the perfect tools for each project.
             </p>
           </div>
           <div class="tw-text-center">
@@ -46,9 +46,9 @@
               Accessibility
             </h3>
             <p class="tw-mt-2 tw-text-justify">
-              I strive to make the web a more accessible and engaging place, always ensuring that the applications I develop 
+              I strive to make the web a more accessible and engaging place, always ensuring that the applications I develop
               are inclusive and smoothly adapt to different devices and screen sizes.
-              <wbr> Using end-to-end testing tools like Cypress, I make sure the website functions 
+              <wbr> Using end-to-end testing tools like Cypress, I make sure the website functions
               correctly and meets high-quality standards.
             </p>
           </div>
@@ -91,7 +91,7 @@
           <div class="tw-col-span-5">
             <p>Vue.js (2), HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, ZURB Foundation, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
           </div>
-            
+
           <div class="tw-mt-10 tw-whitespace-nowrap md:tw-mt-0">
             <img
                 src="/img/icons/ico-smiley.svg"
@@ -145,7 +145,7 @@
           target="#contact"
           title="Contact Me"
       />
-    </section>                
+    </section>
 </template>
 
 <script lang="ts">
@@ -153,10 +153,8 @@ import { defineComponent } from 'vue'
 import NextSectionLink from './NextSectionLink.vue'
 
 export default defineComponent({
-    components: { 
+    components: {
       NextSectionLink,
      },
-    props: {
-    },
 })
 </script>
