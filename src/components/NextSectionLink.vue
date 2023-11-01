@@ -1,5 +1,6 @@
 <template>
     <div
+        class="tw-mb-10"
         :class="['tw-text-center', containerClass]"
     >
       <a
@@ -12,7 +13,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="tw-inline-block tw-h-10 tw-w-10 tw-rounded-lg tw-stroke-purple tw-transition hover:tw-stroke-blue motion-safe:tw-animate-bounce lg:tw-h-16 lg:tw-w-16"
+            class="tw-inline-block tw-h-10 tw-w-10 tw-stroke-purple tw-transition hover:tw-stroke-blue motion-safe:tw-animate-bounce lg:tw-h-14 lg:tw-w-14"
         >
           <path
               fill-rule="evenodd"

@@ -1,5 +1,5 @@
 <template>
-    <article class="tw-container tw-relative tw-mx-auto">
+    <section class="tw-container tw-relative tw-mx-auto">
       <svg
           viewBox="0 0 705 705"
           fill="none"
@@ -10,29 +10,29 @@
             cx="352.5"
             cy="352.5"
             r="352"
-            class="tw-stroke-amber-500 tw-stroke-2"
+            class="tw-stroke-amber-500 tw-stroke-2 dark:tw-stroke-gray-700"
         />
       </svg>
 
       <section class="tw-flex tw-h-screen tw-flex-col">
-        <div class="tw-relative tw-z-50 tw-my-auto">
+        <div class="tw-relative tw-z-50 tw-mt-20 sm:tw-my-auto">
           <h1
-              class="custom-text-gradient tw-font-display tw-text-5xl tw-transition-all sm:tw-text-7xl xl:-tw-mt-20 xl:tw-text-8xl 2xl:tw-text-9xl"
+              class="custom-text-gradient sxl:-tw-mt-20 tw-font-display tw-text-6xl tw-transition-all dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:tw-text-9xl"
           >
-            <span class="tw-ml-10 lg:tw-ml-20">
-              Hello,<br>
+            <span class="tw-block">
+              hello!
             </span>
-            <span class="">
-              I am <br>Laura.
+            <span class="md:tw-ml-20 md:tw-whitespace-nowrap">
+              I'm laura
             </span>
           </h1>
           <h3
-              class="tw-mt-10 tw-text-xl tw-font-medium md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
+              class="tw-mt-10 tw-text-l tw-font-bold dark:tw-text-orange-200 sm:tw-text-xl md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
           >
             I am a
             <a
                 href="#about"
-                class="tw-whitespace-nowrap tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-800 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple"
+                class="tw-whitespace-nowrap tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-800 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-300 dark:hover:tw-bg-black"
             >
               <span class="tw-underline tw-underline-offset-4">front-end designer</span>
               <sup>✱</sup>
@@ -58,14 +58,14 @@
               cy="276"
               r="274"
               fill="none"
-              class="tw-cursor-pointer tw-stroke-blue-100 tw-stroke-2 hover:tw-stroke-indigo-600"
+              class="tw-cursor-pointer tw-stroke-blue-100 tw-stroke-2 hover:tw-stroke-indigo-600 dark:tw-stroke-orange-800"
               stroke-width="2"
               stroke-miterlimit="10"
               stroke-dasharray="12.921,11.9271"
           />
         </svg>
         <img
-            class="custom-image-animation tw-relative tw-mx-auto tw-mb-20 tw-w-2/3 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-16 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] xl:-tw-right-24"
+            class="custom-image-animation tw-relative tw-mx-auto tw-mt-10 tw-w-2/3 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-16 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] xl:-tw-right-24"
             title="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
         >
@@ -76,7 +76,7 @@
           target="#about"
           title="About me"
       />
-    </article>
+    </section>
 </template>
 
 
@@ -88,15 +88,23 @@ export default defineComponent({
     components: {
       NextSectionLink,
      },
-    props: {
-        msg: {
-            type: String,
-            default: '',
-        },
-    },
 })
 </script>
 
-<style>
+<style scoped>
+.custom-image-animation {
+  @screen sm {
+      animation: customImageAnimation 50s linear infinite alternate-reverse;
+  }
+}
+
+@keyframes customImageAnimation {
+  0% {
+    transform:translate(0, 0);
+  }
+  100% {
+    transform:translate(25%, -30%);
+  }
+}
 
 </style>

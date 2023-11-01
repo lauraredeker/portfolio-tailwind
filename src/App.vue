@@ -47,12 +47,6 @@ export default defineComponent({
     animation: customSVGAnimation 50s linear infinite alternate-reverse;
   }
 
-  .custom-image-animation {
-    @media screen(sm) {
-      animation: customImageAnimation 50s linear infinite alternate-reverse;
-    }
-  }
-
   @keyframes customSVGAnimation {
     0% {
       transform: rotate(0);
@@ -61,15 +55,6 @@ export default defineComponent({
     100% {
       transform: rotate(80deg);
       transform-origin: 58% 40%;
-    }
-  }
-
-  @keyframes customImageAnimation {
-    0% {
-      transform:translate(0, 0);
-    }
-    100% {
-      transform:translate(25%, -30%);
     }
   }
 

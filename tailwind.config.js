@@ -81,29 +81,30 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
-    }, 
+    },
     fontSize: {
       sm: '0.8rem',
       base: '1rem',
+      l: '1.125rem',
       xl: '1.5rem',
       '2xl': ['1.875rem', {
       }],
       '3xl': ['2.25rem', {
       }],
-      '5xl': ['3rem', {
+      '5xl': ['3.25rem', {
         lineHeight: '3.25rem',
       }],
       '6xl': ['4.5rem', {
         lineHeight: '4.75rem',
       }],
       '7xl': ['6rem', {
-        lineHeight: '0.9',
+        lineHeight: '1',
       }],
       '8xl': ['8rem', {
-        lineHeight: '0.9',
+        lineHeight: '1',
       }],
       '9xl': ['9.875rem', {
-        lineHeight: '0.9',
+        lineHeight: '1',
       }],
     },
     fontFamily: {
@@ -124,6 +125,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/container-queries'),
+    require('@tailwindcss/container-queries')
   ],
 }
