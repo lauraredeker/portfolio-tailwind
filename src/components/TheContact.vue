@@ -1,7 +1,7 @@
 <template>
     <section class="tw-pt-40">
       <div class="tw-container tw-mx-auto tw-h-screen tw-text-base dark:tw-text-indigo-50 md:tw-text-xl lg:tw-w-4/5">
-        <h2 class="tw-mt-10 tw-bg-gradient-to-bl tw-from-purple tw-to-blue-500 tw-bg-clip-text tw-font-display tw-text-5xl tw-text-transparent dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-text-5xl lg:tw-mt-10 lg:tw-text-7xl xl:tw-text-8xl">
+        <h2 class="custom-text-gradient tw-mt-10 tw-bg-clip-text tw-font-display tw-text-5xl tw-text-transparent dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-text-5xl lg:tw-mt-10 lg:tw-text-7xl xl:tw-text-8xl">
           Say hi!
         </h2>
 
@@ -11,7 +11,7 @@
         </p>
         <a
             href="mailto:lauraredeker.ux@gmail.com"
-            class="tw-mt-4 tw-inline-block tw-rounded-full tw-border-2 tw-border-white tw-bg-black tw-px-6 tw-py-3 tw-text-base tw-font-bold tw-text-white tw-transition-all hover:tw-bg-blue-600 sm:tw-text-l md:tw-px-10 md:tw-py-4 lg:tw-text-xl "
+            class="tw-mt-4 tw-inline-block tw-rounded-full tw-border-2 tw-border-black tw-px-6 tw-py-3 tw-text-base tw-font-bold tw-transition-all hover:tw-bg-orange-100 dark:tw-border-white dark:hover:tw-bg-black sm:tw-text-l md:tw-px-10 md:tw-py-4 lg:tw-text-xl "
         >
           lauraredeker.ux@gmail.com
         </a>

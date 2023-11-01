@@ -1,6 +1,6 @@
 <template>
     <section>
-      <div class="tw-h-auto tw-overflow-hidden tw-bg-gradient-to-r tw-from-amber-500 tw-to-purple-300 md:tw-mb-72">
+      <div class="tw-h-auto tw-overflow-hidden tw-bg-gradient-to-r tw-from-blue-700 tw-to-purple-600 md:tw-mb-72">
         <div class="tw-container tw-mx-auto tw-py-72">
           <div class="tw-text-center">
             <a

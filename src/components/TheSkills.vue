@@ -1,9 +1,9 @@
 <template>
     <section>
       <div class="tw-container tw-mx-auto">
-        <h1 class="tw-mt-10 tw-bg-gradient-to-bl tw-from-purple tw-to-blue-500 tw-bg-clip-text tw-font-display tw-text-5xl tw-leading-tight tw-text-transparent dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-text-center md:tw-text-6xl lg:tw-mt-10 lg:tw-text-8xl xl:tw-text-9xl">
+        <h2 class="custom-text-gradient tw-mt-10 tw-font-display tw-text-5xl tw-leading-tight tw-text-transparent dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-text-center md:tw-text-6xl lg:tw-mt-10 lg:tw-text-8xl xl:tw-text-9xl">
           exper<wbr>tise
-        </h1>
+        </h2>
 
         <div class="tw-mt-10 tw-grid dark:tw-text-orange-50 md:tw-mt-32 md:tw-gap-12 lg:tw-grid-cols-3 xl:tw-gap-20">
           <div class="tw-text-center">

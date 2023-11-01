@@ -1,9 +1,9 @@
 <template>
-    <section class="tw-container tw-relative tw-mx-auto">
+    <section class="tw-container tw-relative tw-mx-auto md:tw-px-0">
       <svg
           viewBox="0 0 705 705"
           fill="none"
-          class="custom-svg-animation tw-absolute -tw-left-[15%] -tw-top-10 tw-z-0 tw-w-[130%] sm:tw-w-[100%] md:-tw-left-[35%] md:-tw-top-[10%] md:tw-w-[90%]"
+          class="custom-svg-animation tw-absolute -tw-left-[25%] tw-z-0 tw-w-[130%] sm:tw-w-[100%] md:-tw-left-[35%] md:-tw-top-[10%] md:tw-w-[90%]"
           xmlns="http://www.w3.org/2000/svg"
       >
         <circle
@@ -27,7 +27,7 @@
             </span>
           </h1>
           <h3
-              class="tw-mt-10 tw-text-l tw-font-bold dark:tw-text-orange-200 sm:tw-text-xl md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
+              class="tw-mt-10 tw-text-l tw-font-bold dark:tw-text-orange-50 sm:tw-text-xl md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
           >
             I am a
             <a
@@ -48,7 +48,7 @@
 
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="tw-absolute -tw-right-[15%] -tw-mt-[15%] motion-safe:tw-animate-spin-slow"
+            class="tw-absolute -tw-right-[5%] tw-bottom-[2%] motion-safe:tw-animate-spin-slow"
             width="352"
             height="352"
             overflow="visible"
