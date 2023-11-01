@@ -1,7 +1,7 @@
 <template>
     <div
         id="app"
-        class="custom-bg-image tw-relative tw-w-screen tw-overflow-x-hidden tw-scroll-smooth tw-font-sans focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950"
+        class="custom-bg-image tw-relative tw-w-screen tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950"
     >
       <router-view />
     </div>
@@ -67,4 +67,12 @@ export default defineComponent({
     }
   }
 
+  /* bungee-shade-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bungee Shade';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bungee-shade-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 </style>

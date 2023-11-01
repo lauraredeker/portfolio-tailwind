@@ -4,7 +4,7 @@
         <hr class="tw-mb-4 tw-mt-20 tw-border-b-2 tw-border-lime-400 dark:tw-border-purple-200">
 
         <div class="tw-flex tw-flex-wrap tw-justify-between">
-          <div class="tw-w-full tw-text-center md:tw-w-1/3 md:tw-text-left">
+          <div class="md:eft tw-w-full tw-text-center md:tw-w-1/3">
             <p class="tw-mb-2">
               &copy; 2023 Laura A. Redeker
             </p>

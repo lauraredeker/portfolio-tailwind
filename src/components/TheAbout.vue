@@ -15,7 +15,7 @@
         </blockquote>
       </div>
       <div class="lg:tw-flex lg:tw-justify-end">
-        <div class="tw-my-20 tw-px-10 tw-text-base dark:tw-text-orange-50 md:tw-pr-48 md:tw-text-xl lg:tw-w-3/5">
+        <div class="tw-my-20 tw-px-10 tw-text-base dark:tw-text-orange-50 md:tw-text-xl lg:tw-w-3/5 lg:tw-pr-48">
           <p class="tw-mb-10">
             I am, in short, a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and
             back-end developer's floor. It took me a while, to be honest, but I have successfully recovered from my identity crisis

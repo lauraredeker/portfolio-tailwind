@@ -4,9 +4,9 @@
         class="3xl:tw-container tw-fixed tw-inset-x-2 tw-top-2 tw-z-50 tw-mx-auto"
     >
       <div class="tw-flex tw-justify-between md:tw-p-1 lg:tw-py-2 2xl:tw-px-0">
-        <div class="tw-px-3 tw-font-medium sm:tw-hidden md:tw-py-2">
+        <div class="tw-px-3 tw-pt-1 tw-font-medium sm:tw-hidden md:tw-py-2">
           <a
-              class="from-purple-100 dark:tw-to-bue-50 tw-bg-gradient-to-r tw-from-purple tw-to-blue tw-bg-clip-text tw-font-display tw-font-bold tw-text-transparent dark:tw-from-white dark:tw-to-purple-300"
+              class="from-purple-100 dark:tw-to-bue-50 tw-bg-gradient-to-r tw-from-purple tw-to-blue tw-bg-clip-text tw-font-display tw-text-transparent dark:tw-from-white dark:tw-to-purple-300"
               title="scroll to top"
               href="#"
           >

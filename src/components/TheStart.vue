@@ -17,17 +17,17 @@
       <section class="tw-flex tw-h-screen tw-flex-col">
         <div class="tw-relative tw-z-50 tw-mt-20 sm:tw-my-auto">
           <h1
-              class="custom-text-gradient sxl:-tw-mt-20 tw-font-display tw-text-6xl tw-transition-all dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:tw-text-9xl"
+              class="custom-text-gradient sxl:-tw-mt-20 tw-font-display tw-text-6xl tw-transition-all dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl"
           >
-            <span class="tw-block">
-              hello!
+            <span class="tw-block md:tw-ml-20">
+              hello,
             </span>
-            <span class="md:tw-ml-20 md:tw-whitespace-nowrap">
-              I'm laura
+            <span class="md:tw-whitespace-nowrap">
+              I am <br>laura
             </span>
           </h1>
           <h3
-              class="tw-mt-10 tw-text-l tw-font-bold dark:tw-text-orange-50 sm:tw-text-xl md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
+              class="tw-mt-10 tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-max-w-2xl xl:tw-max-w-3xl xl:tw-text-3xl"
           >
             I am a
             <a
@@ -72,7 +72,7 @@
       </section>
 
       <next-section-link
-          container-class="-tw-mt-[10%]"
+          container-class="-tw-mt-20"
           target="#about"
           title="About me"
       />

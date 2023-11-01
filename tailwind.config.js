@@ -83,9 +83,9 @@ module.exports = {
       },
     },
     fontSize: {
-      sm: '0.8rem',
-      base: '1rem',
-      l: '1.125rem',
+      sm: '0.9rem',
+      base: '1.25rem',
+      l: '1.25rem',
       xl: '1.5rem',
       '2xl': ['1.875rem', {
       }],
@@ -108,7 +108,7 @@ module.exports = {
       }],
     },
     fontFamily: {
-      sans: ['Roboto Mono', ...defaultTheme.fontFamily.sans],
+      sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       display: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
     },
     container: {

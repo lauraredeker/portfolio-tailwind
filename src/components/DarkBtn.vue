@@ -10,7 +10,7 @@
       <!-- Moon -->
       <svg
           :class="isDarkMode ? 'tw-hidden' : 'tw-block'"
-          class="tw-block tw-h-5 tw-w-5 tw-fill-purple-600"
+          class="tw-block tw-h-5 tw-fill-purple-600"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
       >
@@ -19,7 +19,7 @@
       <!-- Sun -->
       <svg
           :class="isDarkMode ? 'tw-block' : 'tw-hidden'"
-          class="tw-h-5 tw-w-5 tw-fill-amber-50"
+          class="tw-h-5 tw-fill-amber-50"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
       >
