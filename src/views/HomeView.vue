@@ -3,7 +3,6 @@
       <the-header />
       <the-start id="hi" />
       <the-about id="about" />
-      <the-experience id="experience" />
       <the-skills id="expertise" />
       <the-contact id="contact" />
       <the-footer />

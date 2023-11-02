@@ -1,5 +1,5 @@
 <template>
-    <section class="tw-container tw-relative tw-mx-auto md:tw-px-0">
+    <section class="tw-container tw-relative tw-mx-auto xl:tw-px-0">
       <svg
           viewBox="0 0 705 705"
           fill="none"

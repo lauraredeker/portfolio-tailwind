@@ -1,5 +1,16 @@
 <template>
-    <section class="tw-mx-auto">
+    <section class="tw-relative tw-mx-auto">
+      <div class="tw-absolute -tw-left-20 tw-bottom-20 tw-text-center">
+        <a
+            href="vita.html"
+            title="work experience of laura"
+            class="tw-flex tw-h-96 tw-w-96 tw-flex-col tw-items-center tw-justify-center tw-rounded-full tw-border-2 tw-border-amber-500 tw-text-base tw-font-bold tw-text-blue-600 tw-transition-all hover:tw-bg-amber-50 hover:tw-text-blue-600 dark:tw-text-white dark:hover:tw-bg-indigo-900 md:tw-px-16 md:tw-py-4 md:tw-text-xl"
+        >
+          my work<br>experience
+          <i class="tw-i-ph-arrow-right tw-mt-2 tw-inline-block tw-w-12" />
+        </a>
+      </div>
+
       <div class="tw-mx-auto tw-mt-10 sm:tw-w-5/6 md:tw-mt-80 md:tw-p-8 lg:tw-w-3/4">
         <blockquote class="tw-mb-4 tw-border-8 tw-border-lime-400 tw-p-10 tw-text-xl tw-font-bold dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-pl-20 md:tw-text-2xl xl:tw-text-5xl">
           "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
@@ -32,8 +43,9 @@
           </p>
         </div>
       </div>
+
       <next-section-link
-          container-class="md:tw-mt-20"
+          container-class="tw-block md:tw-mt-40 md:tw-mb-40"
           target="#experience"
           title="My Work Experience"
       />

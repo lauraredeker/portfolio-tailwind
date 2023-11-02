@@ -1,8 +1,20 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
 
 module.exports = {
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
+    iconsPlugin({
+      // Select the icon collections you want to use
+      // You can also ignore this option to automatically discover all icon collections you have installed
+      collections: getIconCollections(['ph']),
+    })
+  ],
   darkMode: 'class',
   prefix: 'tw-', // add this as a prefix to all tailwind classes
   content: ['./index.html', './src/**/*.vue', './src/**/*.ts'],
@@ -121,10 +133,4 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/container-queries')
-  ],
 }
