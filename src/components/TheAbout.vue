@@ -1,21 +1,21 @@
 <template>
     <section class="tw-relative tw-mx-auto">
-      <div class="tw-mx-auto tw-mt-10 sm:tw-w-5/6 md:tw-mt-80 md:tw-p-8 lg:tw-w-3/4">
-        <blockquote class="xl:tw-text-4xl tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-pl-20 md:tw-text-3xl">
+      <div class="tw-mx-auto tw-mt-10 md:tw-mt-80 md:tw-w-5/6 md:tw-p-8 lg:tw-w-3/4">
+        <blockquote class="tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold tw-leading-tight tw-tracking-tight tw-text-indigo-700 dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-pl-20 md:tw-text-3xl lg:tw-text-5xl">
           "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
           logic, loops, and Linux – lies frontend design."
-          <cite class="tw-mt-10 tw-block tw-text-base tw-font-semibold tw-not-italic">
+          <cite class="tw-mt-10 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white">
             Brad Frost, author of
             <a
                 href="http://atomicdesign.bradfrost.com"
-                class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
+                class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
                 target="_blank"
             >Atomic Design</a>
           </cite>
         </blockquote>
       </div>
       <div class="tw-justify-center lg:tw-flex xl:tw-justify-end">
-        <div class="tw-my-20 tw-px-10 tw-text-base dark:tw-text-orange-50 md:tw-px-32 md:tw-text-xl xl:tw-w-3/5 xl:tw-pr-48">
+        <div class="tw-my-20 tw-px-10 tw-text-base dark:tw-text-orange-50 md:tw-px-20 md:tw-text-xl xl:tw-w-3/5 xl:tw-pr-48">
           <p class="tw-mb-6">
             <span class="tw-font-semibold">I am, in short, a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and
               back-end developer's floor. Woops!</span>
@@ -41,7 +41,7 @@
         />
         <router-link
             to="/vita"
-            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-[16px] tw-border-teal-300  tw-align-middle tw-text-gray-800  tw-transition-all hover:tw-border-teal-300 hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-900 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px]"
+            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-[12px] tw-border-teal-300  tw-align-middle tw-text-gray-800  tw-transition-all hover:tw-border-teal-300 hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-900 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px]"
         >
           <span class="tw-flex tw-flex-row tw-justify-center tw-px-40 tw-py-10 tw-align-middle tw-font-bold tw-uppercase tw-leading-tight tw-tracking-widest md:tw-text-2xl xl:tw-block">
             my work<br>
@@ -53,8 +53,8 @@
       </div>
       <next-section-link
           container-class="tw-block md:tw-mt-40 md:tw-mb-40"
-          target="#experience"
-          title="My Work Experience"
+          target="#expertise"
+          title="My Skills"
       />
     </section>
 </template>

@@ -107,14 +107,13 @@
           </div>
         </div>
         <hr class="tw-my-20 tw-border-b-2 tw-border-teal-400 dark:tw-border-lime-400">
+
+        <next-section-link
+            container-class="tw-block md:tw-mt-40 md:tw-mb-40"
+            target="#contact"
+            title="Contact Me"
+        />
       </div>
-
-
-      <next-section-link
-          container-class="tw-mt-20"
-          target="#contact"
-          title="Contact Me"
-      />
     </section>
 </template>
 
