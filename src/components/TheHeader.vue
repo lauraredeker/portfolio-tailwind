@@ -1,7 +1,7 @@
 <template>
     <header
         role="banner"
-        class="3xl:tw-container tw-fixed tw-inset-x-2 tw-top-2 tw-z-50 tw-mx-auto"
+        class="3xl:tw-container tw-fixed tw-inset-x-2 tw-top-2 tw-z-50 tw-mx-auto tw-flex-none"
     >
       <div class="tw-flex tw-justify-between md:tw-p-1 lg:tw-py-2 2xl:tw-px-0">
         <div class="tw-px-3 tw-pt-1 tw-font-medium sm:tw-hidden md:tw-py-2">

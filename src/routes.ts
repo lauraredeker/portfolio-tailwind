@@ -6,6 +6,7 @@ import NotFound from './views/NotFound.vue'
 export const routes = [
   { path: '/', component: HomeView, meta: { title: 'Home' }},
   { path: '/impressum', component: ImprintView, meta: { title: 'Impressum' }},
+  { path: '/vita', component: ImprintView, meta: { title: 'Vita' }},
   { path: '/datenschutz', component: PrivacyView, meta: { title: 'Datenschutz' }},
   { path: '/:pathMatch(.*)*', component: NotFound, meta: { title: 'Page not found' }}
 ]

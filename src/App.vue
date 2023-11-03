@@ -1,7 +1,7 @@
 <template>
     <div
         id="app"
-        class="custom-bg-image tw-relative tw-w-screen tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950"
+        class="custom-bg-image tw-relative tw-flex tw-w-full tw-flex-col tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950"
     >
       <router-view />
     </div>
@@ -43,11 +43,11 @@ export default defineComponent({
     }
   }
 
-  .custom-svg-animation {
-    animation: customSVGAnimation 50s linear infinite alternate-reverse;
+  .custom-circle-animation {
+    animation: customAnimation 50s linear infinite alternate-reverse;
   }
 
-  @keyframes customSVGAnimation {
+  @keyframes customAnimation {
     0% {
       transform: rotate(0);
       transform-origin: 40% 60%;

@@ -1,7 +1,7 @@
 <template>
     <section>
-      <div class="tw-container tw-mx-auto tw-w-4/5">
-        <div class="tw-mt-10 tw-grid dark:tw-text-orange-50 md:tw-mt-12 md:tw-gap-12 lg:tw-grid-cols-3 xl:tw-gap-20">
+      <div class="tw-container tw-mx-auto tw-w-full 2xl:tw-w-4/5">
+        <div class="tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-mt-12 lg:tw-grid-cols-3 lg:tw-gap-12 2xl:tw-gap-20">
           <div class="tw-text-center">
             <span
                 aria-hidden="true"
@@ -17,10 +17,9 @@
               for teams to build and maintain scalable and consistent UIs.
             </p>
           </div>
-          <div class="tw-text-center">
+          <div class="tw-mt-20 tw-text-center lg:tw-mt-0">
             <span
                 aria-hidden="true"
-
                 class="tw-i-ph-code-block-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
             />
             <h3 class="tw-mb-10 tw-text-xl tw-font-semibold tw-text-indigo-600 dark:tw-text-indigo-300 md:tw-text-5xl 2xl:tw-text-6xl">
@@ -31,7 +30,7 @@
               I've got a versatile technical skill set and I'm experienced in different front-end frameworks and libraries. This means I can pick the perfect tools for each project.
             </p>
           </div>
-          <div class="tw-text-center">
+          <div class="tw-mt-20 tw-text-center lg:tw-mt-0">
             <span
                 aria-hidden="true"
                 class="tw-i-ph-heart-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
@@ -49,7 +48,7 @@
           </div>
         </div>
 
-        <hr class="tw-my-20 tw-border-b-2 tw-border-lime-400">
+        <hr class="tw-my-20 tw-border-b-2 tw-border-lime-500 dark:tw-border-lime-400">
 
         <div class="tw-text-center">
           <span
@@ -64,18 +63,18 @@
             I'm familiar with
           </h3>
         </div>
-        <div class="tw-mx-auto tw-gap-0 dark:tw-text-orange-50 md:tw-grid md:tw-grid-cols-12 2xl:tw-w-4/5">
+        <div class="tw-mx-auto tw-gap-0 dark:tw-text-orange-50 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
           <div
               class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap"
               aria-hidden="true"
           >
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
-          <div class="tw-col-span-9 tw-mt-10">
+          <div class="tw-col-span-9 lg:tw-mt-10">
             <p>Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, ZURB Foundation, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
           </div>
 
@@ -83,13 +82,13 @@
               class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap"
               aria-hidden="true"
           >
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-dot-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
-          <div class="tw-col-span-9 tw-mt-10">
+          <div class="tw-col-span-9 lg:tw-mt-10">
             <p>Vuex, Jest, Cypress.io, Tailwind CSS, PostCSS, Adobe CC (Photoshop, Illustrator, InDesign), Figma</p>
           </div>
 
@@ -97,17 +96,17 @@
               class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap"
               aria-hidden="true"
           >
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-smiley-sticker tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-dot-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
-            <span class="tw-i-ph-dot-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-purple-400 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
+            <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-indigo-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
-          <div class="tw-col-span-9 tw-mt-10">
+          <div class="tw-col-span-9 lg:tw-mt-10">
             <p>Vuetify, Pinia, TypeScript, SVG, Webpack, Grunt, Gulp</p>
           </div>
         </div>
-        <hr class="tw-my-20 tw-border-b-2 tw-border-lime-400">
+        <hr class="tw-my-20 tw-border-b-2 tw-border-lime-500 dark:tw-border-lime-400">
       </div>
 
 

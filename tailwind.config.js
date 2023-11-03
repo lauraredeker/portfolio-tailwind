@@ -85,6 +85,7 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
+        '3xl': '1920px',
       },
       spacing: {
         '128': '32rem',
@@ -95,7 +96,7 @@ module.exports = {
       },
     },
     fontSize: {
-      sm: '0.9rem',
+      sm: '1rem',
       base: '1.25rem',
       l: '1.25rem',
       xl: '1.5rem',

@@ -9,7 +9,7 @@
           :title="title"
       >
         <span
-            class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-lime-400 tw-transition hover:tw-stroke-blue-600 motion-safe:tw-animate-bounce lg:tw-h-14 lg:tw-w-14"
+            class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-stroke-blue-600 motion-safe:tw-animate-bounce dark:tw-text-lime-400 lg:tw-h-14 lg:tw-w-14"
         />
       </a>
     </div>

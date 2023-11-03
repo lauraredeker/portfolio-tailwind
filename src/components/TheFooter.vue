@@ -1,48 +1,48 @@
 <template>
-    <footer class="">
-      <div class="tw-mx-auto tw-mb-10 tw-px-6 tw-py-4 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0 md:tw-text-base">
-        <div class="tw-flex tw-flex-wrap tw-justify-between">
-          <div class="tw-w-full tw-text-center md:tw-w-1/3 md:tw-text-left">
+    <footer class="tw-flex tw-h-auto tw-flex-row tw-justify-center tw-border-t-2 tw-border-lime-500 tw-pt-10 tw-align-bottom dark:tw-border-lime-400 lg:tw-border-0">
+      <div class="tw-w-full tw-px-6 tw-pb-5 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0">
+        <div class="tw-flex tw-flex-wrap tw-justify-center lg:tw-flex-nowrap lg:tw-justify-between">
+          <div class="tw-text-center lg:tw-w-4/12 lg:tw-text-left">
             <p class="tw-mb-2">
               &copy; 2023 Laura A. Redeker
             </p>
           </div>
-          <div class="tw-w-full tw-text-center md:tw-w-1/3">
+          <div class="tw-w-full tw-text-center lg:tw-w-6/12">
             Built with
             <a
-                class="tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-200 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
                 href="//www.vuejs.org"
                 title="Vue.js 3"
-            >Vue.js</a> &
+            >Vue.js</a> and
             <a
-                class="tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-200 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
                 href="//www.tailwindcss.com"
                 title="TailwindCSS"
             >
               TailwindCSS
             </a>
-            <span class="tw-i-ph-heart tw-mx-1 tw-h-4 dark:tw-text-white" />
-
-            Here's my
-            <a
-                class="tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-200 dark:hover:tw-bg-black"
-                href="//github.com/therobotzombie"
-                title="gitHub"
-            >
-              GitHub.
-            </a>
+            <span class="tw-i-ph-heart tw-mr-1 dark:tw-text-white" />
+            <span class="tw-whitespace-nowrap">
+              Take a look at my
+              <a
+                  class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                  href="//github.com/therobotzombie"
+                  title="gitHub"
+              >
+                GitHub.
+              </a>
+            </span>
           </div>
-          <div class="tw-w-full tw-text-center md:tw-w-1/3 md:tw-text-right">
-            <hr aria-hidden="true" class="tw-my-5 tw-border-b-2 tw-border-lime-400 md:tw-hidden">
+          <div class="tw-my-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
             <router-link
                 to="/impressum"
-                class="tw-mr-10 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-200 dark:hover:tw-bg-black"
+                class="tw-mr-5 tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
             >
               Impressum
             </router-link>
             <router-link
                 to="/datenschutz"
-                class="tw-mr-10 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-200 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
             >
               Datenschutz
             </router-link>
