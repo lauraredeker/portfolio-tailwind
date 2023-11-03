@@ -32,8 +32,20 @@ module.exports = {
         emerald: colors.emerald,
         indigo: colors.indigo,
         red: colors.red,
-        green: colors.green,
         beige: '#F7F7F1',
+        'teal': {
+          '50': '#ecfdf7',
+          '100': '#d1fae9',
+          '200': '#a7f3d7',
+          '300': '#5ce5bc',
+          '400': '#33d4a9',
+          '500': '#0fba92',
+          '600': '#049777',
+          '700': '#037962',
+          '800': '#05604f',
+          '900': '#064e42',
+          '950': '#022c26',
+        },
         'blue': {
           DEFAULT: '#110DFF',
           50: '#C6C5FF',
@@ -121,7 +133,7 @@ module.exports = {
       }],
     },
     fontFamily: {
-      sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+      sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       display: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
     },
     container: {

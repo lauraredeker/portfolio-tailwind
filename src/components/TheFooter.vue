@@ -1,6 +1,6 @@
 <template>
-    <footer class="tw-flex tw-h-auto tw-flex-row tw-justify-center tw-border-t-2 tw-border-lime-500 tw-pt-10 tw-align-bottom dark:tw-border-lime-400 lg:tw-border-0">
-      <div class="tw-w-full tw-px-6 tw-pb-5 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0">
+    <footer class="tw-flex tw-h-auto tw-flex-row tw-justify-center tw-pt-10 tw-align-bottom ">
+      <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0">
         <div class="tw-flex tw-flex-wrap tw-justify-center lg:tw-flex-nowrap lg:tw-justify-between">
           <div class="tw-text-center lg:tw-w-4/12 lg:tw-text-left">
             <p class="tw-mb-2">

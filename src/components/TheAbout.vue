@@ -1,7 +1,7 @@
 <template>
     <section class="tw-relative tw-mx-auto">
       <div class="tw-mx-auto tw-mt-10 sm:tw-w-5/6 md:tw-mt-80 md:tw-p-8 lg:tw-w-3/4">
-        <blockquote class="tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-pl-20 md:tw-text-2xl xl:tw-text-5xl">
+        <blockquote class="xl:tw-text-4xl tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-pl-20 md:tw-text-3xl">
           "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
           logic, loops, and Linux – lies frontend design."
           <cite class="tw-mt-10 tw-block tw-text-base tw-font-semibold tw-not-italic">
@@ -41,7 +41,7 @@
         />
         <router-link
             to="/vita"
-            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-[16px] tw-border-pink-400  tw-align-middle tw-text-gray-800  tw-transition-all hover:tw-border-purple-300 hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-900 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px]"
+            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-[16px] tw-border-teal-300  tw-align-middle tw-text-gray-800  tw-transition-all hover:tw-border-teal-300 hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-900 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px]"
         >
           <span class="tw-flex tw-flex-row tw-justify-center tw-px-40 tw-py-10 tw-align-middle tw-font-bold tw-uppercase tw-leading-tight tw-tracking-widest md:tw-text-2xl xl:tw-block">
             my work<br>
