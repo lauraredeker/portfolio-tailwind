@@ -11,7 +11,7 @@
       >
         <span
             v-show="showTitle"
-            class="tw-absolute tw-bottom-20 tw-font-semibold tw-uppercase tw-tracking-wider tw-text-gray-400 dark:tw-text-indigo-400 md:tw-bottom-8 md:tw-ml-16"
+            class="tw-absolute tw-bottom-20 tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-bottom-8 md:tw-ml-16"
         >{{ title }}
         </span>
         <span

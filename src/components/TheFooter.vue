@@ -1,7 +1,7 @@
 <template>
-    <footer class="tw-flex tw-h-auto tw-flex-row tw-justify-center tw-pt-10 tw-align-bottom ">
+    <footer class="custom-wavy-border tw-flex tw-h-auto tw-flex-row tw-justify-center tw-bg-indigo-800 tw-pt-16 tw-align-bottom tw-text-white dark:tw-bg-indigo-900 ">
       <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0">
-        <div class="tw-flex tw-flex-wrap tw-justify-center lg:tw-flex-nowrap lg:tw-justify-between">
+        <div class="tw-flex tw-flex-wrap tw-justify-center tw-align-bottom lg:tw-flex-nowrap lg:tw-justify-between">
           <div class="tw-text-center lg:tw-w-4/12 lg:tw-text-left">
             <p class="tw-mb-2">
               &copy; 2023 Laura A. Redeker
@@ -10,12 +10,12 @@
           <div class="tw-w-full tw-text-center lg:tw-w-6/12">
             Built with
             <a
-                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
                 href="//www.vuejs.org"
                 title="Vue.js 3"
             >Vue.js</a> and
             <a
-                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
                 href="//www.tailwindcss.com"
                 title="TailwindCSS"
             >
@@ -25,7 +25,7 @@
             <span class="tw-whitespace-nowrap">
               Take a look at my
               <a
-                  class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                  class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
                   href="//github.com/therobotzombie"
                   title="gitHub"
               >
@@ -36,13 +36,13 @@
           <div class="tw-my-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
             <router-link
                 to="/impressum"
-                class="tw-mr-5 tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-mr-5 tw-rounded-md tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
             >
               Impressum
             </router-link>
             <router-link
                 to="/datenschutz"
-                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-blue-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple-600 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
             >
               Datenschutz
             </router-link>

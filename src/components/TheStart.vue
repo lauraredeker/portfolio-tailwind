@@ -5,10 +5,10 @@
           class="custom-circle-animation tw-absolute -tw-left-[15%] tw-z-0 tw-h-144 tw-w-144 tw-rounded-full tw-border-4 tw-border-amber-300 tw-bg-gray-100 tw-bg-opacity-30 tw-transition-all  dark:tw-border-amber-600 dark:tw-bg-transparent md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:tw-h-[1200px] 2xl:tw-w-[1200px] 3xl:tw-top-20"
       />
 
-      <section class="tw-flex tw-flex-col tw-h-screen tw-align-middle">
-        <div class="tw-relative tw-z-50 tw-mt-20 sm:tw-my-auto 2xl:tw-mt-40">
+      <section class="tw-flex tw-h-screen tw-flex-col tw-align-middle">
+        <div class="tw-relative tw-z-20 tw-mt-20 sm:tw-my-auto ">
           <h1
-              class="tw-text-6xl tw-transition-all custom-text-gradient tw-font-display dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl"
+              class="tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-font-display tw-text-6xl tw-text-transparent tw-transition-all dark:tw-from-lime-500 dark:tw-via-purple-400 dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl"
           >
             <span class="tw-block md:tw-ml-20">
               hello,
@@ -23,7 +23,7 @@
             As a
             <a
                 href="#about"
-                class="tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors tw-rounded-lg hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-300 dark:hover:tw-bg-black"
+                class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:dark:tw-text-purple-300 dark:hover:tw-bg-black"
             >
               <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">designer-developer hybrid</span>
               <sup>✱</sup>

@@ -1,13 +1,13 @@
 <template>
     <section>
-      <div class="tw-container tw-mx-auto tw-w-full 2xl:tw-w-4/5">
-        <div class="tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-mt-12 lg:tw-grid-cols-3 lg:tw-gap-12 2xl:tw-gap-20">
+      <div class="tw-container tw-mx-auto tw-w-full">
+        <div class="tw-mx-auto tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-mt-12 lg:tw-grid-cols-3 lg:tw-gap-12 2xl:tw-w-4/5 2xl:tw-gap-20">
           <div class="tw-text-center">
             <span
                 aria-hidden="true"
-                class="tw-i-ph-atom-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+                class="tw-i-ph-atom-duotone tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
             />
-            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold dark:tw-text-indigo-300 md:tw-text-5xl 2xl:tw-text-6xl">
+            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
               Design
             </h3>
             <p class="tw-mt-2 tw-text-justify">
@@ -20,9 +20,9 @@
           <div class="tw-mt-20 tw-text-center lg:tw-mt-0">
             <span
                 aria-hidden="true"
-                class="tw-i-ph-code-block-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+                class="tw-i-ph-code-block-duotone tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
             />
-            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold dark:tw-text-indigo-300 md:tw-text-5xl 2xl:tw-text-6xl">
+            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
               Code
             </h3>
             <p class="tw-mt-2 tw-text-justify">
@@ -33,10 +33,10 @@
           <div class="tw-mt-20 tw-text-center lg:tw-mt-0">
             <span
                 aria-hidden="true"
-                class="tw-i-ph-heart-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+                class="tw-i-ph-heart-duotone tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
             />
 
-            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold dark:tw-text-indigo-300 md:tw-text-5xl 2xl:tw-text-6xl">
+            <h3 class="tw-mb-10 tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
               A11y
             </h3>
             <p class="tw-mt-2 tw-text-justify">
@@ -48,19 +48,16 @@
           </div>
         </div>
 
-        <hr class="tw-my-20 tw-border-b-2 tw-border-teal-400 dark:tw-border-lime-400">
+        <hr class="tw-mb-20 tw-mt-20 tw-rounded-md tw-border-b-4 tw-border-purple-400 dark:tw-border-lime-400">
 
         <div class="tw-text-center">
           <span
               aria-hidden="true"
-              class="tw-i-ph-stack-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+              class="tw-i-ph-coffee-duotone tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
           />
 
-          <h3 class="tw-text-xl tw-font-semibold dark:tw-text-indigo-300 md:tw-text-5xl 2xl:tw-text-6xl">
+          <h3 class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
             Tech Stack
-          </h3>
-          <h3 class="tw-text-l tw-font-semibold tw-uppercase tw-tracking-widest tw-text-purple-400 dark:tw-text-indigo-400">
-            I'm familiar with
           </h3>
         </div>
         <div class="tw-mx-auto tw-gap-8 dark:tw-text-orange-50 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
@@ -75,11 +72,11 @@
             <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
           <div class="tw-col-span-9 lg:tw-mt-10">
-            <p>Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, ZURB Foundation, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
+            <p>Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
           </div>
 
           <div
-              class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap"
+              class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap"
               aria-hidden="true"
           >
             <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
@@ -88,12 +85,12 @@
             <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
             <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
-          <div class="tw-col-span-9 lg:tw-mt-10">
-            <p>Vuex, Jest, Cypress.io, Tailwind CSS, PostCSS, Adobe CC (Photoshop, Illustrator, InDesign), Figma</p>
+          <div class="tw-col-span-9 lg:tw-mt-6">
+            <p>Vuex, Jest, Cypress.io, PostCSS, Adobe CC (Photoshop, Illustrator, InDesign), Figma</p>
           </div>
 
           <div
-              class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap"
+              class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap"
               aria-hidden="true"
           >
             <span class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
@@ -102,11 +99,11 @@
             <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
             <span class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-12 tw-w-12 tw-text-gray-600 dark:tw-text-lime-200 md:tw-h-10 md:tw-w-10" />
           </div>
-          <div class="tw-col-span-9 lg:tw-mt-10">
+          <div class="tw-col-span-9 lg:tw-mt-6">
             <p>Vuetify, Pinia, TypeScript, SVG, Webpack, Grunt, Gulp</p>
           </div>
         </div>
-        <hr class="tw-my-20 tw-border-b-2 tw-border-teal-400 dark:tw-border-lime-400">
+        <hr class="tw-mb-20 tw-mt-20 tw-rounded-md tw-border-b-4 tw-border-purple-400 dark:tw-border-lime-400">
 
         <next-section-link
             container-class="tw-block md:tw-mt-40 md:tw-mb-40"
