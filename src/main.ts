@@ -9,6 +9,17 @@ const app = createApp(App)
 const router = createRouter({
   history: createWebHistory(),
   routes: import.meta.hot ? [] : routes,
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 54,
+        behavior: 'smooth',
+      }
+    } else {
+      return { top: 0 }
+    }
+  },
 })
 
 if (import.meta.hot) {

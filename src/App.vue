@@ -1,7 +1,7 @@
 <template>
     <div
         id="app"
-        class="custom-bg-image tw-relative tw-flex tw-w-full tw-flex-col tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950"
+        class="custom-bg-image tw-relative tw-flex tw-w-full tw-flex-col tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
     >
       <router-view />
     </div>
@@ -14,7 +14,8 @@ import { watchEffect } from '@vue/runtime-core'
 
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: {
+  },
   setup () {
     watchEffect(() => {
       if (globalState.isDarkMode) {

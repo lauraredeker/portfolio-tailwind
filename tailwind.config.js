@@ -91,8 +91,8 @@ module.exports = {
       },
     },
     fontSize: {
-      sm: '1rem',
-      base: '1.25rem',
+      sm: '.875rem',
+      base: '1rem',
       l: '1.25rem',
       xl: '1.5rem',
       '2xl': ['1.875rem', {

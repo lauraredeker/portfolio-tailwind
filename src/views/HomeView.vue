@@ -5,7 +5,6 @@
       <the-about id="about" />
       <the-skills id="expertise" />
       <the-contact id="contact" />
-      <the-footer />
     </div>
 </template>
 

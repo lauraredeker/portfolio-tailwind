@@ -1,6 +1,6 @@
 <template>
     <section class="dark:tw-bg-black dark:tw-bg-opacity-40 lg:tw-h-screen">
-      <section class="tw-flex tw-flex-row tw-justify-center tw-pb-10 tw-pt-16 tw-text-center tw-align-middle lg:tw-h-[86vh]">
+      <section class="tw-flex tw-flex-row tw-justify-center tw-pb-2 tw-pt-16 tw-text-center tw-align-middle lg:tw-h-[86vh]">
         <div class="tw-container tw-my-auto tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3">
           <h3 class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
             Say hello!
@@ -12,7 +12,7 @@
           </p>
           <a
               href="mailto:lauraredeker.ux@gmail.com"
-              class="tw-mt-4 tw-inline-block tw-rounded-full tw-border-4 tw-border-indigo-400 tw-bg-indigo-300 tw-px-6 tw-py-3 tw-text-sm tw-font-semibold tw-text-indigo-900 tw-transition-all hover:tw-border-indigo-800 hover:tw-text-black dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white md:tw-px-10 md:tw-py-4 md:tw-text-base lg:tw-text-xl "
+              class="tw-mt-4 tw-inline-block tw-rounded-full tw-border-4 tw-border-indigo-400 tw-bg-indigo-200 tw-px-6 tw-py-3 tw-font-semibold tw-text-indigo-900 tw-transition-all hover:tw-border-indigo-800 hover:tw-text-black dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white md:tw-px-10 md:tw-py-4"
           >
             <span class="tw-flex tw-flex-row tw-items-center">
               <span>lauraredeker.ux@gmail.com</span>
