@@ -1,13 +1,24 @@
 <template>
-    <div class="">
-      <h1>Data Privacy</h1>
+    <div>
+      <the-header />
+      <the-privacy />
+      <the-footer />
     </div>
 </template>
 
-  <script lang="ts">
-  import { defineComponent } from 'vue'
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-  export default defineComponent({
-    components: {},
-  })
-  </script>
+import TheHeader from '../components/TheHeader.vue'
+import TheFooter from '../components/TheFooter.vue'
+import ThePrivacy from '../components/ThePrivacy.vue'
+
+export default defineComponent({
+components: {
+TheHeader,
+ThePrivacy,
+TheFooter,
+},
+})
+</script>
+

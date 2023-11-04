@@ -1,22 +1,21 @@
 <template>
-    <div class="tw-container">
-      <h1>Not Found.</h1>
-      <p>
-        You've landed on a URL that doesn't seem to exist. Return
-        <router-link to="/">
-          home
-        </router-link>.
-      </p>
+    <div>
+      <the-header />
+      <the-not-found />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
+import TheHeader from '../components/TheHeader.vue'
+import TheNotFound from '../components/TheNotFound.vue'
+
 export default defineComponent({
-  components: {},
+components: {
+  TheHeader,
+  TheNotFound,
+  },
 })
 </script>
 
-<style scoped>
-</style>

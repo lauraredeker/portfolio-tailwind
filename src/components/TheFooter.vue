@@ -10,12 +10,12 @@
           <div class="tw-w-full tw-text-center lg:tw-w-6/12">
             Built with
             <a
-                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                 href="//www.vuejs.org"
                 title="Vue.js 3"
             >Vue.js</a> and
             <a
-                class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                 href="//www.tailwindcss.com"
                 title="TailwindCSS"
             >
@@ -25,7 +25,7 @@
             <span class="tw-whitespace-nowrap">
               Take a look at my
               <a
-                  class="tw-rounded-md tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                  class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                   href="//github.com/therobotzombie"
                   title="gitHub"
               >
@@ -36,13 +36,13 @@
           <div class="tw-my-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
             <router-link
                 to="/impressum"
-                class="tw-mr-5 tw-rounded-md tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             >
               Impressum
             </router-link>
             <router-link
                 to="/datenschutz"
-                class="tw-rounded-md tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-indigo-900 hover:tw-text-purple-400 dark:tw-text-lime-400 dark:hover:tw-bg-black"
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             >
               Datenschutz
             </router-link>
