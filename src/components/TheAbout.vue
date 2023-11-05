@@ -1,7 +1,7 @@
 <template>
-    <section class="tw-relative tw-mx-auto">
+    <section class="tw-relative tw-mx-auto tw-pt-1">
       <div class="tw-mx-auto tw-mt-10 md:tw-mt-80 md:tw-p-8 lg:tw-w-3/4 ">
-        <blockquote class="tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-px-20 md:tw-text-3xl lg:tw-text-5xl">
+        <blockquote class="tw-mb-4 tw-border-8 tw-border-indigo-400 tw-p-10 tw-text-xl tw-font-bold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 md:tw-mb-10 md:tw-px-20 md:tw-text-3xl lg:tw-text-5xl">
           "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
           logic, loops, and Linux – lies frontend design."
           <cite class="tw-mt-10 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white">
@@ -58,7 +58,7 @@
         </router-link>
       </div>
       <next-section-link
-          container-class="tw-block md:tw-mt-40 md:tw-mb-40"
+          container-class="tw-block md:tw-mt-40"
           target="#expertise"
           title="My Skills"
       />

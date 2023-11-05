@@ -1,6 +1,6 @@
 <template>
-    <section class="dark:tw-bg-black dark:tw-bg-opacity-40 lg:tw-h-screen">
-      <section class="tw-flex tw-flex-row tw-justify-center tw-pb-2 tw-pt-16 tw-text-center tw-align-middle lg:tw-h-[86vh]">
+    <section class=" dark:tw-bg-opacity-40 lg:tw-h-screen">
+      <section class="tw-flex tw-flex-row tw-justify-center tw-pb-20 tw-pt-16 tw-text-center tw-align-middle lg:tw-h-[86vh]">
         <div class="tw-container tw-my-auto tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3">
           <h3 class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
             Say hello!

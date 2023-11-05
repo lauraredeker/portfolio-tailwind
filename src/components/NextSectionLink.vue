@@ -1,6 +1,5 @@
 <template>
     <div
-        class="tw-mb-10"
         aria-hidden="true"
         :class="['tw-text-center', containerClass]"
     >
