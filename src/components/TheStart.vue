@@ -6,7 +6,7 @@
       <div aria-hidden="true">
         <div
 
-            class="custom-circle-animation-2 tw-absolute  tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-70 dark:tw-bg-purple-600 dark:tw-opacity-30 dark:tw-mix-blend-multiply md:tw-h-[55rem] md:tw-w-[55rem] "
+            class="custom-circle-animation-2 tw-absolute  tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 dark:tw-bg-purple-600 dark:tw-opacity-30 dark:tw-mix-blend-multiply md:tw-h-[55rem] md:tw-w-[55rem] "
         />
         <div
             aria-hidden="true"
@@ -30,7 +30,7 @@
               I am <br>laura
             </span>
           </h1>
-          <h3 class="tw-mt-4 tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+          <h3 class="tw-mt-10 tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
             As a
             <router-link
                 to="/#about"
@@ -51,13 +51,13 @@
             class="tw-absolute -tw-bottom-0 -tw-right-10 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all hover:tw-rotate-0 hover:tw-cursor-pointer motion-safe:tw-animate-spin-slow dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%]  md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[12%] lg:tw-h-[600px] lg:tw-w-[600px] "
         />
         <next-section-link
-            container-class="tw-mt-10 sm:tw-hidden"
+            container-class="tw-my-10 sm:tw-hidden"
             target="#about"
             title="More about me"
         />
 
         <img
-            class="custom-image-animation xl:-tw-right-30 tw-relative tw-mx-auto tw-mb-20 tw-w-56 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-56 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[5%]"
+            class="custom-image-animation tw-relative tw-mx-auto tw-mb-10 tw-w-64 sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-56 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[5%]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
         >

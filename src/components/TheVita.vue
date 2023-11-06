@@ -35,7 +35,7 @@
             web application "LabXpert".
           </p>
           <p class="tw-mt-5">
-            <strong>Technologies:</strong> Vue.js 2· Vuex · Cypress.io · JavaScript · jQuery · Jest · SCSS
+            <strong>Technologies:</strong> Vue.js 2 · Vuex · Cypress.io · JavaScript · jQuery · Jest · SCSS
           </p>
 
 

@@ -16,18 +16,18 @@
       </div>
       <div class="tw-flex tw-flex-row tw-justify-center xl:tw-justify-end xl:tw-pr-40">
         <div class="tw-my-20 tw-px-10 dark:tw-text-orange-50 md:tw-w-4/5 xl:tw-w-3/5">
-          <p class="tw-mb-6">
-            <span class="tw-font-semibold">
+          <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-gray-500 dark:tw-text-indigo-400">
+            Laura, she/her &middot; 33 &middot; based in Munich, Germany
+          </p>
+          <p class="tw-my-6">
+            <span class="tw-font-semibold dark:tw-text-indigo-100 md:tw-text-xl">
               I am, in short, a designer, who eventually discovered
               the joy of coding and somehow ended up sitting full-time on the engineer's and
               back-end developer's floor. 👻
             </span>
           </p>
           <p class="tw-mb-6">
-            Honestly, it took me a while, but I have successfully recovered from my identity crisis
-            and found myself the right spot:<wbr> A place where I can bridge the often scary gap
-            between the design and development worlds,
-            spreading peace, harmony, and naming conventions. ✨
+            (Fast forward, a few identity crises later ...)
           </p>
           <p>
             That said, I'm not a traditional graphic designer,
@@ -35,6 +35,10 @@
             I understand UX principles and I know how to apply them. <wbr>
             I'm not a full-stack developer, but I am happy to write clean front-end code and
             create user interfaces that are responsive, performant, flexible, and compatible.
+            <br><br>
+
+            So I guess you could say I am a <span class="tw-italic">designer-developer hybrid</span>?
+            A designer who codes, a front-end developer who designs, a creative UX developer – whatever you want to call it.
           </p>
         </div>
       </div>

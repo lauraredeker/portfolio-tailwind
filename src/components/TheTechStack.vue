@@ -1,10 +1,10 @@
 <template>
     <div class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-indigo-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20">
-      <div class="tw-container tw-mx-auto">
+      <div class="tw-container tw-mx-auto tw-text-center md:tw-text-left">
         <div class="tw-text-center">
           <span
               aria-hidden="true"
-              class="tw-i-ph-coffee-duotone tw-inline-block tw-h-16 tw-w-16 tw-text-purple-600 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+              class="tw-i-ph-coffee-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-600 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
           />
 
           <h3 class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">

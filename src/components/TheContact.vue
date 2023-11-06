@@ -6,7 +6,7 @@
             Say hello!
           </h3>
 
-          <p class="tw-mb-2 tw-mt-6 tw-font-semibold md:tw-mt-10">
+          <p class="tw-mb-2 tw-mt-6 md:tw-mt-10">
             I'm currently taking on new clients, and would love to hear about your project! <wbr>
             Please include as much information as possible about the scope, your timelines, and your budget.
           </p>
