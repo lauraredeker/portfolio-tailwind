@@ -44,19 +44,19 @@
       </div>
       <div class="tw-mx-5 tw-mb-32 tw-text-center xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40">
         <div
-            class="tw-flex tw-rounded-full tw-border-dotted tw-border-purple-300 tw-transition-all hover:tw-rotate-0 motion-safe:tw-animate-spin-slow dark:tw-border-indigo-600 md:tw-py-4 xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-border-4 2xl:tw-px-16"
+            class="tw-flex tw-rounded-full tw-border-dotted tw-border-purple-300 tw-py-4 tw-transition-all hover:tw-rotate-0 motion-safe:tw-animate-spin-slow dark:tw-border-indigo-600 xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-border-4 2xl:tw-px-16"
         />
         <router-link
             to="/vita"
-            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-[12px]  tw-border-amber-500 tw-align-middle  tw-text-gray-800 tw-transition-all hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-900 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px]"
+            class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-w-full tw-flex-col tw-justify-end tw-rounded-full tw-border-2 tw-border-amber-500 tw-align-middle tw-text-gray-800 tw-transition-all hover:tw-bg-indigo-900 hover:tw-text-white dark:tw-border-indigo-400 dark:tw-text-indigo-200 dark:hover:tw-bg-indigo-200 dark:hover:tw-text-black xl:tw-absolute xl:tw-border-[240px] xl:hover:tw-border-[90px] xl:dark:tw-border-indigo-900"
         >
-          <span class="tw-flex tw-flex-row tw-justify-center tw-py-5 tw-align-middle tw-font-bold tw-uppercase tw-leading-tight tw-tracking-widest sm:tw-py-10 md:tw-text-2xl xl:tw-block xl:tw-px-40">
-            my work<br>
-            experience
+          <span class="tw-flex tw-flex-row tw-justify-center tw-py-3 tw-align-middle tw-font-semibold tw-uppercase sm:tw-py-5 xl:tw-block xl:tw-px-40 xl:tw-text-2xl xl:tw-leading-tight xl:tw-tracking-widest">
+            <span>my work experience
+            </span>
             <wbr>
             <span
                 aria-hidden="true"
-                class="tw-i-ph-arrow-right-bold tw-ml-2 tw-inline-block tw-h-8 tw-w-8 sm:tw-h-12 sm:tw-w-12 md:tw-mt-2 lg:tw-mt-3 xl:tw-ml-0"
+                class="tw-i-ph-arrow-right-bold tw-ml-2 tw-inline-block tw-h-6 tw-w-6 md:tw-h-8 md:tw-w-8 xl:tw-ml-0 xl:tw-mt-3"
             />
           </span>
         </router-link>

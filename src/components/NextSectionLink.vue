@@ -1,10 +1,10 @@
 <template>
     <div
-        aria-hidden="true"
         :class="['tw-text-center', containerClass]"
     >
       <a
           :href="target"
+          aria-hidden="true"
           @mouseout="showTitle = false"
           @mouseover="showTitle = true"
       >

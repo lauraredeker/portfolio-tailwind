@@ -10,39 +10,36 @@
           <div class="tw-w-full tw-text-center lg:tw-w-6/12">
             Built with
             <a
-                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                 href="//www.vuejs.org"
                 title="Vue.js 3"
             >Vue.js</a> and
             <a
-                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                 href="//www.tailwindcss.com"
                 title="TailwindCSS"
             >
               TailwindCSS
             </a>
-            <span class="tw-i-ph-heart tw-mr-1 dark:tw-text-white" />
+            <span class="tw-i-ph-heart-light tw-mr-1 tw-mt-1 tw-h-4 tw-w-4" />
             <span class="tw-whitespace-nowrap">
               Take a look at my
               <a
-                  class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+                  class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
                   href="//github.com/therobotzombie"
-                  title="gitHub"
-              >
-                GitHub.
-              </a>
+              >GitHub</a>
             </span>
           </div>
           <div class="tw-my-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
             <router-link
                 to="/impressum"
-                class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+                class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             >
               Impressum
             </router-link>
             <router-link
                 to="/datenschutz"
-                class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-purple-200 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+                class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             >
               Datenschutz
             </router-link>

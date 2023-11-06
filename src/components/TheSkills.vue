@@ -1,7 +1,7 @@
 <template>
     <section>
       <div class="tw-container tw-mx-auto tw-w-full tw-pt-20">
-        <div class="tw-mx-auto tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-mt-12 lg:tw-grid-cols-3 lg:tw-gap-12 2xl:tw-w-4/5 2xl:tw-gap-20">
+        <div class="tw-mx-auto tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-gap-20 xl:tw-grid-cols-3 ">
           <div class="tw-text-center">
             <span
                 aria-hidden="true"
@@ -14,8 +14,8 @@
               <p>
                 With a keen eye for design and a focus on user experience, I'm great at creating
                 <span class="tw-font-semibold dark:tw-text-indigo-100">
-                  delightful interfaces that seamlessly blend aesthetics with functionality.</span><br><br>
-
+                  delightful interfaces that seamlessly blend aesthetics with functionality.</span>
+                <br><br>
                 I'm a big fan of "designing with code": By developing living style guides, it is often easier for teams to maintain scalable
                 and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching,
                 and to create wireframes and mockups.
