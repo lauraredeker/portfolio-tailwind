@@ -6,7 +6,7 @@
               class="tw-inline-block tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-sm tw-text-indigo-600 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-200 "
               to="/"
           >
-            startseite
+            home
           </router-link>
           <span class="tw-mx-2">/</span>
           <span class="tw-inline tw-text-indigo-400">impressum</span>
@@ -17,7 +17,7 @@
         </h1>
         <section class="tw-mt-5 md:tw-mt-20">
           <p>
-            Dieses Impressum gilt für alle Angebote unter der Domain <span class="tw-underline tw-underline-offset-4">www.lauraredeker.com</span> inklusive aller Subdomains (Unterseiten).
+            Dieses Impressum gilt für alle Angebote unter der Domain www.lauraredeker.com inklusive aller Subdomains (Unterseiten).
           </p>
           <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
             Angaben gemäß § 5 TMG

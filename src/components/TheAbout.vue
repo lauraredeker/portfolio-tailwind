@@ -15,12 +15,12 @@
         </blockquote>
       </div>
       <div class="tw-flex tw-flex-row tw-justify-center xl:tw-justify-end xl:tw-pr-40">
-        <div class="tw-my-20 tw-px-10 dark:tw-text-orange-50 md:tw-w-4/5 xl:tw-w-3/5">
+        <div class="tw-mb-10 tw-mt-12 tw-px-10 dark:tw-text-orange-50 md:tw-my-20 md:tw-w-4/5 xl:tw-w-3/5">
           <p v-scroll class="tw-text-sm tw-font-semibold tw-uppercase tw-text-gray-500 dark:tw-text-indigo-400">
             Laura, she/her &middot; 33 &middot; based in Munich, Germany
           </p>
           <p v-scroll class="tw-my-6">
-            <span class="tw-font-semibold dark:tw-text-indigo-100 md:tw-text-xl">
+            <span class="tw-text-l tw-font-semibold dark:tw-text-indigo-100 md:tw-text-xl">
               I am, in short, a designer, who eventually discovered
               the joy of coding and somehow ended up sitting full-time on the engineer's and
               back-end developer's floor. 👻
@@ -42,9 +42,9 @@
           </p>
         </div>
       </div>
-      <div class="tw-container tw-mx-auto tw-mb-32 tw-max-w-lg tw-text-center xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-full">
+      <div class="tw-container tw-mx-auto tw-mb-20 tw-max-w-lg tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-full">
         <div
-            class="tw-flex tw-rounded-full tw-border-dotted tw-border-purple-300 tw-py-4 tw-transition-all hover:tw-rotate-0 motion-safe:tw-animate-spin-slow dark:tw-border-indigo-600 xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-border-4 2xl:tw-px-16"
+            class="tw-flex tw-rounded-full tw-border-purple-300 tw-py-4 tw-transition-all dark:tw-border-indigo-600 xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-border-4 2xl:tw-px-16"
         />
         <router-link
             to="/vita"

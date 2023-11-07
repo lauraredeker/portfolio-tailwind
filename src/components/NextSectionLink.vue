@@ -11,7 +11,7 @@
         <Transition name="fade">
           <span
               v-show="showTitle"
-              class="tw-absolute tw-bottom-20 tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-bottom-8 md:tw-ml-16"
+              class="tw-absolute tw-bottom-20 tw-select-none tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-bottom-8 md:tw-ml-16"
           >
             {{ title }}
           </span>

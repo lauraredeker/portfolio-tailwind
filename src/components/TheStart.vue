@@ -18,7 +18,7 @@
       <section class="tw-flex tw-flex-col tw-align-middle sm:tw-h-screen">
         <div class="tw-relative tw-z-20 tw-mx-auto tw-mt-20 md:tw-w-11/12 2xl:tw-mt-10">
           <Transition name="fade">
-            <h1 class="tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]">
+            <h1 class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]">
               <span
                   class="tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-32"
               >
@@ -30,7 +30,7 @@
             </h1>
           </Transition>
 
-          <h3  class="tw-mt-5 tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+          <h3 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
             As a
             <router-link
                 to="/#about"
@@ -52,7 +52,7 @@
         />
 
         <next-section-link
-            container-class="tw-my-10 sm:tw-hidden"
+            container-class="tw-mt-10 tw-mb-6 sm:tw-hidden"
             target="#about"
             title="More about me"
         />
@@ -79,7 +79,6 @@
 import { defineComponent } from 'vue'
 import NextSectionLink from './NextSectionLink.vue'
 
-
 export default defineComponent({
     components: {
       NextSectionLink,
@@ -88,41 +87,34 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.custom-image-animation {
-  @screen sm {
-      animation: customImageAnimation 50s linear infinite alternate-reverse;
+  .custom-image-animation {
+    @screen sm {
+        animation: customImageAnimation 50s linear infinite alternate-reverse;
+    }
   }
-}
 
-@keyframes customImageAnimation {
-  0% {
-    transform:translate(0, 0);
+  @keyframes customImageAnimation {
+    0% {
+      transform:translate(0, 0);
+    }
+    100% {
+      transform:translate(5%, -3%);
+    }
   }
-  100% {
-    transform:translate(5%, -3%);
+
+  .slide-enter-active {
+    transition: all 0.8s ease;
+    transition-delay: 0.2s;
+    transform: translate(0, 0);
   }
-}
 
+  .slide-leave-active {
+    transition: all 1.8s ease;
+  }
 
-/*
-  Enter and leave animations can use different
-  durations and timing functions.
-*/
-.slide-enter-active {
-  transition: all 2.3s ease-out;
-  transition-delay: 1s;
-  transform: translateX(0);
-}
-
-.slide-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-  transform: translateX(20px);
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  opacity: 0;
-  transform: translateX(120px);
-}
-
+  .slide-enter-from,
+  .slide-leave-to {
+    opacity: 0;
+    transform: translate(0, 120px);
+  }
 </style>

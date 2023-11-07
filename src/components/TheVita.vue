@@ -1,7 +1,18 @@
 <template>
-    <article class="tw-h-auto tw-pb-20 tw-pt-32 md:tw-pt-20">
+    <article class="tw-pt-20 md:tw-pb-32">
       <div class="tw-container tw-m-auto tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3">
-        <h1 class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
+        <div class="tw-border-b-2 tw-border-indigo-800 tw-py-2 tw-text-sm tw-font-semibold tw-text-indigo-400 dark:tw-text-indigo-300">
+          <router-link
+              class="tw-inline-block tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-sm tw-text-indigo-600 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-200 "
+              to="/"
+          >
+            home
+          </router-link>
+          <span class="tw-mx-2">/</span>
+          <span class="tw-inline tw-text-indigo-400">résumé</span>
+        </div>
+
+        <h1 class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
           Résumé
         </h1>
 
