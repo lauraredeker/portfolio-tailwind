@@ -1,22 +1,22 @@
 
 {
-    "name": "Laura A. Redeker | Designer & Developer from Munich",
+    "name": "Laura A. Redeker | Front-End Designer & Developer from Munich",
     "short_name": "Laura A. Redeker",
     "start_url": "https://lauraredeker.com",
-    "description": "Front-end developer with advanced UX/UI experience and abilities from Germany.",
+    "description": "Hi, I'm Laura. I'm a designer-developer who understands both the visual and functional aspects of creating for the web.",
     "icons": [
         {
-            "src": "android-chrome-192x192.png",
+            "src": "img/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "android-chrome-512x512.png",
+            "src": "img/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#ED827C",
+    "background_color": "#252A56",
     "display": "standalone"
 }

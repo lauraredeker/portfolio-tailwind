@@ -44,7 +44,7 @@
       </div>
       <div class="tw-container tw-mx-auto tw-mb-20 tw-max-w-lg tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-full">
         <div
-            class="tw-flex tw-rounded-full tw-border-purple-300 tw-py-4 tw-transition-all dark:tw-border-indigo-600 xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-border-4 2xl:tw-px-16"
+            class="tw-flex tw-rounded-full tw-py-4 tw-transition-all xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"
         />
         <router-link
             to="/vita"
