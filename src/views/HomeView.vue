@@ -3,7 +3,7 @@
       <the-header />
       <the-start id="hi" />
       <the-about id="about" />
-      <the-skills id="expertise" />
+      <the-skills id="expertise" v-scroll />
       <the-contact id="contact" />
     </div>
 </template>

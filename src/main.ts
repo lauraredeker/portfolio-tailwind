@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import vScroll from './directives/vScroll'
 import { routes } from './routes'
 import './index.css'
 
@@ -17,7 +18,9 @@ const router = createRouter({
         behavior: 'smooth',
       }
     } else {
-      return { top: 0 }
+      return {
+        top: 0,
+      }
     }
   },
 })
@@ -40,5 +43,6 @@ if (import.meta.hot) {
   })
 }
 
+app.directive('scroll', vScroll)
 app.use(router)
 app.mount('#app')

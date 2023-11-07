@@ -21,7 +21,7 @@
             >
               TailwindCSS
             </a>
-            <span class="tw-i-ph-heart-light tw-mr-1 tw-mt-1 tw-h-4 tw-w-4" />
+            <span class="tw-i-ph-heart-light tw-mx-1 tw-inline-flex tw-h-4 tw-w-4 tw-items-baseline" />
             <span class="tw-whitespace-nowrap">
               Take a look at my
               <a

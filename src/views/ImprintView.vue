@@ -1,6 +1,6 @@
 <template>
     <div>
-      <the-header />
+      <the-header :is-subpage="true" />
       <the-imprint />
       <the-footer />
     </div>

@@ -99,6 +99,8 @@ module.exports = {
       }],
       '3xl': ['2.25rem', {
       }],
+      '4xl': ['2.875rem', {
+      }],
       '5xl': ['3.25rem', {
         lineHeight: '3.25rem',
       }],
@@ -121,7 +123,7 @@ module.exports = {
     },
     container: {
       padding: {
-        DEFAULT: '1rem',
+        DEFAULT: '1.8rem',
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
