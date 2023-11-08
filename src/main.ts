@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import BaseBtn from './components/BaseBtn.vue'
 import App from './App.vue'
 import { routes } from './routes'
 import './index.css'
