@@ -1,8 +1,8 @@
 <template>
-    <div>
-      <the-header :is-subpage="true" />
-      <the-not-found />
-    </div>
+  <div>
+    <the-header :is-subpage="true" />
+    <the-not-found />
+  </div>
 </template>
 
 <script lang="ts">

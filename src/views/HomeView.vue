@@ -1,11 +1,11 @@
 <template>
-    <div>
-      <the-header />
-      <the-start id="hi" />
-      <the-about id="about" />
-      <the-skills id="expertise" v-scroll />
-      <the-contact id="contact" />
-    </div>
+  <div>
+    <the-header />
+    <the-start id="hi" />
+    <the-about id="about" />
+    <the-skills id="expertise" />
+    <the-contact id="contact" />
+  </div>
 </template>
 
 <script lang="ts">

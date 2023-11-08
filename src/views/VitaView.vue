@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <the-header />
-      <the-vita />
-      <the-footer />
-    </div>
+  <div>
+    <the-header />
+    <the-vita />
+    <the-footer />
+  </div>
 </template>
 
 <script lang="ts">

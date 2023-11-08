@@ -1,11 +1,12 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
-import vScroll from './directives/vScroll'
 import { routes } from './routes'
 import './index.css'
 
 const app = createApp(App)
+app.component('BaseBtn', BaseBtn)
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -43,6 +44,5 @@ if (import.meta.hot) {
   })
 }
 
-app.directive('scroll', vScroll)
 app.use(router)
 app.mount('#app')

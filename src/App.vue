@@ -1,14 +1,14 @@
 <template>
-    <div
-        id="app"
-        class="custom-bg-image tw-relative tw-flex tw-w-full tw-flex-col tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
-    >
-      <router-view v-slot="{ Component }">
-        <Transition name="fade" appear mode="out-in">
-          <component :is="Component" />
-        </Transition>
-      </router-view>
-    </div>
+  <div
+    id="app"
+    class="custom-bg-image tw-relative tw-flex tw-w-full tw-flex-col tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base focus:tw-scroll-auto dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
+  >
+    <router-view v-slot="{ Component }">
+      <Transition name="fade" appear mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </router-view>
+  </div>
 </template>
 
 <script lang="ts">
@@ -33,7 +33,7 @@ export default defineComponent({
 <style scoped>
   .fade-enter-active,
   .fade-leave-active  {
-    transition: opacity 1s ease;
+    transition: opacity .7s ease;
   }
 
   .fade-enter-from,

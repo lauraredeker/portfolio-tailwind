@@ -6,7 +6,7 @@ module.exports = {
   extends: [
     'plugin:vue/essential',
     'plugin:vue/vue3-recommended',
-    '@vue/typescript/recommended',
+    '@vue/typescript/recommended'
   ],
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -21,15 +21,15 @@ module.exports = {
       config: 'tailwind.config.js',
       prependCustom: false,
       removeDuplicates: true,
-      whitelist: [  
-        'custom\\-.*',
+      whitelist: [
+        'custom\\-.*'
       ],
     },
   },
   rules: {
     'vue/html-indent': ['warn', 2, {
-      'attribute': 2,
-      'baseIndent': 2,
+      'attribute': 1,
+      'baseIndent': 1,
       'closeBracket': 0,
       'alignAttributesVertically': true,
       'ignores': [],
@@ -38,7 +38,7 @@ module.exports = {
       'warn',
       {
         order: ['template', 'script', 'style'],
-      },
+      }
     ],
     'comma-dangle': ['warn', 'always-multiline'],
     'quotes': ['error', 'single'],
@@ -61,7 +61,7 @@ module.exports = {
     'no-param-reassign':           'warn',
     'no-multiple-empty-lines': [2, {'max': 2}],
     'vue/no-multi-spaces': ['warn', {
-      ignoreProperties: true
+      ignoreProperties: true,
     }],
     'vue/no-multi-spaces':         ['off'],
     'brace-style':                 ['off'],
@@ -89,11 +89,11 @@ module.exports = {
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
       ],
       env: {
         mocha: true,
       },
-    },
+    }
   ],
 }

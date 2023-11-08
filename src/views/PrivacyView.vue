@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <the-header :is-subpage="true" />
-      <the-privacy />
-      <the-footer />
-    </div>
+  <div>
+    <the-header :is-subpage="true" />
+    <the-privacy />
+    <the-footer />
+  </div>
 </template>
 
 <script lang="ts">
