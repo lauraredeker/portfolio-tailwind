@@ -1,6 +1,6 @@
 <template>
   <footer class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-indigo-800 tw-pb-5 tw-pt-16 tw-text-white dark:tw-bg-indigo-900 xl:tw-pt-20">
-    <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white">
+    <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white xl:tw-px-20 xl:tw-text-base">
       <div class="tw-flex tw-flex-wrap tw-justify-center tw-align-bottom lg:tw-flex-nowrap lg:tw-justify-between">
         <div class="tw-text-center lg:tw-w-4/12 lg:tw-text-left">
           <p class="tw-mb-2">

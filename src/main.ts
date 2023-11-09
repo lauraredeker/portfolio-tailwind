@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import BaseBtn from './components/BaseBtn.vue'
+import BaseContainer from './components/BaseContainer.vue'
 import App from './App.vue'
 import { routes } from './routes'
 import './index.css'
@@ -11,6 +12,7 @@ const app = createApp(App)
 
 // base components
 app.component('BaseBtn', BaseBtn)
+app.component('BaseContainer', BaseContainer)
 
 const router = createRouter({
   history: createWebHistory(),

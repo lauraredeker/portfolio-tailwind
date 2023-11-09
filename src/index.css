@@ -6,10 +6,6 @@
 
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   .fade-enter-active,
   .fade-leave-active  {
     transition: opacity 1s ease;
