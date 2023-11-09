@@ -4,7 +4,7 @@
   >
     <a
       :href="target"
-      aria-hidden="true"
+      aria-label="go to next section"
       class="tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:focus-visible:tw-ring-gray-700"
       @mouseout="showTitle = false"
       @mouseover="showTitle = true"

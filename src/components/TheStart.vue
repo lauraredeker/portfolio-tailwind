@@ -33,7 +33,7 @@
           </h1>
         </Transition>
 
-        <h3 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+        <h2 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
           As a
           <router-link
             to="/#about"
@@ -46,7 +46,7 @@
             </span>
           </router-link>
           <span class="tw-whitespace-nowrap"> I understand</span> both the visual and functional aspects of creating for the web.
-        </h3>
+        </h2>
       </div>
 
       <!-- dotted border circle -->

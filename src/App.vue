@@ -11,7 +11,7 @@
     <button
       v-show="isScrolling"
       data-te-ripple-init
-      aria-title="scroll to top"
+      aria-label="scroll to top"
       data-te-ripple-color="light"
       class="tw-fixed tw-bottom-3 tw-right-0 tw-z-50 tw-m-4 tw-flex tw-h-14 tw-w-14 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-400 tw-text-white tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 active:tw-shadow-lg dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-text-purple-300 dark:focus-visible:tw-ring-gray-700 md:tw-bottom-10 md:tw-h-16 md:tw-w-16 2xl:tw-bottom-20"
       @click="scrollToTop"
