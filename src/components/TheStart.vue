@@ -62,11 +62,15 @@
       />
 
       <Transition name="slide" appear>
-        <img
-          class="custom-image-animation tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-56 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[28%] 2xl:-tw-right-[20%] 2xl:tw-w-144"
-          alt="Picture of Laura sneaking around the corner."
-          src="/img/pictures/moi.png"
-        >
+        <picture>
+          <source srcset="/img/pictures/moi.webp" type="image/webp">
+          <source srcset="/img/pictures/moi.png" type="image/jpeg">
+          <img
+            class="custom-image-animation tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-56 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[28%] 2xl:tw-w-128 3xl:-tw-right-[20%] 3xl:tw-w-144"
+            alt="Picture of Laura sneaking around the corner."
+            src="/img/pictures/moi.png"
+          >
+        </picture>
       </Transition>
     </section>
 
