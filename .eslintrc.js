@@ -27,11 +27,20 @@ module.exports = {
     },
   },
   rules: {
+    'vue/no-duplicate-attributes': ['error', {
+      'allowCoexistClass': true,
+      'allowCoexistStyle': true,
+    }],
     'vue/html-indent': ['warn', 2, {
       'attribute': 1,
       'baseIndent': 1,
       'closeBracket': 0,
       'alignAttributesVertically': true,
+      'ignores': [],
+    }],
+    'vue/script-indent': ['error', 2, {
+      'baseIndent': 0,
+      'switchCase': 0,
       'ignores': [],
     }],
     'vue/component-tags-order': [

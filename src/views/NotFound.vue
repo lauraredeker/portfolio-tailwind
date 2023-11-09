@@ -12,9 +12,9 @@ import TheHeader from '../components/TheHeader.vue'
 import TheNotFound from '../components/TheNotFound.vue'
 
 export default defineComponent({
-components: {
-  TheHeader,
-  TheNotFound,
+  components: {
+    TheHeader,
+    TheNotFound,
   },
 })
 </script>

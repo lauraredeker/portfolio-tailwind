@@ -41,23 +41,23 @@ export default defineComponent({
     })
   },
   data () {
-      return {
-        scrollingTimer: 0,
-        isScrolling: 0,
-      }
-    },
+    return {
+      scrollingTimer: 0,
+      isScrolling: 0,
+    }
+  },
   mounted () {
-      window.addEventListener('scroll', this.handleScroll)
-    },
+    window.addEventListener('scroll', this.handleScroll)
+  },
   methods: {
     handleScroll: function () {
-        if (this.scrollingTimer) return
-        this.scrollingTimer = setTimeout(() => {
-          this.isScrolling = window.scrollY
-          clearTimeout(this.scrollingTimer)
-          this.scrollingTimer = 0
-        }, 100)
-      },
+      if (this.scrollingTimer) return
+      this.scrollingTimer = setTimeout(() => {
+        this.isScrolling = window.scrollY
+        clearTimeout(this.scrollingTimer)
+        this.scrollingTimer = 0
+      }, 100)
+    },
     scrollToTop () {
       window.scrollTo({
         top: 0,

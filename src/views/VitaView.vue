@@ -14,10 +14,10 @@ import TheFooter from '../components/TheFooter.vue'
 import TheVita from '../components/TheVita.vue'
 
 export default defineComponent({
-components: {
-  TheHeader,
-  TheVita,
-  TheFooter,
+  components: {
+    TheHeader,
+    TheVita,
+    TheFooter,
   },
 })
 </script>

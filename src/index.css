@@ -6,6 +6,10 @@
 
 
 @layer base {
+  body {
+    touch-action: pan-x pan-y;
+  }
+  
   .fade-enter-active,
   .fade-leave-active  {
     transition: opacity 1s ease;

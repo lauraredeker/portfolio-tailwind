@@ -78,9 +78,9 @@ import NextSectionLink from './NextSectionLink.vue'
 import TheTechStack from './TheTechStack.vue'
 
 export default defineComponent({
-    components: {
+  components: {
     NextSectionLink,
     TheTechStack,
-},
+  },
 })
 </script>

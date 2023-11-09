@@ -16,8 +16,9 @@
         </cite>
       </blockquote>
     </div>
-    <div class="tw-flex tw-flex-row tw-justify-center xl:tw-justify-end xl:tw-pr-40">
-      <div class="tw-my-12 tw-px-10 dark:tw-text-orange-50 md:tw-my-20 md:tw-w-4/5 xl:tw-w-3/5 2xl:tw-w-6/12">
+
+    <div class="tw-container tw-mx-auto tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-40">
+      <div class="tw-my-12 dark:tw-text-orange-50 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-6/12">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
           Laura, she/her &middot; 33 &middot; based in Munich
         </p>
@@ -43,7 +44,9 @@
         </p>
       </div>
     </div>
-    <div class="tw-mx-auto tw-mb-20 tw-px-10 md:tw-mb-32 md:tw-w-4/5 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0">
+
+
+    <div class="tw-mx-auto tw-mb-20 tw-px-7 md:tw-mb-32 md:tw-w-4/5 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0">
       <div
         class="tw-flex tw-rounded-full tw-py-4 tw-transition-all xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"
       />
@@ -58,7 +61,7 @@
           <wbr>
           <span
             aria-hidden="true"
-            class="tw-i-ph-arrow-right-bold tw-ml-1 tw-inline-block tw-w-12 xl:tw-ml-0 xl:tw-mt-3 xl:tw-h-8 xl:tw-w-8"
+            class="tw-i-ph-arrow-right-bold tw-ml-2 tw-inline-block xl:tw-ml-0 xl:tw-mt-3 xl:tw-h-8 xl:tw-w-8"
           />
         </span>
       </router-link>
@@ -78,9 +81,9 @@ import NextSectionLink from './NextSectionLink.vue'
 import { RouterLink } from 'vue-router'
 
 export default defineComponent({
-    components: {
+  components: {
     NextSectionLink,
     RouterLink,
-},
+  },
 })
 </script>

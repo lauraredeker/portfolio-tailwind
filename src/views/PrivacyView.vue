@@ -14,11 +14,11 @@ import TheFooter from '../components/TheFooter.vue'
 import ThePrivacy from '../components/ThePrivacy.vue'
 
 export default defineComponent({
-components: {
-TheHeader,
-ThePrivacy,
-TheFooter,
-},
+  components: {
+    TheHeader,
+    ThePrivacy,
+    TheFooter,
+  },
 })
 </script>
 

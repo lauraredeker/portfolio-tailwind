@@ -26,8 +26,8 @@ import { defineComponent } from 'vue'
 import TheFooter from './TheFooter.vue'
 
 export default defineComponent({
-name: 'TheNotFound',
-components: {
+  name: 'TheNotFound',
+  components: {
     TheFooter,
   },
 })

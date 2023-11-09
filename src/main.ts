@@ -1,12 +1,17 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import BaseBtn from './components/BaseBtn.vue'
-import BaseContainer from './components/BaseContainer.vue'
 import App from './App.vue'
 import { routes } from './routes'
-import './index.css'
+import BaseBtn from './components/BaseBtn.vue'
+import BaseContainer from './components/BaseContainer.vue'
 
+// dependencies
 import { registerScrollSpy } from 'vue3-scroll-spy'
+import Vue3TouchEvents from 'vue3-touch-events'
+
+// styles
+import 'animate.css'
+import './index.css'
 
 const app = createApp(App)
 
@@ -17,7 +22,7 @@ app.component('BaseContainer', BaseContainer)
 const router = createRouter({
   history: createWebHistory(),
   routes: import.meta.hot ? [] : routes,
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior (to) {
     if (to.hash) {
       return {
         el: to.hash,
@@ -52,6 +57,6 @@ if (import.meta.hot) {
 
 // custom global options
 registerScrollSpy(app)
-
+app.use(Vue3TouchEvents)
 app.use(router)
 app.mount('#app')

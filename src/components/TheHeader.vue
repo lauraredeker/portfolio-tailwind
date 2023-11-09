@@ -32,7 +32,7 @@
         </router-link>
         <router-link
           to="/#contact"
-          class="custom-nav-link tw-px-3 tw-py-2 tw-transition-all hover:tw-bg-gray-100 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700 sm:tw-rounded-lg md:tw-py-1 md:hover:tw-text-purple-500 md:dark:hover:tw-bg-black md:dark:hover:tw-text-purple-200"
+          class="custom-nav-link tw-px-3 tw-py-2 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700 sm:tw-rounded-lg md:tw-py-1 md:hover:tw-bg-gray-100 md:hover:tw-text-purple-500 md:dark:hover:tw-bg-black md:dark:hover:tw-text-purple-200"
         >
           contact
         </router-link>
@@ -48,15 +48,15 @@ import { defineComponent } from 'vue'
 import TheDarkBtn from './TheDarkBtn.vue'
 
 export default defineComponent({
-    components: {
-      TheDarkBtn,
+  components: {
+    TheDarkBtn,
+  },
+  props: {
+    isSubpage: {
+      type: Boolean,
+      default: false,
     },
-    props: {
-      isSubpage: {
-        type: Boolean,
-        default: false,
-      },
-    },
+  },
 })
 </script>
 

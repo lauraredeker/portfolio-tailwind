@@ -6,15 +6,67 @@
           Say hello!
         </h3>
 
-        <p class="tw-mb-2 tw-mt-6 md:tw-mt-10">
+        <p class="tw-mb-2 tw-mt-8 md:tw-mt-10">
           I'm currently taking on new clients, and would love to hear about your project! <wbr>
           Please include as much information as possible about the scope, your timelines, and your budget.
         </p>
 
-        <base-btn
-          target="mailto:lauraredeker.ux@gmail.com"
-          text="lauraredeker.ux@gmail.com"
-        />
+        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle md:tw-flex-row">
+          <base-btn
+            class="tw-text-center"
+            target="mailto:lauraredeker.ux@gmail.com"
+            text="lauraredeker.ux@gmail.com"
+          />
+          <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
+            <button
+              aria-label="copy email to clipboard"
+              class="tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 tw-transition-colors dark:tw-text-indigo-300 md:tw-mt-0 md:tw-text-purple-600 md:dark:tw-text-purple-300 md:dark:hover:tw-text-purple-200"
+              @mouseover="showTooltip = true"
+              @mouseout="showTooltip = false"
+              @click="copyEmail"
+            >
+              <span
+                :class="{'tw-text-green-600 dark:tw-text-green-300' : isCopied}"
+                class="tw-i-ph-copy-simple-duotone tw-text-xl md:tw-ml-4 md:tw-text-2xl"
+              />
+              <div
+                v-if="isMobile"
+                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300"
+              >
+                <span
+                  v-if="isCopied"
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300"
+                >
+                  Copied to clipboard!
+                </span>
+                <span
+                  v-else
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
+                >
+                  Click to copy email
+                </span>
+              </div>
+            </button>
+
+            <div
+              v-show="showTooltip  && !isMobile"
+              class="tw-absolute -tw-left-20 tw-top-2 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white md:tw-left-2 md:tw-top-2"
+            >
+              <span
+                v-if="isCopied"
+                class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300"
+              >
+                Copied to clipboard!
+              </span>
+              <span
+                v-else
+                class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
+              >
+                Click to copy
+              </span>
+            </div>
+          </div>
+        </div>
 
         <p class="tw-mb-6 tw-mt-10 md:tw-mt-20">
           Also, feel free to connect with me on the following platforms:
@@ -71,8 +123,33 @@ export default defineComponent({
   components: {
     TheFooter,
   },
-  setup () {
-    return {}
+  data () {
+    return {
+      showTooltip: false,
+      isCopied: false,
+    }
+  },
+  computed: {
+    isMobile () {
+      return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    },
+  },
+  methods: {
+    async copyEmail () {
+      try {
+        await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
+        this.isCopied = true
+
+        setTimeout(() => {
+          this.showTooltip = false
+          this.isCopied = false
+        }, 3000)
+      } catch (err) {
+        console.error('Failed to copy: ', err)
+      }
+
+
+    },
   },
 })
 </script>

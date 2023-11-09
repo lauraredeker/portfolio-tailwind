@@ -19,8 +19,10 @@
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "@vitejs/plugin-vue": "^4.4.0",
+    "animate.css": "^4.1.1",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vue3-touch-events": "^4.1.8"
   },
   "devDependencies": {
     "@angular-eslint/template-parser": "^16.2.0",

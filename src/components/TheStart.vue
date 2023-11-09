@@ -1,6 +1,6 @@
 <template>
   <section
-    class="tw-container tw-relative tw-w-full tw-mx-auto xl:tw-px-0"
+    class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
   >
     <!-- dark big bg circle -->
     <div
@@ -20,7 +20,12 @@
 
     <section class="tw-flex tw-flex-col tw-align-middle sm:tw-h-screen">
       <div class="tw-relative tw-z-20 tw-mx-auto tw-mt-20 md:tw-w-11/12 2xl:tw-mt-20">
-        <Transition name="fade">
+        <Transition
+          enter-from-class="tw-duration-100 tw-opacity-0"
+          enter-active-class="tw-duration-300 animate__animated animate__backInDown"
+          leave-to-class="tw-duration-100 tw-delay-300 tw-opacity-0"
+          leave-active-class="animate__animated animate__bounceOutDown"
+        >
           <h1 class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]">
             <span
               class="tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-32"
@@ -33,11 +38,11 @@
           </h1>
         </Transition>
 
-        <h2 class="tw-mt-5 tw-font-semibold tw-select-none tw-text-l dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+        <h2 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
           As a
           <router-link
             to="/#about"
-            class="tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors tw-rounded-lg hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
+            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
             <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">
               designer-developer
@@ -88,9 +93,9 @@ import { defineComponent } from 'vue'
 import NextSectionLink from './NextSectionLink.vue'
 
 export default defineComponent({
-    components: {
-      NextSectionLink,
-     },
+  components: {
+    NextSectionLink,
+  },
 })
 </script>
 

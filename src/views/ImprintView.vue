@@ -14,11 +14,11 @@ import TheFooter from '../components/TheFooter.vue'
 import TheImprint from '../components/TheImprint.vue'
 
 export default defineComponent({
-components: {
-  TheHeader,
-  TheImprint,
-  TheFooter,
-},
+  components: {
+    TheHeader,
+    TheImprint,
+    TheFooter,
+  },
 })
 </script>
 

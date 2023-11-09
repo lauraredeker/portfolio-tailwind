@@ -95,9 +95,9 @@ import { defineComponent } from 'vue'
 import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
 
 export default defineComponent({
-name: 'TheVita',
-components: {
-  BaseBreadcrumbs,
-},
+  name: 'TheVita',
+  components: {
+    BaseBreadcrumbs,
+  },
 })
 </script>

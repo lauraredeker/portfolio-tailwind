@@ -26,7 +26,7 @@ export default defineComponent({
   name: 'DarkBtn',
   setup () {
     return {
-        isDarkMode: toRef(globalState, 'isDarkMode'),
+      isDarkMode: toRef(globalState, 'isDarkMode'),
     }
   },
   methods: {

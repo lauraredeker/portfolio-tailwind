@@ -29,25 +29,25 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    components: {},
-    props: {
-        target: {
-            type: String,
-            default: '',
-        },
-        title: {
-            type: String,
-            default: '',
-        },
-        containerClass: {
-            type: String,
-            default: '',
-        },
+  components: {},
+  props: {
+    target: {
+      type: String,
+      default: '',
     },
-    data () {
-     return {
-        showTitle: false,
-     }
+    title: {
+      type: String,
+      default: '',
+    },
+    containerClass: {
+      type: String,
+      default: '',
+    },
+  },
+  data () {
+    return {
+      showTitle: false,
+    }
   },
 })
 </script>
