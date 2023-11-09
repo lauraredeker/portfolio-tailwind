@@ -57,7 +57,7 @@
 
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        2013 - 2017 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Ludwig-Maximilians-Universität München
+        2013 - 2017 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> LMU Munich
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
         B.A. Kunst und Multimedia (1.1)
@@ -77,10 +77,10 @@
 
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        2010 - 2013  <span class="tw-mx-2 md:tw-mx-4">&middot;</span> eventa AG in Seeshaupt, Germany
+        2010 - 2013  <span class="tw-mx-2 md:tw-mx-4">&middot;</span> eventa AG
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Media Designer Apprenticeship (2.2)
+        Media Designer Apprenticeship
       </h4>
       <p>
         Frontend Development, UX/UI, Illustration, Typography, Editorial Work, Image Retouching,

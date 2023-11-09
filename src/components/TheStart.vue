@@ -1,6 +1,6 @@
 <template>
   <section
-    class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
+    class="tw-container tw-relative tw-w-full tw-mx-auto xl:tw-px-0"
   >
     <!-- dark big bg circle -->
     <div
@@ -33,11 +33,11 @@
           </h1>
         </Transition>
 
-        <h2 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+        <h2 class="tw-mt-5 tw-font-semibold tw-select-none tw-text-l dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
           As a
           <router-link
             to="/#about"
-            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
+            class="tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors tw-rounded-lg hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
             <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">
               designer-developer
@@ -103,17 +103,16 @@ export default defineComponent({
 
   @keyframes customImageAnimation {
     0% {
-      transform:translate(0, 0);
+      transform: translate(0, 0);
     }
     100% {
-      transform:translate(5%, -3%);
+      transform: translate(5%, -3%);
     }
   }
 
   .slide-enter-active {
-    transition: all 0.8s ease;
-    transition-delay: 0.2s;
-    transform: translate(0, 0);
+    transition-delay: 0.9s;
+    transition: opacity 1.8s ease;
   }
 
   .slide-leave-active {
@@ -123,6 +122,5 @@ export default defineComponent({
   .slide-enter-from,
   .slide-leave-to {
     opacity: 0;
-    transform: translate(0, 120px);
   }
 </style>
