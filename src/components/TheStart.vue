@@ -1,6 +1,6 @@
 <template>
   <section
-    class="tw-container tw-relative tw-mx-auto xl:tw-px-0"
+    class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
   >
     <!-- dark big bg circle -->
     <div

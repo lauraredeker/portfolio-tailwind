@@ -30,8 +30,8 @@
         </p>
         <p>
           Fast-forward to <span class="tw-font-semibold">2023</span> (and a few identity crises later),
-          I am still oscillating somewhere between the design and development worlds:
-          I'm not quite the traditional graphic designer,
+          I am still here, oscillating somewhere between the design and development worlds:
+          I'm not the traditional graphic designer,
           but I have a strong knowledge of the design aspects of modern web development.
           <span class="tw-whitespace-nowrap">I understand</span> UX principles and I know how to apply them. <wbr>
           I'm not a full-stack developer, but I am happy to write clean front&#8209;end code and

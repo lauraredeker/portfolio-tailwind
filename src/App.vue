@@ -1,6 +1,6 @@
 <template>
   <div
-    class="custom-bg-image tw-relative tw-w-full tw-overflow-x-hidden tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
+    class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
   >
     <router-view v-slot="{ Component }">
       <Transition name="fade-in" appear mode="out-in">
@@ -13,12 +13,12 @@
       data-te-ripple-init
       aria-title="scroll to top"
       data-te-ripple-color="light"
-      class="tw-fixed tw-bottom-3 tw-right-0 tw-z-50 tw-m-4 tw-flex tw-h-10 tw-w-10 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-400 tw-text-white tw-opacity-60 tw-transition-all hover:tw-opacity-100 focus-visible:tw-outline-none focus-visible:tw-ring-4 active:tw-shadow-lg dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-text-purple-300 dark:focus-visible:tw-ring-gray-700 md:tw-bottom-10 md:tw-h-16 md:tw-w-16 2xl:tw-bottom-20"
+      class="tw-fixed tw-bottom-3 tw-right-0 tw-z-50 tw-m-4 tw-flex tw-h-14 tw-w-14 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-400 tw-text-white tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 active:tw-shadow-lg dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-text-purple-300 dark:focus-visible:tw-ring-gray-700 md:tw-bottom-10 md:tw-h-16 md:tw-w-16 2xl:tw-bottom-20"
       @click="scrollToTop"
     >
       <span
         focusable="false"
-        class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-xl md:tw-text-2xl"
+        class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-2xl"
       />
     </button>
   </div>
