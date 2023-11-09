@@ -6,6 +6,20 @@
 
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active  {
+    transition: opacity 1s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
   /* bungee-shade-regular - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -49,24 +63,41 @@
   }
 
   .custom-circle-animation-1 {
-    animation: customAnimation 50s linear infinite alternate-reverse;
-  }
-  .custom-circle-animation-2 {
-    animation: customAnimation 30s linear infinite alternate-reverse;
-  }
-  .custom-circle-animation-3 {
-    animation: customAnimation2 50s linear infinite alternate-reverse;
+   @media (prefers-reduced-motion: no-preference) {
+    animation: customSpinAnimation 40s linear infinite alternate-reverse;
+   }
   }
 
+  .custom-circle-animation-2 {
+   @media (prefers-reduced-motion: no-preference) {
+    animation: customAnimation 30s linear infinite alternate-reverse;
+   }
+  }
+  .custom-circle-animation-3 {
+   @media (prefers-reduced-motion: no-preference) {
+    animation: customAnimation2 50s linear infinite alternate-reverse;
+   }
+  }
+
+  @keyframes customSpinAnimation {
+    0% {
+      transform: rotate(0);
+      transform-origin: 50% 55%;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 58% 48%;
+    }
+  }
 
   @keyframes customAnimation {
     0% {
       transform: rotate(0);
-      transform-origin: 50% 60%;
+      transform-origin: 50% 55%;
     }
     100% {
       transform: rotate(80deg);
-      transform-origin: 58% 50%;
+      transform-origin: 58% 48%;
     }
   }
 

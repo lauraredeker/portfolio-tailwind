@@ -5,9 +5,12 @@ import App from './App.vue'
 import { routes } from './routes'
 import './index.css'
 
-const app = createApp(App)
-app.component('BaseBtn', BaseBtn)
+import { registerScrollSpy } from 'vue3-scroll-spy'
 
+const app = createApp(App)
+
+// base components
+app.component('BaseBtn', BaseBtn)
 
 const router = createRouter({
   history: createWebHistory(),
@@ -44,6 +47,9 @@ if (import.meta.hot) {
     router.replace('')
   })
 }
+
+// custom global options
+registerScrollSpy(app)
 
 app.use(router)
 app.mount('#app')

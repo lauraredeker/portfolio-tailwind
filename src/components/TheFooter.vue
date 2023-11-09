@@ -1,6 +1,6 @@
 <template>
-  <footer class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-indigo-800 tw-pt-16 tw-text-white dark:tw-bg-indigo-900">
-    <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white md:tw-mb-0">
+  <footer class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-indigo-800 tw-pb-5 tw-pt-16 tw-text-white dark:tw-bg-indigo-900 xl:tw-pt-20">
+    <div class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white">
       <div class="tw-flex tw-flex-wrap tw-justify-center tw-align-bottom lg:tw-flex-nowrap lg:tw-justify-between">
         <div class="tw-text-center lg:tw-w-4/12 lg:tw-text-left">
           <p class="tw-mb-2">
@@ -21,7 +21,7 @@
           >
             TailwindCSS
           </a>
-          <span class="tw-i-ph-heart-light tw-mx-1 tw-inline-flex tw-h-4 tw-w-4 tw-items-baseline" />
+          <span class="tw-i-ph-heart-fill tw-mx-1 tw-mt-2 tw-inline-block" />
           <span class="tw-whitespace-nowrap">
             Take a look at my
             <a

@@ -2,9 +2,11 @@
   <div>
     <the-header />
     <the-start id="hi" />
-    <the-about id="about" />
-    <the-skills id="expertise" />
-    <the-contact id="contact" />
+    <div v-scroll-spy="{allowNoActive: true, offset: 0}">
+      <the-about id="about" />
+      <the-skills id="expertise" />
+      <the-contact id="contact" />
+    </div>
   </div>
 </template>
 

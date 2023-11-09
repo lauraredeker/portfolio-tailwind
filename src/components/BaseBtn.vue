@@ -17,14 +17,14 @@ export default defineComponent({
   name: 'BaseBtn',
   components: {},
   props: {
-        target: {
+    target: {
         type: String,
         default: '',
-        },
-      text: {
-        type: String,
-        default: '',
-        },
     },
+    text: {
+        type: String,
+        default: '',
+    },
+  },
 })
 </script>
