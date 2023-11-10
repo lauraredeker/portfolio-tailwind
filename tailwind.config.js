@@ -6,12 +6,8 @@ const { iconsPlugin, getIconCollections } = require('@egoist/tailwindcss-icons')
 module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/container-queries'),
+    // require('@tailwindcss/forms'),
     iconsPlugin({
-      // Select the icon collections you want to use
-      // You can also ignore this option to automatically discover all icon collections you have installed
       collections: getIconCollections(['ph']),
     })
   ],

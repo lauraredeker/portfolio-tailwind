@@ -5,14 +5,14 @@
     <a
       :href="target"
       aria-label="go to next section"
-      class="tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:focus-visible:tw-ring-gray-700"
-      @mouseout="showTitle = false"
+      class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:focus-visible:tw-ring-gray-700"
       @mouseover="showTitle = true"
+      @mouseout="showTitle = false"
     >
       <Transition name="fade">
         <span
           v-show="showTitle"
-          class="tw-absolute tw-bottom-20 tw-select-none tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-bottom-8 md:tw-ml-16"
+          class="tw-absolute tw-bottom-14 tw-left-16 tw-hidden tw-w-56 tw-select-none tw-text-left tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-left-20 md:tw-block"
         >
           {{ title }}
         </span>

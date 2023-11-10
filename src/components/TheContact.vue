@@ -13,7 +13,6 @@
 
         <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle md:tw-flex-row">
           <base-btn
-            class="tw-text-center"
             target="mailto:lauraredeker.ux@gmail.com"
             text="lauraredeker.ux@gmail.com"
           />
@@ -30,7 +29,7 @@
                 class="tw-i-ph-copy-simple-duotone tw-text-xl md:tw-ml-4 md:tw-text-2xl"
               />
               <div
-                v-if="isMobile"
+                v-if="(isMobileViewport || isMobile)"
                 class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300"
               >
                 <span
@@ -49,7 +48,7 @@
             </button>
 
             <div
-              v-show="showTooltip  && !isMobile"
+              v-show="showTooltip  && !(isMobile || isMobileViewport)"
               class="tw-absolute -tw-left-20 tw-top-2 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white md:tw-left-2 md:tw-top-2"
             >
               <span
@@ -127,14 +126,35 @@ export default defineComponent({
     return {
       showTooltip: false,
       isCopied: false,
+      windowWidth: window.innerWidth,
     }
   },
   computed: {
+    isMobileViewport () {
+      return this.windowWidth < 768 // TODO replace with tailwindconfig breakpoints
+    },
+    // TODO move to store or add as composable?
     isMobile () {
       return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
     },
   },
+  mounted () {
+    this.onResize()
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize)
+    })
+  },
+  beforeUnmount () {
+    window.removeEventListener('resize', this.onResize)
+  },
   methods: {
+    onResize () {
+      this.windowWidth = window.innerWidth
+    },
+
+    /**
+     * Copy email address to user's clipboard and update tooltip text.
+     */
     async copyEmail () {
       try {
         await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
@@ -147,8 +167,6 @@ export default defineComponent({
       } catch (err) {
         console.error('Failed to copy: ', err)
       }
-
-
     },
   },
 })

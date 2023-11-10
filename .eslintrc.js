@@ -27,9 +27,13 @@ module.exports = {
     },
   },
   rules: {
-    'vue/no-duplicate-attributes': ['error', {
+    '@typescript-eslint/no-var-requires': 'off',
+    'vue/no-duplicate-attributes': ['warn', {
       'allowCoexistClass': true,
       'allowCoexistStyle': true,
+    }],
+    'vue/no-multi-spaces': ['warn', {
+      'ignoreProperties': false,
     }],
     'vue/html-indent': ['warn', 2, {
       'attribute': 1,
@@ -38,7 +42,7 @@ module.exports = {
       'alignAttributesVertically': true,
       'ignores': [],
     }],
-    'vue/script-indent': ['error', 2, {
+    'vue/script-indent': ['warn', 2, {
       'baseIndent': 0,
       'switchCase': 0,
       'ignores': [],

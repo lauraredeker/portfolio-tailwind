@@ -1,6 +1,6 @@
 <template>
   <section
-    class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
+    class="tw-container tw-relative tw-w-full tw-mx-auto xl:tw-px-0"
   >
     <!-- dark big bg circle -->
     <div
@@ -38,11 +38,11 @@
           </h1>
         </Transition>
 
-        <h2 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
+        <h2 class="tw-mt-5 tw-font-semibold tw-select-none tw-text-l dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
           As a
           <router-link
             to="/#about"
-            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
+            class="tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors tw-rounded-lg hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
             <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">
               designer-developer
@@ -61,7 +61,7 @@
       />
 
       <next-section-link
-        container-class="tw-mt-10 tw-mb-6 sm:tw-hidden"
+        container-class="tw-mt-10 tw-mb-6 md:tw-hidden"
         target="#about"
         title="More about me"
       />
@@ -71,7 +71,7 @@
           <source srcset="/img/pictures/moi.webp" type="image/webp">
           <source srcset="/img/pictures/moi.png" type="image/jpeg">
           <img
-            class="custom-image-animation tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all sm:tw-absolute sm:-tw-bottom-52 sm:-tw-right-36 sm:tw-z-10 sm:tw-mt-56 sm:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[28%] 2xl:tw-w-128 3xl:-tw-right-[20%] 3xl:tw-w-144"
+            class="custom-image-animation tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all md:tw-absolute md:-tw-bottom-20 md:-tw-right-20 md:tw-z-10 md:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[28%] 2xl:tw-w-128 3xl:-tw-right-[20%] 3xl:tw-w-144"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
           >
@@ -80,7 +80,7 @@
     </section>
 
     <next-section-link
-      container-class="tw-hidden sm:tw-block sm:-tw-mt-20 2xl:-tw-mt-32"
+      container-class="tw-hidden md:tw-block sm:-tw-mt-20 2xl:-tw-mt-32"
       target="#about"
       title="More about me"
     />
