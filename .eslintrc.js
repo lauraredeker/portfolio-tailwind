@@ -50,7 +50,7 @@ module.exports = {
     'vue/component-tags-order': [
       'warn',
       {
-        order: ['template', 'script', 'style'],
+        order: ['script', 'template', 'style'],
       }
     ],
     'comma-dangle': ['warn', 'always-multiline'],

@@ -1,3 +1,64 @@
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import TheFooter from '../components/TheFooter.vue'
+
+export default defineComponent({
+  name: 'TheContact',
+  components: {
+    TheFooter,
+  },
+  data () {
+    return {
+      showTooltip: false,
+      isCopied: false,
+      windowWidth: window.innerWidth,
+    }
+  },
+  computed: {
+    isMobileViewport () {
+      return this.windowWidth < 768 // TODO replace with tailwindconfig breakpoints
+    },
+    // TODO move to store or add as composable?
+    isMobile () {
+      return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    },
+  },
+  mounted () {
+    this.onResize()
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize)
+    })
+  },
+  beforeUnmount () {
+    window.removeEventListener('resize', this.onResize)
+  },
+  methods: {
+    onResize () {
+      this.windowWidth = window.innerWidth
+    },
+
+    /**
+     * Copy email address to user's clipboard and update tooltip text.
+     */
+    async copyEmail () {
+      try {
+        await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
+        this.isCopied = true
+
+        setTimeout(() => {
+          this.showTooltip = false
+          this.isCopied = false
+        }, 3000)
+      } catch (err) {
+        console.error('Failed to copy: ', err)
+      }
+    },
+  },
+})
+</script>
+
+
 <template>
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
     <section class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center">
@@ -112,62 +173,3 @@
     <the-footer />
   </section>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import TheFooter from '../components/TheFooter.vue'
-
-export default defineComponent({
-  name: 'TheContact',
-  components: {
-    TheFooter,
-  },
-  data () {
-    return {
-      showTooltip: false,
-      isCopied: false,
-      windowWidth: window.innerWidth,
-    }
-  },
-  computed: {
-    isMobileViewport () {
-      return this.windowWidth < 768 // TODO replace with tailwindconfig breakpoints
-    },
-    // TODO move to store or add as composable?
-    isMobile () {
-      return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-    },
-  },
-  mounted () {
-    this.onResize()
-    this.$nextTick(() => {
-      window.addEventListener('resize', this.onResize)
-    })
-  },
-  beforeUnmount () {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onResize () {
-      this.windowWidth = window.innerWidth
-    },
-
-    /**
-     * Copy email address to user's clipboard and update tooltip text.
-     */
-    async copyEmail () {
-      try {
-        await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
-        this.isCopied = true
-
-        setTimeout(() => {
-          this.showTooltip = false
-          this.isCopied = false
-        }, 3000)
-      } catch (err) {
-        console.error('Failed to copy: ', err)
-      }
-    },
-  },
-})
-</script>

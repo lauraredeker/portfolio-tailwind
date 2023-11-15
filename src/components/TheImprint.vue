@@ -1,3 +1,8 @@
+
+<script lang="ts" setup>
+import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
+</script>
+
 <template>
   <base-container>
     <base-breadcrumbs currentPage="impressum" />
@@ -76,15 +81,3 @@
     </section>
   </base-container>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
-
-export default defineComponent({
-  name: 'TheImprint',
-  components: {
-    BaseBreadcrumbs,
-  },
-})
-</script>

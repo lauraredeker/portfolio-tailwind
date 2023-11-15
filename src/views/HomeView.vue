@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+import TheHeader from '../components/TheHeader.vue'
+import TheStart from '../components/TheStart.vue'
+import TheAbout from '../components/TheAbout.vue'
+import TheSkills from '../components/TheSkills.vue'
+import TheContact from '../components/TheContact.vue'
+</script>
+
 <template>
   <div>
     <the-header />
@@ -9,24 +17,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-import TheHeader from '../components/TheHeader.vue'
-import TheStart from '../components/TheStart.vue'
-import TheAbout from '../components/TheAbout.vue'
-import TheSkills from '../components/TheSkills.vue'
-import TheContact from '../components/TheContact.vue'
-
-export default defineComponent({
-  components: {
-    TheHeader,
-    TheStart,
-    TheAbout,
-    TheSkills,
-    TheContact,
-  },
-})
-</script>
-

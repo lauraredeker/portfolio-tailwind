@@ -1,9 +1,22 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+
+defineProps<{
+  title?: string
+  target?: string
+  containerClass?: string
+}>()
+
+const showTitle = ref(false)
+</script>
+
 <template>
   <div
     :class="['tw-text-center', containerClass]"
   >
-    <a
-      :href="target"
+    <RouterLink
+      :to="target ? target : '/#'"
       aria-label="go to next section"
       class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:focus-visible:tw-ring-gray-700"
       @mouseover="showTitle = true"
@@ -21,34 +34,6 @@
       <span
         class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-indigo-400 lg:tw-h-14 lg:tw-w-14"
       />
-    </a>
+    </RouterLink>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  components: {},
-  props: {
-    target: {
-      type: String,
-      default: '',
-    },
-    title: {
-      type: String,
-      default: '',
-    },
-    containerClass: {
-      type: String,
-      default: '',
-    },
-  },
-  data () {
-    return {
-      showTitle: false,
-    }
-  },
-})
-</script>
-

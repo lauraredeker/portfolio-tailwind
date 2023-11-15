@@ -1,3 +1,18 @@
+
+<script lang="ts" setup>
+import ScrollTopBtn from './components/ScrollTopBtn.vue'
+import { watchEffect } from '@vue/runtime-core'
+import { store } from './store'
+
+watchEffect(() => {
+  if (store.isDarkMode) {
+    document.documentElement.classList.add('tw-dark')
+  } else {
+    document.documentElement.classList.remove('tw-dark')
+  }
+})
+</script>
+
 <template>
   <div
     class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
@@ -8,32 +23,9 @@
       </Transition>
     </router-view>
 
-    <scroll-top-btn />
+    <ScrollTopBtn />
   </div>
 </template>
-
-<script lang="ts">
-import { globalState } from './store'
-import { defineComponent } from 'vue'
-import { watchEffect } from '@vue/runtime-core'
-import ScrollTopBtn from './components/ScrollTopBtn.vue'
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    ScrollTopBtn,
-  },
-  setup () {
-    watchEffect(() => {
-      if (globalState.isDarkMode) {
-        document.documentElement.classList.add('tw-dark')
-      } else {
-        document.documentElement.classList.remove('tw-dark')
-      }
-    })
-  },
-})
-</script>
 
 <style scoped>
   .fade-in-enter-active,

@@ -1,3 +1,10 @@
+
+<script lang="ts" setup>
+defineProps<{
+  currentPage?: string
+}>()
+</script>
+
 <template>
   <div class="tw-border-b-2 tw-border-indigo-800 tw-py-2 tw-text-sm tw-font-semibold tw-text-indigo-400 dark:tw-text-indigo-300 2xl:tw-text-base">
     <router-link
@@ -10,17 +17,3 @@
     <span class="tw-inline tw-text-indigo-400">{{ currentPage }}</span>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'BaseBreadcrumbs',
-  props: {
-    currentPage: {
-      type: String,
-      default: '',
-    },
-  },
-})
-</script>

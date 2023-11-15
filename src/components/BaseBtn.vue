@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+defineProps<{
+  hasArrow?: boolean
+  target?: string
+  text?: string
+}>()
+</script>
+
+
 <template>
   <a
     :href="target"
@@ -13,29 +22,3 @@
     </span>
   </a>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'BaseBtn',
-  components: {},
-  props: {
-    hasArrow: {
-      type: Boolean,
-      default: true,
-      required: false,
-    },
-    target: {
-      type: String,
-      default: '',
-      required: false,
-    },
-    text: {
-      type: String,
-      default: '',
-      required: false,
-    },
-  },
-})
-</script>

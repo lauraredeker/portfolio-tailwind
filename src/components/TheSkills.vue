@@ -1,3 +1,9 @@
+
+<script lang="ts" setup>
+import NextSectionLink from './NextSectionLink.vue'
+import TheTechStack from './TheTechStack.vue'
+</script>
+
 <template>
   <section>
     <div class="tw-container tw-mx-auto tw-w-full md:tw-pt-20">
@@ -71,16 +77,3 @@
     />
   </section>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import NextSectionLink from './NextSectionLink.vue'
-import TheTechStack from './TheTechStack.vue'
-
-export default defineComponent({
-  components: {
-    NextSectionLink,
-    TheTechStack,
-  },
-})
-</script>
