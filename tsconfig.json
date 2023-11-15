@@ -8,6 +8,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["dom", "esnext"],
     "types": ["vite/client"]
   },

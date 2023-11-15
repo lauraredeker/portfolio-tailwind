@@ -1,61 +1,49 @@
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import TheFooter from '../components/TheFooter.vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+// import resolveConfig from 'tailwindcss/resolveConfig'
+// import tailwindConfig from 'tailwind-config'
 
-export default defineComponent({
-  name: 'TheContact',
-  components: {
-    TheFooter,
-  },
-  data () {
-    return {
-      showTooltip: false,
-      isCopied: false,
-      windowWidth: window.innerWidth,
-    }
-  },
-  computed: {
-    isMobileViewport () {
-      return this.windowWidth < 768 // TODO replace with tailwindconfig breakpoints
-    },
-    // TODO move to store or add as composable?
-    isMobile () {
-      return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-    },
-  },
-  mounted () {
-    this.onResize()
-    this.$nextTick(() => {
-      window.addEventListener('resize', this.onResize)
-    })
-  },
-  beforeUnmount () {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onResize () {
-      this.windowWidth = window.innerWidth
-    },
+// const twConfig = resolveConfig(tailwindConfig)
+const showTooltip = ref(false)
+const isCopied = ref(false)
+const windowWidth = ref(0)
+const isMobile = ref(false)
+const isMobileViewport = ref(false)
 
-    /**
-     * Copy email address to user's clipboard and update tooltip text.
-     */
-    async copyEmail () {
-      try {
-        await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
-        this.isCopied = true
-
-        setTimeout(() => {
-          this.showTooltip = false
-          this.isCopied = false
-        }, 3000)
-      } catch (err) {
-        console.error('Failed to copy: ', err)
-      }
-    },
-  },
+onMounted(async () => {
+  await nextTick()
+  window.addEventListener('resize', onResize)
+  windowWidth.value = window.innerWidth
 })
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+})
+
+function onResize () {
+  windowWidth.value = window.innerWidth
+  isMobileViewport.value = windowWidth.value < 1024
+  isMobile.value = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+}
+
+/**
+ * Copy email address to user's clipboard and update tooltip text.
+ */
+async function copyEmail () {
+  try {
+    await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
+    isCopied.value = true
+
+    setTimeout(() => {
+      showTooltip.value = false
+      isCopied.value = false
+    }, 3000)
+  } catch (err) {
+    console.error('Failed to copy: ', err)
+  }
+}
 </script>
 
 
