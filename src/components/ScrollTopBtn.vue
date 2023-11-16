@@ -1,47 +1,50 @@
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
-const scrollingTimer = ref(0)
-const isScrolling = ref(0)
+const scrollingTimer = ref<number>(0)
+const isScrolling = ref<number>(0)
 
-onMounted(() => {
+const addScrollListener = () => {
   window.addEventListener('scroll', handleScroll)
-})
+}
 
-onUnmounted(() => {
+const removeScrollListener = () => {
   window.removeEventListener('scroll', handleScroll)
-})
+}
 
-function scrollToTop () {
+onMounted(addScrollListener)
+onUnmounted(removeScrollListener)
+
+function scrollToTop (): void {
   window.scrollTo({
     top: 0,
     behavior: 'smooth',
   })
 }
 
-function handleScroll () {
+function handleScroll (): void {
   if (scrollingTimer.value) return
   scrollingTimer.value = setTimeout(() => {
     isScrolling.value = window.scrollY
-    clearTimeout(scrollingTimer.value)
+    window.clearTimeout(scrollingTimer.value)
     scrollingTimer.value = 0
   }, 100)
 }
-
 </script>
 
-
 <template>
-  <button
-    v-show="isScrolling"
-    aria-label="scroll to top"
-    class="tw-fixed tw-bottom-3 tw-right-0 tw-z-50 tw-m-4 tw-flex tw-h-14 tw-w-14 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-400 tw-text-white tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 active:tw-shadow-lg dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-text-purple-300 dark:focus-visible:tw-ring-gray-700 md:tw-bottom-10 md:tw-right-4 md:tw-h-16 md:tw-w-16 xl:tw-h-20 xl:tw-w-20 2xl:tw-bottom-20"
-    @click="scrollToTop"
-  >
-    <span
-      focusable="false"
-      class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-2xl"
-    />
-  </button>
+  <transition name="fade">
+    <button
+      v-show="isScrolling"
+      aria-label="scroll to top"
+      class="tw-fixed tw-bottom-3 tw-right-0 tw-z-50 tw-m-4 tw-flex tw-h-14 tw-w-14 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-400 tw-text-white tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 active:tw-shadow-lg dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-text-purple-300 dark:focus-visible:tw-ring-gray-700 md:tw-bottom-10 md:tw-right-4 md:tw-h-16 md:tw-w-16 xl:tw-h-20 xl:tw-w-20 2xl:tw-bottom-20"
+      @click="scrollToTop"
+    >
+      <span
+        focusable="false"
+        class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-2xl"
+      />
+    </button>
+  </transition>
 </template>

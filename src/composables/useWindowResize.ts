@@ -1,6 +1,9 @@
-// useWindowResize.js
 import { ref, onMounted, onUnmounted, nextTick, computed } from 'vue'
 
+/**
+ * Composable for detecting if viewport and device is mobile
+ * @returns {isMobileViewport, isMobile}
+ */
 export default function useWindowResize () {
   const windowWidth = ref(0)
   const isMobileDevice = ref(false)

@@ -1,14 +1,23 @@
-<script setup>
+<script lang="ts" setup>
 import NextSectionLink from './NextSectionLink.vue'
 import { RouterLink } from 'vue-router'
+import { vElementVisibility } from '@vueuse/components'
+import { useVisibility } from '../composables/useVisibility'
+
+const [isQuoteVisible, onQuoteVisibility] = useVisibility()
+const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
 </script>
 
 <template>
-  <section
-    class="tw-relative tw-mx-auto tw-pt-1"
-  >
-    <div class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6">
-      <blockquote class="tw-mb-4 tw-border-[10px] tw-border-indigo-400 tw-p-5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 sm:tw-p-10 md:tw-mb-10 md:tw-p-10 md:tw-px-20 md:tw-text-xl lg:tw-text-3xl xl:tw-text-5xl">
+  <section class="tw-relative tw-mx-auto tw-pt-1">
+    <div
+      v-element-visibility="onQuoteVisibility"
+      class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6"
+    >
+      <blockquote
+        :class="{'animate__animated animate__fadeIn animate__slow': isQuoteVisible}"
+        class="tw-mb-4 tw-border-[10px] tw-border-indigo-400 tw-p-5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 sm:tw-p-10 md:tw-mb-10 md:tw-p-10 md:tw-px-20 md:tw-text-xl lg:tw-text-3xl xl:tw-text-5xl"
+      >
         "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
         logic, loops, and Linux – lies <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">frontend design</span>."
         <cite class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl">
@@ -22,7 +31,11 @@ import { RouterLink } from 'vue-router'
       </blockquote>
     </div>
 
-    <div class="tw-container tw-mx-auto tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]">
+    <div
+      v-element-visibility="onTextBlockVisibility"
+      :class="{'animate__animated animate__fadeIn animate__slow animate__delay-1s': isTextBlockVisible}"
+      class="tw-container tw-mx-auto tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
+    >
       <div class="tw-my-12 dark:tw-text-orange-50 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
           Laura, she/her &middot; 33 &middot; based in Munich
@@ -51,7 +64,12 @@ import { RouterLink } from 'vue-router'
     </div>
 
 
-    <div class="tw-mx-auto tw-mb-20 tw-px-7 md:tw-mb-32 md:tw-w-4/5 md:tw-px-40 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0">
+    <div
+      ref="link"
+      v-element-visibility="onTextBlockVisibility"
+      :class="{'animate__animated animate__fadeInUp animate__delay-2s': isTextBlockVisible}"
+      class="tw-mx-auto tw-mb-20 tw-px-7 md:tw-mb-32 md:tw-w-4/5 md:tw-px-40 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
+    >
       <div
         class="tw-flex tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"
       >

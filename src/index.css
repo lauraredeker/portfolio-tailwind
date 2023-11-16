@@ -20,6 +20,10 @@ body {
 
 
 @layer base {
+  /* All delay classes will take half the time to start */
+  :root {
+    --animate-delay: 0.7s;
+  }
 
   /* bungee-shade-regular - latin */
   @font-face {

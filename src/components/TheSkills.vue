@@ -2,13 +2,23 @@
 <script lang="ts" setup>
 import NextSectionLink from './NextSectionLink.vue'
 import TheTechStack from './TheTechStack.vue'
+import { vElementVisibility } from '@vueuse/components'
+import { useVisibility } from '../composables/useVisibility'
+
+const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
 
 <template>
   <section>
-    <div class="tw-container tw-mx-auto tw-w-full md:tw-pt-20">
+    <div
+      v-element-visibility="onSectionVisibility"
+      class="tw-container tw-mx-auto tw-w-full md:tw-pt-20"
+    >
       <div class="tw-mx-auto tw-mt-10 tw-grid dark:tw-text-orange-50 lg:tw-gap-20 xl:tw-grid-cols-3">
-        <div class="tw-text-center">
+        <div
+          :class="{'animate__animated animate__slideInUp': isSectionVisible}"
+          class="tw-text-center"
+        >
           <span
             aria-hidden="true"
             class="tw-i-ph-atom-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
@@ -28,7 +38,11 @@ import TheTechStack from './TheTechStack.vue'
             </p>
           </div>
         </div>
-        <div class="tw-mt-10 tw-text-center md:tw-mt-20 lg:tw-mt-0">
+
+        <div
+          :class="{'animate__animated animate__slideInUp animate__delay-1s': isSectionVisible}"
+          class="tw-mt-10 tw-text-center md:tw-mt-20 lg:tw-mt-0"
+        >
           <span
             aria-hidden="true"
             class="tw-i-ph-magic-wand-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
@@ -45,12 +59,15 @@ import TheTechStack from './TheTechStack.vue'
             That means I can pick the perfect tools for each project.
           </p>
         </div>
-        <div class="tw-mt-10 tw-text-center md:tw-mt-20 lg:tw-mt-0">
+
+        <div
+          :class="{'animate__animated animate__slideInUp  animate__delay-2s': isSectionVisible}"
+          class="tw-mt-10 tw-text-center md:tw-mt-20 lg:tw-mt-0"
+        >
           <span
             aria-hidden="true"
             class="tw-i-ph-heart-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
           />
-
           <h3 class="tw-mb-5 tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-mb-10 md:tw-text-5xl">
             A11y
           </h3>

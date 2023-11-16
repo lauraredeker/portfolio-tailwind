@@ -69,7 +69,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
     </section>
 
     <section class="tw-mt-20">
-      <h4  class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
         Urheberrecht
       </h4>
       <p>

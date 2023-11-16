@@ -3,11 +3,25 @@
 import TheFooter from '../components/TheFooter.vue'
 import { ref } from 'vue'
 import useWindowResize from '../composables/useWindowResize.js'
+import { vElementVisibility } from '@vueuse/components'
+import { useVisibility } from '../composables/useVisibility'
 
 const email = 'lauraredeker.ux@gmail.com'
-const isEmailCopied = ref(false)
-const showTooltip = ref(false)
+const isEmailCopied = ref<boolean>(false)
+const showTooltip = ref<boolean>(false)
 const { isMobileViewport, isMobile } = useWindowResize()
+const [isSectionVisible, onSectionVisibility] = useVisibility()
+
+
+/**
+ * Reset tooltip and copied status after a delay.
+ */
+const resetStatus = () => {
+  setTimeout(() => {
+    showTooltip.value = false
+    isEmailCopied.value = false
+  }, 4000)
+}
 
 /**
  * Copy email address to user's clipboard and update tooltip text.
@@ -17,11 +31,7 @@ const copyEmail = async () => {
     await navigator.clipboard.writeText(email)
     isEmailCopied.value = true
     showTooltip.value = true
-
-    setTimeout(() => {
-      showTooltip.value = false
-      isEmailCopied.value = false
-    }, 4000)
+    resetStatus()
   } catch (err) {
     console.error(`Failed to copy: ${err}`)
   }
@@ -31,8 +41,14 @@ const copyEmail = async () => {
 
 <template>
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
-    <section class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center">
-      <div class="2lg:tw-w-1/2 tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3">
+    <section
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center 2xl:tw-pb-40"
+    >
+      <div
+        v-element-visibility="onSectionVisibility"
+        :class="{'animate__animated animate__fadeInUp': isSectionVisible}"
+        class="2lg:tw-w-1/2 tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3"
+      >
         <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
           Say hello!
         </h3>
@@ -50,7 +66,7 @@ const copyEmail = async () => {
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
               aria-label="copy email to clipboard"
-              class="tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 tw-transition-colors dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
+              class="tw-transitions tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
               @mouseover="showTooltip = true"
               @mouseout="showTooltip = isEmailCopied"
               @click="copyEmail"
@@ -108,14 +124,14 @@ const copyEmail = async () => {
         </p>
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold ">
           <a
-            class="tw-px tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="//www.linkedin.com/in/laura-a-redeker/"
           >
             <span>linkedin</span>
             <span class="tw-i-ph-arrow-right-bold tw-ml-1 " />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.malt.de/profile/lauraredeker"
           >
             <span>
@@ -124,7 +140,7 @@ const copyEmail = async () => {
             <span class="tw-i-ph-arrow-right-bold tw-ml-1 " />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.junico.de/freelancer/laura-131"
           >
             <span>
@@ -133,7 +149,7 @@ const copyEmail = async () => {
             <span class="tw-i-ph-arrow-right-bold tw-ml-1 " />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="//www.freelancermap.de/profil/frontend-developer-with-ui-ux-skills"
           >
             <span>
