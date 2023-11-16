@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+import { RouterLink } from 'vue-router'
+import NextSectionLink from './NextSectionLink.vue'
+
+// import { useMouse } from '../composables/useMouse'
+// const { x, y } = useMouse()
+</script>
+
 <template>
   <section
     class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
@@ -40,7 +48,7 @@
 
         <h2 class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl">
           As a
-          <router-link
+          <RouterLink
             to="/#about"
             class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
@@ -49,7 +57,7 @@
               <span class="tw-whitespace-nowrap">hybrid<sup><span class="tw-i-ph-asterisk-bold" /></sup>
               </span>
             </span>
-          </router-link>
+          </RouterLink>
           <span class="tw-whitespace-nowrap"> I understand</span> both the visual and functional aspects of creating for the web.
         </h2>
       </div>
@@ -60,7 +68,7 @@
         class="custom-circle-animation-1 tw-absolute -tw-bottom-0 -tw-right-10 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%]  md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]"
       />
 
-      <next-section-link
+      <NextSectionLink
         container-class="tw-mt-10 tw-mb-6 md:tw-hidden"
         target="#about"
         title="More about me"
@@ -79,7 +87,7 @@
       </Transition>
     </section>
 
-    <next-section-link
+    <NextSectionLink
       container-class="tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       title="More about me"
@@ -87,17 +95,6 @@
   </section>
 </template>
 
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import NextSectionLink from './NextSectionLink.vue'
-
-export default defineComponent({
-  components: {
-    NextSectionLink,
-  },
-})
-</script>
 
 <style scoped>
   .custom-image-animation {

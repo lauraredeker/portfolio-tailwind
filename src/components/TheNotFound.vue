@@ -1,3 +1,8 @@
+<script setup>
+import TheFooter from './TheFooter.vue'
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <article class="tw-h-screen">
     <section class="tw-flex tw-h-full tw-flex-row tw-justify-center tw-pb-2 tw-pt-16 tw-text-center tw-align-middle sm:tw-h-[86vh]">
@@ -8,27 +13,15 @@
         </h1>
         <p class="tw-mt-10 tw-text-l sm:tw-text-xl">
           The page you are looking for does not exist. Please check the URL or go back to the
-          <router-link
+          <RouterLink
             class="tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             to="/#"
           >
             home page
-          </router-link>.
+          </RouterLink>.
         </p>
       </div>
     </section>
     <the-footer  class="tw-fixed tw-bottom-0 tw-left-0 tw-w-full" />
   </article>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import TheFooter from './TheFooter.vue'
-
-export default defineComponent({
-  name: 'TheNotFound',
-  components: {
-    TheFooter,
-  },
-})
-</script>

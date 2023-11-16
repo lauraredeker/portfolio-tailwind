@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
 
-export const globalState = reactive({
+export const store = reactive({
   isDarkMode: true,
 })

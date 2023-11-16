@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
+</script>
+
 <template>
   <base-container>
     <base-breadcrumbs currentPage="résumé" />
@@ -89,15 +93,3 @@
     </section>
   </base-container>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
-
-export default defineComponent({
-  name: 'TheVita',
-  components: {
-    BaseBreadcrumbs,
-  },
-})
-</script>

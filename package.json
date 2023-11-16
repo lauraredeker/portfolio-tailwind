@@ -14,8 +14,6 @@
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.4.0",
     "@iconify-json/ph": "^1.1.6",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "@vitejs/plugin-vue": "^4.4.0",

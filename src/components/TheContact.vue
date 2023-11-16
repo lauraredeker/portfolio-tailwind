@@ -1,8 +1,62 @@
+
+<script lang="ts" setup>
+import TheFooter from '../components/TheFooter.vue'
+import { ref, onMounted, onUnmounted, nextTick, computed } from 'vue'
+
+const showTooltip = ref(false)
+const isEmailCopied = ref(false)
+const windowWidth = ref(0)
+const isMobileDevice = ref(false)
+
+onMounted(async () => {
+  await nextTick()
+  window.addEventListener('resize', onResize)
+  windowWidth.value = window.innerWidth
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+})
+
+// a computed ref
+const isMobileViewport = computed(() => {
+  return windowWidth.value < 1024
+})
+
+const isMobile = computed(() => {
+  return isMobileDevice.value || isMobileViewport
+})
+
+async function onResize () {
+  await nextTick()
+  windowWidth.value = window.innerWidth
+  isMobileDevice.value = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+}
+
+/**
+ * Copy email address to user's clipboard and update tooltip text.
+ */
+async function copyEmail () {
+  try {
+    await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
+    isEmailCopied.value = true
+
+    setTimeout(() => {
+      showTooltip.value = false
+      isEmailCopied.value = false
+    }, 5000)
+  } catch (err) {
+    console.error('Failed to copy: ', err)
+  }
+}
+</script>
+
+
 <template>
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
     <section class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center">
-      <div class="tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3 2xl:tw-w-1/2">
-        <h3 class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
+      <div class="2lg:tw-w-1/2 tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3">
+        <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
           Say hello!
         </h3>
 
@@ -11,7 +65,7 @@
           Please include as much information as possible about the scope, your timelines, and your budget.
         </p>
 
-        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle md:tw-flex-row">
+        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle lg:tw-flex-row">
           <base-btn
             target="mailto:lauraredeker.ux@gmail.com"
             text="lauraredeker.ux@gmail.com"
@@ -19,21 +73,25 @@
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
               aria-label="copy email to clipboard"
-              class="tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 tw-transition-colors dark:tw-text-indigo-300 md:tw-mt-0 md:tw-text-purple-600 md:dark:tw-text-purple-300 md:dark:hover:tw-text-purple-200"
+              class="tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 tw-transition-colors dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
               @mouseover="showTooltip = true"
               @mouseout="showTooltip = false"
               @click="copyEmail"
             >
               <span
-                :class="{'tw-text-green-600 dark:tw-text-green-300' : isCopied}"
-                class="tw-i-ph-copy-simple-duotone tw-text-xl md:tw-ml-4 md:tw-text-2xl"
+                :class="{
+                  'tw-i-ph-check-fat-duotone tw-text-green-600 dark:tw-text-green-300' : isEmailCopied,
+                  'tw-i-ph-copy-simple-duotone' : !isEmailCopied
+                }"
+                class="tw-text-l lg:tw-ml-4 lg:tw-text-2xl"
               />
+              <!-- mobile text -->
               <div
-                v-if="(isMobileViewport || isMobile)"
-                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300"
+                v-show="isMobile"
+                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300 lg:tw-hidden"
               >
                 <span
-                  v-if="isCopied"
+                  v-if="isEmailCopied"
                   class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300"
                 >
                   Copied to clipboard!
@@ -47,12 +105,13 @@
               </div>
             </button>
 
+            <!-- desktop tooltip -->
             <div
-              v-show="showTooltip  && !(isMobile || isMobileViewport)"
-              class="tw-absolute -tw-left-20 tw-top-2 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white md:tw-left-2 md:tw-top-2"
+              v-if="showTooltip && !isMobileViewport"
+              class="tw-absolute -tw-left-2 tw-top-2 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white"
             >
               <span
-                v-if="isCopied"
+                v-if="isEmailCopied"
                 class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300"
               >
                 Copied to clipboard!
@@ -61,7 +120,7 @@
                 v-else
                 class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
               >
-                Click to copy
+                Click to copy email
               </span>
             </div>
           </div>
@@ -112,62 +171,3 @@
     <the-footer />
   </section>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import TheFooter from '../components/TheFooter.vue'
-
-export default defineComponent({
-  name: 'TheContact',
-  components: {
-    TheFooter,
-  },
-  data () {
-    return {
-      showTooltip: false,
-      isCopied: false,
-      windowWidth: window.innerWidth,
-    }
-  },
-  computed: {
-    isMobileViewport () {
-      return this.windowWidth < 768 // TODO replace with tailwindconfig breakpoints
-    },
-    // TODO move to store or add as composable?
-    isMobile () {
-      return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-    },
-  },
-  mounted () {
-    this.onResize()
-    this.$nextTick(() => {
-      window.addEventListener('resize', this.onResize)
-    })
-  },
-  beforeUnmount () {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onResize () {
-      this.windowWidth = window.innerWidth
-    },
-
-    /**
-     * Copy email address to user's clipboard and update tooltip text.
-     */
-    async copyEmail () {
-      try {
-        await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
-        this.isCopied = true
-
-        setTimeout(() => {
-          this.showTooltip = false
-          this.isCopied = false
-        }, 3000)
-      } catch (err) {
-        console.error('Failed to copy: ', err)
-      }
-    },
-  },
-})
-</script>

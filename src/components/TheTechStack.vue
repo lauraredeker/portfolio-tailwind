@@ -1,3 +1,7 @@
+
+<script lang="ts" setup>
+</script>
+
 <template>
   <div class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-indigo-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 2xl:tw-pb-52 2xl:tw-pt-48">
     <div class="tw-container tw-mx-auto tw-text-center md:tw-text-left">
@@ -23,7 +27,7 @@
           <span class="tw-i-ph-smiley-sticker-duotone tw-h-10 tw-w-10 tw-text-indigo-700 dark:tw-text-amber-200" />
         </div>
         <div class="tw-col-span-9 lg:tw-mt-10">
-          <p>Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
+          <p>Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
         </div>
 
         <div
@@ -51,7 +55,7 @@
           <span class="tw-i-ph-asterisk-bold tw-h-10 tw-w-10 tw-text-indigo-700 dark:tw-text-amber-200" />
         </div>
         <div class="tw-col-span-9 lg:tw-mt-6">
-          <p>Vuetify, Pinia, TypeScript, SVG, Webpack, Grunt, Gulp</p>
+          <p>Vuetify, TypeScript, SVG, Webpack, Grunt, Gulp</p>
         </div>
       </div>
     </div>

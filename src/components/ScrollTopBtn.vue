@@ -1,3 +1,37 @@
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrollingTimer = ref(0)
+const isScrolling = ref(0)
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+function scrollToTop () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
+
+function handleScroll () {
+  if (scrollingTimer.value) return
+  scrollingTimer.value = setTimeout(() => {
+    isScrolling.value = window.scrollY
+    clearTimeout(scrollingTimer.value)
+    scrollingTimer.value = 0
+  }, 100)
+}
+
+</script>
+
+
 <template>
   <button
     v-show="isScrolling"
@@ -11,36 +45,3 @@
     />
   </button>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ScrollTopBtn',
-  data () {
-    return {
-      scrollingTimer: 0,
-      isScrolling: 0,
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll: function () {
-      if (this.scrollingTimer) return
-      this.scrollingTimer = setTimeout(() => {
-        this.isScrolling = window.scrollY
-        clearTimeout(this.scrollingTimer)
-        this.scrollingTimer = 0
-      }, 100)
-    },
-    scrollToTop () {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
-    },
-  },
-})
-</script>
