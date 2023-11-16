@@ -30,6 +30,7 @@ const router = createRouter({
         behavior: 'smooth',
       }
     } else {
+      // always scroll to top
       return {
         top: 0,
       }

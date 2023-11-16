@@ -3,15 +3,20 @@
 import ScrollTopBtn from './components/ScrollTopBtn.vue'
 import { watchEffect } from '@vue/runtime-core'
 import { store } from './store'
+import { RouterView } from 'vue-router'
 
 watchEffect(() => {
-  document.documentElement.classList[store.isDarkMode ? 'add' : 'remove']('tw-dark')
+  if (store.isDarkMode) {
+    document.documentElement.classList.add('tw-dark')
+  } else {
+    document.documentElement.classList.remove('tw-dark')
+  }
 })
 </script>
 
 <template>
   <div class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl">
-    <router-view />
+    <RouterView />
     <ScrollTopBtn />
   </div>
 </template>
