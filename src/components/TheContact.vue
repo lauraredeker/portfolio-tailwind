@@ -1,52 +1,29 @@
 
 <script lang="ts" setup>
 import TheFooter from '../components/TheFooter.vue'
-import { ref, onMounted, onUnmounted, nextTick, computed } from 'vue'
+import { ref } from 'vue'
+import useWindowResize from '../composables/useWindowResize.js'
 
-const showTooltip = ref(false)
+const email = 'lauraredeker.ux@gmail.com'
 const isEmailCopied = ref(false)
-const windowWidth = ref(0)
-const isMobileDevice = ref(false)
-
-onMounted(async () => {
-  await nextTick()
-  window.addEventListener('resize', onResize)
-  windowWidth.value = window.innerWidth
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', onResize)
-})
-
-// a computed ref
-const isMobileViewport = computed(() => {
-  return windowWidth.value < 1024
-})
-
-const isMobile = computed(() => {
-  return isMobileDevice.value || isMobileViewport
-})
-
-async function onResize () {
-  await nextTick()
-  windowWidth.value = window.innerWidth
-  isMobileDevice.value = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-}
+const showTooltip = ref(false)
+const { isMobileViewport, isMobile } = useWindowResize()
 
 /**
  * Copy email address to user's clipboard and update tooltip text.
  */
-async function copyEmail () {
+const copyEmail = async () => {
   try {
-    await navigator.clipboard.writeText('lauraredeker.ux@gmail.com')
+    await navigator.clipboard.writeText(email)
     isEmailCopied.value = true
+    showTooltip.value = true
 
     setTimeout(() => {
       showTooltip.value = false
       isEmailCopied.value = false
-    }, 5000)
+    }, 4000)
   } catch (err) {
-    console.error('Failed to copy: ', err)
+    console.error(`Failed to copy: ${err}`)
   }
 }
 </script>
@@ -67,15 +44,15 @@ async function copyEmail () {
 
         <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle lg:tw-flex-row">
           <base-btn
-            target="mailto:lauraredeker.ux@gmail.com"
-            text="lauraredeker.ux@gmail.com"
+            :target="`mailto:${email}`"
+            :text="email"
           />
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
               aria-label="copy email to clipboard"
               class="tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 tw-transition-colors dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
               @mouseover="showTooltip = true"
-              @mouseout="showTooltip = false"
+              @mouseout="showTooltip = isEmailCopied"
               @click="copyEmail"
             >
               <span
@@ -108,7 +85,7 @@ async function copyEmail () {
             <!-- desktop tooltip -->
             <div
               v-if="showTooltip && !isMobileViewport"
-              class="tw-absolute -tw-left-2 tw-top-2 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white"
+              class="tw-absolute -tw-top-10 tw-left-14 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white"
             >
               <span
                 v-if="isEmailCopied"

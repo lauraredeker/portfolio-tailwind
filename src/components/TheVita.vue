@@ -20,7 +20,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
       <p>
         I'm currently taking on new clients, and would love to hear about your project!<br>
         <router-link
-          class="tw-transition-color tw-mt-10 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           to="/#contact"
         >
           Contact me
@@ -76,7 +76,11 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
       </p>
       <p class="tw-mt-5">
         Final Exhibition:
-        <a href="http://www.senseven.net" class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white" target="_blank">senseven.net</a>
+        <a
+          href="http://www.senseven.net"
+          class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          target="_blank"
+        >senseven.net</a>
       </p>
 
 

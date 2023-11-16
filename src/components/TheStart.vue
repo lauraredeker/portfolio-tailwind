@@ -1,9 +1,6 @@
 <script lang="ts" setup>
 import { RouterLink } from 'vue-router'
 import NextSectionLink from './NextSectionLink.vue'
-
-// import { useMouse } from '../composables/useMouse'
-// const { x, y } = useMouse()
 </script>
 
 <template>
@@ -65,7 +62,7 @@ import NextSectionLink from './NextSectionLink.vue'
       <!-- dotted border circle -->
       <div
         aria-hidden="true"
-        class="custom-circle-animation-1 tw-absolute -tw-bottom-0 -tw-right-10 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%]  md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]"
+        class="custom-circle-animation-1 tw-absolute -tw-bottom-0 -tw-right-10 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%] md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:-tw-bottom-[28%] 2xl:-tw-right-[15%] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]"
       />
 
       <NextSectionLink
