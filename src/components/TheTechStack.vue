@@ -41,7 +41,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           :class="{'animate__animated animate__fadeIn': isSectionVisible}"
           class="tw-col-span-9 lg:tw-mt-10"
         >
-          <p>Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, Sketch</p>
+          <p>Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, AnimateCSS, Sketch</p>
         </div>
 
         <div

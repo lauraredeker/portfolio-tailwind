@@ -73,6 +73,7 @@ const copyEmail = async () => {
             >
               <span
                 :class="{
+                  'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                   'tw-i-ph-check-fat-duotone tw-text-green-600 dark:tw-text-green-300' : isEmailCopied,
                   'tw-i-ph-copy-simple-duotone' : !isEmailCopied
                 }"

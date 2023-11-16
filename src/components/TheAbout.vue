@@ -6,6 +6,7 @@ import { useVisibility } from '../composables/useVisibility'
 
 const [isQuoteVisible, onQuoteVisibility] = useVisibility()
 const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
+const [isLinkVisible, onLinkVisibility] = useVisibility()
 </script>
 
 <template>
@@ -66,8 +67,8 @@ const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
 
     <div
       ref="link"
-      v-element-visibility="onTextBlockVisibility"
-      :class="{'animate__animated animate__fadeInUp animate__delay-2s': isTextBlockVisible}"
+      v-element-visibility="onLinkVisibility"
+      :class="{'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible}"
       class="tw-mx-auto tw-mb-20 tw-px-7 md:tw-mb-32 md:tw-w-4/5 md:tw-px-40 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
     >
       <div

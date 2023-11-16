@@ -5,24 +5,13 @@ import { watchEffect } from '@vue/runtime-core'
 import { store } from './store'
 
 watchEffect(() => {
-  if (store.isDarkMode) {
-    document.documentElement.classList.add('tw-dark')
-  } else {
-    document.documentElement.classList.remove('tw-dark')
-  }
+  document.documentElement.classList[store.isDarkMode ? 'add' : 'remove']('tw-dark')
 })
 </script>
 
 <template>
-  <div
-    class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl"
-  >
-    <router-view v-slot="{ Component }">
-      <Transition name="fade-in" appear mode="out-in">
-        <component :is="Component" />
-      </Transition>
-    </router-view>
-
+  <div class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 md:tw-text-l 3xl:tw-text-xl">
+    <router-view />
     <ScrollTopBtn />
   </div>
 </template>

@@ -86,7 +86,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           <source srcset="/img/pictures/moi.png" type="image/jpeg">
           <img
             :class="{'animate__animated animate__fadeInBottomRight': isSectionVisible}"
-            class="tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all md:tw-absolute md:-tw-bottom-20 md:-tw-right-20 md:tw-z-10 md:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] 2xl:-tw-right-[10%] 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-w-144"
+            class="tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all md:tw-absolute md:-tw-bottom-20 md:-tw-right-20 md:tw-z-10 md:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] 2xl:-tw-right-[16%] 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-w-144"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
           >
@@ -95,7 +95,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
     </section>
 
     <NextSectionLink
-      class="animate__delay-2s animate__animated animate__fadeIn"
+      class="animate__animated animate__fadeIn"
       container-class="tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       title="More about me"
