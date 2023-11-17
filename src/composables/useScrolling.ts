@@ -8,10 +8,9 @@ export function useScrolling (scrollThreshold: number, hideOnScroll: boolean) {
   const handleScroll = (): void => {
     if (scrollingTimer.value) return
       scrollingTimer.value = window.setTimeout(() => {
-        if (hideOnScroll)
-      isScrolling.value =  window.scrollY < scrollThreshold
-        else
-        isScrolling.value =  window.scrollY > scrollThreshold
+        isScrolling.value = hideOnScroll
+        ? window.scrollY < scrollThreshold
+        : window.scrollY > scrollThreshold
       window.clearTimeout(scrollingTimer.value)
       scrollingTimer.value = 0
     }, 100)
