@@ -22,7 +22,7 @@ body {
 @layer base {
   /* All delay classes will take half the time to start */
   :root {
-    --animate-delay: 0.7s;
+    --animate-delay: 0.5s;
   }
 
   /* bungee-shade-regular - latin */
