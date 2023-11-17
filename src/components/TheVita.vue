@@ -15,7 +15,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         10/2023 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Munich, Germany
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Freelance Front&#8209;End Designer &amp; Developer
+        Freelance Frontend Designer &amp; Developer
       </h4>
       <p>
         I'm currently taking on new clients, and would love to hear about your project!<br>
@@ -32,15 +32,15 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         04/2019 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Pharma4u GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Front&#8209;End Designer &amp; Developer
+        Frontend Designer &amp; Developer
       </h4>
       <p>
         As a Frontend Designer at Pharma4u I'm responsible for designing, developing and testing new extensible
-        front&#8209;end components, maintaining the in-house front&#8209;end pattern library, and integrating new modules into the extensive
+        frontend components, maintaining the in-house pattern library, and integrating new modules into the extensive
         web application "LabXpert".
       </p>
       <p class="tw-mt-5">
-        <strong>Technologies:</strong> Vue.js 2 · Vuex · Cypress.io · JavaScript · jQuery · Jest · SCSS
+        <strong>Technologies:</strong> Vue.js 2 · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · SCSS · HTML5
       </p>
 
 

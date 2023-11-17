@@ -59,7 +59,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           :class="{'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible}"
           class="tw-col-span-9 lg:tw-mt-6"
         >
-          <p>Vuex, Jest, Cypress.io, PostCSS, Adobe CC (Photoshop, Illustrator, InDesign), Figma</p>
+          <p>Vuex, Jest, Cypress.io, PostCSS, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Figma</p>
         </div>
 
         <div

@@ -50,12 +50,11 @@ const copyEmail = async () => {
         class="2lg:tw-w-1/2 tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3"
       >
         <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
-          Say hello!
+          {{ $t("contact.headline") }}
         </h3>
 
         <p class="tw-mb-2 tw-mt-8 md:tw-mt-10">
-          I'm currently taking on new clients, and would love to hear about your project! <wbr>
-          Please include as much information as possible about the scope, your timelines, and your budget.
+          {{ $t("contact.text") }}
         </p>
 
         <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle lg:tw-flex-row">
@@ -88,13 +87,13 @@ const copyEmail = async () => {
                   v-if="isEmailCopied"
                   class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300"
                 >
-                  Copied to clipboard!
+                  {{ $t("contact.copied") }}
                 </span>
                 <span
                   v-else
                   class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
                 >
-                  Click to copy email
+                  {{ $t("contact.copy") }}
                 </span>
               </div>
             </button>
@@ -108,20 +107,20 @@ const copyEmail = async () => {
                 v-if="isEmailCopied"
                 class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300"
               >
-                Copied to clipboard!
+                {{ $t("contact.copied") }}
               </span>
               <span
                 v-else
                 class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
               >
-                Click to copy email
+                {{ $t("contact.copy") }}
               </span>
             </div>
           </div>
         </div>
 
         <p class="tw-mb-6 tw-mt-10 md:tw-mt-20">
-          Also, feel free to connect with me on the following platforms:
+          {{ $t("contact.socials") }}
         </p>
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold ">
           <a

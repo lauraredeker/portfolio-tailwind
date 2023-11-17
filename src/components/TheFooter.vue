@@ -8,12 +8,13 @@
           </p>
         </div>
         <div class="tw-w-full tw-text-center lg:tw-w-6/12">
-          Built with
+          {{ $t("footer.info1") }}
           <a
             class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             href="//www.vuejs.org"
             title="Vue.js 3"
-          >Vue.js</a> and
+          >Vue.js</a>
+          {{ $t("general.and") }}
           <a
             class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
             href="//www.tailwindcss.com"
@@ -21,9 +22,10 @@
           >
             TailwindCSS
           </a>
+          {{ $t("footer.info2") }}
           <span class="tw-i-ph-heart-fill tw-mx-1 tw-mt-2 tw-inline-block" />
           <span class="tw-whitespace-nowrap">
-            Take a look at my
+            {{ $t("footer.github") }}
             <a
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
               href="//github.com/therobotzombie"

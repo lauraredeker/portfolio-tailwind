@@ -1,4 +1,7 @@
 {
+    "general": {
+        "and": "and"
+    },
     "nav": {
         "about": "about",
         "skills": "expertise",
@@ -11,5 +14,46 @@
         "intro2": "designer-developer",
         "intro3": "hybrid",
         "intro4": "I understand both the visual and functional aspects of creating for the web."
-	}
+	},
+    "about": {
+        "quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
+        "frontend": "frontend design",
+        "author": "author of",
+        "pronouns": "she/her",
+        "location": "based in Munich, Germany",
+        "tldr": "TL;DR: I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
+        "text1": "Fast-forward to 2023 (and a few identity crises later), I am still here, oscillating somewhere between the design and development worlds: I'm not the traditional graphic designer, but I have a strong knowledge of the design aspects of modern web development. I understand UX principles and I know how to apply them. I'm not a full-stack developer, but I am happy to write clean frontend code and create user interfaces that are responsive, performant, flexible, and compatible.",
+        "text2": "So I guess you could say I am a designer-developer hybrid, a designer who codes, a frontend developer who designs, a creative UX-developer – or whatever you want to call it. :)",
+        "vita": "my work experience"
+    },
+    "skills": {
+        "design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
+        "design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
+        "design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",
+        "code-text1": "Writing code is my favorite way to bring designs to life:",
+        "code-text2": "As an 'architect' of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
+        "code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",
+        "ally-text1": "My goal is to make the web a more accessible and engaging place.",
+        "ally-text2": "While there's still a lot to learn (and always will be), I am doing my best to build applications that are inclusive and smoothly adapt to different devices and screen sizes.",
+        "ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
+    },
+    "contact": {
+        "headline": "Say hello!",
+        "text": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
+        "copy": "Click to copy email",
+        "copied": "Copied to clipboard!",
+        "socials": "Also, feel free to connect with me on the following platforms:"
+    },
+    "footer": {
+        "info1": "Built with",
+        "info2": "",
+        "github": "Public on",
+        "imprint": "Impressum",
+        "privacy": "Datenschutz"
+    },
+    "404": {
+        "headline": "Not found",
+        "text": "The page you are looking for does not exist. Please check the URL or go back to the",
+        "button": "home page"
+    }
 }

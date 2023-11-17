@@ -19,10 +19,13 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
         :class="{'animate__animated animate__fadeIn animate__slow': isQuoteVisible}"
         class="tw-mb-4 tw-border-[10px] tw-border-indigo-400 tw-p-5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 sm:tw-p-10 md:tw-mb-10 md:tw-p-10 md:tw-px-20 md:tw-text-xl lg:tw-text-3xl xl:tw-text-5xl"
       >
-        "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of
-        logic, loops, and Linux – lies <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">frontend design</span>."
+        "{{ $t("about.quote") }}
+        <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
+          "{{ $t("about.frontend") }}
+        </span>."
         <cite class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl">
-          Brad Frost, author of
+          Brad Frost,
+          {{ $t("about.author") }}
           <a
             href="http://atomicdesign.bradfrost.com"
             class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
@@ -39,27 +42,21 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
     >
       <div class="tw-my-12 dark:tw-text-orange-50 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
-          Laura, she/her &middot; 33 &middot; based in Munich
+          Laura,
+          {{ $t("about.pronouns") }}
+          &middot; 33 &middot;
+          {{ $t("about.location") }}
+          &middot; Freelancer
         </p>
         <p class="tw-my-6">
-          <span class="tw-text-l tw-font-semibold dark:tw-text-indigo-100 md:tw-text-xl 2xl:tw-text-2xl">
-            TL;DR: I'm a designer, who eventually discovered
-            the joy of coding and somehow ended up sitting full-time on the engineer's and
-            back-end developer's floor. 👻
+          <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl 2xl:tw-text-2xl">
+            {{ $t("about.tldr") }}
           </span>
         </p>
         <p>
-          Fast-forward to <span class="tw-font-semibold">2023</span> (and a few identity crises later),
-          I am still here, oscillating somewhere between the design and development worlds:
-          I'm not the traditional graphic designer,
-          but I have a strong knowledge of the design aspects of modern web development.
-          <span class="tw-whitespace-nowrap">I understand</span> UX principles and I know how to apply them. <wbr>
-          I'm not a full-stack developer, but I am happy to write clean front&#8209;end code and
-          create user interfaces that are responsive, performant, flexible, and compatible.
+          {{ $t("about.text1") }}
           <br><br>
-
-          So I guess you could say I am a <span class="tw-italic">designer-developer hybrid</span>,
-          a designer who codes, a front&#8209;end developer who designs, a creative UX&#8209;developer – or whatever you want to call it. :)
+          {{ $t("about.text2") }}
         </p>
       </div>
     </div>
@@ -80,7 +77,7 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
         >
           <span class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-font-semibold xl:tw-block xl:tw-px-40 xl:tw-text-2xl xl:tw-font-bold xl:tw-uppercase xl:tw-leading-tight xl:tw-tracking-widest">
             <span>
-              my work experience
+              {{ $t("about.vita") }}
             </span>
             <wbr>
             <span
