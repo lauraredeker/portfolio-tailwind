@@ -4,6 +4,7 @@ import App from './App.vue'
 import { routes } from './routes'
 import BaseBtn from './components/BaseBtn.vue'
 import BaseContainer from './components/BaseContainer.vue'
+import { createI18n } from 'vue-i18n'
 
 // dependencies
 import { registerScrollSpy } from 'vue3-scroll-spy'
@@ -13,6 +14,19 @@ import Vue3TouchEvents from 'vue3-touch-events'
 import 'animate.css'
 import './index.css'
 
+// import translations
+import de from './locales/de.json'
+import en from './locales/en.json'
+
+// configure i18n
+const i18n = createI18n({
+  legacy: false, // you must set `false`, to use Composition API
+  locale: 'en',
+  fallbackLocale: 'de',
+  messages: { de, en },
+})
+
+// create and start the app
 const app = createApp(App)
 
 // base components
@@ -60,4 +74,6 @@ if (import.meta.hot) {
 registerScrollSpy(app)
 app.use(Vue3TouchEvents)
 app.use(router)
+app.use(i18n)
+
 app.mount('#app')

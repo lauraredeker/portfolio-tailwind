@@ -1,0 +1,15 @@
+{
+    "nav": {
+        "about": "about",
+        "skills": "expertise",
+        "contact":  "contact"
+    },
+	"start": {
+		"hello1": "Hello,",
+		"hello2": "I am",
+        "intro1": "As a",
+        "intro2": "designer-developer",
+        "intro3": "hybrid",
+        "intro4": "I understand both the visual and functional aspects of creating for the web."
+	}
+}

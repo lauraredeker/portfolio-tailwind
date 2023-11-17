@@ -1,20 +1,7 @@
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-
-const scrollingTimer = ref<number>(0)
-const isScrolling = ref<number>(0)
-
-const addScrollListener = () => {
-  window.addEventListener('scroll', handleScroll)
-}
-
-const removeScrollListener = () => {
-  window.removeEventListener('scroll', handleScroll)
-}
-
-onMounted(addScrollListener)
-onUnmounted(removeScrollListener)
+import { useScrolling } from '../composables/useScrolling'
+const { isScrolling } = useScrolling(50, false)
 
 function scrollToTop (): void {
   window.scrollTo({
@@ -23,18 +10,10 @@ function scrollToTop (): void {
   })
 }
 
-function handleScroll (): void {
-  if (scrollingTimer.value) return
-  scrollingTimer.value = setTimeout(() => {
-    isScrolling.value = window.scrollY
-    window.clearTimeout(scrollingTimer.value)
-    scrollingTimer.value = 0
-  }, 100)
-}
 </script>
 
 <template>
-  <transition name="fade">
+  <Transition name="fade">
     <button
       v-show="isScrolling"
       aria-label="scroll to top"
@@ -46,5 +25,5 @@ function handleScroll (): void {
         class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-2xl"
       />
     </button>
-  </transition>
+  </Transition>
 </template>

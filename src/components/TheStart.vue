@@ -38,13 +38,12 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           :class="{'animate__animated animate__slideInDown': isSectionVisible}"
           class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
         >
-          <span
-            class="tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32"
-          >
-            hello,
+          <span class="tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
+            {{ $t("start.hello1") }}
           </span>
-          <span  class="md:tw-whitespace-nowrap">
-            I am <br>laura
+          <span class="tw-inline-block xl:tw-max-w-[70%] 3xl:tw-max-w-[60%]">
+            {{ $t("start.hello2") }}
+            laura
           </span>
         </h1>
 
@@ -52,18 +51,19 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           :class="{'animate__animated animate__bounceInLeft': isSectionVisible}"
           class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
         >
-          As a
+          {{ $t("start.intro1") }}
           <RouterLink
             to="/#about"
-            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
+            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
             <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">
-              designer-developer
-              <span class="tw-whitespace-nowrap">hybrid<sup><span class="tw-i-ph-asterisk-bold" /></sup>
+              {{ $t("start.intro2") }}
+              <span class="tw-whitespace-nowrap">
+                {{ $t("start.intro3") }}<sup><span class="tw-i-ph-asterisk-bold" /></sup>
               </span>
             </span>
           </RouterLink>
-          <span class="tw-whitespace-nowrap"> I understand</span> both the visual and functional aspects of creating for the web.
+          {{ $t("start.intro4") }}
         </h2>
       </div>
 
