@@ -12,18 +12,20 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
 
     <section>
       <p class="tw-mb-2 tw-mt-10 tw-block tw-font-semibold tw-text-indigo-400">
-        10/2023 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Munich, Germany
+        10/2023 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span>
+        {{ $t("general.location") }}
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Freelance Frontend Designer &amp; Developer
+        Freelance
+        {{ $t("general.jobtitle") }}
       </h4>
       <p>
-        I'm currently taking on new clients, and would love to hear about your project!<br>
+        {{ $t("general.contact-text") }}<br><br>
         <router-link
           class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           to="/#contact"
         >
-          Contact me
+          {{ $t("general.contact-button") }}
           <span class="tw-i-ph-arrow-right-bold tw-ml-1 tw-h-4 tw-w-4 " />
         </router-link>
       </p>
@@ -32,12 +34,10 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         04/2019 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Pharma4u GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Frontend Designer &amp; Developer
+        {{ $t("vita.pharma4u_title") }}
       </h4>
       <p>
-        As a Frontend Designer at Pharma4u I'm responsible for designing, developing and testing new extensible
-        frontend components, maintaining the in-house pattern library, and integrating new modules into the extensive
-        web application "LabXpert".
+        {{ $t("vita.pharma4u_text") }}
       </p>
       <p class="tw-mt-5">
         <strong>Technologies:</strong> Vue.js 2 · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · SCSS · HTML5
@@ -48,31 +48,28 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         07/2017 - 03/2019 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Interone GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Junior Web Developer
+        {{ $t("vita.interone_title") }}
       </h4>
       <p>
-        Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, SCSS, JavaScript, and jQuery.
-        Clients included BMW, SOS Kinderdorf, ProSiebenSat.1 Media and E.ON.
+        {{ $t("vita.interone_text") }}
       </p>
       <p class="tw-mt-5">
         <strong>Technologies:</strong> Patternlab.io · Adobe Target · A/B-Testing · Handlebars.js · SCSS · JavaScript ·
-        jQuery · Foundation · Bootstrap · Vue JS · Vuetify
+        jQuery · Foundation · Bootstrap · Vue.js · Vuetify
       </p>
 
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        2013 - 2017 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> LMU Munich
+        2013 - 2017 <span class="tw-mx-2 md:tw-mx-4">&middot;</span>
+        LMU
+        {{ $t("general.location") }}
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        B.A. Kunst und Multimedia (1.1)
+        {{ $t("vita.kumu_title") }}
       </h4>
       <p>
-        B.A. Fine Arts and Multimedia, Minor Subject: Computer Sciences for Media<br><br>
-
-        Graphic Design, Web Design, Multimedia Design, Illustration, Animation, Motion Design,
-        UX-Design, Art-/ Media History, Didactics of Art and Media, Photography, Culture Management,
-        Programming and Software Development, Digital Media, Systems and Applications, Media Technology,
-        Multimedia Programming, Multimedia in the Web, Human-Computer Interaction, Web Development
+        {{ $t("vita.kumu_subtitle") }}<br><br>
+        {{ $t("vita.kumu_text") }}
       </p>
       <p class="tw-mt-5">
         Final Exhibition:

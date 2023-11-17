@@ -38,12 +38,11 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           :class="{'animate__animated animate__slideInDown': isSectionVisible}"
           class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
         >
-          <span class="tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
+          <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t("start.hello1") }}
           </span>
           <span class="tw-inline-block xl:tw-max-w-[70%] 3xl:tw-max-w-[60%]">
             {{ $t("start.hello2") }}
-            laura
           </span>
         </h1>
 

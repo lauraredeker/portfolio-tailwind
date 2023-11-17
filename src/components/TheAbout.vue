@@ -45,7 +45,7 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
           Laura,
           {{ $t("about.pronouns") }}
           &middot; 33 &middot;
-          {{ $t("about.location") }}
+          {{ $t("general.location") }}
           &middot; Freelancer
         </p>
         <p class="tw-my-6">

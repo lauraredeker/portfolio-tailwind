@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import TheLocaleChanger from './TheLocaleChanger.vue'
+import TheMobileNav from './TheMobileNav.vue'
 import TheDarkBtn from './TheDarkBtn.vue'
 import { RouterLink } from 'vue-router'
 import { useScrolling } from '../composables/useScrolling'
@@ -12,7 +13,7 @@ withDefaults(defineProps<Props>(), {
   isSubpage: false,
 })
 
-const { isScrolling } = useScrolling(400, true)
+const { isScrolling } = useScrolling(800, true)
 </script>
 
 <template>
@@ -20,21 +21,19 @@ const { isScrolling } = useScrolling(400, true)
     role="banner"
     class="tw-fixed tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent md:tw-py-0 xl:tw-px-2"
   >
-    <div class="tw-flex tw-w-full tw-justify-between tw-py-2 sm:tw-space-x-2 md:tw-p-1">
-      <div class="md:tw-visible">
-        <RouterLink
-          class="tw-hidden tw-select-none tw-rounded-lg tw-px-2 tw-py-2 tw-text-base tw-font-semibold hover:tw-bg-gray-100 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-200 dark:focus-visible:tw-ring-gray-700 sm:tw-block md:tw-py-1 md:tw-text-xl lg:tw-text-2xl"
-          to="/#hi"
-        >
-          laura a. redeker
-        </RouterLink>
-      </div>
+    <div class="tw-flex tw-w-full tw-justify-between tw-p-1 tw-py-2 sm:tw-space-x-2">
+      <RouterLink
+        class="tw-select-none tw-rounded-lg tw-px-2 tw-py-2 tw-text-l tw-font-semibold hover:tw-bg-gray-100 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-200 dark:focus-visible:tw-ring-gray-700 md:tw-py-1 md:tw-text-xl lg:tw-text-2xl"
+        to="/#hi"
+      >
+        laura a. redeker
+      </RouterLink>
 
       <nav
         v-scroll-spy-active
         v-scroll-spy-link
         role="navigation"
-        class="tw-flex tw-w-full tw-select-none tw-flex-row tw-items-start tw-space-x-4 tw-px-2 tw-align-top tw-text-base tw-font-semibold sm:tw-w-auto md:tw-space-x-4 md:tw-px-0 md:tw-text-xl lg:tw-text-2xl"
+        class="tw-hidden tw-w-full tw-select-none tw-flex-row tw-items-start tw-space-x-4 tw-px-2 tw-align-top tw-text-base tw-font-semibold sm:tw-w-auto md:tw-flex md:tw-space-x-4 md:tw-px-0 md:tw-text-xl lg:tw-text-2xl"
       >
         <RouterLink
           to="/#about"
@@ -60,12 +59,14 @@ const { isScrolling } = useScrolling(400, true)
     <Transition name="fade">
       <div
         v-show="isScrolling"
-        class="tw-fixed tw-right-0 tw-top-0 tw-rounded-lg tw-rounded-tl-none tw-rounded-tr-none tw-bg-slate-100 dark:tw-bg-indigo-900 md:tw-right-4 md:tw-top-20 md:tw-rounded-lg"
+        class="tw-fixed tw-right-0 tw-top-0 tw-hidden tw-rounded-lg tw-rounded-tl-none tw-rounded-tr-none tw-bg-slate-100 dark:tw-bg-indigo-900 md:tw-right-4 md:tw-top-20 md:tw-block md:tw-rounded-lg"
       >
         <TheDarkBtn />
         <TheLocaleChanger />
       </div>
     </Transition>
+
+    <TheMobileNav />
   </header>
 </template>
 

@@ -1,6 +1,10 @@
 {
     "general": {
-        "and": "und"
+        "location": "München",
+        "jobtitle": "Frontend Designer & Developer",
+        "and": "und",
+        "contact-text": "Ich bin aktuell für neue Projekte verfügbar. Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+        "contact-button": "Schreib mir"
     },
     "nav": {
         "about": "über mich",
@@ -8,19 +12,18 @@
         "contact":  "kontakt"
     },
 	"start": {
-		"hello1": "Hi, ich",
-		"hello2": "bin",
+		"hello1": "Hallo",
+		"hello2": "Hallo Hallo",
         "intro1": "Als",
-        "intro2": "Designer",
-        "intro3": "& Developer",
-        "intro4": "kenne ich mich mit den visuellen und funktionalen Aspekten der modernen Webentwicklung aus."
+        "intro2": "Designerin",
+        "intro3": "& Entwicklerin",
+        "intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
 	},
     "about": {
-        "quote": "Irgendwo zwischen Design – einer Welt aus Personas, Pixeln und Feinschliff – und Programmierung – einer Welt aus Logik, Schleifen und Linux – liegt ",
-        "frontend": "Frontend Design",
+        "quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
+        "frontend": "frontend design",
         "author": "Autor von",
         "pronouns": "sie/ihr",
-        "location": "München",
         "tldr": "Meine Ursprünge liegen im Design – eines Tages jedoch habe ich den Spaß am Entwickeln gefunden und saß im nächsten Augeblick schon Vollzeit in der Entwicklerabteilung. 👻",
         "text1": "Mittlerweile habe ich mich jedoch von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin laut Definition nach Brad Frost.",
         "text2": "Heißt also: Ich bin keine klassische Grafikdesignerin, habe aber dennoch fundierte Kenntnisse über die Designaspekte der modernen Webentwicklung. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Ich bin keine Full-Stack-Entwicklerin, schreibe aber gerne sauberen und modularen Frontend-Code und entwickle intuitive Benutzeroberflächen, die performant, responsive und möglichst barrierefrei sind.",
@@ -32,14 +35,14 @@
         "design-text3": "Dabei designe ich gerne direkt durch Code: Durch die Entwicklung von Living Styleguides ist es für Teams oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch gerne Tools wie Figma.",
         "code-text1": "Designs zum Leben zu erwecken:",
         "code-text2": "Als Frontend-Architekt kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
-        "code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen unterschiedlichen Frontend-Frameworks und Bibliotheken sammeln und mein technisches Know-How ausbauen können. Das heißt, dass ich für jedes Projekt die richtigen Tools finde.",
+        "code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen unterschiedlichen Frontend-Frameworks und Bibliotheken sammeln und mein technisches Know-How vertiefen können. Das heißt, dass ich für jedes Projekt die richtigen Tools finde.",
         "ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und schöner zu gestalten.",
         "ally-text2": "In Sachen Accessibility gibt es immer noch viel zu lernen, dennoch gebe ich immer mein Bestes, um Seiten zu erstellen, die barrierefrei, responsive und performant sind.",
         "ally-text3": "Mit Hilfe von End-to-End-Testtools wie Cypress.io stelle ich außerdem sicher, dass die Oberfläche korrekt funktioniert und allen Qualitätsstandards entspricht."
     },
     "contact": {
         "headline": "Kontakt",
-        "text": "Du hast ein Projekt, das du gerne mit mir besprechen möchtest? Schreib mir gerne eine Nachricht mit allen relevanten Informationen und ich melde mich so schnell wie möglich bei dir zurück.",
+        "text": "Ich bin aktuell für neue Projekte verfügbar. Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
         "copy": "E-Mail kopieren",
         "copied": "E-Mail kopiert!",
         "socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
@@ -55,5 +58,16 @@
         "headline": "404 :(",
         "text": "Diese Seite existiert nicht. Überprüfe die URL oder gehe zurück zur",
         "button": "Startseite"
+    },
+    "vita": {
+        "pharma4u_title": "Frontend Developer & UX Designer",
+        "pharma4u_text": "Als Frontend Designer bei Pharma4u bin ich verantwortlich für das UX/UI Design, die Entwicklung und das Testen neuer Frontend-Module, die Pflege der hauseigenen Komponenten-Library und die Integration neuer Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Desweiteren führe ich Refactorings durch um die Codequalität zu verbessern und die Anwendung barrierefreier zu gestalten.",
+        "interone_title": "Junior Web Developer",
+        "interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
+        "kumu_title": "B.A. Kunst und Multimedia",
+        "kumu_subtitle": "Nebenfach: Medieninformatik",
+        "kumu_text": "Grafikdesign, Webdesign, Multimediadesign, Illustration, Animation, Motion Design, UX-Design, Kunst-/Mediengeschichte, Didaktik von Kunst und Medien, Fotografie, Kulturmanagement, Programmierung und Softwareentwicklung, Digitale Medien, Systeme und Anwendungen, Medientechnologie, Multimedia-Programmierung, Multimedia im Web, Mensch-Computer-Interaktion, Webentwicklung",
+        "eventa_title": "Ausbildung zur Mediengestalterin",
+        "eventa_text": "Frontend Entwicklung, UX/UI, Illustration, Typographie, Editorial, Bildbearbeitung, Retouching, Texting, (Produkt-) Fotographie, Logo Design, Corporate Design, Print Design, Webdesign"
     }
 }
