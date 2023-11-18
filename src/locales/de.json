@@ -8,7 +8,9 @@
     },
     "nav": {
         "about": "über mich",
+        "about-long": "mehr über mich",
         "skills": "expertise",
+        "skills-long": "meine skills",
         "contact":  "kontakt"
     },
 	"start": {
@@ -24,21 +26,21 @@
         "frontend": "frontend design",
         "author": "Autor von",
         "pronouns": "sie/ihr",
-        "tldr": "Meine Ursprünge liegen im Design – eines Tages jedoch habe ich den Spaß am Entwickeln gefunden und saß im nächsten Augeblick schon Vollzeit in der Entwicklerabteilung. 👻",
-        "text1": "Mittlerweile habe ich mich jedoch von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin laut Definition nach Brad Frost.",
-        "text2": "Heißt also: Ich bin keine klassische Grafikdesignerin, habe aber dennoch fundierte Kenntnisse über die Designaspekte der modernen Webentwicklung. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Ich bin keine Full-Stack-Entwicklerin, schreibe aber gerne sauberen und modularen Frontend-Code und entwickle intuitive Benutzeroberflächen, die performant, responsive und möglichst barrierefrei sind.",
+        "tldr": "TL;DR: Ich bin eine Designerin, die irgendwann die Freude am Programmieren entdeckt hat und einen Moment später schon Vollzeit in der Entwicklerabteilung saß. 👻",
+        "text1": "Heute, im Jahr 2023 (und einige Identitätskrisen später), pendle ich immer noch zwischen Design und Entwicklung: Ich bin keine klassische Grafikdesignerin, aber ich kenne mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Ich bin keine Full-Stack-Entwicklerin, schreibe aber gerne sauberen und modularen Frontend-Code und entwickle intuitive Benutzeroberflächen, die performant, responsive und möglichst barrierefrei sind.",
+        "text2": "Man könnte also sagen, dass ich ein Designer-Developer-Hybrid bin, eine Designerin, die programmiert, eine Frontend-Entwicklerin, die designt, ein kreativer UX-Entwickler - oder wie auch immer man es nennen möchte :)",
         "vita": "Mein Résumé"
     },
     "skills": {
-        "design-text1": "Mit einem geschulten Auge für Design und einem Fokus auf Benutzererfahrung erstelle ich",
+        "design-text1": "Mit einem scharfen Auge für Detail und einem Fokus auf Benutzererfahrung gestalte ich",
         "design-text2": "Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden.",
-        "design-text3": "Dabei designe ich gerne direkt durch Code: Durch die Entwicklung von Living Styleguides ist es für Teams oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch gerne Tools wie Figma.",
+        "design-text3": "Dabei designe ich gerne direkt im Code: Durch die Entwicklung von Living Styleguides ist es für Teams oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch nach wie vor gerne Tools wie Sketch oder Figma.",
         "code-text1": "Designs zum Leben zu erwecken:",
-        "code-text2": "Als Frontend-Architekt kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
-        "code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen unterschiedlichen Frontend-Frameworks und Bibliotheken sammeln und mein technisches Know-How vertiefen können. Das heißt, dass ich für jedes Projekt die richtigen Tools finde.",
-        "ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und schöner zu gestalten.",
-        "ally-text2": "In Sachen Accessibility gibt es immer noch viel zu lernen, dennoch gebe ich immer mein Bestes, um Seiten zu erstellen, die barrierefrei, responsive und performant sind.",
-        "ally-text3": "Mit Hilfe von End-to-End-Testtools wie Cypress.io stelle ich außerdem sicher, dass die Oberfläche korrekt funktioniert und allen Qualitätsstandards entspricht."
+        "code-text2": "Als Frontend-Architektin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
+        "code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frontend-Frameworks und Bibliotheken sammeln und meine technischen Kenntnisse vertiefen können. Meine aktuellen Favoriten sind Vue.js und TailwindCSS – für jedes Projekt suche ich mir aber die passenden Tools aus.",
+        "ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und ansprechender zu machen.",
+        "ally-text2": "Obwohl es noch viel zu lernen gibt (und immer geben wird), tue ich mein Bestes, um barrierefreie Seiten zu entwickeln, die sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
+        "ally-text3": "Mit Hilfe von Testautomatisierung stelle ich außerdem sicher, dass das Frontend zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
     },
     "contact": {
         "headline": "Kontakt",
@@ -50,7 +52,7 @@
     "footer": {
         "info1": "Diese Seite wurde mit",
         "info2": "erstellt",
-        "github": "Zu finden auf",
+        "github": "Hier auf",
         "imprint": "Impressum",
         "privacy": "Datenschutz"
     },

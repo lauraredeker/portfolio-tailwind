@@ -25,7 +25,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           Tech Stack
         </h3>
       </div>
-      <div class="tw-mx-auto tw-gap-8 dark:tw-text-orange-50 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
+      <div class="tw-mx-auto tw-gap-8 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
         <div
           :class="{'animate__animated animate__fadeIn': isSectionVisible}"
           class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap tw-text-center md:tw-text-left"

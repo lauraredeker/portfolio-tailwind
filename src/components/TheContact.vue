@@ -12,7 +12,6 @@ const showTooltip = ref<boolean>(false)
 const { isMobileViewport, isMobile } = useWindowResize()
 const [isSectionVisible, onSectionVisibility] = useVisibility()
 
-
 /**
  * Reset tooltip and copied status after a delay.
  */
@@ -47,7 +46,7 @@ const copyEmail = async () => {
       <div
         v-element-visibility="onSectionVisibility"
         :class="{'animate__animated animate__fadeInUp': isSectionVisible}"
-        class="2lg:tw-w-1/2 tw-container tw-pb-10 dark:tw-text-indigo-50 md:tw-pt-20 lg:tw-w-2/3"
+        class="2lg:tw-w-1/2 tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3"
       >
         <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
           {{ $t("contact.headline") }}

@@ -2,8 +2,10 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import { routes } from './routes'
-import BaseBtn from './components/BaseBtn.vue'
-import BaseContainer from './components/BaseContainer.vue'
+import BaseBtn from './components/UI/BaseBtn.vue'
+import BaseContainer from './components/UI/BaseContainer.vue'
+import BaseBreadcrumbs from './components/UI/BaseBreadcrumbs.vue'
+import BaseNextSection from './components/UI/BaseNextSection.vue'
 import { createI18n } from 'vue-i18n'
 
 // dependencies
@@ -32,6 +34,8 @@ const app = createApp(App)
 // base components
 app.component('BaseBtn', BaseBtn)
 app.component('BaseContainer', BaseContainer)
+app.component('BaseBreadcrumbs', BaseBreadcrumbs)
+app.component('BaseNextSection', BaseNextSection)
 
 const router = createRouter({
   history: createWebHistory(),

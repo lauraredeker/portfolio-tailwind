@@ -1,5 +1,4 @@
 <script setup>
-import TheFooter from './TheFooter.vue'
 import { RouterLink } from 'vue-router'
 </script>
 

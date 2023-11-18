@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import TheLocaleChanger from './TheLocaleChanger.vue'
-import TheDarkBtn from './TheDarkBtn.vue'
+import TheLocaleChanger from './UI/TheLocaleChanger.vue'
+import TheDarkBtn from './UI/TheDarkBtn.vue'
 import { ref } from 'vue'
 
 const isNavVisible = ref(false)
@@ -33,40 +33,67 @@ function toggleNav () {
       </button>
     </div>
 
-    <div
-      v-show="isNavVisible"
-      class="tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-screen tw-w-screen tw-flex-row tw-items-center tw-bg-indigo-900"
-    >
-      <div>
-        <TheDarkBtn />
-        <TheLocaleChanger />
+    <Transition name="fade">
+      <div
+        v-show="isNavVisible"
+        class="tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-h-screen tw-w-screen tw-bg-indigo-100 dark:tw-bg-indigo-900"
+      >
+        <div>
+          <div class="tw-mt-20 tw-flex tw-w-[70%] tw-flex-row tw-items-center tw-justify-center">
+            <TheDarkBtn />
+            <TheLocaleChanger />
+          </div>
 
-        <nav
-          v-scroll-spy-active
-          v-scroll-spy-link
-          role="navigation"
-          class="tw-flex tw-w-full tw-select-none tw-flex-row tw-items-start tw-space-x-4 tw-px-2 tw-align-top tw-text-base tw-font-semibold sm:tw-w-auto md:tw-space-x-4 md:tw-px-0 md:tw-text-xl lg:tw-text-2xl"
-        >
-          <RouterLink
-            to="/#about"
-            class="custom-nav-link tw-px-3 tw-py-2 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700 sm:tw-rounded-lg md:tw-py-1 md:hover:tw-bg-gray-100 md:hover:tw-text-purple-500 md:dark:hover:tw-bg-black md:dark:hover:tw-text-purple-200"
+          <hr class="tw-mt-10 tw-border-t-2 tw-border-indigo-200 tw-px-20 tw-pt-10 dark:tw-border-indigo-700">
+          <nav
+            v-scroll-spy-active
+            v-scroll-spy-link
+            role="navigation"
+            class="tw-align-center tw-flex tw-w-full tw-select-none tw-flex-col tw-items-center tw-space-y-6 tw-text-center tw-text-xl tw-font-semibold"
           >
-            {{ $t("nav.about") }}
-          </RouterLink>
-          <RouterLink
-            to="/#expertise"
-            class="custom-nav-link tw-px-3 tw-py-2 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700 sm:tw-rounded-lg md:tw-py-1 md:hover:tw-bg-gray-100 md:hover:tw-text-purple-500 md:dark:hover:tw-bg-black md:dark:hover:tw-text-purple-200"
-          >
-            {{ $t("nav.skills") }}
-          </RouterLink>
-          <RouterLink
-            to="/#contact"
-            class="custom-nav-link tw-px-3 tw-py-2 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700 sm:tw-rounded-lg md:tw-py-1 md:hover:tw-bg-gray-100 md:hover:tw-text-purple-500 md:dark:hover:tw-bg-black md:dark:hover:tw-text-purple-200"
-          >
-            {{ $t("nav.contact") }}
-          </RouterLink>
-        </nav>
+            <RouterLink
+              to="/#about"
+              class="custom-nav-link tw-w-full tw-px-3 tw-py-4 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700"
+            >
+              {{ $t("nav.about") }}
+            </RouterLink>
+            <RouterLink
+              to="/#expertise"
+              class="custom-nav-link tw-w-full tw-px-3 tw-py-4 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700"
+            >
+              {{ $t("nav.skills") }}
+            </RouterLink>
+            <RouterLink
+              to="/#contact"
+              class="custom-nav-link tw-w-full tw-px-3 tw-py-4 tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:focus-visible:tw-ring-gray-700"
+            >
+              {{ $t("nav.contact") }}
+            </RouterLink>
+          </nav>
+
+          <hr class="tw-my-20 tw-border-t-2 tw-border-indigo-200 tw-px-20 dark:tw-border-indigo-700">
+          <div class="tw-my-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
+            <router-link
+              to="/impressum"
+              class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+            >
+              Impressum
+            </router-link>
+            <router-link
+              to="/datenschutz"
+              class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
+            >
+              Datenschutz
+            </router-link>
+          </div>
+
+          <div class="tw-text-center tw-text-black dark:tw-text-indigo-100 lg:tw-w-4/12 lg:tw-text-left">
+            <p class="tw-mb-2">
+              &copy; 2023 Laura A. Redeker
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>

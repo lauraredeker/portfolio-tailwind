@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { RouterLink } from 'vue-router'
-import NextSectionLink from './NextSectionLink.vue'
 import { vElementVisibility } from '@vueuse/components'
 import { useVisibility } from '../composables/useVisibility'
 
@@ -48,7 +47,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
 
         <h2
           :class="{'animate__animated animate__bounceInLeft': isSectionVisible}"
-          class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold dark:tw-text-orange-50 sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
+          class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
         >
           {{ $t("start.intro1") }}
           <RouterLink
@@ -72,11 +71,11 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
         class="custom-circle-animation-1 tw-absolute -tw-bottom-0 -tw-right-10 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%] md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:-tw-bottom-[28%] 2xl:-tw-right-[15%] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]"
       />
 
-      <NextSectionLink
+      <BaseNextSection
         class="animate__animated animate__fadeIn"
         container-class="tw-mt-10 tw-mb-6 md:tw-hidden"
         target="#about"
-        title="More about me"
+        :title="$t('nav.about-long')"
       />
 
       <Transition name="slide" appear>
@@ -93,11 +92,11 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
       </Transition>
     </section>
 
-    <NextSectionLink
+    <BaseNextSection
       class="animate__animated animate__fadeIn"
       container-class="tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
-      title="More about me"
+      :title="$t('nav.about-long')"
     />
   </section>
 </template>

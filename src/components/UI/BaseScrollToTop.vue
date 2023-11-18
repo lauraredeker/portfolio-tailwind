@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { useScrolling } from '../composables/useScrolling'
+import { useScrolling } from '../../composables/useScrolling'
 const { isScrolling } = useScrolling(50, false)
 
 function scrollToTop (): void {

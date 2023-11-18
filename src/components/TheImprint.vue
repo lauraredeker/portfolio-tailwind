@@ -1,8 +1,3 @@
-
-<script lang="ts" setup>
-import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
-</script>
-
 <template>
   <base-container>
     <base-breadcrumbs currentPage="impressum" />
