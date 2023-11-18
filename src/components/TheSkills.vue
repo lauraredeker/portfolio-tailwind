@@ -11,7 +11,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
   <section>
     <div
       v-element-visibility="onSectionVisibility"
-      class="tw-container tw-w-full md:tw-pt-20"
+      class="tw-container tw-w-full tw-hyphens-auto md:tw-pt-20"
     >
       <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 2xl:tw-gap-20">
         <div

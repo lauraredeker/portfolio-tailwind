@@ -6,11 +6,7 @@ import { store } from './store'
 import { RouterView } from 'vue-router'
 
 watchEffect(() => {
-  if (store.isDarkMode) {
-    document.documentElement.classList.add('tw-dark')
-  } else {
-    document.documentElement.classList.remove('tw-dark')
-  }
+  document.documentElement.classList.toggle('tw-dark', store.isDarkMode)
 })
 </script>
 

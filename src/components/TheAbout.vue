@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 import { vElementVisibility } from '@vueuse/components'
 import { useVisibility } from '../composables/useVisibility'
-import BaseNextSectionVue from './UI/BaseNextSection.vue'
+import BaseNextSection from './UI/BaseNextSection.vue'
 
 const [isQuoteVisible, onQuoteVisibility] = useVisibility()
 const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
@@ -40,23 +40,25 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
       :class="{'animate__animated animate__fadeIn animate__slow animate__delay-1s': isTextBlockVisible}"
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
-      <div class="tw-my-12 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
+      <div class="tw-my-12 tw-hyphens-auto md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
           Laura,
           {{ $t("about.pronouns") }}
           &middot; 33 &middot;
           {{ $t("general.location") }}
         </p>
-        <p class="tw-my-6">
-          <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
-            {{ $t("about.tldr") }}
-          </span>
-        </p>
-        <p>
-          {{ $t("about.text1") }}
-          <br><br>
-          {{ $t("about.text2") }}
-        </p>
+        <div class="tw-hyphens-auto tw-text-justify">
+          <p class="tw-my-6">
+            <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
+              {{ $t("about.tldr") }}
+            </span>
+          </p>
+          <p>
+            {{ $t("about.text1") }}
+            <br><br>
+            {{ $t("about.text2") }}
+          </p>
+        </div>
       </div>
     </div>
 

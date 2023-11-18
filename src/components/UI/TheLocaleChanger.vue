@@ -20,6 +20,13 @@ const langs: Lang[] = [
 const filteredLangs: ComputedRef<Lang[]> = computed(() => langs.filter((lang) => lang.code !== locale.value))
 const showTitle = ref(false)
 
+// update locale and html lang attribute
+function changeLocale (lang: Lang): void {
+  if (typeof lang.code === 'string') {
+    locale.value = lang.code
+    document.documentElement.setAttribute('lang', lang.code)
+  }
+}
 </script>
 
 <template>
@@ -43,7 +50,7 @@ const showTitle = ref(false)
       }"
       :aria-label="`Change language to ${lang.text}`"
       class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-100 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-600 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-700 dark:tw-text-amber-100 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-text-sm md:tw-shadow-md"
-      @click="locale = lang.code"
+      @click="changeLocale(lang)"
     >
       <label
         v-show="showTitle"

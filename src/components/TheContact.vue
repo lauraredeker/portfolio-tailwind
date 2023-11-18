@@ -44,15 +44,13 @@ const copyEmail = async () => {
       class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center 2xl:tw-pb-40"
     >
       <div
-        v-element-visibility="onSectionVisibility"
-        :class="{'animate__animated animate__fadeInUp': isSectionVisible}"
         class="2lg:tw-w-1/2 tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3"
       >
         <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
           {{ $t("contact.headline") }}
         </h3>
 
-        <p class="tw-mb-2 tw-mt-8 md:tw-mt-10">
+        <p class="tw-mb-2 tw-mt-8 tw-hyphens-auto tw-text-justify md:tw-mt-10 md:tw-text-center">
           {{ $t("contact.text") }}
         </p>
 

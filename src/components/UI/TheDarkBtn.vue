@@ -3,10 +3,11 @@
 import { store } from '../../store'
 import { ref } from 'vue'
 
+const showTitle = ref(false)
+
 function toggleDarkMode () {
   store.isDarkMode = !store.isDarkMode
 }
-const showTitle = ref(false)
 </script>
 
 <template>
