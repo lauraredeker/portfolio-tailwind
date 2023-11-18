@@ -18,6 +18,13 @@
         "skills-long": "meine skills",
         "contact":  "kontakt"
     },
+    "footer": {
+        "info1": "Diese Seite wurde mit",
+        "info2": "erstellt",
+        "github": "Hier auf",
+        "imprint": "Impressum",
+        "privacy": "Datenschutz"
+    },
 	"start": {
 		"hello1": "Hallo",
 		"hello2": "Hallo Hallo",
@@ -53,13 +60,6 @@
         "copy": "E-Mail kopieren",
         "copied": "E-Mail kopiert!",
         "socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
-    },
-    "footer": {
-        "info1": "Diese Seite wurde mit",
-        "info2": "erstellt",
-        "github": "Hier auf",
-        "imprint": "Impressum",
-        "privacy": "Datenschutz"
     },
     "404": {
         "headline": "404 :(",

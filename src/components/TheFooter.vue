@@ -37,13 +37,13 @@
             to="/impressum"
             class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
           >
-            Impressum
+            {{ $t("footer.imprint") }}
           </router-link>
           <router-link
             to="/datenschutz"
             class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "
           >
-            Datenschutz
+            {{ $t("footer.privacy") }}
           </router-link>
         </div>
       </div>

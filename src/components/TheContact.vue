@@ -98,23 +98,26 @@ const copyEmail = async () => {
             </button>
 
             <!-- desktop tooltip -->
-            <div
-              v-if="showTooltip && !isMobileViewport"
-              class="tw-absolute -tw-top-10 tw-left-14 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white"
-            >
-              <span
-                v-if="isEmailCopied"
-                class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300"
+            <Transition name="fade">
+              <div
+                v-if="showTooltip && !isMobileViewport"
+                role="tooltip"
+                class="tw-absolute -tw-top-10 tw-left-14 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white"
               >
-                {{ $t("contact.copied") }}
-              </span>
-              <span
-                v-else
-                class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
-              >
-                {{ $t("contact.copy") }}
-              </span>
-            </div>
+                <span
+                  v-if="isEmailCopied"
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300"
+                >
+                  {{ $t("contact.copied") }}
+                </span>
+                <span
+                  v-else
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold"
+                >
+                  {{ $t("contact.copy") }}
+                </span>
+              </div>
+            </Transition>
           </div>
         </div>
 

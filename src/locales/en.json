@@ -18,6 +18,13 @@
         "skills-long": "my skills",
         "contact":  "contact"
     },
+    "footer": {
+        "info1": "Built with",
+        "info2": "",
+        "github": "Public on",
+        "imprint": "Imprint",
+        "privacy": "Data Privacy"
+    },
 	"start": {
 		"hello1": "Hello",
 		"hello2": "I am Laura",
@@ -53,13 +60,6 @@
         "copy": "Click to copy email",
         "copied": "Copied to clipboard!",
         "socials": "Also, feel free to connect with me on the following platforms:"
-    },
-    "footer": {
-        "info1": "Built with",
-        "info2": "",
-        "github": "Public on",
-        "imprint": "Impressum",
-        "privacy": "Datenschutz"
     },
     "404": {
         "headline": "Not found",
