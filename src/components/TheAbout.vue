@@ -38,7 +38,7 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
     <div
       v-element-visibility="onTextBlockVisibility"
       :class="{'animate__animated animate__fadeIn animate__slow animate__delay-1s': isTextBlockVisible}"
-      class="tw-container tw-mx-auto tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
+      class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
       <div class="tw-my-12 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">

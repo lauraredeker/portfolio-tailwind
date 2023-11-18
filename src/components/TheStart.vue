@@ -9,7 +9,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
 <template>
   <section
     v-element-visibility="onSectionVisibility"
-    class="tw-container tw-relative tw-mx-auto tw-w-full xl:tw-px-0"
+    class="tw-container tw-relative tw-w-full xl:tw-px-0"
   >
     <div
       :class="{'animate__animated animate__fadeIn animate__slow': isSectionVisible}"

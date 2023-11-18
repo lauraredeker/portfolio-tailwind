@@ -118,6 +118,7 @@ module.exports = {
       display: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
     },
     container: {
+      center: true,
       padding: {
         DEFAULT: '1.8rem',
         sm: '2rem',

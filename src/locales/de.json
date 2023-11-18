@@ -7,6 +7,11 @@
         "contact-button": "Schreib mir"
     },
     "nav": {
+        "menu-open": "Menü öffnen",
+        "menu-close": "Menü schließen",
+        "theme-light": "Helles Theme",
+        "theme-dark": "Dunkles Theme",
+        "switch-language": "Sprache wechseln",
         "about": "über mich",
         "about-long": "mehr über mich",
         "skills": "expertise",

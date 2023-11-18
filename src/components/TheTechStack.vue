@@ -10,7 +10,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
   <div
     class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-indigo-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 2xl:tw-pb-52 2xl:tw-pt-48"
   >
-    <div class="tw-container tw-mx-auto tw-text-center md:tw-text-left">
+    <div class="tw-container tw-text-center md:tw-text-left">
       <div
         v-element-visibility="onSectionVisibility"
         :class="{'animate__animated animate__fadeIn': isSectionVisible}"

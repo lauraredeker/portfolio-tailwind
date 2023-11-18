@@ -11,7 +11,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
   <section>
     <div
       v-element-visibility="onSectionVisibility"
-      class="tw-container tw-mx-auto tw-w-full md:tw-pt-20"
+      class="tw-container tw-w-full md:tw-pt-20"
     >
       <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 2xl:tw-gap-20">
         <div
@@ -28,7 +28,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           <div  class="tw-text-justify">
             <p>
               {{ $t("skills.design-text1") }}
-              <span class="tw-font-semibold dark:tw-text-amber-50">
+              <span class="tw-font-semibold dark:tw-text-orange-50">
                 {{ $t("skills.design-text2") }}
               </span>
               <br><br>
@@ -49,7 +49,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
             Code
           </h3>
           <p class="tw-text-justify">
-            <span class="tw-font-semibold dark:tw-text-amber-50">
+            <span class="tw-font-semibold dark:tw-text-orange-50">
               {{ $t("skills.code-text1") }}
             </span>
             {{ $t("skills.code-text2") }}
@@ -70,7 +70,7 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
             A11y
           </h3>
           <p class="tw-text-justify">
-            <span class="tw-font-semibold dark:tw-text-amber-50">
+            <span class="tw-font-semibold dark:tw-text-orange-50">
               {{ $t("skills.ally-text1") }}
             </span>
             {{ $t("skills.ally-text2") }}

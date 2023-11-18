@@ -7,6 +7,11 @@
         "contact-button": "Contact me"
     },
     "nav": {
+        "menu-open": "Open menu",
+        "menu-close": "Close menu",
+        "theme-light": "Light Theme",
+        "theme-dark": "Dark Theme",
+        "switch-language": "Switch language",
         "about": "about",
         "about-long": "more about me",
         "skills": "expertise",
