@@ -8,6 +8,8 @@ const isNavVisible = ref(false)
 
 function toggleNav () {
   isNavVisible.value = !isNavVisible.value
+
+  document.body.classList.toggle('tw-overflow-hidden', isNavVisible.value)
 }
 
 </script>
@@ -17,7 +19,7 @@ function toggleNav () {
       id="theme-toggle"
       type="button"
       aria-label="settings"
-      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-bg-indigo-100 tw-px-2 tw-py-2 tw-align-middle tw-text-indigo-500 hover:tw-bg-indigo-200 hover:tw-text-indigo-600 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:hover:tw-text-amber-50 dark:focus:tw-bg-indigo-900 md:tw-hidden"
+      class="tw-fixed tw-z-50 tw-flex tw-flex-row tw-items-center tw-px-2 tw-py-2 tw-align-middle tw-bg-indigo-400 tw-rounded-full tw-right-2 tw-top-2 tw-text-indigo-50 hover:tw-bg-indigo-200 hover:tw-text-indigo-600 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:hover:tw-text-amber-50 dark:focus:tw-bg-indigo-900 md:tw-hidden"
       @click="toggleNav()"
     >
       <span
@@ -49,10 +51,10 @@ function toggleNav () {
       :class=" {
         'tw-overscroll-y-none' : isNavVisible,
       }"
-      class="animate__animated animate__slideInRight animate__ tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-screen tw-w-screen tw-flex-col tw-justify-stretch tw-bg-indigo-100 dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950"
+      class="tw-fixed tw-top-0 tw-z-40 tw-flex tw-flex-col tw-w-screen tw-h-screen tw-bg-indigo-100 animate__animated animate__slideInRight animate__ tw-l-0 tw-justify-stretch dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950"
     >
       <span
-        class="tw-mx-6 tw-mb-1 tw-mt-20 tw-block tw-text-sm tw-font-semibold md:tw-hidden"
+        class="tw-block tw-mx-6 tw-mt-20 tw-mb-1 tw-text-sm tw-font-semibold md:tw-hidden"
         for="mobile-nav"
       >
         Navigation
@@ -65,21 +67,21 @@ function toggleNav () {
       />
       <hr class="tw-mx-6 tw-mt-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
 
-      <div class="tw-mt-5 tw-flex tw-flex-row tw-justify-between tw-px-6">
+      <div class="tw-flex tw-flex-row tw-justify-between tw-px-6 tw-mt-5">
         <TheDarkBtn @click="toggleNav()" />
         <TheLocaleChanger @click="toggleNav()" />
       </div>
 
-      <div class="tw-mb-5 tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
+      <div class="tw-w-full tw-mt-10 tw-mb-5 tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
         <router-link
           to="/impressum"
-          class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
+          class="tw-px-2 tw-py-2 tw-mr-5 tw-text-indigo-800 tw-underline tw-transition-colors tw-bg-opacity-50 tw-rounded-md tw-underline-offset-4 hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
         >
           {{ $t("footer.imprint") }}
         </router-link>
         <router-link
           to="/datenschutz"
-          class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
+          class="tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-transition-colors tw-bg-opacity-50 tw-rounded-md tw-underline-offset-4 hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
         >
           {{ $t("footer.privacy") }}
         </router-link>

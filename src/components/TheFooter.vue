@@ -24,7 +24,7 @@
           </a>
           {{ $t("footer.info2") }}
           <span class="tw-i-ph-heart-fill tw-mx-1 tw-mt-2 tw-inline-block" />
-          <span class="tw-whitespace-nowrap">
+          <span class="tw-whitespace-nowrap tw-px-1">
             {{ $t("footer.github") }}
             <a
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-2 tw-text-indigo-200 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 "

@@ -22,7 +22,7 @@ function scrollToTop (): void {
     >
       <span
         focusable="false"
-        class="tw-i-ph-arrow-up-bold tw-p-2 tw-text-2xl"
+        class="tw-i-ph-arrow-up-bold tw-p-3 tw-text-2xl"
       />
     </button>
   </Transition>
