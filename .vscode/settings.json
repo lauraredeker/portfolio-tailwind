@@ -1,0 +1,31 @@
+{
+	"editor.defaultFormatter": "octref.vetur",
+	"vetur.format.defaultFormatter.html": "prettier",
+	"vetur.format.defaultFormatter.css": "prettier",
+	"vetur.format.defaultFormatter.postcss": "prettier",
+	"vetur.format.defaultFormatter.scss": "prettier",
+	"vetur.format.defaultFormatter.less": "prettier",
+	"vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+	"vetur.format.defaultFormatter.js": "prettier",
+	"vetur.format.defaultFormatter.ts": "prettier",
+	"css.customData": [".vscode/tailwind.json"],
+	"scss.lint.unknownAtRules": "ignore",
+	// For ESLint
+	"eslint.validate": [
+		"javascript",
+		"javascriptvue",
+		"typescript",
+		"typescriptvue",
+		"javascriptreact",
+		"html",
+		"json",
+		"jsonc"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll": false
+	},
+	"eslint.packageManager": "pnpm",
+	// For Prettier
+	"editor.formatOnSave": true,
+	"prettier.requireConfig": true
+}
