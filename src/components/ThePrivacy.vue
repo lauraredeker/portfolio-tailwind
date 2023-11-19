@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
-</script>
-
 <template>
   <base-container>
     <base-breadcrumbs currentPage="impressum" />
@@ -35,7 +31,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         erhalten. Ebenfalls haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung Ihrer Daten.
         Für Auskünfte zu Ihren personenbezogenen Daten, wenden Sie sich bitte per E-Mail an
         <a
-          class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           href="mailto:lauraredeker.ux@gmail.com"
         >lauraredeker.ux@gmail.com</a>.
       </p>
@@ -45,7 +41,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
       <p>
         Sie können der Verarbeitung und Nutzung Ihrer personenbezogenen Daten jederzeit und für die Zukunft durch E-Mail an
         <a
-          class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           href="mailto:lauraredeker.ux@gmail.com"
         >lauraredeker.ux@gmail.com</a>
         widersprechen.
@@ -78,13 +74,24 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         Dieser speichert dabei einige Informationen über die Verbindung in einer sogenannten Logdatei.
         Wir haben keinen Zugriff auf diese Logdateien. Mehr Informationen dazu, wie Netlify Ihre Daten verarbeitet,
         können Sie
-        <a class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white" href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">der Datenschutzerklärung von Netlify</a>
+        <a
+          class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          href="https://www.netlify.com/privacy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >der Datenschutzerklärung von Netlify</a>
         entnehmen.
         Netlify erhebt folgende personenbezogene Daten, die technisch erforderlich sind, um Ihnen die Anzeige der
         Webseite zu ermöglichen und die Stabilität und Sicherheit zu gewährleisten: IP-Adresse,
         Datum und Uhrzeit der Anfrage, Übertragene Datenmenge, Zugriffsstatus (HTTP-Status) und Websites, von denen das System des Nutzers auf unsere Internetseite gelangt (Referrer URL).
         Diese Daten werden von Netlify für 30 Tage gespeichert. Weitere Details dazu finden Sie
-        <a class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white" href="https://www.netlify.com/gdpr-ccpa" target="_blank" rel="noopener noreferrer">der Verpflichtung von Netlify zum Schutz Ihrer Daten</a>.
+        <a
+          class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          href="https://www.netlify.com/gdpr-ccpa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >der Verpflichtung von Netlify zum Schutz Ihrer Daten
+        </a>.
       </p>
       <p>Die Speicherung dieser Daten in Logfiles dient der Sicherstellung der Funktionsfähigkeit und zur Optimierung der Webseite sowie zur Sicherstellung der Sicherheit der informationstechnischen Systeme. In den vorstehenden Zwecken liegt unser berechtigtes Interesse an der Datenverarbeitung. Rechtsgrundlage für die Erhebung und die vorübergehende Speicherung der vorgenannten Daten und der Logfiles ist Art. 6 Abs. 1 S. 1 lit. f) DSGVO.</p>
     </section>

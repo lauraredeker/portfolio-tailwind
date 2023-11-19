@@ -4,3 +4,5 @@ declare module '*.vue' {
   const _default: Component
   export default _default
 }
+
+declare module '@vueuse/components'

@@ -1,8 +1,3 @@
-
-<script lang="ts" setup>
-import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
-</script>
-
 <template>
   <base-container>
     <base-breadcrumbs currentPage="impressum" />
@@ -26,8 +21,9 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
         Kontakt
       </h4>
       <p>
-        E-Mail: <a
-          class="tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+        E-Mail:
+        <a
+          class="tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           href="mailto:lauraredeker.ux@gmail.com"
         >lauraredeker.ux@gmail.com</a>
       </p>
@@ -68,7 +64,7 @@ import BaseBreadcrumbs from './BaseBreadcrumbs.vue'
     </section>
 
     <section class="tw-mt-20">
-      <h4  class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
         Urheberrecht
       </h4>
       <p>
