@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-  import TheLocaleChanger from './UI/TheLocaleChanger.vue';
-  import TheMobileNav from './TheMobileNav.vue';
-  import TheNav from './TheNav.vue';
-  import TheDarkBtn from './UI/TheDarkBtn.vue';
-  import { RouterLink } from 'vue-router';
-  import useWindowResize from '../composables/useWindowResize.js';
+  import TheLocaleChanger from './UI/TheLocaleChanger.vue'
+  import TheMobileNav from './TheMobileNav.vue'
+  import TheNav from './TheNav.vue'
+  import TheDarkBtn from './UI/TheDarkBtn.vue'
+  import { RouterLink } from 'vue-router'
+  import useWindowResize from '../composables/useWindowResize.js'
 
-  const { isMobileViewport, isMobile } = useWindowResize();
-  import { useScrolling } from '../composables/useScrolling';
+  const { isMobileViewport, isMobile } = useWindowResize()
+  import { useScrolling } from '../composables/useScrolling'
 
   export interface Props {
     isSubpage?: boolean;
@@ -15,9 +15,9 @@
 
   withDefaults(defineProps<Props>(), {
     isSubpage: false,
-  });
+  })
 
-  const { isScrolling } = useScrolling(800, true);
+  const { isScrolling } = useScrolling(800, true)
 </script>
 
 <template>

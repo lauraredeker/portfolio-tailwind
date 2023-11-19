@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-  import TheHeader from '../components/TheHeader.vue';
-  import TheStart from '../components/TheStart.vue';
-  import TheAbout from '../components/TheAbout.vue';
-  import TheSkills from '../components/TheSkills.vue';
-  import TheContact from '../components/TheContact.vue';
+  import TheHeader from '../components/TheHeader.vue'
+  import TheStart from '../components/TheStart.vue'
+  import TheAbout from '../components/TheAbout.vue'
+  import TheSkills from '../components/TheSkills.vue'
+  import TheContact from '../components/TheContact.vue'
 </script>
 
 <template>

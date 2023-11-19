@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-  import { computed, ComputedRef } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  import { ref } from 'vue';
-  import { onMounted } from 'vue';
+  import { computed, ComputedRef } from 'vue'
+  import { useI18n } from 'vue-i18n'
+  import { ref } from 'vue'
+  import { onMounted } from 'vue'
 
-  const { locale } = useI18n();
-  const showTitle = ref(false);
+  const { locale } = useI18n()
+  const showTitle = ref(false)
 
   type Lang = {
     code: string;
@@ -15,38 +15,38 @@
   const langs: Lang[] = [
     { code: 'en', text: 'EN' },
     { code: 'de', text: 'DE' },
-  ];
+  ]
 
-  const defaultLocale: string = langs[0].code;
+  const defaultLocale: string = langs[0].code
 
   // filter to language that is not the current locale
   const filteredLangs: ComputedRef<Lang[]> = computed(() =>
     langs.filter(lang => lang.code !== locale.value)
-  );
+  )
 
   // check if a locale is supported
   function isLocaleSupported(locale: string) {
-    return langs.some(e => e.code === locale);
+    return langs.some(e => e.code === locale)
   }
 
   // read the preferred language sent by the browser
   function getUserLocale() {
-    const locale = window.navigator.language || defaultLocale;
+    const locale = window.navigator.language || defaultLocale
 
     return {
       locale: locale,
       localeNoRegion: locale.split('-')[0],
-    };
+    }
   }
 
   // read the local storage and check whether the persisted locale is supported by the app
   function getPersistedLocale() {
-    const persistedLocale = localStorage.getItem('user-locale') || '';
+    const persistedLocale = localStorage.getItem('user-locale') || ''
 
     if (isLocaleSupported(persistedLocale)) {
-      return persistedLocale;
+      return persistedLocale
     } else {
-      return null;
+      return null
     }
   }
 
@@ -57,26 +57,26 @@
    * 3. the default locale
    */
   function guessDefaultLocale() {
-    const userPersistedLocale = getPersistedLocale();
+    const userPersistedLocale = getPersistedLocale()
     if (userPersistedLocale) {
-      return userPersistedLocale;
+      return userPersistedLocale
     }
-    const userPreferredLocale = getUserLocale();
+    const userPreferredLocale = getUserLocale()
     if (isLocaleSupported(userPreferredLocale.locale)) {
-      return userPreferredLocale.locale;
+      return userPreferredLocale.locale
     }
     if (isLocaleSupported(userPreferredLocale.localeNoRegion)) {
-      return userPreferredLocale.localeNoRegion;
+      return userPreferredLocale.localeNoRegion
     }
 
-    return defaultLocale;
+    return defaultLocale
   }
 
   // update locale and html lang attribute
   function changeLocale(lang: Lang): void {
     if (typeof lang.code === 'string') {
-      locale.value = lang.code;
-      setLocale(lang.code);
+      locale.value = lang.code
+      setLocale(lang.code)
     }
   }
 
@@ -85,16 +85,16 @@
    * and update the html lang attribute
    */
   function setLocale(locale: string): void {
-    document.documentElement.setAttribute('lang', locale);
+    document.documentElement.setAttribute('lang', locale)
     // persist the chosen locale by saving it into the local storage
-    localStorage.setItem('user-locale', locale);
+    localStorage.setItem('user-locale', locale)
   }
 
   // set the locale to the guessed locale
   onMounted(() => {
-    locale.value = guessDefaultLocale();
-    setLocale(locale.value);
-  });
+    locale.value = guessDefaultLocale()
+    setLocale(locale.value)
+  })
 </script>
 
 <template>

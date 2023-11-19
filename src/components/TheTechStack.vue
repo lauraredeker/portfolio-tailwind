@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-  import { vElementVisibility } from '@vueuse/components';
-  import { useVisibility } from '../composables/useVisibility';
+  import { vElementVisibility } from '@vueuse/components'
+  import { useVisibility } from '../composables/useVisibility'
 
-  const [isSectionVisible, onSectionVisibility] = useVisibility();
+  const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
 
 <template>

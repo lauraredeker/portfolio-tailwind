@@ -3,7 +3,7 @@
     hasArrow?: boolean;
     target?: string;
     text?: string;
-  }>();
+  }>()
 </script>
 
 <template>

@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-  import ScrollTopBtn from './components/UI/BaseScrollToTop.vue';
-  import { watchEffect } from '@vue/runtime-core';
-  import { store } from './store';
-  import { RouterView } from 'vue-router';
+  import ScrollTopBtn from './components/UI/BaseScrollToTop.vue'
+  import { watchEffect } from '@vue/runtime-core'
+  import { store } from './store'
+  import { RouterView } from 'vue-router'
 
   watchEffect(() => {
-    document.documentElement.classList.toggle('tw-dark', store.isDarkMode);
-  });
+    document.documentElement.classList.toggle('tw-dark', store.isDarkMode)
+  })
 </script>
 
 <template>

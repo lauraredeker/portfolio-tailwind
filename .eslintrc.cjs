@@ -28,6 +28,7 @@ module.exports = {
 		},
 	},
 	rules: {
+		semi: ['warn', 'never'],
 		'@typescript-eslint/no-var-requires': 'off',
 		'vue/no-duplicate-attributes': [
 			'warn',

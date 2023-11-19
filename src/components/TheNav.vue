@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-  import { RouterLink } from 'vue-router';
-  defineEmits(['linkClick']);
+  import { RouterLink } from 'vue-router'
+  defineEmits(['linkClick'])
 </script>
 
 <template>

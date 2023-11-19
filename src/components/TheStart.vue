@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-  import { RouterLink } from 'vue-router';
-  import { vElementVisibility } from '@vueuse/components';
-  import { useVisibility } from '../composables/useVisibility';
+  import { RouterLink } from 'vue-router'
+  import { vElementVisibility } from '@vueuse/components'
+  import { useVisibility } from '../composables/useVisibility'
 
-  const [isSectionVisible, onSectionVisibility] = useVisibility();
+  const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
 
 <template>

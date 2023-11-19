@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-  import { store } from '../../store';
-  import { ref } from 'vue';
+  import { store } from '../../store'
+  import { ref } from 'vue'
 
-  const showTitle = ref(false);
+  const showTitle = ref(false)
 
   function toggleDarkMode() {
-    store.isDarkMode = !store.isDarkMode;
+    store.isDarkMode = !store.isDarkMode
   }
 </script>
 

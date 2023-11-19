@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-  import TheLocaleChanger from './UI/TheLocaleChanger.vue';
-  import TheDarkBtn from './UI/TheDarkBtn.vue';
-  import TheNav from './TheNav.vue';
-  import { ref } from 'vue';
+  import TheLocaleChanger from './UI/TheLocaleChanger.vue'
+  import TheDarkBtn from './UI/TheDarkBtn.vue'
+  import TheNav from './TheNav.vue'
+  import { ref } from 'vue'
 
-  const isNavVisible = ref(false);
+  const isNavVisible = ref(false)
 
   function toggleNav() {
-    isNavVisible.value = !isNavVisible.value;
-    document.body.classList.toggle('tw-overflow-hidden', isNavVisible.value);
+    isNavVisible.value = !isNavVisible.value
+    document.body.classList.toggle('tw-overflow-hidden', isNavVisible.value)
   }
 </script>
 <template>

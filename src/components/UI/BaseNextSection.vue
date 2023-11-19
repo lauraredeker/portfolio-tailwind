@@ -1,14 +1,14 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
-  import { RouterLink } from 'vue-router';
+  import { ref } from 'vue'
+  import { RouterLink } from 'vue-router'
 
   defineProps<{
     title?: string;
     target?: string;
     containerClass?: string;
-  }>();
+  }>()
 
-  const showTitle = ref(false);
+  const showTitle = ref(false)
 </script>
 
 <template>

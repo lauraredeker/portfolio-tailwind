@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-  import { RouterLink } from 'vue-router';
-  import { vElementVisibility } from '@vueuse/components';
-  import { useVisibility } from '../composables/useVisibility';
-  import BaseNextSection from './UI/BaseNextSection.vue';
+  import { RouterLink } from 'vue-router'
+  import { vElementVisibility } from '@vueuse/components'
+  import { useVisibility } from '../composables/useVisibility'
+  import BaseNextSection from './UI/BaseNextSection.vue'
 
-  const [isQuoteVisible, onQuoteVisibility] = useVisibility();
-  const [isTextBlockVisible, onTextBlockVisibility] = useVisibility();
-  const [isLinkVisible, onLinkVisibility] = useVisibility();
+  const [isQuoteVisible, onQuoteVisibility] = useVisibility()
+  const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
+  const [isLinkVisible, onLinkVisibility] = useVisibility()
 </script>
 
 <template>

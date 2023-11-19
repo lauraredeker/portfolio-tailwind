@@ -1,39 +1,39 @@
 <script lang="ts" setup>
-  import TheFooter from '../components/TheFooter.vue';
-  import { ref } from 'vue';
-  import useWindowResize from '../composables/useWindowResize.js';
-  import { vElementVisibility } from '@vueuse/components';
-  import { useVisibility } from '../composables/useVisibility';
+  import TheFooter from '../components/TheFooter.vue'
+  import { ref } from 'vue'
+  import useWindowResize from '../composables/useWindowResize.js'
+  import { vElementVisibility } from '@vueuse/components'
+  import { useVisibility } from '../composables/useVisibility'
 
-  const email = 'lauraredeker.ux@gmail.com';
-  const isEmailCopied = ref<boolean>(false);
-  const showTooltip = ref<boolean>(false);
-  const { isMobileViewport, isMobile } = useWindowResize();
-  const [isSectionVisible, onSectionVisibility] = useVisibility();
+  const email = 'lauraredeker.ux@gmail.com'
+  const isEmailCopied = ref<boolean>(false)
+  const showTooltip = ref<boolean>(false)
+  const { isMobileViewport, isMobile } = useWindowResize()
+  const [isSectionVisible, onSectionVisibility] = useVisibility()
 
   /**
    * Reset tooltip and copied status after a delay.
    */
   const resetStatus = () => {
     setTimeout(() => {
-      showTooltip.value = false;
-      isEmailCopied.value = false;
-    }, 4000);
-  };
+      showTooltip.value = false
+      isEmailCopied.value = false
+    }, 4000)
+  }
 
   /**
    * Copy email address to user's clipboard and update tooltip text.
    */
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(email);
-      isEmailCopied.value = true;
-      showTooltip.value = true;
-      resetStatus();
+      await navigator.clipboard.writeText(email)
+      isEmailCopied.value = true
+      showTooltip.value = true
+      resetStatus()
     } catch (err) {
-      console.error(`Failed to copy: ${err}`);
+      console.error(`Failed to copy: ${err}`)
     }
-  };
+  }
 </script>
 
 <template>
