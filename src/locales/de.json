@@ -46,12 +46,12 @@
 	},
 	"skills": {
 		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer die Nutzererfahrung im Fokus und lebe meine Liebe zum Detail aus.",
-		"design-text2": "Ästhetik und Funktionalität sollten sich nicht gegenseitig ausschließen, sondern ergänzen.",
-		"design-text3": "Dabei designe ich gerne direkt im Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch nach wie vor gerne Tools wie Sketch oder Figma.",
+		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
+		"design-text3": "Designen durch Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes verwende ich dennoch gerne Designprogramme wie Sketch oder Figma.",
 		"code-text1": "Code ist die Erweiterung meiner gestalterischen Ausdrucksform:",
 		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
-		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln und meine Tech Stack ausbauen können (siehe unten). Meine aktuellen Favoriten sind Vue.js und TailwindCSS – für jedes Projekt suche ich mir aber die passenden Tools aus.",
-		"ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und hübscher zu gestalten.",
+		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde für jedes Projekt die geeigneten Tools.",
+		"ally-text1": "Mein Ziel ist es, das Web inklusiver und hübscher zu gestalten.",
 		"ally-text2": "Obwohl es noch viel zu lernen gibt (und immer geben wird), tue ich mein Bestes, um barrierefreie Seiten zu entwickeln, die sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
 		"ally-text3": "Mit Hilfe von E2E-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
 	},
