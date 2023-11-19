@@ -4,10 +4,6 @@
 
 @tailwind utilities;
 
-body {
-  touch-action: pan-x pan-y;
-}
-
 .fade-enter-active,
 .fade-leave-active  {
   transition: opacity 1s ease;
@@ -65,55 +61,5 @@ body {
     --mask: conic-gradient(from 132.5deg at top,#0000,#000 1deg 94deg,#0000 95deg) 50%/65.48px 100%;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-  }
-
-  .custom-circle-animation-1 {
-   @media (prefers-reduced-motion: no-preference) {
-    animation: customSpinAnimation 40s linear infinite alternate-reverse;
-   }
-  }
-
-  .custom-circle-animation-2 {
-   @media (prefers-reduced-motion: no-preference) {
-    animation: customAnimation 30s linear infinite alternate-reverse;
-   }
-  }
-  .custom-circle-animation-3 {
-   @media (prefers-reduced-motion: no-preference) {
-    animation: customAnimation2 50s linear infinite alternate-reverse;
-   }
-  }
-
-  @keyframes customSpinAnimation {
-    0% {
-      transform: rotate(0);
-      transform-origin: 50% 55%;
-    }
-    100% {
-      transform: rotate(360deg);
-      transform-origin: 58% 48%;
-    }
-  }
-
-  @keyframes customAnimation {
-    0% {
-      transform: rotate(0);
-      transform-origin: 50% 55%;
-    }
-    100% {
-      transform: rotate(80deg);
-      transform-origin: 58% 48%;
-    }
-  }
-
-  @keyframes customAnimation2 {
-    0% {
-      transform: rotate(0);
-      transform-origin: 60% 60%;
-    }
-    100% {
-      transform: rotate(80deg);
-      transform-origin: 38% 60%;
-    }
   }
 }

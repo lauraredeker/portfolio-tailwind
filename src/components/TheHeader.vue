@@ -4,7 +4,10 @@ import TheMobileNav from './TheMobileNav.vue'
 import TheNav from './TheNav.vue'
 import TheDarkBtn from './UI/TheDarkBtn.vue'
 import { RouterLink } from 'vue-router'
-// import { useScrolling } from '../composables/useScrolling'
+import useWindowResize from '../composables/useWindowResize.js'
+
+const { isMobileViewport, isMobile } = useWindowResize()
+import { useScrolling } from '../composables/useScrolling'
 
 export interface Props {
   isSubpage?: boolean
@@ -14,8 +17,7 @@ withDefaults(defineProps<Props>(), {
   isSubpage: false,
 })
 
-// const { isScrolling } = useScrolling(800, true)
-const isScrolling = true
+const { isScrolling } = useScrolling(800, true)
 </script>
 
 <template>
@@ -35,16 +37,19 @@ const isScrolling = true
 
     <Transition name="fade">
       <aside
-        v-show="isScrolling"
+        v-if="!isMobile || !isMobileViewport"
         class="tw-fixed tw-right-4 tw-top-20 tw-hidden md:tw-block"
       >
-        <div class="tw-flex tw-flex-col tw-items-end">
+        <div
+          v-show="isScrolling"
+          class="tw-flex tw-flex-col tw-items-end"
+        >
           <TheDarkBtn />
-          <TheLocaleChanger class="tw-mt-2" />
+          <TheLocaleChanger class="tw-mt-3" />
         </div>
       </aside>
     </Transition>
 
-    <TheMobileNav />
+    <TheMobileNav v-if="isMobile || isMobileViewport" />
   </header>
 </template>

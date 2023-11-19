@@ -11,18 +11,24 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
     v-element-visibility="onSectionVisibility"
     class="tw-container tw-relative tw-w-full xl:tw-px-0"
   >
-    <div
-      :class="{'animate__animated animate__fadeIn animate__slow': isSectionVisible}"
-    >
+    <div>
       <!-- dark big bg circle -->
       <div
         aria-hidden="true"
-        class="custom-circle-animation-2 tw-absolute tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-top-10 2xl:tw-h-[70rem] 2xl:tw-w-[70rem]"
+        :class="{
+          'custom-circle-animation-2': isSectionVisible,
+          'tw-will-change': !isSectionVisible
+        }"
+        class="tw-absolute tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-top-10 2xl:tw-h-[70rem] 2xl:tw-w-[70rem]"
       />
       <!-- small bg circle -->
       <div
         aria-hidden="true"
-        class="custom-circle-animation-3 tw-absolute -tw-left-[16%] tw-top-[53%] tw-z-0 tw-hidden tw-h-[14rem] tw-w-[14rem] tw-rounded-full tw-bg-amber-300 tw-opacity-70 dark:tw-bg-indigo-900 dark:tw-opacity-40 dark:tw-mix-blend-lighten md:tw-block md:tw-h-[32rem] md:tw-w-[32rem] 2xl:-tw-left-[25%] 2xl:tw-top-[35%] 2xl:tw-h-[52rem] 2xl:tw-w-[52rem]"
+        :class="{
+          'custom-circle-animation-3': isSectionVisible,
+          'tw-will-change': !isSectionVisible
+        }"
+        class="tw-absolute -tw-left-[16%] tw-top-[53%] tw-z-0 tw-hidden tw-h-[14rem] tw-w-[14rem] tw-rounded-full tw-bg-amber-300 tw-opacity-70 tw-will-change-transform dark:tw-bg-indigo-900 dark:tw-opacity-40 dark:tw-mix-blend-lighten md:tw-block md:tw-h-[32rem] md:tw-w-[32rem] 2xl:-tw-left-[25%] 2xl:tw-top-[35%] 2xl:tw-h-[52rem] 2xl:tw-w-[52rem]"
       />
       <!-- big border circle -->
       <div
@@ -31,11 +37,14 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
       />
     </div>
 
-    <section class="tw-flex tw-flex-col tw-align-middle sm:tw-h-screen">
-      <div class="tw-relative tw-z-20 tw-mx-auto tw-mt-20 md:tw-w-11/12 2xl:tw-mt-20">
+    <section class="tw-flex tw-flex-col tw-align-middle md:tw-h-screen">
+      <div class="tw-relative tw-z-20 tw-mx-auto tw-mt-20 xl:tw-w-11/12 2xl:tw-mt-20">
         <h1
-          :class="{'animate__animated animate__slideInDown': isSectionVisible}"
-          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-6xl tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 sm:tw-text-7xl xl:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
+          :class="{
+            'animate__animated animate__slideInDown': isSectionVisible,
+            'tw-will-change': !isSectionVisible,
+          }"
+          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400  dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
         >
           <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t("start.hello1") }}
@@ -46,8 +55,11 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
         </h1>
 
         <h2
-          :class="{'animate__animated animate__bounceInLeft': isSectionVisible}"
-          class="tw-mt-5 tw-select-none tw-text-l tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
+          :class="{
+            'animate__animated animate__bounceInLeft': isSectionVisible,
+            'tw-will-change': !isSectionVisible,
+          }"
+          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
         >
           {{ $t("start.intro1") }}
           <RouterLink
@@ -72,7 +84,10 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
       />
 
       <BaseNextSection
-        class="animate__animated animate__fadeIn"
+        :class="{
+          'animate__animated animate__fadeIn': isSectionVisible,
+          'tw-will-change': !isSectionVisible,
+        }"
         container-class="tw-mt-10 tw-mb-6 md:tw-hidden"
         target="#about"
         :title="$t('nav.about-long')"
@@ -83,8 +98,11 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
           <source srcset="/img/pictures/moi.webp" type="image/webp">
           <source srcset="/img/pictures/moi.png" type="image/jpeg">
           <img
-            :class="{'animate__animated animate__fadeInBottomRight': isSectionVisible}"
-            class="tw-relative tw-mx-auto tw-mb-10 tw-w-64 tw-translate-x-0 tw-transform tw-transition-all md:tw-absolute md:-tw-bottom-20 md:-tw-right-20 md:tw-z-10 md:tw-w-96 lg:tw-w-1/3 xl:-tw-bottom-[20%] 2xl:-tw-right-[16%] 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-w-144"
+            :class="{
+              'animate__animated animate__fadeInBottomRight': isSectionVisible,
+              'tw-will-change': !isSectionVisible,
+            }"
+            class="tw-relative tw-mx-auto tw-mb-10 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-z-10 sm:tw-h-96 sm:tw-w-96 md:tw-absolute  md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 2xl:tw-h-128 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-h-144 3xl:tw-w-144"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
           >
@@ -93,7 +111,10 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
     </section>
 
     <BaseNextSection
-      class="animate__animated animate__fadeIn"
+      :class="{
+        'animate__animated animate__fadeIn': isSectionVisible,
+        'tw-will-change': !isSectionVisible,
+      }"
       container-class="tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       :title="$t('nav.about-long')"
@@ -105,7 +126,9 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
 <style scoped>
   .custom-image-animation {
     @screen sm {
-        animation: customImageAnimation 50s linear infinite alternate-reverse;
+      @media (prefers-reduced-motion: no-preference) {
+            animation: customImageAnimation 50s linear infinite alternate-reverse;
+      }
     }
   }
 
@@ -117,6 +140,55 @@ const [isSectionVisible, onSectionVisibility] = useVisibility()
       transform: translate(5%, -3%);
     }
   }
+
+  .custom-circle-animation-1 {
+    @media (prefers-reduced-motion: no-preference) {
+     animation: customSpinAnimation 40s linear infinite alternate-reverse;
+    }
+   }
+
+   .custom-circle-animation-2 {
+    @media (prefers-reduced-motion: no-preference) {
+     animation: customAnimation 30s linear infinite alternate-reverse;
+    }
+   }
+   .custom-circle-animation-3 {
+    @media (prefers-reduced-motion: no-preference) {
+     animation: customAnimation2 50s linear infinite alternate-reverse;
+    }
+   }
+
+   @keyframes customSpinAnimation {
+     0% {
+       transform: rotate(0);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+
+   @keyframes customAnimation {
+     0% {
+       transform: rotate(0);
+       transform-origin: 50% 55%;
+     }
+     100% {
+       transform: rotate(80deg);
+       transform-origin: 58% 48%;
+     }
+   }
+
+   @keyframes customAnimation2 {
+     0% {
+       transform: rotate(0);
+       transform-origin: 60% 60%;
+     }
+     100% {
+       transform: rotate(80deg);
+       transform-origin: 38% 60%;
+     }
+   }
+
 
   .slide-enter-active {
     transition-delay: 0.9s;

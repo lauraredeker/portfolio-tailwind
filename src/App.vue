@@ -22,7 +22,6 @@ watchEffect(() => {
   .fade-in-leave-active  {
     transition: opacity .8s ease;
   }
-
   .fade-in-enter-from,
   .fade-in-leave-to {
     opacity: 0;

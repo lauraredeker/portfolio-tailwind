@@ -44,9 +44,11 @@ const copyEmail = async () => {
       class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center 2xl:tw-pb-40"
     >
       <div
-        class="2lg:tw-w-1/2 tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3"
+        v-element-visibility="onSectionVisibility"
+        :class="{'animate__animated animate__fadeInUp': isSectionVisible}"
+        class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 2xl:tw-w-1/2"
       >
-        <h3 class="2lg:tw-text-7xl tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl">
+        <h3 class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
           {{ $t("contact.headline") }}
         </h3>
 
@@ -54,14 +56,13 @@ const copyEmail = async () => {
           {{ $t("contact.text") }}
         </p>
 
-        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle lg:tw-flex-row">
+        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle md:tw-flex-row">
           <base-btn
             :target="`mailto:${email}`"
             :text="email"
           />
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              aria-label="copy email to clipboard"
               class="tw-transitions tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
               @mouseover="showTooltip = true"
               @mouseout="showTooltip = isEmailCopied"
@@ -73,12 +74,20 @@ const copyEmail = async () => {
                   'tw-i-ph-check-fat-duotone tw-text-green-600 dark:tw-text-green-300' : isEmailCopied,
                   'tw-i-ph-copy-simple-duotone' : !isEmailCopied
                 }"
-                class="tw-text-l lg:tw-ml-4 lg:tw-text-2xl"
+                aria-hidden="true"
+                class="tw-text-l md:tw-ml-4 md:tw-text-2xl"
               />
+              <span
+                v-if="!isMobile"
+                class="tw-sr-only"
+              >
+                {{ isEmailCopied ? $t("contact.copied") : $t("contact.copy") }}
+              </span>
+
               <!-- mobile text -->
               <div
-                v-show="isMobile"
-                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300 lg:tw-hidden"
+                v-if="isMobile"
+                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300"
               >
                 <span
                   v-if="isEmailCopied"

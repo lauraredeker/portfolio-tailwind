@@ -16,8 +16,11 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
       class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6"
     >
       <blockquote
-        :class="{'animate__animated animate__fadeIn animate__slow': isQuoteVisible}"
-        class="tw-mb-4 tw-border-[10px] tw-border-indigo-400 tw-p-5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-800 dark:tw-border-indigo-800 dark:tw-text-indigo-300 sm:tw-p-10 md:tw-mb-10 md:tw-p-10 md:tw-px-20 md:tw-text-xl lg:tw-text-3xl xl:tw-text-5xl"
+        :class="{
+          'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
+          'tw-will-change': isQuoteVisible,
+        }"
+        class="tw-mb-4 tw-bg-indigo-200 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
       >
         "{{ $t("about.quote") }}
         <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
@@ -28,7 +31,7 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
           {{ $t("about.author") }}
           <a
             href="http://atomicdesign.bradfrost.com"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
             target="_blank"
           >Atomic Design</a>
         </cite>
@@ -37,10 +40,13 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
 
     <div
       v-element-visibility="onTextBlockVisibility"
-      :class="{'animate__animated animate__fadeIn animate__slow animate__delay-1s': isTextBlockVisible}"
+      :class="{
+        'animate__animated animate__fadeIn animate__delay-1s': isTextBlockVisible,
+        'tw-will-change': isTextBlockVisible,
+      }"
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
-      <div class="tw-my-12 tw-hyphens-auto md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
+      <div class="tw-my-12 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
           Laura,
           {{ $t("about.pronouns") }}
@@ -66,8 +72,11 @@ const [isLinkVisible, onLinkVisibility] = useVisibility()
     <div
       ref="link"
       v-element-visibility="onLinkVisibility"
-      :class="{'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible}"
-      class="tw-mx-auto tw-mb-20 tw-px-7 md:tw-mb-32 md:tw-w-4/5 md:tw-px-40 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
+      :class="{
+        'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible,
+        'tw-will-change': isLinkVisible,
+      }"
+      class="tw-mx-auto tw-mb-20 md:tw-mb-32 md:tw-w-4/5 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto"
     >
       <div
         class="tw-flex tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"

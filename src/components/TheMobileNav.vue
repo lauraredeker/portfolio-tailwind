@@ -47,18 +47,17 @@ function toggleNav () {
       v-show="isNavVisible"
       role="dialog"
       aria-modal="true"
-      :class=" {
-        'tw-overscroll-y-none' : isNavVisible,
-      }"
-      class="animate__animated animate__slideInRight animate__ tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-screen tw-w-screen tw-flex-col tw-justify-stretch tw-bg-indigo-100 dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950"
+      class="animate__animated animate__slideInRight animate__ tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-indigo-100 dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950"
     >
-      <span
-        class="tw-mx-6 tw-mb-1 tw-mt-20 tw-block tw-text-sm tw-font-semibold md:tw-hidden"
-        for="mobile-nav"
-      >
-        Navigation
-      </span>
-      <hr class="tw-mx-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
+      <div>
+        <span
+          class="tw-mx-6 tw-mb-1 tw-mt-20 tw-block tw-text-sm tw-font-semibold md:tw-hidden"
+          for="mobile-nav"
+        >
+          Navigation
+        </span>
+        <hr class="tw-mx-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
+      </div>
       <TheNav
         id="mobile-nav"
         class="tw-mt-6"
@@ -71,23 +70,25 @@ function toggleNav () {
         <TheLocaleChanger @click="toggleNav()" />
       </div>
 
-      <div class="tw-mb-5 tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
-        <router-link
-          to="/impressum"
-          class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
-        >
-          {{ $t("footer.imprint") }}
-        </router-link>
-        <router-link
-          to="/datenschutz"
-          class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
-        >
-          {{ $t("footer.privacy") }}
-        </router-link>
-      </div>
+      <div>
+        <div class="tw-mb-5 tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
+          <router-link
+            to="/impressum"
+            class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
+          >
+            {{ $t("footer.imprint") }}
+          </router-link>
+          <router-link
+            to="/datenschutz"
+            class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400 "
+          >
+            {{ $t("footer.privacy") }}
+          </router-link>
+        </div>
 
-      <div class="tw-text-center tw-text-black dark:tw-text-indigo-100">
-        &copy; 2023 Laura A. Redeker
+        <p class="tw-mb-16 tw-text-center tw-text-black dark:tw-text-indigo-100">
+          &copy; 2023 Laura A. Redeker
+        </p>
       </div>
     </div>
   </div>
