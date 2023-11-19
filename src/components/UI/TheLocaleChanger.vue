@@ -1,127 +1,129 @@
-
 <script lang="ts" setup>
-import { computed, ComputedRef } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { ref } from 'vue'
-import { onMounted } from 'vue'
+  import { computed, ComputedRef } from 'vue';
+  import { useI18n } from 'vue-i18n';
+  import { ref } from 'vue';
+  import { onMounted } from 'vue';
 
-const { locale } = useI18n()
+  const { locale } = useI18n();
+  const showTitle = ref(false);
 
-type Lang = {
-  code: string
-  text: string
-}
+  type Lang = {
+    code: string;
+    text: string;
+  };
 
-const langs: Lang[] = [
-  { code: 'en', text: 'EN' },
-  { code: 'de', text: 'DE' }
-]
+  const langs: Lang[] = [
+    { code: 'en', text: 'EN' },
+    { code: 'de', text: 'DE' },
+  ];
 
-const defaultLocale = 'en'
+  const defaultLocale: string = langs[0].code;
 
-// filter to language that is not the current locale
-const filteredLangs: ComputedRef<Lang[]> = computed(() => langs.filter((lang) => lang.code !== locale.value))
-const showTitle = ref(false)
+  // filter to language that is not the current locale
+  const filteredLangs: ComputedRef<Lang[]> = computed(() =>
+    langs.filter(lang => lang.code !== locale.value)
+  );
 
-// check if a locale is supported
-function isLocaleSupported (locale: string) {
-  console.log(langs.some(e => e.code === locale))
-  return (langs.some(e => e.code === locale))
-}
-
-// read the preferred language sent by the browser
-function getUserLocale () {
-  const locale = window.navigator.language || defaultLocale
-
-  return {
-    locale: locale,
-    localeNoRegion: locale.split('-')[0],
-  }
-}
-
-// read the local storage and check whether the persisted locale is supported by the app
-function getPersistedLocale () {
-  const persistedLocale = localStorage.getItem('user-locale') || ''
-
-  if (isLocaleSupported(persistedLocale)) {
-    return persistedLocale
-  } else {
-    return null
-  }
-}
-
-/**
- * Guess the default locale for the app by checking the following sources:
- * 1. the persisted locale
- * 2. the user's preferred locale
- * 3. the default locale
- */
-function guessDefaultLocale () {
-  const userPersistedLocale = getPersistedLocale()
-  if(userPersistedLocale) {
-    return userPersistedLocale
-  }
-  const userPreferredLocale = getUserLocale()
-  if (isLocaleSupported(userPreferredLocale.locale)) {
-    return userPreferredLocale.locale
-  }
-  if (isLocaleSupported(userPreferredLocale.localeNoRegion)) {
-    return userPreferredLocale.localeNoRegion
+  // check if a locale is supported
+  function isLocaleSupported(locale: string) {
+    return langs.some(e => e.code === locale);
   }
 
-  return defaultLocale
-}
+  // read the preferred language sent by the browser
+  function getUserLocale() {
+    const locale = window.navigator.language || defaultLocale;
 
-// set the locale to the guessed locale
-onMounted(() => {
-  locale.value = guessDefaultLocale()
-  document.documentElement.setAttribute('lang', locale.value)
-  localStorage.setItem('user-locale', locale.value)
-})
+    return {
+      locale: locale,
+      localeNoRegion: locale.split('-')[0],
+    };
+  }
 
-// update locale and html lang attribute
-function changeLocale (lang: Lang): void {
-  if (typeof lang.code === 'string') {
-    locale.value = lang.code
-    document.documentElement.setAttribute('lang', lang.code)
+  // read the local storage and check whether the persisted locale is supported by the app
+  function getPersistedLocale() {
+    const persistedLocale = localStorage.getItem('user-locale') || '';
+
+    if (isLocaleSupported(persistedLocale)) {
+      return persistedLocale;
+    } else {
+      return null;
+    }
+  }
+
+  /**
+   * Guess the default locale for the app by checking the following sources:
+   * 1. the persisted locale
+   * 2. the user's preferred locale
+   * 3. the default locale
+   */
+  function guessDefaultLocale() {
+    const userPersistedLocale = getPersistedLocale();
+    if (userPersistedLocale) {
+      return userPersistedLocale;
+    }
+    const userPreferredLocale = getUserLocale();
+    if (isLocaleSupported(userPreferredLocale.locale)) {
+      return userPreferredLocale.locale;
+    }
+    if (isLocaleSupported(userPreferredLocale.localeNoRegion)) {
+      return userPreferredLocale.localeNoRegion;
+    }
+
+    return defaultLocale;
+  }
+
+  // update locale and html lang attribute
+  function changeLocale(lang: Lang): void {
+    if (typeof lang.code === 'string') {
+      locale.value = lang.code;
+      setLocale(lang.code);
+    }
+  }
+
+  /**
+   * Persist the chosen locale by saving it into the local storage
+   * and update the html lang attribute
+   */
+  function setLocale(locale: string): void {
+    document.documentElement.setAttribute('lang', locale);
     // persist the chosen locale by saving it into the local storage
-    localStorage.setItem('user-locale', lang.code)
+    localStorage.setItem('user-locale', locale);
   }
-}
+
+  // set the locale to the guessed locale
+  onMounted(() => {
+    locale.value = guessDefaultLocale();
+    setLocale(locale.value);
+  });
 </script>
 
 <template>
-  <div
-    @mouseover="showTitle = true"
-    @mouseout="showTitle = false"
-  >
-    <label
-      class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-hidden"
-      for="lang-button"
-    >
-      {{ $t("nav.switch-language") }}
-    </label>
+  <div>
+    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-hidden">
+      {{ $t('nav.switch-language') }}
+    </span>
     <button
       v-for="(lang, i) in filteredLangs"
-      id="lang-button"
       :key="`Lang${i}`"
       :class="{
-        'tw-justify-center md:tw-w-56 md:tw-justify-end' : showTitle,
-        'tw-justify-center md:tw-w-12' : !showTitle,
+        'tw-justify-center md:tw-w-56 md:tw-justify-end': showTitle,
+        'tw-justify-center md:tw-w-12': !showTitle,
       }"
       :aria-label="`Change language to ${lang.text}`"
       class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-100 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-600 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-700 dark:tw-text-amber-100 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-4 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
       @click="changeLocale(lang)"
-    >
-      <label
+      @mouseover="showTitle = true"
+      @focusin="showTitle = true"
+      @mouseout="showTitle = false"
+      @focusout="showTitle = false">
+      <span
         v-show="showTitle"
         class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 md:tw-block"
-        for="lang-button"
-      >
+        for="lang-button">
         <span class="tw-inline-block tw-h-full tw-align-middle tw-font-semibold">
-          {{ $t("nav.switch-language") }}
+          {{ $t('nav.switch-language') }}
         </span>
-      </label>
+      </span>
       <span class="tw-font-semibold">
         {{ lang.text }}
       </span>

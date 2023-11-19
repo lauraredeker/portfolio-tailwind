@@ -9,7 +9,7 @@ module.exports = {
 		'plugin:vue/essential',
 		'plugin:vuejs-accessibility/recommended',
 		'@vue/eslint-config-typescript/recommended',
-		'prettier',
+		'prettier', // LAST in the extensions list so it overrides other eslint rules!
 	],
 	parserOptions: {
 		parser: '@typescript-eslint/parser',
@@ -38,7 +38,7 @@ module.exports = {
 		],
 		'vue/html-indent': [
 			'warn',
-			4,
+			2,
 			{
 				attribute: 1,
 				baseIndent: 1,
@@ -51,7 +51,7 @@ module.exports = {
 			'warn',
 			2,
 			{
-				baseIndent: 0,
+				baseIndent: 1,
 				switchCase: 0,
 				ignores: [],
 			},

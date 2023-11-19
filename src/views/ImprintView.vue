@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import TheHeader from '../components/TheHeader.vue'
-import TheFooter from '../components/TheFooter.vue'
-import TheImprint from '../components/TheImprint.vue'
+  import TheHeader from '../components/TheHeader.vue';
+  import TheFooter from '../components/TheFooter.vue';
+  import TheImprint from '../components/TheImprint.vue';
 </script>
 
 <template>

@@ -1,10 +1,8 @@
-
 <script lang="ts" setup>
-import TheHeader from '../components/TheHeader.vue'
-import TheNotFound from '../components/TheNotFound.vue'
-import TheFooter from '../components/TheFooter.vue'
+  import TheHeader from '../components/TheHeader.vue';
+  import TheNotFound from '../components/TheNotFound.vue';
+  import TheFooter from '../components/TheFooter.vue';
 </script>
-
 
 <template>
   <div>
