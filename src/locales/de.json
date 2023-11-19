@@ -1,8 +1,9 @@
 {
     "general": {
-        "location": "München",
+        "location": "München, Deutschland",
         "jobtitle": "Frontend Designer & Developer",
         "and": "und",
+        "today": "heute",
         "contact-text": "Ich bin aktuell für neue Projekte verfügbar. Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
         "contact-button": "Schreib mir"
     },

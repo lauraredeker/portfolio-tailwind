@@ -8,7 +8,7 @@
 
     <section>
       <p class="tw-mb-2 tw-mt-10 tw-block tw-font-semibold tw-text-indigo-400">
-        10/2023 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span>
+        10/2023 - {{ $t("general.today") }}<span class="tw-mx-2 md:tw-mx-4">&middot;</span>
         {{ $t("general.location") }}
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
@@ -27,7 +27,7 @@
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        04/2019 - today <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Pharma4u GmbH
+        04/2019 - {{ $t("general.today") }}<span class="tw-mx-2 md:tw-mx-4">&middot;</span> Pharma4u GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
         {{ $t("vita.pharma4u_title") }}
@@ -81,11 +81,10 @@
         2010 - 2013  <span class="tw-mx-2 md:tw-mx-4">&middot;</span> eventa AG
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
-        Media Designer Apprenticeship
+        {{ $t("vita.eventa_title") }}
       </h4>
       <p>
-        Frontend Development, UX/UI, Illustration, Typography, Editorial Work, Image Retouching,
-        Texting, (Product) Photography, Logo Design, Corporate Design, Print Design, Web Design
+        {{ $t("vita.eventa_text") }}
       </p>
     </section>
   </base-container>
