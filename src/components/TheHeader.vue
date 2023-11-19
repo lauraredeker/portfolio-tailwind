@@ -5,6 +5,7 @@
   import TheDarkBtn from './UI/TheDarkBtn.vue'
   import { RouterLink } from 'vue-router'
   import useWindowResize from '../composables/useWindowResize.js'
+  import { scrollToTop } from '../utils/helpers'
 
   const { isMobileViewport, isMobile } = useWindowResize()
   import { useScrolling } from '../composables/useScrolling'
@@ -26,7 +27,8 @@
     <div class="tw-flex tw-w-full tw-justify-between tw-px-3 tw-py-2 sm:tw-space-x-2">
       <RouterLink
         class="tw-select-none tw-rounded-lg tw-px-2 tw-py-2 tw-text-l tw-font-semibold hover:tw-bg-gray-100 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-white dark:hover:tw-bg-black dark:hover:tw-text-purple-200 dark:focus-visible:tw-ring-gray-700 md:tw-py-1 md:tw-text-xl lg:tw-text-2xl"
-        to="/#hi">
+        to="/"
+        @click="isSubpage ? null : scrollToTop()">
         laura a. redeker
       </RouterLink>
       <TheNav class="tw-hidden md:tw-block" />

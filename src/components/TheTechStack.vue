@@ -8,7 +8,7 @@
 <template>
   <div
     class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-indigo-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 2xl:tw-pb-52 2xl:tw-pt-48">
-    <div class="tw-container tw-text-center md:tw-text-left">
+    <div class="tw-container tw-text-center lg:tw-text-left">
       <div
         v-element-visibility="onSectionVisibility"
         :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
@@ -25,7 +25,7 @@
       <div class="tw-mx-auto tw-gap-8 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
         <div
           :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
-          class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap tw-text-center md:tw-text-left"
+          class="tw-col-span-3 tw-mt-10 tw-whitespace-nowrap tw-text-center lg:tw-text-left"
           aria-hidden="true">
           <span
             class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-10 tw-w-10 tw-text-indigo-700 dark:tw-text-amber-200" />
@@ -49,7 +49,7 @@
 
         <div
           :class="{ 'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible }"
-          class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap tw-text-center md:tw-text-left"
+          class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap tw-text-center lg:tw-text-left"
           aria-hidden="true">
           <span
             class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-10 tw-w-10 tw-text-indigo-700 dark:tw-text-amber-200" />
@@ -72,7 +72,7 @@
 
         <div
           :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
-          class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap tw-text-center md:tw-text-left"
+          class="tw-col-span-3 tw-mt-6 tw-whitespace-nowrap tw-text-center lg:tw-text-left"
           aria-hidden="true">
           <span
             class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-10 tw-w-10 tw-text-indigo-700 dark:tw-text-amber-200" />

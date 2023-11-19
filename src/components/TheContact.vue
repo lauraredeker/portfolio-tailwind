@@ -99,7 +99,7 @@
             <!-- desktop tooltip -->
             <Transition name="fade">
               <div
-                v-if="showTooltip && !isMobileViewport"
+                v-if="showTooltip && !(isMobileViewport || isMobile)"
                 role="tooltip"
                 class="tw-absolute -tw-top-10 tw-left-14 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white">
                 <span

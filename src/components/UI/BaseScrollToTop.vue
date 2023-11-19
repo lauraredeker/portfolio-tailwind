@@ -1,13 +1,7 @@
 <script setup lang="ts">
   import { useScrolling } from '../../composables/useScrolling'
+  import { scrollToTop } from '../../utils/helpers'
   const { isScrolling } = useScrolling(50, false)
-
-  function scrollToTop(): void {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
 </script>
 
 <template>

@@ -17,15 +17,13 @@
 		"javascriptvue",
 		"typescript",
 		"typescriptvue",
-		"javascriptreact",
 		"html",
 		"json",
 		"jsonc"
 	],
 	"editor.codeActionsOnSave": {
-		"source.fixAll": false
+		"source.fixAll": true
 	},
-	"eslint.packageManager": "pnpm",
 	// For Prettier
 	"editor.formatOnSave": true,
 	"prettier.requireConfig": true

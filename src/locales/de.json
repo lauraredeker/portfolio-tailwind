@@ -1,81 +1,81 @@
 {
-    "general": {
-        "location": "München, Deutschland",
-        "jobtitle": "Frontend Designer & Developer",
-        "and": "und",
-        "today": "heute",
-        "contact-text": "Ich bin aktuell für neue Projekte verfügbar. Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-        "contact-button": "Schreib mir"
-    },
-    "nav": {
-        "menu-open": "Menü öffnen",
-        "menu-close": "Menü schließen",
-        "theme-light": "Helles Theme",
-        "theme-dark": "Dunkles Theme",
-        "switch-language": "Sprache wechseln",
-        "about": "über mich",
-        "about-long": "mehr über mich",
-        "skills": "expertise",
-        "skills-long": "meine skills",
-        "contact":  "kontakt"
-    },
-    "footer": {
-        "info1": "Diese Seite wurde mit",
-        "info2": "erstellt",
-        "github": "Hier auf",
-        "imprint": "Impressum",
-        "privacy": "Datenschutz"
-    },
+	"general": {
+		"location": "München",
+		"jobtitle": "Frontend Designer & Developer",
+		"and": "und",
+		"today": "heute",
+		"contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"contact-button": "Schreib mir gerne"
+	},
+	"nav": {
+		"menu-open": "Menü öffnen",
+		"menu-close": "Menü schließen",
+		"theme-light": "Helles Theme",
+		"theme-dark": "Dunkles Theme",
+		"switch-language": "Sprache wechseln",
+		"about": "über mich",
+		"about-long": "mehr über mich",
+		"skills": "expertise",
+		"skills-long": "meine skills",
+		"contact": "kontakt"
+	},
+	"footer": {
+		"info1": "Diese Seite wurde mit",
+		"info2": "erstellt",
+		"github": "Hier auf",
+		"imprint": "Impressum",
+		"privacy": "Datenschutz"
+	},
 	"start": {
 		"hello1": "Hallo",
 		"hello2": "Hallo Hallo",
-        "intro1": "Als",
-        "intro2": "Designerin",
-        "intro3": "& Entwicklerin",
-        "intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
+		"intro1": "Als",
+		"intro2": "Designerin",
+		"intro3": "& Entwicklerin",
+		"intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
 	},
-    "about": {
-        "quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
-        "frontend": "frontend design",
-        "author": "Autor von",
-        "pronouns": "sie/ihr",
-        "tldr": "TL;DR: Ich bin eine Designerin, die irgendwann die Freude am Programmieren entdeckt hat und einen Moment später schon Vollzeit in der Entwicklerabteilung saß. 👻",
-        "text1": "Heute, im Jahr 2023 (und einige Identitätskrisen später), pendle ich immer noch zwischen Design und Entwicklung: Ich bin keine klassische Grafikdesignerin, aber ich kenne mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Ich bin keine Full-Stack-Entwicklerin, schreibe aber gerne sauberen und modularen Frontend-Code und entwickle intuitive Benutzeroberflächen, die performant, responsive und möglichst barrierefrei sind.",
-        "text2": "Man könnte also sagen, dass ich ein Designer-Developer-Hybrid bin, eine Designerin, die programmiert, eine Frontend-Entwicklerin, die designt, ein kreativer UX-Entwickler - oder wie auch immer man es nennen möchte :)",
-        "vita": "Mein Résumé"
-    },
-    "skills": {
-        "design-text1": "Mit einem scharfen Auge für Detail und einem Fokus auf Benutzererfahrung gestalte ich",
-        "design-text2": "Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden.",
-        "design-text3": "Dabei designe ich gerne direkt im Code: Durch die Entwicklung von Living Styleguides ist es für Teams oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch nach wie vor gerne Tools wie Sketch oder Figma.",
-        "code-text1": "Designs zum Leben zu erwecken:",
-        "code-text2": "Als Frontend-Architektin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
-        "code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frontend-Frameworks und Bibliotheken sammeln und meine technischen Kenntnisse vertiefen können. Meine aktuellen Favoriten sind Vue.js und TailwindCSS – für jedes Projekt suche ich mir aber die passenden Tools aus.",
-        "ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und ansprechender zu machen.",
-        "ally-text2": "Obwohl es noch viel zu lernen gibt (und immer geben wird), tue ich mein Bestes, um barrierefreie Seiten zu entwickeln, die sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
-        "ally-text3": "Mit Hilfe von Testautomatisierung stelle ich außerdem sicher, dass das Frontend zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
-    },
-    "contact": {
-        "headline": "Kontakt",
-        "text": "Ich bin aktuell für neue Projekte verfügbar. Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-        "copy": "E-Mail kopieren",
-        "copied": "E-Mail kopiert!",
-        "socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
-    },
-    "404": {
-        "headline": "404 :(",
-        "text": "Diese Seite existiert nicht. Überprüfe die URL oder gehe zurück zur",
-        "button": "Startseite"
-    },
-    "vita": {
-        "pharma4u_title": "Frontend Developer & UX Designer",
-        "pharma4u_text": "Als Frontend Designer bei Pharma4u bin ich verantwortlich für das UX/UI Design, die Entwicklung und das Testen neuer Frontend-Module, die Pflege der hauseigenen Komponenten-Library und die Integration neuer Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Desweiteren führe ich Refactorings durch um die Codequalität zu verbessern und die Anwendung barrierefreier zu gestalten.",
-        "interone_title": "Junior Web Developer",
-        "interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
-        "kumu_title": "B.A. Kunst und Multimedia",
-        "kumu_subtitle": "Nebenfach: Medieninformatik",
-        "kumu_text": "Grafikdesign, Webdesign, Multimediadesign, Illustration, Animation, Motion Design, UX-Design, Kunst-/Mediengeschichte, Didaktik von Kunst und Medien, Fotografie, Kulturmanagement, Programmierung und Softwareentwicklung, Digitale Medien, Systeme und Anwendungen, Medientechnologie, Multimedia-Programmierung, Multimedia im Web, Mensch-Computer-Interaktion, Webentwicklung",
-        "eventa_title": "Ausbildung zur Mediengestalterin",
-        "eventa_text": "Frontend Entwicklung, UX/UI, Illustration, Typographie, Editorial, Bildbearbeitung, Retouching, Texting, (Produkt-) Fotographie, Logo Design, Corporate Design, Print Design, Webdesign"
-    }
+	"about": {
+		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
+		"frontend": "frontend design",
+		"author": "Autor von",
+		"pronouns": "sie/ihr",
+		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der Entwicklerabteilung. 👻",
+		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin laut Definition nach Brad Frost. ⚡️",
+		"text2": "Zusammengefasst: Ich bin zwar keine traditionelle Grafikdesignerin, kenne mich aber bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Ich bin auch keine Full-Stack-Entwicklerin, aber ich schreibe gerne sauberen und modularen Frontend-Code und entwickle intuitive Benutzeroberflächen, die performant, responsive und möglichst barrierefrei sind.",
+		"vita": "Was bisher geschehen ist"
+	},
+	"skills": {
+		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer die Nutzererfahrung im Fokus und lebe meine Liebe zum Detail aus.",
+		"design-text2": "Ästhetik und Funktionalität sollten sich nicht gegenseitig ausschließen, sondern ergänzen.",
+		"design-text3": "Dabei designe ich gerne direkt im Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes und Mockups verwende ich dennoch nach wie vor gerne Tools wie Sketch oder Figma.",
+		"code-text1": "Code ist die Erweiterung meiner gestalterischen Ausdrucksform:",
+		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
+		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln und meine Tech Stack ausbauen können (siehe unten). Meine aktuellen Favoriten sind Vue.js und TailwindCSS – für jedes Projekt suche ich mir aber die passenden Tools aus.",
+		"ally-text1": "Mein Ziel ist es, das Web ein bisschen inklusiver und hübscher zu gestalten.",
+		"ally-text2": "Obwohl es noch viel zu lernen gibt (und immer geben wird), tue ich mein Bestes, um barrierefreie Seiten zu entwickeln, die sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
+		"ally-text3": "Mit Hilfe von E2E-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
+	},
+	"contact": {
+		"headline": "Kontakt",
+		"text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"copy": "E-Mail kopieren",
+		"copied": "E-Mail kopiert!",
+		"socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
+	},
+	"404": {
+		"headline": "404 :(",
+		"text": "Diese Seite existiert nicht. Überprüfe die URL oder gehe zurück zur",
+		"button": "Startseite"
+	},
+	"vita": {
+		"pharma4u_title": "Frontend Developer & UX Designer",
+		"pharma4u_text": "Als Frontend Designer bei Pharma4u bin ich verantwortlich für das UX/UI Design, die Entwicklung und das Testen neuer Frontend-Module, die Pflege der hauseigenen Komponenten-Library und die Integration neuer Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Desweiteren führe ich Refactorings durch um die Codequalität zu verbessern und die Anwendung barrierefreier zu gestalten.",
+		"interone_title": "Junior Web Developer",
+		"interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
+		"kumu_title": "B.A. Kunst und Multimedia",
+		"kumu_subtitle": "Nebenfach: Medieninformatik",
+		"kumu_text": "Grafikdesign, Webdesign, Multimediadesign, Illustration, Animation, Motion Design, UX-Design, Kunst-/Mediengeschichte, Didaktik von Kunst und Medien, Fotografie, Kulturmanagement, Programmierung und Softwareentwicklung, Digitale Medien, Systeme und Anwendungen, Medientechnologie, Multimedia-Programmierung, Multimedia im Web, Mensch-Computer-Interaktion, Webentwicklung",
+		"eventa_title": "Ausbildung zur Mediengestalterin",
+		"eventa_text": "Frontend Entwicklung, UX/UI, Illustration, Typographie, Editorial, Bildbearbeitung, Retouching, Texting, (Produkt-) Fotographie, Logo Design, Corporate Design, Print Design, Webdesign"
+	}
 }
