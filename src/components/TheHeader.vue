@@ -23,7 +23,7 @@ const { isScrolling } = useScrolling(800, true)
 <template>
   <header
     role="banner"
-    class="tw-fixed tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent md:tw-py-0"
+    class="tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent md:tw-fixed md:tw-py-0"
   >
     <div class="tw-flex tw-w-full tw-justify-between tw-px-3 tw-py-2 sm:tw-space-x-2">
       <RouterLink

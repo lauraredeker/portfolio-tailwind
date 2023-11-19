@@ -61,7 +61,7 @@ function toggleNav () {
       <TheNav
         id="mobile-nav"
         class="tw-mt-6"
-        @click="toggleNav()"
+        @nav-click="toggleNav()"
       />
       <hr class="tw-mx-6 tw-mt-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
 
