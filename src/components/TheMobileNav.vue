@@ -3,13 +3,24 @@
   import TheDarkBtn from './UI/TheDarkBtn.vue'
   import TheNav from './TheNav.vue'
   import { ref } from 'vue'
+  import { useSwipe } from '@vueuse/core'
 
   const isNavVisible = ref(false)
+  const refNav = ref(null)
 
   function toggleNav() {
     isNavVisible.value = !isNavVisible.value
     document.body.classList.toggle('tw-overflow-hidden', isNavVisible.value)
   }
+
+  const { direction } = useSwipe(refNav, {
+    onSwipe() {
+      if (direction.value === 'right') {
+        isNavVisible.value = false
+        document.body.classList.remove('tw-overflow-hidden')
+      }
+    },
+  })
 </script>
 <template>
   <div>
@@ -39,6 +50,7 @@
 
     <div
       v-show="isNavVisible"
+      ref="refNav"
       role="dialog"
       aria-modal="true"
       class="animate__animated animate__slideInRight animate__ tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-indigo-100 dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950">
@@ -65,12 +77,14 @@
         <div class="tw-mb-5 tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link
             to="/impressum"
-            class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400">
+            class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
+            @click="toggleNav()">
             {{ $t('footer.imprint') }}
           </router-link>
           <router-link
             to="/datenschutz"
-            class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400">
+            class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
+            @click="toggleNav()">
             {{ $t('footer.privacy') }}
           </router-link>
         </div>
