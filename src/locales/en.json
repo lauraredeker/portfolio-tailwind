@@ -48,6 +48,7 @@
 		"vita": "my work experience"
 	},
 	"skills": {
+		"headline": "Skills & Tools",
 		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
 		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
 		"design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",

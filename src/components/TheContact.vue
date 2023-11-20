@@ -1,14 +1,12 @@
 <script lang="ts" setup>
   import TheFooter from '../components/TheFooter.vue'
   import { ref } from 'vue'
-  import useWindowResize from '../composables/useWindowResize.js'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
 
   const email = 'lauraredeker.ux@gmail.com'
   const isEmailCopied = ref<boolean>(false)
   const showTooltip = ref<boolean>(false)
-  const { isMobileViewport, isMobile } = useWindowResize()
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 
   /**
@@ -53,13 +51,17 @@
           {{ $t('contact.text') }}
         </p>
 
-        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle md:tw-flex-row">
+        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle">
           <base-btn
             :target="`mailto:${email}`"
             :text="email" />
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              class="tw-transitions tw-z-40 tw-mt-2 tw-flex tw-flex-row tw-items-center tw-justify-center tw-text-indigo-600 dark:tw-text-indigo-300 lg:tw-mt-0 lg:tw-text-purple-600 lg:dark:tw-text-purple-300 lg:dark:hover:tw-text-purple-200"
+              class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-white"
+              :class="{
+                'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
+                'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
+              }"
               @mouseover="showTooltip = true"
               @focusin="showTooltip = true"
               @mouseout="showTooltip = isEmailCopied"
@@ -67,53 +69,25 @@
               @click="copyEmail">
               <span
                 :class="{
-                  'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
-                  'tw-i-ph-check-fat-duotone tw-text-green-600 dark:tw-text-green-300': isEmailCopied,
-                  'tw-i-ph-copy-simple-duotone': !isEmailCopied,
+                  'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
+                  'tw-i-ph-copy-simple-bold': !isEmailCopied,
                 }"
                 aria-hidden="true"
-                class="tw-text-l md:tw-ml-4 md:tw-text-2xl" />
-              <span
-                v-if="!isMobile"
-                class="tw-sr-only">
-                {{ isEmailCopied ? $t('contact.copied') : $t('contact.copy') }}
-              </span>
+                class="tw-text-l" />
 
-              <!-- mobile text -->
-              <div
-                v-if="isMobile"
-                class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-2 tw-text-indigo-600 tw-underline tw-underline-offset-4 focus:tw-outline-none focus:tw-ring-4 dark:tw-text-indigo-300">
+              <div class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-1">
                 <span
-                  v-if="isEmailCopied"
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300">
+                  v-show="isEmailCopied"
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300 md:tw-text-base">
                   {{ $t('contact.copied') }}
                 </span>
                 <span
-                  v-else
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold">
+                  v-show="!isEmailCopied"
+                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-text-base">
                   {{ $t('contact.copy') }}
                 </span>
               </div>
             </button>
-
-            <!-- desktop tooltip -->
-            <Transition name="fade">
-              <div
-                v-if="showTooltip && !(isMobileViewport || isMobile)"
-                role="tooltip"
-                class="tw-absolute -tw-top-10 tw-left-14 tw-ml-2 tw-mt-12 tw-w-32 tw-rounded-lg tw-bg-black tw-px-4 tw-py-2 tw-text-white">
-                <span
-                  v-if="isEmailCopied"
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-300">
-                  {{ $t('contact.copied') }}
-                </span>
-                <span
-                  v-else
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold">
-                  {{ $t('contact.copy') }}
-                </span>
-              </div>
-            </Transition>
           </div>
         </div>
 

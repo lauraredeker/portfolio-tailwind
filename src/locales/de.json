@@ -48,10 +48,11 @@
 		"vita": "Was bisher geschehen ist"
 	},
 	"skills": {
-		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer die Nutzererfahrung im Fokus und lebe meine Liebe zum Detail aus.",
+		"headline": "Kenntnisse",
+		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer das Nutzererlebnis im Fokus und lebe meine Liebe zum Detail aus.",
 		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
 		"design-text3": "Designen durch Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes verwende ich dennoch gerne Sketch oder Figma.",
-		"code-text1": "Code erweitert meine gestalterischen Ausdrucksformen:",
+		"code-text1": "JavaScript, HTML und CSS sind meine täglichen Begleiter:",
 		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
 		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde für jedes Projekt die geeigneten Tools.",
 		"ally-text1": "Mein Ziel ist es, das Web inklusiver und hübscher zu gestalten.",
