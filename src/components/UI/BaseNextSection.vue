@@ -15,6 +15,7 @@
   <div :class="['tw-text-center', containerClass]">
     <RouterLink
       :to="target ? target : '/#'"
+      :aria-label="title"
       class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"

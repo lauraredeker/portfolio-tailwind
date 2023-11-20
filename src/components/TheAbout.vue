@@ -30,7 +30,7 @@
           {{ $t('about.author') }}
           <a
             href="http://atomicdesign.bradfrost.com"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
             target="_blank"
           >Atomic Design</a
           >
