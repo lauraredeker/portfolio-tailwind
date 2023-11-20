@@ -1,28 +1,12 @@
 <script lang="ts" setup>
   import TheFooter from '../components/TheFooter.vue'
-  import { ref } from 'vue'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
+  import { useClipboard } from '@vueuse/core'
 
   const email = 'lauraredeker.ux@gmail.com'
-  const isEmailCopied = ref<boolean>(false)
+  const { isSupported, copied, copy } = useClipboard({ legacy: true })
   const [isSectionVisible, onSectionVisibility] = useVisibility()
-
-  /**
-   * Copy email address to user's clipboard
-   */
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(email)
-      isEmailCopied.value = true
-
-      setTimeout(() => {
-        isEmailCopied.value = false
-      }, 4000)
-    } catch (err) {
-      console.error(`Failed to copy: ${err}`)
-    }
-  }
 </script>
 
 <template>
@@ -46,19 +30,20 @@
           <BaseBtn
             :target="`mailto:${email}`"
             :text="email" />
-          <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
+          <div
+            v-if="isSupported"
+            class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              v-touch:press="copyEmail()"
               class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-bg-indigo-900 dark:hover:tw-text-white"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
-                'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
+                'tw-text-green-500 dark:tw-text-green-300': copied,
               }"
-              @click="copyEmail()">
+              @click="copy(email)">
               <span
                 :class="{
-                  'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
-                  'tw-i-ph-copy-simple-bold': !isEmailCopied,
+                  'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': copied,
+                  'tw-i-ph-copy-simple-bold': !copied,
                 }"
                 aria-hidden="true"
                 class="tw-text-l" />
@@ -66,10 +51,10 @@
               <div class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-1">
                 <span
                   :class="{
-                    'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
+                    'tw-text-green-500 dark:tw-text-green-300': copied,
                   }"
                   class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-text-base">
-                  {{ isEmailCopied ? $t('contact.copied') : $t('contact.copy') }}
+                  {{ copied ? $t('contact.copied') : $t('contact.copy') }}
                 </span>
               </div>
             </button>
