@@ -6,7 +6,7 @@
 <template>
   <nav
     v-scroll-spy-active
-    v-scroll-spy-link
+    v-scroll-spy-link="{ selector: '.custom-nav-link' }"
     role="navigation"
     class="tw-flex tw-w-full tw-select-none tw-flex-col tw-px-2 tw-py-1 tw-text-center tw-text-xl tw-font-semibold sm:tw-w-auto md:tw-flex-row md:tw-items-start md:tw-space-x-4 md:tw-px-0 md:tw-align-top md:tw-text-xl lg:tw-text-2xl">
     <RouterLink
