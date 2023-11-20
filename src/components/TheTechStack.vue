@@ -19,7 +19,7 @@
 
         <h3
           class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
-          Tech Stack
+          {{ $t('skills.headline') }}
         </h3>
       </div>
       <div class="tw-mx-auto tw-gap-8 lg:tw-grid lg:tw-grid-cols-12 2xl:tw-w-4/5">
@@ -42,8 +42,9 @@
           :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-10">
           <p>
-            Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation
-            Framework, PatternLab.io, Handlebars.js, Atomic Design, Git, GitHub, AnimateCSS, Sketch
+            Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation,
+            PatternLab.io, Handlebars.js, Atomic Design, Responsive/Mobile Design, Git, GitHub, Sketch,
+            Zeplin, Cross-Browser Development, Testing
           </p>
         </div>
 
@@ -66,7 +67,8 @@
           :class="{ 'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-6">
           <p>
-            Vuex, Jest, Cypress.io, PostCSS, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Figma
+            Vuex, Jest, E2E Testing (Cypress.io), Web Accessibility, WCAG, PostCSS, Ajax, Adobe CC
+            (Photoshop, Lightroom, Illustrator, InDesign), Figma
           </p>
         </div>
 
@@ -88,7 +90,7 @@
         <div
           :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-6">
-          <p>Vuetify, TypeScript, SVG, Webpack, Grunt, Gulp</p>
+          <p>Vuetify, TypeScript, SVG, Webpack, Node.js, Grunt, Gulp</p>
         </div>
       </div>
     </div>
