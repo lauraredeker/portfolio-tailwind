@@ -1,6 +1,6 @@
 <template>
   <BaseContainer>
-    <BaseBreadcrumbs currentPage="résumé" />
+    <BaseBreadcrumbs currentPage="Résumé" />
 
     <h1
       class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-mb-20 md:tw-text-6xl xl:tw-text-7xl">
