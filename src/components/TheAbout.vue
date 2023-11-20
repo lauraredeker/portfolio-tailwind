@@ -30,7 +30,7 @@
           {{ $t('about.author') }}
           <a
             href="http://atomicdesign.bradfrost.com"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
             target="_blank"
           >Atomic Design</a
           >
@@ -80,7 +80,7 @@
         class="tw-flex tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16">
         <router-link
           to="/vita"
-          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-400 tw-bg-indigo-200 tw-px-10 tw-py-3 tw-align-middle tw-font-semibold tw-text-indigo-900 tw-transition-all hover:tw-border-indigo-800 hover:tw-bg-indigo-600 hover:tw-text-white dark:tw-border-indigo-400 dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-border-indigo-800 dark:hover:tw-bg-black dark:hover:tw-text-white md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:hover:tw-border-[90px] xl:hover:tw-border-amber-500 xl:hover:tw-bg-indigo-900 xl:hover:tw-text-white xl:dark:tw-border-indigo-900">
+          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-align-middle tw-font-semibold tw-text-white tw-transition-all hover:tw-bg-indigo-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-border-indigo-400 dark:tw-bg-black dark:tw-text-purple-200 dark:hover:tw-border-indigo-800 dark:hover:tw-bg-black dark:hover:tw-text-white md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:tw-text-indigo-800 xl:hover:tw-border-[90px] xl:hover:tw-border-amber-500 xl:hover:tw-bg-indigo-900 xl:hover:tw-text-white xl:dark:tw-border-indigo-900">
           <span
             class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-font-semibold xl:tw-block xl:tw-px-40 xl:tw-text-2xl xl:tw-font-bold xl:tw-uppercase xl:tw-leading-tight xl:tw-tracking-widest">
             <span>

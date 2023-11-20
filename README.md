@@ -15,6 +15,7 @@
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
 - [Vue-i18n](https://vue-i18n.intlify.dev/)
+- [Vue3TouchEvents](https://www.npmjs.com/package/vue3-touch-events)
 
 ## Recommended IDE Setup
 

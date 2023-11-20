@@ -43,18 +43,18 @@
         </p>
 
         <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle">
-          <base-btn
+          <BaseBtn
             :target="`mailto:${email}`"
             :text="email" />
           <div class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-white"
+              v-touch:press="copyEmail()"
+              class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-bg-indigo-900 dark:hover:tw-text-white"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
               }"
-              @focusin="copyEmail"
-              @click="copyEmail">
+              @click="copyEmail()">
               <span
                 :class="{
                   'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
@@ -65,14 +65,11 @@
 
               <div class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-1">
                 <span
-                  v-show="isEmailCopied"
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold tw-text-green-600 dark:tw-text-green-300 md:tw-text-base">
-                  {{ $t('contact.copied') }}
-                </span>
-                <span
-                  v-show="!isEmailCopied"
+                  :class="{
+                    'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
+                  }"
                   class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-text-base">
-                  {{ $t('contact.copy') }}
+                  {{ isEmailCopied ? $t('contact.copied') : $t('contact.copy') }}
                 </span>
               </div>
             </button>
@@ -84,25 +81,25 @@
         </p>
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold">
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="//www.linkedin.com/in/laura-a-redeker/">
             <span>linkedin</span>
             <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.malt.de/profile/lauraredeker">
             <span> malt </span>
             <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.junico.de/freelancer/laura-131">
             <span> junico </span>
             <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
           </a>
           <a
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="//www.freelancermap.de/profil/frontend-developer-with-ui-ux-skills">
             <span> freelancermap </span>
             <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
