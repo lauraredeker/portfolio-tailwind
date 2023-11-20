@@ -85,7 +85,7 @@
 		"headline": "Impressum",
 		"text1": "Dieses Impressum gilt für alle Angebote unter der Domain www.lauraredeker.com inklusive aller Subdomains (Unterseiten).",
 		"tgm": "Angaben gemäß § 5 TMG:",
-		"vat": "Kleinunternehmerreglung",
+		"vat": "Umsatzsteuer-ID",
 		"vat_text": "Als Kleinunternehmerin bin ich von der Umsatzsteuer nach § 19 UstG befreit.",
 		"validity": "Gültigkeit",
 		"validity_text": "Dieses Impressum gilt ab dem 6. September 2023.",
@@ -98,5 +98,28 @@
 		"copyright": "Urheberrecht",
 		"copyright_text1": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
 		"copyright_text2": "Soweit die Inhalte auf dieser Seite nicht von der Betreiberin erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden ich derartige Inhalte umgehend entfernen."
+	},
+	"privacy": {
+		"headline": "Datenschutz",
+		"info": "Grundlegendes",
+		"text1": "Diese Datenschutzerklärung soll die Nutzer dieser Website über die Art, den Umfang und den Zweck der Erhebung und Verwendung personenbezogener Daten durch die Websitebetreiberin Laura Redeker informieren.",
+		"text2": "Die Websitebetreiberin nimmt Ihren Datenschutz sehr ernst und behandelt Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Vorschriften.",
+		"text3": "Die Nutzung unserer Webseiten ist auch ohne Angabe personenbezogener Daten möglich. Soweit auf dieser Webseite personenbezogene Daten erhoben werden, erfolgt dies auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Ich möchte, dass Sie wissen, wann wir welche Daten erheben, wie wir sie verwenden und welche Rechte auf Unterstützung Sie haben. Alle Informationen dazu erhalten Sie nachfolgend.",
+		"right1": "Recht auf Auskunft, Berichtigung, Sperrung oder Löschung",
+		"right1_text1": "Sie haben das Recht, jederzeit Auskunft über die zu Ihrer Person gespeicherten Daten und deren Nutzung zu erhalten. Ebenfalls haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung Ihrer Daten. Für Auskünfte zu Ihren personenbezogenen Daten, wenden Sie sich bitte per E-Mail an",
+		"right2": "Recht auf Widerspruch",
+		"right2_text1": "Sie können der Verarbeitung und Nutzung Ihrer personenbezogenen Daten jederzeit und für die Zukunft widersprechen. Bitte senden Sie eine E-Mail an ",
+		"changes": "Änderung der Datenschutzerklärung",
+		"changes_text": "Im Zuge der Weiterentwicklung meiner Webseite und der Implementierung neuer Technologien können auch Änderungen dieser Datenschutzerklärung erforderlich werden. Daher empfehlen wir Ihnen, sich diese Datenschutzerklärung ab und zu erneut durchzulesen.",
+		"ssl": "SSL-Verschlüsselung",
+		"ssl_text": "Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
+		"links": "Links zu anderen Anbietern",
+		"links_text": "Meine Webseiten enthalten Links zu Webseiten anderer Anbieter. Ich habe keinen Einfluss darauf, dass diese Anbieter die gesetzlichen Datenschutzbestimmungen einhalten. Sie sollten daher stets die dort angebotenen Datenschutzerklärungen prüfen.",
+		"netlify": "Nutzung von Netlify",
+		"netlify_text1": "Meine Website wird von Netlify gehostet. Wenn Sie eine meiner Webseiten aufrufen, baut Ihr Browser daher eine Verbindung zu einem Server von Netlify, Inc., 610 22nd Street, Suite 315, San Francisco, CA 94107, USA auf. Dieser speichert dabei einige Informationen über die Verbindung in einer sogenannten Logdatei. Wir haben keinen Zugriff auf diese Logdateien. Mehr Informationen dazu, wie Netlify Ihre Daten verarbeitet, können Sie hier entnehmen: ",
+		"netlify_link1": "Datenschutzerklärung von Netlify",
+		"netlify_text2": "Netlify erhebt folgende personenbezogene Daten, die technisch erforderlich sind, um Ihnen die Anzeige der Webseite zu ermöglichen und die Stabilität und Sicherheit zu gewährleisten: IP-Adresse, Datum und Uhrzeit der Anfrage, Übertragene Datenmenge, Zugriffsstatus (HTTP-Status) und Websites, von denen das System des Nutzers auf unsere Internetseite gelangt (Referrer URL). Diese Daten werden von Netlify für 30 Tage gespeichert. Weitere Details dazu finden Sie in der ",
+		"netlify_link2": "Verpflichtung von Netlify zum Schutz Ihrer Daten",
+		"netlify_text3": "Die Speicherung dieser Daten in Logfiles dient der Sicherstellung der Funktionsfähigkeit und zur Optimierung der Webseite sowie zur Sicherstellung der Sicherheit der informationstechnischen Systeme. In den vorstehenden Zwecken liegt unser berechtigtes Interesse an der Datenverarbeitung. Rechtsgrundlage für die Erhebung und die vorübergehende Speicherung der vorgenannten Daten und der Logfiles ist Art. 6 Abs. 1 S. 1 lit. f) DSGVO."
 	}
 }

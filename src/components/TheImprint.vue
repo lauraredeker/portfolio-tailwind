@@ -1,6 +1,6 @@
 <template>
   <BaseContainer>
-    <BaseBreadcrumbs currentPage="impressum" />
+    <BaseBreadcrumbs :currentPage="$t('imprint.headline')" />
 
     <h1
       class="tw-mb-10 tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl xl:tw-text-7xl">
@@ -14,10 +14,8 @@
         {{ $t('imprint.tgm') }}
       </h4>
       <p>
-        Laura Redeker<br />
-        Firstalmstr. 19<br />
-        81539 München<br />
-        {{ $t('general.germany') }}<br /><br />
+        Laura A. Redeker, Frontend Design<br />
+        Firstalmstr. 19, 81539 München, {{ $t('general.germany') }}<br /><br />
       </p>
       <p>
         Email:
