@@ -11,7 +11,7 @@ import { createI18n } from 'vue-i18n'
 
 // dependencies
 import { registerScrollSpy } from 'vue3-scroll-spy'
-// import Vue3TouchEvents from 'vue3-touch-events'
+import Vue3TouchEvents from 'vue3-touch-events'
 
 // styles
 import 'animate.css'
@@ -64,7 +64,7 @@ if (import.meta.hot) {
 
 // custom global options
 registerScrollSpy(app)
-// app.use(Vue3TouchEvents)
+app.use(Vue3TouchEvents)
 app.use(router)
 app.use(i18n)
 

@@ -3,6 +3,7 @@ module.exports = {
 	env: {
 		node: true,
 	},
+	ignorePatterns: ['dist/**/*'],
 	extends: [
 		'plugin:vue/essential',
 		'plugin:vue/vue3-recommended',
@@ -19,7 +20,6 @@ module.exports = {
 	plugins: ['tailwindcss', '@typescript-eslint', 'vuejs-accessibility'],
 	settings: {
 		tailwindcss: {
-			// These are the default values but feel free to customize
 			callees: ['classnames', 'clsx', 'ctl'],
 			config: 'tailwind.config.js',
 			prependCustom: false,

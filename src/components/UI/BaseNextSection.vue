@@ -15,8 +15,7 @@
   <div :class="['tw-text-center', containerClass]">
     <RouterLink
       :to="target ? target : '/#'"
-      aria-label="go to next section"
-      class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 dark:focus-visible:tw-ring-gray-700"
+      class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
