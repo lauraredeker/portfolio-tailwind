@@ -6,28 +6,19 @@
 
   const email = 'lauraredeker.ux@gmail.com'
   const isEmailCopied = ref<boolean>(false)
-  const showTooltip = ref<boolean>(false)
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 
   /**
-   * Reset tooltip and copied status after a delay.
-   */
-  const resetStatus = () => {
-    setTimeout(() => {
-      showTooltip.value = false
-      isEmailCopied.value = false
-    }, 4000)
-  }
-
-  /**
-   * Copy email address to user's clipboard and update tooltip text.
+   * Copy email address to user's clipboard
    */
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email)
       isEmailCopied.value = true
-      showTooltip.value = true
-      resetStatus()
+
+      setTimeout(() => {
+        isEmailCopied.value = false
+      }, 4000)
     } catch (err) {
       console.error(`Failed to copy: ${err}`)
     }
@@ -62,10 +53,7 @@
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': isEmailCopied,
               }"
-              @mouseover="showTooltip = true"
-              @focusin="showTooltip = true"
-              @mouseout="showTooltip = isEmailCopied"
-              @focusout="showTooltip = isEmailCopied"
+              @focusin="copyEmail"
               @click="copyEmail">
               <span
                 :class="{

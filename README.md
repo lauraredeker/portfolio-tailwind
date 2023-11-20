@@ -6,8 +6,7 @@
 
 ## Features
 
-- [Vue 3](https://vuejs.org/)
-- Simple store with global state
+- [Vue 3](https://vuejs.org/), simple store with global state
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com)
 - [@egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons)
@@ -16,6 +15,14 @@
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
 - [Vue-i18n](https://vue-i18n.intlify.dev/)
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+
+### `<script setup>`
+
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
 ## Project setup and usage
 
