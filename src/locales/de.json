@@ -4,8 +4,11 @@
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "und",
 		"today": "heute",
+		"contact": "Kontakt",
 		"contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-		"contact-button": "Schreib mir gerne"
+		"contact-button": "Schreib mir",
+		"skills": "Kenntnisse",
+		"germany": "Deutschland"
 	},
 	"nav": {
 		"menu-open": "Menü öffnen",
@@ -47,9 +50,9 @@
 	"skills": {
 		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer die Nutzererfahrung im Fokus und lebe meine Liebe zum Detail aus.",
 		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
-		"design-text3": "Designen durch Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes verwende ich dennoch gerne Designprogramme wie Sketch oder Figma.",
-		"code-text1": "Code ist die Erweiterung meiner gestalterischen Ausdrucksform:",
-		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält. ✨",
+		"design-text3": "Designen durch Code: Durch die Entwicklung von Living Styleguides ist es oft einfacher, skalierbare und konsistente Designsysteme zu pflegen. Zur Ideenfindung und Skizzierung sowie zur Erstellung von Wireframes verwende ich dennoch gerne Sketch oder Figma.",
+		"code-text1": "Code erweitert meine gestalterischen Ausdrucksformen:",
+		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
 		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde für jedes Projekt die geeigneten Tools.",
 		"ally-text1": "Mein Ziel ist es, das Web inklusiver und hübscher zu gestalten.",
 		"ally-text2": "Obwohl es noch viel zu lernen gibt (und immer geben wird), tue ich mein Bestes, um barrierefreie Seiten zu entwickeln, die sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
@@ -69,13 +72,31 @@
 	},
 	"vita": {
 		"pharma4u_title": "Frontend Developer & UX Designer",
-		"pharma4u_text": "Als Frontend Designer bei Pharma4u bin ich verantwortlich für das UX/UI Design, die Entwicklung und das Testen neuer Frontend-Module, die Pflege der hauseigenen Komponenten-Library und die Integration neuer Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Desweiteren führe ich Refactorings durch um die Codequalität zu verbessern und die Anwendung barrierefreier zu gestalten.",
+		"pharma4u_text": "Bei Pharma4u bin ich verantwortlich für das UX/UI Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mock-Ups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern. Außerdem beteilige ich mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"interone_title": "Junior Web Developer",
 		"interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
-		"kumu_title": "B.A. Kunst und Multimedia",
-		"kumu_subtitle": "Nebenfach: Medieninformatik",
+		"kumu_title": "B.A. Kunst und Multimedia, Nebenfach Medieninformatik",
+		"kumu_exhibition": "Abschlussausstellung",
 		"kumu_text": "Grafikdesign, Webdesign, Multimediadesign, Illustration, Animation, Motion Design, UX-Design, Kunst-/Mediengeschichte, Didaktik von Kunst und Medien, Fotografie, Kulturmanagement, Programmierung und Softwareentwicklung, Digitale Medien, Systeme und Anwendungen, Medientechnologie, Multimedia-Programmierung, Multimedia im Web, Mensch-Computer-Interaktion, Webentwicklung",
 		"eventa_title": "Ausbildung zur Mediengestalterin",
 		"eventa_text": "Frontend Entwicklung, UX/UI, Illustration, Typographie, Editorial, Bildbearbeitung, Retouching, Texting, (Produkt-) Fotographie, Logo Design, Corporate Design, Print Design, Webdesign"
+	},
+	"imprint": {
+		"headline": "Impressum",
+		"text1": "Dieses Impressum gilt für alle Angebote unter der Domain www.lauraredeker.com inklusive aller Subdomains (Unterseiten).",
+		"tgm": "Angaben gemäß § 5 TMG:",
+		"vat": "Kleinunternehmerreglung",
+		"vat_text": "Als Kleinunternehmerin bin ich von der Umsatzsteuer nach § 19 UstG befreit.",
+		"validity": "Gültigkeit",
+		"validity_text": "Dieses Impressum gilt ab dem 6. September 2023.",
+		"liability": "Haftung für Inhalte",
+		"liability_text1": "Als Diensteanbieterin bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieterin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+		"liability_text2": "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.",
+		"liability_links": "Haftung für Links",
+		"liability_links_text1": "Mein Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+		"liability_links_text2": "Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.",
+		"copyright": "Urheberrecht",
+		"copyright_text1": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+		"copyright_text2": "Soweit die Inhalte auf dieser Seite nicht von der Betreiberin erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden ich derartige Inhalte umgehend entfernen."
 	}
 }

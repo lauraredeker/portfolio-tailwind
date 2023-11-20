@@ -1,81 +1,102 @@
 {
-    "general": {
-        "location": "Munich, Germany",
-        "jobtitle": "Frontend Designer & Developer",
-        "and": "and",
-        "today": "today",
-        "contact-text": "I'm currently taking on new clients, and would love to hear about your project!",
-        "contact-button": "Contact me"
-    },
-    "nav": {
-        "menu-open": "Open menu",
-        "menu-close": "Close menu",
-        "theme-light": "Light Theme",
-        "theme-dark": "Dark Theme",
-        "switch-language": "Switch language",
-        "about": "about",
-        "about-long": "more about me",
-        "skills": "expertise",
-        "skills-long": "my skills",
-        "contact":  "contact"
-    },
-    "footer": {
-        "info1": "Built with",
-        "info2": "",
-        "github": "Public on",
-        "imprint": "Imprint",
-        "privacy": "Data Privacy"
-    },
+	"general": {
+		"location": "Munich, Germany",
+		"jobtitle": "Frontend Designer & Developer",
+		"and": "and",
+		"today": "today",
+		"contact": "Contact",
+		"contact-text": "I'm currently taking on new clients, and would love to hear about your project!",
+		"contact-button": "Write me",
+		"skills": "Skills",
+		"germany": "Germany"
+	},
+	"nav": {
+		"menu-open": "Open menu",
+		"menu-close": "Close menu",
+		"theme-light": "Light Theme",
+		"theme-dark": "Dark Theme",
+		"switch-language": "Switch language",
+		"about": "about",
+		"about-long": "more about me",
+		"skills": "expertise",
+		"skills-long": "my skills",
+		"contact": "contact"
+	},
+	"footer": {
+		"info1": "Built with",
+		"info2": "",
+		"github": "Public on",
+		"imprint": "Imprint",
+		"privacy": "Data Privacy"
+	},
 	"start": {
 		"hello1": "Hello",
 		"hello2": "I am Laura",
-        "intro1": "As a",
-        "intro2": "designer-developer",
-        "intro3": "hybrid",
-        "intro4": "I understand both the visual and functional aspects of creating for the web."
+		"intro1": "As a",
+		"intro2": "designer-developer",
+		"intro3": "hybrid",
+		"intro4": "I understand both the visual and functional aspects of creating for the web."
 	},
-    "about": {
-        "quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
-        "frontend": "frontend design",
-        "author": "author of",
-        "pronouns": "she/her",
-        "tldr": "TL;DR: I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
-        "text1": "Fast-forward to 2023 (and a few identity crises later), I am still here, oscillating somewhere between the design and development worlds: I'm not a traditional graphic designer, but I have a strong knowledge of the design aspects of modern web development. I understand UX principles and I know how to apply them. I'm not a full-stack developer, but I am happy to write clean frontend code and create user interfaces that are responsive, performant, flexible, and compatible.",
-        "text2": "So I guess you could say I am a designer-developer hybrid, a designer who codes, a frontend developer who designs, a creative UX-developer – or whatever you want to call it. :)",
-        "vita": "my work experience"
-    },
-    "skills": {
-        "design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
-        "design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
-        "design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",
-        "code-text1": "Writing code is my favorite way to bring designs to life:",
-        "code-text2": "As an 'architect' of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
-        "code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",
-        "ally-text1": "My goal is to make the web a more accessible and engaging place.",
-        "ally-text2": "While there's still a lot to learn (and always will be), I am doing my best to build applications that are inclusive and smoothly adapt to different devices and screen sizes.",
-        "ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
-    },
-    "contact": {
-        "headline": "Say hello!",
-        "text": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
-        "copy": "Click to copy email",
-        "copied": "Copied to clipboard!",
-        "socials": "Also, feel free to connect with me on the following platforms:"
-    },
-    "404": {
-        "headline": "Not found",
-        "text": "The page you are looking for does not exist. Please check the URL or go back to the",
-        "button": "home page"
-    },
-    "vita": {
-        "pharma4u_title": "Frontend Developer & UX Designer",
-        "pharma4u_text": "As a Frontend Designer at Pharma4u I'm responsible for designing, developing and testing new extensible frontend components, maintaining the in-house pattern library, and integrating new modules into the extensive web application LabXpert.",
-        "interone_title": "Junior Web Developer",
-        "interone_text": "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, SCSS, JavaScript, and jQuery. Clients included BMW, SOS Kinderdorf, ProSiebenSat.1 Media and E.ON.",
-        "kumu_title": "B.A. Fine Arts and Multimedia",
-        "kumu_subtitle": "Minor Subject: Computer Sciences for Media",
-        "kumu_text": "Graphic Design, Web Design, Multimedia Design, Illustration, Animation, Motion Design, UX-Design, Art-/ Media History, Didactics of Art and Media, Photography, Culture Management, Programming and Software Development, Digital Media, Systems and Applications, Media Technology, Multimedia Programming, Multimedia in the Web, Human-Computer Interaction, Web Development",
-        "eventa_title": "Media Designer Apprenticeship",
-        "eventa_text": "Frontend Development, UX/UI, Illustration, Typography, Editorial Work, Image Retouching, Texting, (Product) Photography, Logo Design, Corporate Design, Print Design, Web Design"
-    }
+	"about": {
+		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
+		"frontend": "frontend design",
+		"author": "author of",
+		"pronouns": "she/her",
+		"tldr": "TL;DR: I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
+		"text1": "Fast-forward to 2023 (and a few identity crises later), I am still here, oscillating somewhere between the design and development worlds: I'm not a traditional graphic designer, but I have a strong knowledge of the design aspects of modern web development. I understand UX principles and I know how to apply them. I'm not a full-stack developer, but I am happy to write clean frontend code and create user interfaces that are responsive, performant, flexible, and compatible.",
+		"text2": "So I guess you could say I am a designer-developer hybrid, a designer who codes, a frontend developer who designs, a creative UX-developer – or whatever you want to call it. :)",
+		"vita": "my work experience"
+	},
+	"skills": {
+		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
+		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
+		"design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",
+		"code-text1": "Writing code is my favorite way to bring designs to life:",
+		"code-text2": "As an 'architect' of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
+		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",
+		"ally-text1": "My goal is to make the web a more accessible and engaging place.",
+		"ally-text2": "While there's still a lot to learn (and always will be), I am doing my best to build applications that are inclusive and smoothly adapt to different devices and screen sizes.",
+		"ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
+	},
+	"contact": {
+		"headline": "Say hello!",
+		"text": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
+		"copy": "Click to copy email",
+		"copied": "Copied to clipboard!",
+		"socials": "Also, feel free to connect with me on the following platforms:"
+	},
+	"404": {
+		"headline": "Not found",
+		"text": "The page you are looking for does not exist. Please check the URL or go back to the",
+		"button": "home page"
+	},
+	"vita": {
+		"pharma4u_title": "Frontend Developer & UX Designer",
+		"pharma4u_text": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
+		"interone_title": "Junior Web Developer",
+		"interone_text": "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, SCSS, JavaScript, and jQuery. Clients included BMW, SOS Kinderdorf, ProSiebenSat.1 Media and E.ON.",
+		"kumu_title": "B.A. Fine Arts and Multimedia, Minor Subject: Computer Sciences for Media",
+		"kumu_exhibition": "Final Exhibition",
+		"kumu_text": "Graphic Design, Web Design, Multimedia Design, Illustration, Animation, Motion Design, UX-Design, Art-/ Media History, Didactics of Art and Media, Photography, Culture Management, Programming and Software Development, Digital Media, Systems and Applications, Media Technology, Multimedia Programming, Multimedia in the Web, Human-Computer Interaction, Web Development",
+		"eventa_title": "Media Designer Apprenticeship",
+		"eventa_text": "Frontend Development, UX/UI, Illustration, Typography, Editorial Work, Image Retouching, Texting, (Product) Photography, Logo Design, Corporate Design, Print Design, Web Design"
+	},
+	"imprint": {
+		"headline": "Imprint",
+		"text1": "This imprint applies to all offers under the domain www.lauraredeker.com including all subdomains (subpages).",
+		"tgm": "Information pursuant to § 5 TMG (German Telemedia Act)",
+		"vat": "VAT",
+		"vat_text": "As a small business (Kleinunternehmer) I am exempt from VAT according to § 19 UstG.",
+		"validity": "Validity",
+		"validity_text": "This imprint is valid from September 6, 2023.",
+		"liability": "Liability for Contents",
+		"liability_text1": "As a service provider, I am responsible for my own content on these pages in accordance with § 7 para. 1 TMG (German Telemedia Act) and general laws. According to §§ 8 to 10 TMG, however, I am not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+		"liability_text2": "Obligations to remove or block the use of information in accordance with general legislation remain unaffected by this. However, liability in this respect is only possible from the time I become aware of a specific infringement. As soon as I become aware of such infringements, I will remove this content immediately.",
+		"liability_links": "Liability for Links",
+		"liability_links_text1": "My website contains links to external websites of third parties over whose content I have no influence. Therefore, I cannot accept any liability for this third-party content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
+		"liability_links_text2": "However, permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of an infringement. If I become aware of any legal infringements, I will remove such links immediately.",
+		"copyright": "Copyright",
+		"copyright_text1": "The content and works created by the site operator on these pages are subject to German copyright law. Duplication, processing, distribution and any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+		"copyright_text2": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform me accordingly. If we become aware of any infringements, we will remove such content immediately."
+	}
 }
