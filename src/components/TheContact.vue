@@ -37,11 +37,11 @@
 <template>
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
     <section
-      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center 2xl:tw-pb-40">
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center 3xl:tw-pb-40">
       <div
         v-element-visibility="onSectionVisibility"
         :class="{ 'animate__animated animate__fadeInUp': isSectionVisible }"
-        class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 2xl:tw-w-1/2">
+        class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 3xl:tw-w-1/2">
         <h3
           class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
           {{ $t('contact.headline') }}
