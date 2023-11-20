@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <base-container>
+  <BaseContainer>
     <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
       <section class="tw-pb-10 tw-pt-16 tw-text-center">
         <h1
@@ -21,5 +21,5 @@
         </p>
       </section>
     </section>
-  </base-container>
+  </BaseContainer>
 </template>
