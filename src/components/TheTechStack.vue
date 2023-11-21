@@ -41,9 +41,9 @@
           :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-10">
           <p>
-            Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, ES6, jQuery, Bootstrap, Foundation,
-            PatternLab.io, Handlebars.js, Atomic Design, Responsive/Mobile Design, Git, GitHub, Sketch,
-            Zeplin, Cross-Browser Development, Testing
+            Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation,
+            PatternLab.io, Handlebars.js, Atomic Design, Responsive Design, UI/UX Design, Git, GitHub,
+            Sketch, Zeplin, Cross-Browser Development
           </p>
         </div>
 
@@ -66,8 +66,8 @@
           :class="{ 'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-6">
           <p>
-            Vuex, Jest, E2E Testing (Cypress.io), Web Accessibility, WCAG, PostCSS, Ajax, Adobe CC
-            (Photoshop, Lightroom, Illustrator, InDesign), Figma
+            Figma, Web Accessibility, WCAG, Vuex, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
+            Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Chrome DevTools
           </p>
         </div>
 
@@ -89,7 +89,7 @@
         <div
           :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
           class="tw-col-span-9 lg:tw-mt-6">
-          <p>Vuetify, TypeScript, SVG, Webpack, Node.js, Grunt, Gulp</p>
+          <p>Vuetify, TypeScript, SVG, Node.js, NPM, Grunt, Gulp</p>
         </div>
       </div>
     </div>

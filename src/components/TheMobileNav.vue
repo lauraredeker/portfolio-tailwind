@@ -28,7 +28,7 @@
       id="theme-toggle"
       type="button"
       aria-label="settings"
-      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-bg-indigo-400 tw-px-2 tw-py-2 tw-align-middle tw-text-indigo-50 hover:tw-bg-indigo-200 hover:tw-text-indigo-600 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:hover:tw-text-amber-50 dark:focus:tw-bg-indigo-900 md:tw-hidden"
+      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-bg-purple-500 tw-px-2 tw-py-2 tw-align-middle tw-text-white tw-transition focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900"
       @click="toggleNav()">
       <span
         v-show="!isNavVisible"
@@ -53,7 +53,7 @@
       ref="refNav"
       role="dialog"
       aria-modal="true"
-      class="animate__animated animate__slideInRight animate__ tw-l-0 tw-fixed tw-top-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-indigo-100 dark:tw-bg-gradient-to-br dark:tw-from-indigo-900 dark:tw-to-indigo-950">
+      class="animate__animated animate__slideInRight tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-gradient-to-br tw-from-indigo-100 tw-to-indigo-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950">
       <div>
         <span
           class="tw-mx-6 tw-mb-1 tw-mt-20 tw-block tw-text-sm tw-font-semibold md:tw-hidden"

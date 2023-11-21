@@ -38,8 +38,8 @@
       </p>
       <p class="tw-mt-5">
         <strong>{{ $t('general.skills') }}:</strong>
-        Vue.js · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · CSS3/SCSS · HTML5 · Webpack ·
-        SCRUM · Git · Jira · Confluence · Bitbucket · Figma · Zeplin · Sketch
+        Vue.js · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · CSS3/SCSS · HTML5 · SCRUM · Git
+        · Jira · Confluence · Bitbucket · Figma · Zeplin · Sketch
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
