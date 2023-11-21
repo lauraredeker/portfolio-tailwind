@@ -10,11 +10,11 @@
 </script>
 
 <template>
-  <div
+  <main
     class="custom-bg-image tw-relative tw-w-full tw-overflow-x-clip tw-scroll-smooth tw-font-sans tw-text-base dark:tw-bg-gradient-to-br dark:tw-from-gray-800 dark:tw-to-indigo-950 dark:tw-text-indigo-100 md:tw-text-l 3xl:tw-text-xl">
     <RouterView />
     <ScrollTopBtn />
-  </div>
+  </main>
 </template>
 
 <style scoped>

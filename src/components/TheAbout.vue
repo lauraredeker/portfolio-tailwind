@@ -19,7 +19,7 @@
           'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
           'tw-will-change': isQuoteVisible,
         }"
-        class="tw-mb-4 tw-bg-indigo-200 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl">
+        class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl">
         "{{ $t('about.quote') }}
         <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
           {{ $t('about.frontend') }} </span

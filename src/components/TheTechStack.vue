@@ -7,7 +7,7 @@
 
 <template>
   <div
-    class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-indigo-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 2xl:tw-pb-52 2xl:tw-pt-48">
+    class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-slate-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 2xl:tw-pb-52 2xl:tw-pt-48">
     <div class="tw-container tw-text-center lg:tw-text-left">
       <div
         v-element-visibility="onSectionVisibility"
@@ -16,7 +16,6 @@
         <span
           aria-hidden="true"
           class="tw-i-ph-coffee-light tw-inline-block tw-h-16 tw-w-16 tw-text-purple-600 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28" />
-
         <h3
           class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
           {{ $t('skills.headline') }}

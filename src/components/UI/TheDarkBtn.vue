@@ -22,7 +22,7 @@
         'tw-justify-center md:tw-w-48 md:tw-justify-end md:tw-px-4': showTitle,
         'tw-justify-center md:tw-w-12': !showTitle,
       }"
-      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-100 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-600 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-700 dark:tw-text-amber-100 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-0 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
+      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-0 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
@@ -36,10 +36,10 @@
       </span>
       <span
         :class="store.isDarkMode ? 'tw-hidden' : 'tw-block'"
-        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 md:tw-h-5 md:tw-w-5" />
+        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 tw-shadow-sm md:tw-h-5 md:tw-w-5" />
       <span
         :class="store.isDarkMode ? 'tw-block' : 'tw-hidden'"
-        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 md:tw-h-5 md:tw-w-5" />
+        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 tw-shadow-sm md:tw-h-5 md:tw-w-5" />
     </button>
   </div>
 </template>

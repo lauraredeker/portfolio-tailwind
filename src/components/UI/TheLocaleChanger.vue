@@ -110,7 +110,7 @@
         'tw-justify-center md:tw-w-12': !showTitle,
       }"
       :aria-label="`Change language to ${lang.text}`"
-      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-100 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-600 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-700 dark:tw-text-amber-100 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-4 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
+      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-4 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
       @click="changeLocale(lang)"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
@@ -120,7 +120,7 @@
         v-show="showTitle"
         class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 md:tw-block"
         for="lang-button">
-        <span class="tw-inline-block tw-h-full tw-align-middle tw-font-semibold">
+        <span class="tw-inline-block tw-h-full tw-align-middle tw-font-semibold tw-shadow-sm">
           {{ $t('nav.switch-language') }}
         </span>
       </span>
