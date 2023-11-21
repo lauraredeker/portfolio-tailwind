@@ -17,10 +17,10 @@
         v-element-visibility="onSectionVisibility"
         :class="{ 'animate__animated animate__fadeInUp': isSectionVisible }"
         class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 3xl:tw-w-1/2">
-        <h3
-          class="tw-inline-block tw-text-5xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl 2xl:tw-text-7xl">
+        <h2
+          class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl">
           {{ $t('contact.headline') }}
-        </h3>
+        </h2>
 
         <p class="tw-mb-2 tw-mt-8 tw-hyphens-auto tw-text-justify md:tw-mt-10 md:tw-text-center">
           {{ $t('contact.text') }}
@@ -61,7 +61,7 @@
           </div>
         </div>
 
-        <p class="tw-mb-6 tw-mt-10 md:tw-mt-20">
+        <p class="tw-mb-6 tw-mt-10 md:tw-mt-14">
           {{ $t('contact.socials') }}
         </p>
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold">

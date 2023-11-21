@@ -4,11 +4,12 @@
   import TheNav from './TheNav.vue'
   import TheDarkBtn from './UI/TheDarkBtn.vue'
   import { RouterLink } from 'vue-router'
-  import useWindowResize from '../composables/useWindowResize.js'
+  import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
   import { scrollToTop } from '../utils/helpers'
-
-  const { isMobileViewport, isMobile } = useWindowResize()
   import { useScrolling } from '../composables/useScrolling'
+
+  const breakpoints = useBreakpoints(breakpointsTailwind)
+  const isSmallerThanMd = breakpoints.smaller('md') // only smaller than lg
 
   export interface Props {
     isSubpage?: boolean;
@@ -31,12 +32,12 @@
         @click="isSubpage ? null : scrollToTop()">
         laura a. redeker
       </RouterLink>
-      <TheNav class="tw-hidden md:tw-block" />
+      <TheNav v-if="!isSmallerThanMd" />
     </div>
 
     <Transition name="fade">
-      <aside
-        v-if="!isMobile || !isMobileViewport"
+      <div
+        v-if="!isSmallerThanMd"
         class="tw-fixed tw-right-4 tw-top-20 tw-hidden md:tw-block">
         <div
           v-show="isScrolling"
@@ -44,9 +45,9 @@
           <TheDarkBtn />
           <TheLocaleChanger class="tw-mt-3" />
         </div>
-      </aside>
+      </div>
     </Transition>
 
-    <TheMobileNav v-if="isMobile || isMobileViewport" />
+    <TheMobileNav v-if="isSmallerThanMd" />
   </header>
 </template>
