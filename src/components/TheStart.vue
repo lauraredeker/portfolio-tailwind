@@ -2,6 +2,7 @@
   import { RouterLink } from 'vue-router'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
+  import BgCircles from '@/components/UI/BgCircles.vue'
 
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
@@ -10,28 +11,7 @@
   <section
     v-element-visibility="onSectionVisibility"
     class="tw-container tw-relative tw-w-full xl:tw-px-0">
-    <div>
-      <!-- dark big bg circle -->
-      <div
-        aria-hidden="true"
-        :class="{
-          'custom-circle-animation-2': isSectionVisible,
-          'tw-will-change': !isSectionVisible,
-        }"
-        class="tw-absolute tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-top-10 2xl:tw-h-[70rem] 2xl:tw-w-[70rem]" />
-      <!-- small bg circle -->
-      <div
-        aria-hidden="true"
-        :class="{
-          'custom-circle-animation-3': isSectionVisible,
-          'tw-will-change': !isSectionVisible,
-        }"
-        class="tw-absolute -tw-left-[16%] tw-top-[53%] tw-z-0 tw-hidden tw-h-[14rem] tw-w-[14rem] tw-rounded-full tw-bg-amber-300 tw-opacity-70 tw-will-change-transform dark:tw-bg-indigo-900 dark:tw-opacity-40 dark:tw-mix-blend-lighten md:tw-block md:tw-h-[32rem] md:tw-w-[32rem] 2xl:-tw-left-[25%] 2xl:tw-top-[35%] 2xl:tw-h-[52rem] 2xl:tw-w-[52rem]" />
-      <!-- big border circle -->
-      <div
-        aria-hidden="true"
-        class="tw-z-1 tw-absolute -tw-left-[15%] tw-h-128 tw-w-128 tw-rounded-full tw-border-2 tw-border-amber-300 tw-bg-opacity-30 tw-transition-all dark:tw-border-indigo-800 md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] md:tw-border-4 lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:-tw-left-[5%] 2xl:tw-h-[80rem] 2xl:tw-w-[80rem] 3xl:-tw-top-28" />
-    </div>
+    <BgCircles />
 
     <section class="tw-flex tw-flex-col tw-align-middle md:tw-h-screen">
       <div class="tw-relative tw-z-20 tw-mx-auto -tw-mt-5 md:tw-mt-20 xl:tw-w-11/12">
@@ -111,30 +91,13 @@
         'animate__animated animate__fadeIn': isSectionVisible,
         'tw-will-change': !isSectionVisible,
       }"
-      container-class="tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
+      container-class="tw-relative tw-z-50 tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       :title="$t('nav.about-long')" />
   </section>
 </template>
 
 <style scoped>
-.custom-image-animation {
-	@screen sm {
-		@media (prefers-reduced-motion: no-preference) {
-			animation: customImageAnimation 50s linear infinite alternate-reverse;
-		}
-	}
-}
-
-@keyframes customImageAnimation {
-	0% {
-		transform: translate(0, 0);
-	}
-	100% {
-		transform: translate(5%, -3%);
-	}
-}
-
 .custom-circle-animation-1 {
 	@media (prefers-reduced-motion: no-preference) {
 		animation: customSpinAnimation 40s linear infinite alternate-reverse;
@@ -164,7 +127,7 @@
 @keyframes customAnimation {
 	0% {
 		transform: rotate(0);
-		transform-origin: 50% 55%;
+		transform-origin: 40% 55%;
 	}
 	100% {
 		transform: rotate(80deg);
