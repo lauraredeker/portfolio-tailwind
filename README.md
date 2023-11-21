@@ -1,8 +1,8 @@
-# [lauraredeker.com](https://lauraredeker.com/)
+# 🔮 [lauraredeker.com](https://lauraredeker.com/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4963c89b-99fa-4617-8c49-483c5a6714b4/deploy-status)](https://app.netlify.com/sites/laura-redeker-portfolio/deploys)
 
 > Hi, I'm Laura, Frontend Designer & Developer based in Munich, Germany. As a designer-developer hybrid 👾 I understand both the visual & functional aspects of creating for the web.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4963c89b-99fa-4617-8c49-483c5a6714b4/deploy-status)](https://app.netlify.com/sites/leafy-horse-3396ae/deploys)
 
 ## Features
 
