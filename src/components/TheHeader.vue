@@ -32,7 +32,7 @@
         @click="isSubpage ? null : scrollToTop()">
         laura a. redeker
       </RouterLink>
-      <TheNav class="tw-hidden md:tw-block" />
+      <TheNav v-if="!isSmallerThanMd" />
     </div>
 
     <Transition name="fade">

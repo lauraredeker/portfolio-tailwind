@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-amber-200 tw-pb-10 tw-pt-10 dark:tw-bg-indigo-900 xl:tw-pb-14 xl:tw-pt-16">
+    class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-amber-200 tw-py-20 dark:tw-bg-indigo-900 xl:tw-pb-14 xl:tw-pt-16">
     <div
       class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white lg:tw-px-32 xl:tw-text-base">
       <div
@@ -34,10 +34,10 @@
             >
           </span>
         </div>
-        <div class="tw-mt-10 tw-w-full tw-text-center lg:tw-my-0 lg:tw-w-4/12 lg:tw-text-right">
+        <div class="tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link
             to="/impressum"
-            class="hover:tw-bg-whitetw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-purple-50 dark:hover:tw-bg-black">
+            class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-purple-50 dark:hover:tw-bg-black">
             {{ $t('footer.imprint') }}
           </router-link>
           <router-link
