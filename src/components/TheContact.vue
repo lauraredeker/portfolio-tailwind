@@ -61,7 +61,7 @@
           </div>
         </div>
 
-        <p class="tw-mb-6 tw-mt-10 md:tw-mt-14">
+        <p class="tw-mb-1 tw-mt-10 md:tw-mt-14">
           {{ $t('contact.socials') }}
         </p>
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold">
