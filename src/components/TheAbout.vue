@@ -15,6 +15,7 @@
       v-element-visibility="onQuoteVisibility"
       class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6">
       <blockquote
+        lang="en"
         :class="{
           'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
           'tw-will-change': isQuoteVisible,
