@@ -1,8 +1,11 @@
 <script lang="ts" setup>
+// Components
   import TheLocaleChanger from './UI/TheLocaleChanger.vue'
   import TheMobileNav from './TheMobileNav.vue'
   import TheNav from './TheNav.vue'
   import TheDarkBtn from './UI/TheDarkBtn.vue'
+
+  // Utilities
   import { watchEffect } from '@vue/runtime-core'
   import { RouterLink } from 'vue-router'
   import { store } from '../store'
@@ -10,6 +13,7 @@
   import { useScrolling } from '../composables/useScrolling'
   import { debouncedWatch, useWindowSize, useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 
+  // Props
   export interface Props {
     isSubpage?: boolean;
   }
@@ -36,7 +40,6 @@
     },
     { debounce: 200 }
   )
-  console.log('isMobileNavVisible', store.isMobileNavVisible)
 
   watchEffect(() => {
     store.isMobileNavVisible

@@ -1,6 +1,9 @@
 <script lang="ts" setup>
+// Components
   import TheFooter from '../components/TheFooter.vue'
   import { vElementVisibility } from '@vueuse/components'
+
+  // Utilities
   import { useVisibility } from '../composables/useVisibility'
   import { useClipboard } from '@vueuse/core'
 
@@ -28,7 +31,7 @@
 
         <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle">
           <BaseBtn
-            :target="`mailto:${email}`"
+            :href="`mailto:${email}`"
             :text="email" />
           <div
             v-if="isSupported"

@@ -26,7 +26,6 @@
     localStorage.setItem('user-theme', theme)
   }
 
-  // set the theme
   onMounted(() => {
     setTheme(getPersistedTheme())
   })

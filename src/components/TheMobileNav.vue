@@ -1,7 +1,10 @@
 <script lang="ts" setup>
+// Components
   import TheLocaleChanger from './UI/TheLocaleChanger.vue'
   import TheDarkBtn from './UI/TheDarkBtn.vue'
   import TheNav from './TheNav.vue'
+
+  // Utilities
   import { ref } from 'vue'
   import { useSwipe } from '@vueuse/core'
   import { store } from '../store'

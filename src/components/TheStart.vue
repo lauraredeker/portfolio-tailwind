@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+// Components
   import { RouterLink } from 'vue-router'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'

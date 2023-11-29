@@ -1,13 +1,15 @@
 <script lang="ts" setup>
   import { useMouse, useWindowSize, watchThrottled, debouncedWatch } from '@vueuse/core'
-  import { defineProps, ref, onMounted } from 'vue'
+  import { defineProps, ref, onMounted, nextTick } from 'vue'
 
-  defineProps<{
+  const props = defineProps<{
     hasArrow?: boolean;
-    target?: string;
+    href?: string;
     text?: string;
+    to?: string;
   }>()
 
+  const element = props.href ? 'a' : 'router-link'
   const { x: mouseX, y: mouseY } = useMouse()
   const { width, height } = useWindowSize()
   const circle = ref(null as Element | null)
@@ -15,15 +17,17 @@
   const translateX = ref()
   const translateY = ref()
 
-  onMounted(() => {
+  onMounted(updateCircleLocation)
+
+  function updateCircleLocation() {
     circleLocation.value = circle?.value?.getBoundingClientRect()
-  })
+  }
 
   // we are watching for a change in the window height and width then running a debounce function when it does.
   debouncedWatch(
     [width, height],
     () => {
-      circleLocation.value = circle?.value?.getBoundingClientRect()
+      updateCircleLocation()
     },
     { debounce: 200 }
   )
@@ -43,10 +47,12 @@
 </script>
 
 <template>
-  <a
-    :href="target"
+  <component
+    :is="element"
+    :href="to ? null : href"
+    :to="to"
     :style="`--x: ${translateX}; --y: ${translateY})`"
-    class="custom-button tw-relative tw-flex tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4">
+    class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4">
     <span
       ref="circle"
       class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform">
@@ -58,13 +64,13 @@
       <span>{{ text }}</span>
       <span
         v-if="hasArrow"
-        class="tw-i-ph-arrow-right-bold tw-ml-1" />
+        class="tw-i-ph-arrow-right-bold tw-ml-3" />
       <slot />
     </span>
-  </a>
+  </component>
 </template>
 
-<style>
+<style scoped>
 .custom-button__back > span {
 	@apply tw-bg-indigo-950 tw-duration-200 tw-mix-blend-darken;
 	left: calc(var(--x, 0) * 1px);

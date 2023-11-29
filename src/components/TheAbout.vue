@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-  import { RouterLink } from 'vue-router'
+// Components
   import { vElementVisibility } from '@vueuse/components'
-  import { useVisibility } from '../composables/useVisibility'
   import BaseNextSection from './UI/BaseNextSection.vue'
   import BaseBtn from './UI/BaseBtn.vue'
+
+  // Composables
+  import { useVisibility } from '../composables/useVisibility'
 
   const [isQuoteVisible, onQuoteVisibility] = useVisibility()
   const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
@@ -76,12 +78,12 @@
         'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible,
         'tw-will-change': isLinkVisible,
       }"
-      class="tw-mx-auto tw-mb-20 md:tw-mb-32 md:tw-w-4/5 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto">
+      class="tw-container tw-mb-20 tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0">
       <div
         class="tw-hidden tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-flex xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16">
         <router-link
           to="/vita"
-          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-align-middle tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white dark:hover:tw-text-purple-100 md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:tw-text-indigo-800 xl:hover:tw-border-[90px] xl:hover:tw-border-amber-500 xl:hover:tw-bg-indigo-600 xl:hover:tw-text-white xl:dark:tw-border-indigo-900">
+          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-align-middle tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 dark:hover:tw-text-white md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:tw-text-indigo-800 xl:hover:tw-border-[90px] xl:hover:tw-border-amber-500 xl:hover:tw-bg-indigo-600 xl:hover:tw-text-white xl:dark:tw-border-indigo-900">
           <span
             class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-font-semibold xl:tw-block xl:tw-px-40 xl:tw-text-2xl xl:tw-font-bold xl:tw-uppercase xl:tw-leading-tight xl:tw-tracking-widest">
             <span>
@@ -95,14 +97,14 @@
         </router-link>
       </div>
 
-      <router-link to="/vita">
+      <div class="tw-inline-block xl:tw-hidden">
         <BaseBtn
-          class="tw-inline-block xl:tw-hidden"
           :has-arrow="true"
-          :text="$t('about.vita')">
-        </BaseBtn>
-      </router-link>
+          :text="$t('about.vita')"
+          to="/vita" />
+      </div>
     </div>
+
     <BaseNextSection
       container-class="tw-block md:tw-mt-40"
       target="#expertise"

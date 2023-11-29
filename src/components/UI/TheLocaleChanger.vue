@@ -1,8 +1,7 @@
 <script lang="ts" setup>
   import { computed, ComputedRef } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { ref } from 'vue'
-  import { onMounted } from 'vue'
+  import { ref, onMounted } from 'vue'
 
   const { locale } = useI18n()
   const showTitle = ref(false)
