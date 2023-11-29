@@ -3,16 +3,15 @@ import App from './App.vue'
 import router from './router'
 import { routes } from './router/routes'
 
-import BaseBtn from './components/UI/BaseBtn.vue'
-import BaseContainer from './components/UI/BaseContainer.vue'
-import BaseBreadcrumbs from './components/UI/BaseBreadcrumbs.vue'
-import BaseNextSection from './components/UI/BaseNextSection.vue'
+import BaseBtn from './components/common/BaseBtn.vue'
+import BaseContainer from './components/common/BaseContainer.vue'
+import BaseBreadcrumbs from './components/common/BaseBreadcrumbs.vue'
+import BaseNextSection from './components/common/BaseNextSection.vue'
 
 // dependencies
 import { createI18n } from 'vue-i18n'
 import { registerScrollSpy } from 'vue3-scroll-spy'
 import Vue3TouchEvents from 'vue3-touch-events'
-import VueKinesis from 'vue-kinesis'
 
 // styles
 import 'animate.css'
@@ -68,6 +67,5 @@ registerScrollSpy(app)
 app.use(Vue3TouchEvents)
 app.use(router)
 app.use(i18n)
-app.use(VueKinesis)
 
 app.mount('#app')

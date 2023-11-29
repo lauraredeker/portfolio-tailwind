@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-  import TheHeader from '../components/TheHeader.vue'
-  import TheNotFound from '../components/TheNotFound.vue'
-  import TheFooter from '../components/TheFooter.vue'
+  import TheHeader from '../components/layouts/TheHeader.vue'
+  import TheNotFound from '../pages/TheNotFound.vue'
+  import TheFooter from '../components/layouts/TheFooter.vue'
 </script>
 
 <template>

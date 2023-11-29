@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-  import TheHeader from '../components/TheHeader.vue'
-  import TheFooter from '../components/TheFooter.vue'
-  import TheVita from '../components/TheVita.vue'
+  import TheHeader from '../components/layouts/TheHeader.vue'
+  import TheFooter from '../components/layouts/TheFooter.vue'
+  import TheVita from '../pages/TheVita.vue'
 </script>
 
 <template>

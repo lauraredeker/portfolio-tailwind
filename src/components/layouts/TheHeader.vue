@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 // Components
-  import TheLocaleChanger from './UI/TheLocaleChanger.vue'
+  import TheDarkBtn from '../features/TheDarkBtn.vue'
+  import TheLocaleChanger from '../features/TheLocaleChanger.vue'
   import TheMobileNav from './TheMobileNav.vue'
   import TheNav from './TheNav.vue'
-  import TheDarkBtn from './UI/TheDarkBtn.vue'
 
   // Utilities
   import { watchEffect } from '@vue/runtime-core'
   import { RouterLink } from 'vue-router'
-  import { store } from '../store'
-  import { scrollToTop } from '../utils/helpers'
-  import { useScrolling } from '../composables/useScrolling'
+  import { store } from '../../store'
+  import { scrollToTop } from '../../utils/helpers'
+  import { useScrolling } from '../../composables/useScrolling'
   import { debouncedWatch, useWindowSize, useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 
   // Props

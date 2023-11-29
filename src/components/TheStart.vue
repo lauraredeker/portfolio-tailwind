@@ -3,7 +3,7 @@
   import { RouterLink } from 'vue-router'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
-  import BgCircles from '@/components/UI/BgCircles.vue'
+  import BgCircles from '@/components/features/BgCircles.vue'
 
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
