@@ -1,5 +1,6 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-  isDarkMode: true,
+	isDarkMode: true,
+	isMobileNavVisible: false,
 })

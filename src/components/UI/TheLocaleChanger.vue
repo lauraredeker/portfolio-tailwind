@@ -99,18 +99,18 @@
 
 <template>
   <div>
-    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-hidden">
+    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold lg:tw-hidden">
       {{ $t('nav.switch-language') }}
     </span>
     <button
       v-for="(lang, i) in filteredLangs"
       :key="`Lang${i}`"
       :class="{
-        'tw-justify-center md:tw-w-56 md:tw-justify-end': showTitle,
-        'tw-justify-center md:tw-w-16': !showTitle,
+        'tw-justify-center lg:tw-w-56 lg:tw-justify-end': showTitle,
+        'tw-justify-center lg:tw-w-16': !showTitle,
       }"
       :aria-label="`Change language to ${lang.text}`"
-      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-4 md:tw-py-4 md:tw-text-sm md:tw-shadow-md"
+      class="tw-flex tw-w-36 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-w-48 lg:tw-bg-indigo-100 lg:tw-px-4 lg:tw-py-4 lg:tw-text-sm lg:tw-shadow-md"
       @click="changeLocale(lang)"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
@@ -118,7 +118,7 @@
       @focusout="showTitle = false">
       <span
         v-show="showTitle"
-        class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 md:tw-block"
+        class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 lg:tw-block"
         for="lang-button">
         <span class="tw-inline-block tw-h-full tw-align-middle tw-font-semibold tw-shadow-sm">
           {{ $t('nav.switch-language') }}

@@ -46,7 +46,7 @@
   <a
     :href="target"
     :style="`--x: ${translateX}; --y: ${translateY})`"
-    class="custom-button tw-relative tw-flex tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-10 md:tw-py-4">
+    class="custom-button tw-relative tw-flex tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4">
     <span
       ref="circle"
       class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform">
@@ -66,7 +66,7 @@
 
 <style>
 .custom-button__back > span {
-	@apply tw-bg-indigo-950 tw-duration-500 tw-mix-blend-darken;
+	@apply tw-bg-indigo-950 tw-duration-200 tw-mix-blend-darken;
 	left: calc(var(--x, 0) * 1px);
 	top: calc(var(--y, 0) * 1px);
 	width: 40%;

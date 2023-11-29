@@ -34,7 +34,7 @@
 
 <template>
   <div>
-    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-hidden">
+    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold lg:tw-hidden">
       {{ store.isDarkMode ? $t('nav.theme-light') : $t('nav.theme-dark') }}
     </span>
 
@@ -42,10 +42,10 @@
       type="button"
       :aria-label="store.isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'"
       :class="{
-        'tw-justify-center md:tw-w-48 md:tw-justify-end md:tw-px-4': showTitle,
-        'tw-justify-center md:tw-w-16': !showTitle,
+        'tw-justify-center lg:tw-w-48 lg:tw-justify-end lg:tw-px-4': showTitle,
+        'tw-justify-center lg:tw-w-16': !showTitle,
       }"
-      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-0 md:tw-py-4 md:tw-text-sm md:tw-shadow-md"
+      class="tw-flex tw-w-36 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-w-48 lg:tw-bg-indigo-100 lg:tw-px-4 lg:tw-py-4 lg:tw-text-sm lg:tw-shadow-md"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
@@ -53,16 +53,16 @@
       @click="toggleDarkMode">
       <span
         v-show="showTitle"
-        class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 md:tw-block"
+        class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 lg:tw-block"
         for="theme-toggle">
         {{ store.isDarkMode ? $t('nav.theme-light') : $t('nav.theme-dark') }}
       </span>
       <span
         :class="store.isDarkMode ? 'tw-hidden' : 'tw-block'"
-        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 tw-shadow-sm md:tw-h-5 md:tw-w-5" />
+        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5" />
       <span
         :class="store.isDarkMode ? 'tw-block' : 'tw-hidden'"
-        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 tw-shadow-sm md:tw-h-5 md:tw-w-5" />
+        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5" />
     </button>
   </div>
 </template>

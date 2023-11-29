@@ -34,7 +34,7 @@
             v-if="isSupported"
             class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-bg-indigo-900 dark:hover:tw-text-white"
+              class="tw-mt-3 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-px-4 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-bg-indigo-900 dark:hover:tw-text-white"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': copied,
