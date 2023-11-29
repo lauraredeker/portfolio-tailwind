@@ -40,12 +40,12 @@
 
     <button
       type="button"
-      :aria-label="store.isDarkMode ? 'Turn on the light' : 'Turn off the light'"
+      :aria-label="store.isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'"
       :class="{
         'tw-justify-center md:tw-w-48 md:tw-justify-end md:tw-px-4': showTitle,
-        'tw-justify-center md:tw-w-12': !showTitle,
+        'tw-justify-center md:tw-w-16': !showTitle,
       }"
-      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-0 md:tw-py-2 md:tw-text-sm md:tw-shadow-md"
+      class="tw-flex tw-w-40 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-bg-indigo-100 md:tw-px-0 md:tw-py-4 md:tw-text-sm md:tw-shadow-md"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
