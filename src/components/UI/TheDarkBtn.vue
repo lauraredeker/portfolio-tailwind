@@ -1,12 +1,35 @@
 <script lang="ts" setup>
   import { store } from '../../store'
-  import { ref } from 'vue'
+  import { ref, onMounted } from 'vue'
 
   const showTitle = ref(false)
 
   function toggleDarkMode() {
     store.isDarkMode = !store.isDarkMode
+    setTheme(store.isDarkMode ? 'dark' : 'light')
   }
+
+  // read the local storage and check whether the theme has been set already
+  function getPersistedTheme() {
+    const persistedTheme = localStorage.getItem('user-theme') || 'dark'
+    return persistedTheme
+  }
+
+  /**
+   * Persist the chosen theme by saving it into the local storage
+   * and update the store
+   */
+  function setTheme(theme: string): void {
+    store.isDarkMode = theme === 'dark'
+
+    // persist the chosen theme by saving it into the local storage
+    localStorage.setItem('user-theme', theme)
+  }
+
+  // set the theme
+  onMounted(() => {
+    setTheme(getPersistedTheme())
+  })
 </script>
 
 <template>
