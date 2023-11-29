@@ -67,7 +67,7 @@
       <Transition
         name="slide"
         appear>
-        <picture>
+        <picture id="picture">
           <source
             srcset="/img/pictures/moi.webp"
             type="image/webp" />
@@ -96,67 +96,3 @@
       :title="$t('nav.about-long')" />
   </section>
 </template>
-
-<style scoped>
-.custom-circle-animation-1 {
-	@media (prefers-reduced-motion: no-preference) {
-		animation: customSpinAnimation 40s linear infinite alternate-reverse;
-	}
-}
-
-.custom-circle-animation-2 {
-	@media (prefers-reduced-motion: no-preference) {
-		animation: customAnimation 30s linear infinite alternate-reverse;
-	}
-}
-.custom-circle-animation-3 {
-	@media (prefers-reduced-motion: no-preference) {
-		animation: customAnimation2 50s linear infinite alternate-reverse;
-	}
-}
-
-@keyframes customSpinAnimation {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes customAnimation {
-	0% {
-		transform: rotate(0);
-		transform-origin: 40% 55%;
-	}
-	100% {
-		transform: rotate(80deg);
-		transform-origin: 58% 48%;
-	}
-}
-
-@keyframes customAnimation2 {
-	0% {
-		transform: rotate(0);
-		transform-origin: 60% 60%;
-	}
-	100% {
-		transform: rotate(80deg);
-		transform-origin: 38% 60%;
-	}
-}
-
-.slide-enter-active {
-	transition-delay: 0.9s;
-	transition: opacity 1.8s ease;
-}
-
-.slide-leave-active {
-	transition: all 1.8s ease;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-	opacity: 0;
-}
-</style>
