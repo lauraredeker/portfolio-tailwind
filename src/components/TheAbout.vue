@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 // Components
   import { vElementVisibility } from '@vueuse/components'
-  import BaseNextSection from './UI/BaseNextSection.vue'
-  import BaseBtn from './UI/BaseBtn.vue'
+  import BaseNextSection from './common/BaseNextSection.vue'
+  import BaseBtn from './common/BaseBtn.vue'
 
   // Composables
   import { useVisibility } from '../composables/useVisibility'
