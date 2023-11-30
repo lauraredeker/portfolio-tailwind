@@ -54,7 +54,7 @@
         translateY.value = (y - circleLocation.value.top) * 0.2
       }
     },
-    { throttle: 100 }
+    { throttle: 1000 / 60 }
   )
 </script>
 

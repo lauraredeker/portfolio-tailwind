@@ -13,21 +13,22 @@
   const { x: mouseX, y: mouseY } = useMouse()
   const { width, height } = useWindowSize()
   const circle = ref(null as Element | null)
-  const circleLocation = ref<DOMRect | undefined>(undefined)
+  const btn = ref(null as Element | null)
+  const btnLocation = ref<DOMRect | undefined>(undefined)
   const translateX = ref()
   const translateY = ref()
 
-  onMounted(updateCircleLocation)
+  onMounted(updateBtnLocation)
 
-  function updateCircleLocation() {
-    circleLocation.value = circle?.value?.getBoundingClientRect()
+  function updateBtnLocation() {
+    btnLocation.value = btn?.value?.getBoundingClientRect()
   }
 
   // we are watching for a change in the window height and width then running a debounce function when it does.
   debouncedWatch(
     [width, height],
     () => {
-      updateCircleLocation()
+      updateBtnLocation()
     },
     { debounce: 200 }
   )
@@ -37,12 +38,12 @@
   watchThrottled(
     [mouseX, mouseY],
     ([x, y]) => {
-      if (circleLocation.value) {
-        translateX.value = x - circleLocation.value.left
-        translateY.value = y - circleLocation.value.top
+      if (btnLocation.value) {
+        translateX.value = x - btnLocation.value.left
+        translateY.value = y - btnLocation.value.top
       }
     },
-    { throttle: 100 }
+    { throttle: 1000 / 60 }
   )
 </script>
 
@@ -50,13 +51,14 @@
   <component
     :is="element"
     :href="props.href"
-    :to="props.href ? undefined : to">
+    :to="to">
     <span
+      ref="btn"
       :style="`--x: ${translateX}; --y: ${translateY})`"
       class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4">
       <span
         ref="circle"
-        class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform">
+        class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-bottom-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform">
         <span
           class="tw-pointer-events-none tw-absolute tw-inline-block tw-overflow-hidden tw-rounded-full">
         </span>
