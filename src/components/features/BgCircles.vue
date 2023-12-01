@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-  import { useMouse, useWindowSize, debouncedWatch, watchThrottled } from '@vueuse/core'
+  import {
+    useMouse,
+    useWindowSize,
+    debouncedWatch,
+    watchThrottled,
+    useBreakpoints,
+    breakpointsTailwind,
+  } from '@vueuse/core'
+
   import { ref, onMounted } from 'vue'
   import gsap from 'gsap'
 
@@ -11,6 +19,8 @@
     isSectionVisible: false,
   })
 
+  const breakpoints = useBreakpoints(breakpointsTailwind)
+  const isGreaterThanLg = breakpoints.isGreater('lg')
   const { x: mouseX, y: mouseY } = useMouse()
   const { width, height } = useWindowSize()
   const circle = ref(null as Element | null)
@@ -20,26 +30,29 @@
 
   onMounted(() => {
     circleLocation.value = circle?.value?.getBoundingClientRect()
-
-    gsap.fromTo(
-      '#small-circle',
-      {
-        x: '-80%',
-      },
-      {
-        duration: 2.5,
-        x: '0',
-        ease: 'bounce.out',
-        delay: 0.4,
-      }
-    )
+    if (isGreaterThanLg) {
+      gsap.fromTo(
+        '#small-circle',
+        {
+          x: '-80%',
+        },
+        {
+          duration: 2.5,
+          x: '0',
+          ease: 'bounce.out',
+          delay: 0.4,
+        }
+      )
+    }
   })
 
   // we are watching for a change in the window height and width then running a debounce function when it does.
   debouncedWatch(
     [width, height],
     () => {
-      circleLocation.value = circle?.value?.getBoundingClientRect()
+      if (isGreaterThanLg) {
+        circleLocation.value = circle?.value?.getBoundingClientRect()
+      }
     },
     { debounce: 200 }
   )
@@ -49,7 +62,7 @@
   watchThrottled(
     [mouseX, mouseY],
     ([x, y]) => {
-      if (circleLocation.value) {
+      if (circleLocation.value && isGreaterThanLg) {
         translateX.value = (x - circleLocation.value.right) * 0.2
         translateY.value = (y - circleLocation.value.top) * 0.2
       }
@@ -80,7 +93,7 @@
     <div
       id="small-circle"
       aria-hidden="true"
-      class="tw-absolute -tw-left-[16%] tw-top-[53%] tw-z-0 tw-hidden tw-h-[32rem] tw-w-[32rem] tw-rounded-full tw-bg-amber-300 tw-opacity-70 tw-will-change-transform dark:tw-bg-indigo-900 dark:tw-opacity-40 dark:tw-mix-blend-lighten md:tw-block 2xl:-tw-left-[25%] 2xl:tw-top-[35%] 2xl:tw-h-[52rem] 2xl:tw-w-[52rem]" />
+      class="tw-absolute -tw-left-[16%] tw-top-[53%] tw-z-0 tw-hidden tw-h-[32rem] tw-w-[32rem] tw-rounded-full tw-bg-amber-300 tw-opacity-70 tw-will-change-transform dark:tw-bg-indigo-900 dark:tw-opacity-40 dark:tw-mix-blend-lighten lg:tw-block 2xl:-tw-left-[25%] 2xl:tw-top-[35%] 2xl:tw-h-[52rem] 2xl:tw-w-[52rem]" />
   </div>
 </template>
 
