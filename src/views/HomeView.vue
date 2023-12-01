@@ -1,19 +1,11 @@
 <script lang="ts" setup>
-  import TheHeader from '../components/TheHeader.vue'
-  import TheStart from '../components/TheStart.vue'
-  import TheAbout from '../components/TheAbout.vue'
-  import TheSkills from '../components/TheSkills.vue'
-  import TheContact from '../components/TheContact.vue'
+  import TheHeader from '../components/layouts/TheHeader.vue'
+  import TheHome from '../pages/TheHome.vue'
 </script>
 
 <template>
   <div>
     <TheHeader />
-    <TheStart id="hi" />
-    <div v-scroll-spy="{ allowNoActive: true, offset: 0 }">
-      <TheAbout id="about" />
-      <TheSkills id="expertise" />
-      <TheContact id="contact" />
-    </div>
+    <TheHome />
   </div>
 </template>

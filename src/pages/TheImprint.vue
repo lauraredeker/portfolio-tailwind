@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+// Utilities
+  import defaults from '../utils/config'
+</script>
+
 <template>
   <BaseContainer>
     <BaseBreadcrumbs :currentPage="$t('imprint.headline')" />
@@ -14,15 +19,15 @@
         {{ $t('imprint.tgm') }}
       </h4>
       <p>
-        Laura A. Redeker, Frontend Design<br />
+        {{ defaults.COMPANY_NAME }}<br />
         Firstalmstr. 19, 81539 München, {{ $t('general.germany') }}<br /><br />
       </p>
       <p>
         Email:
         <a
           class="tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          href="mailto:lauraredeker.ux@gmail.com">
-          lauraredeker.ux@gmail.com
+          :href="`mailto:${defaults.EMAIL}`">
+          {{ defaults.EMAIL }}
         </a>
       </p>
     </section>

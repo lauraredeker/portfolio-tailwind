@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import ScrollTopBtn from './components/UI/BaseScrollToTop.vue'
+  import ScrollTopBtn from './components/common/BaseScrollToTop.vue'
   import { watchEffect } from '@vue/runtime-core'
   import { store } from './store'
   import { RouterView } from 'vue-router'

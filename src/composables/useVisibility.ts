@@ -8,15 +8,15 @@ import { ref } from 'vue'
  *
  * @returns {[Ref<boolean>, (state: boolean) => void]}
  */
-export function useVisibility () {
-  const isVisible = ref(false)
+export function useVisibility() {
+	const isVisible = ref(false)
 
-  // update visibility state
-  const onVisibilityChange = (state) => {
-    // isVisible will only be set to true the first time state is true
-    if (!isVisible.value && state) {
-      isVisible.value = state
-    }
-  }
-  return [isVisible, onVisibilityChange]
+	// update visibility state
+	const onVisibilityChange = (state: boolean) => {
+		// isVisible will only be set to true the first time state is true
+		if (!isVisible.value && state) {
+			isVisible.value = state
+		}
+	}
+	return [isVisible, onVisibilityChange]
 }

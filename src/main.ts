@@ -3,13 +3,13 @@ import App from './App.vue'
 import router from './router'
 import { routes } from './router/routes'
 
-import BaseBtn from './components/UI/BaseBtn.vue'
-import BaseContainer from './components/UI/BaseContainer.vue'
-import BaseBreadcrumbs from './components/UI/BaseBreadcrumbs.vue'
-import BaseNextSection from './components/UI/BaseNextSection.vue'
-import { createI18n } from 'vue-i18n'
+import BaseBtn from './components/common/BaseBtn.vue'
+import BaseContainer from './components/common/BaseContainer.vue'
+import BaseBreadcrumbs from './components/common/BaseBreadcrumbs.vue'
+import BaseNextSection from './components/common/BaseNextSection.vue'
 
 // dependencies
+import { createI18n } from 'vue-i18n'
 import { registerScrollSpy } from 'vue3-scroll-spy'
 import Vue3TouchEvents from 'vue3-touch-events'
 

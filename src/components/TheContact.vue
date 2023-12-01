@@ -1,10 +1,13 @@
 <script lang="ts" setup>
-  import TheFooter from '../components/TheFooter.vue'
+// Components
+  import TheFooter from '../components/layouts/TheFooter.vue'
   import { vElementVisibility } from '@vueuse/components'
+
+  // Utilities
+  import defaults from '../utils/config'
   import { useVisibility } from '../composables/useVisibility'
   import { useClipboard } from '@vueuse/core'
 
-  const email = 'lauraredeker.ux@gmail.com'
   const { isSupported, copied, copy } = useClipboard({ legacy: true })
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
@@ -26,20 +29,20 @@
           {{ $t('contact.text') }}
         </p>
 
-        <div class="tw-mt-10 tw-flex tw-flex-col tw-justify-center tw-align-middle">
+        <div class="tw-mt-10 tw-inline-block tw-text-center">
           <BaseBtn
-            :target="`mailto:${email}`"
-            :text="email" />
+            :href="`mailto:${defaults.EMAIL}`"
+            :text="defaults.EMAIL" />
           <div
             v-if="isSupported"
             class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
             <button
-              class="tw-mt-2 tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-4 tw-py-1 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-bg-indigo-900 dark:hover:tw-text-white"
+              class="tw-mt-3 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-px-4 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': copied,
               }"
-              @click="copy(email)">
+              @click="copy(defaults.EMAIL)">
               <span
                 :class="{
                   'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': copied,
