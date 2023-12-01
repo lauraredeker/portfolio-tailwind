@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+// Utilities
+  import defaults from '../utils/config'
+</script>
+
 <template>
   <BaseContainer>
     <BaseBreadcrumbs :currentPage="$t('privacy.headline')" />
@@ -26,8 +31,8 @@
         {{ $t('privacy.right1_text1') }}
         <a
           class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          href="mailto:lauraredeker.ux@gmail.com"
-        >lauraredeker.ux@gmail.com</a
+          :href="`mailto:${defaults.EMAIL}`"
+        >{{ defaults.EMAIL }}</a
         >.
       </p>
       <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
@@ -37,8 +42,8 @@
         {{ $t('privacy.right2_text1') }}
         <a
           class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          href="mailto:lauraredeker.ux@gmail.com"
-        >lauraredeker.ux@gmail.com</a
+          :href="`mailto:${defaults.EMAIL}`"
+        >{{ defaults.EMAIL }}</a
         >
       </p>
       <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">

@@ -4,10 +4,10 @@
   import { vElementVisibility } from '@vueuse/components'
 
   // Utilities
+  import defaults from '../utils/config'
   import { useVisibility } from '../composables/useVisibility'
   import { useClipboard } from '@vueuse/core'
 
-  const email = 'lauraredeker.ux@gmail.com'
   const { isSupported, copied, copy } = useClipboard({ legacy: true })
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
@@ -31,8 +31,8 @@
 
         <div class="tw-mt-10 tw-inline-block tw-text-center">
           <BaseBtn
-            :href="`mailto:${email}`"
-            :text="email" />
+            :href="`mailto:${defaults.EMAIL}`"
+            :text="defaults.EMAIL" />
           <div
             v-if="isSupported"
             class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle">
@@ -42,7 +42,7 @@
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': copied,
               }"
-              @click="copy(email)">
+              @click="copy(defaults.EMAIL)">
               <span
                 :class="{
                   'tw-i-ph-check-fat-bold tw-text-green-500 dark:tw-text-green-300': copied,
