@@ -9,7 +9,8 @@
 </script>
 
 <template>
-  <section
+  <article
+    id="start-section"
     v-element-visibility="onSectionVisibility"
     class="tw-container tw-relative tw-w-full xl:tw-px-0">
     <BgCircles />
@@ -53,6 +54,7 @@
 
       <!-- dotted border circle -->
       <div
+        id="dotted-circle"
         aria-hidden="true"
         class="custom-circle-animation-1 tw-absolute -tw-right-10 tw-bottom-0 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%] md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:-tw-bottom-[28%] 2xl:-tw-right-[15%] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]" />
 
@@ -65,26 +67,24 @@
         target="#about"
         :title="$t('nav.about-long')" />
 
-      <Transition
-        name="slide"
-        appear>
-        <picture id="picture">
-          <source
-            srcset="/img/pictures/moi.webp"
-            type="image/webp" />
-          <source
-            srcset="/img/pictures/moi.png"
-            type="image/jpeg" />
-          <img
-            :class="{
-              'animate__animated animate__fadeInBottomRight': isSectionVisible,
-              'tw-will-change': !isSectionVisible,
-            }"
-            class="tw-relative tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-z-10 sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 2xl:tw-h-128 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-h-144 3xl:tw-w-144"
-            alt="Picture of Laura sneaking around the corner."
-            src="/img/pictures/moi.png" />
-        </picture>
-      </Transition>
+      <picture
+        id="picture"
+        class="md:tw-absolute md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 3xl:-tw-right-[5%]">
+        <source
+          srcset="/img/pictures/moi.webp"
+          type="image/webp" />
+        <source
+          srcset="/img/pictures/moi.png"
+          type="image/jpeg" />
+        <img
+          :class="{
+            'animate__animated animate__fadeInBottomRight': isSectionVisible,
+            'tw-will-change': !isSectionVisible,
+          }"
+          class="tw-relative tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-z-10 sm:tw-h-96 sm:tw-w-96 2xl:tw-h-128 2xl:tw-w-128 3xl:tw-h-144 3xl:tw-w-144"
+          alt="Picture of Laura sneaking around the corner."
+          src="/img/pictures/moi.png" />
+      </picture>
     </section>
 
     <BaseNextSection
@@ -95,5 +95,79 @@
       container-class="tw-relative tw-z-50 tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       :title="$t('nav.about-long')" />
-  </section>
+  </article>
 </template>
+
+<style scoped lang="scss">
+article {
+	view-timeline: --article;
+}
+
+h1 {
+	animation: slide-in, fade-in, color-explosion, fade-out;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-timeline: view(), view(), --article, --article;
+	animation-range:
+		entry 100% cover 10%,
+		entry 100% cover 5%,
+		exit 0% exit 50%,
+		exit 70% exit 90%;
+	transition: all 1s ease-in-out;
+}
+
+h2 {
+	animation: slide-in, fade-in, fade-away, fade-out;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-timeline: view(), view(), --article, --article;
+	animation-range:
+		entry 100% cover 15%,
+		entry 100% cover 15%,
+		exit 20% exit 40%,
+		exit 40% exit 50%;
+}
+
+#picture {
+	animation: scale-down both linear;
+	animation-timeline: --article;
+	animation-range: exit 0% exit 20%;
+}
+
+@keyframes scale-down {
+	0% {
+		scale: 0.8;
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		translate: 0 100%;
+		scale: 1;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+}
+
+@keyframes color-explosion {
+	to {
+		filter: blur(30rem);
+	}
+}
+
+@keyframes fade-away {
+	to {
+		filter: blur(3rem);
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+</style>

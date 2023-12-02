@@ -1,54 +1,42 @@
 <script lang="ts" setup>
 // Components
-  import { vElementVisibility } from '@vueuse/components'
   import BaseNextSection from './common/BaseNextSection.vue'
   import BaseBtn from './common/BaseBtn.vue'
-
-  // Composables
-  import { useVisibility } from '../composables/useVisibility'
-
-  const [isQuoteVisible, onQuoteVisibility] = useVisibility()
-  const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
-  const [isLinkVisible, onLinkVisibility] = useVisibility()
 </script>
 
 <template>
-  <section class="tw-relative tw-mx-auto tw-pt-1">
-    <div
-      v-element-visibility="onQuoteVisibility"
-      class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6">
-      <blockquote
-        lang="en"
-        :class="{
-          'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
-          'tw-will-change': isQuoteVisible,
-        }"
-        class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl">
-        "{{ $t('about.quote') }}
-        <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
-          {{ $t('about.frontend') }} </span
-        >."
-        <cite
-          class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl">
-          Brad Frost,
-          {{ $t('about.author') }}
-          <a
-            href="http://atomicdesign.bradfrost.com"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
-            target="_blank"
-          >Atomic Design</a
-          >
-        </cite>
-      </blockquote>
-    </div>
+  <article
+    ref="container"
+    class="tw-relative tw-mx-auto tw-pt-1">
+    <section>
+      <div
+        class="text-block tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-my-144 xl:tw-w-3/4 3xl:tw-w-4/6">
+        <blockquote
+          lang="en"
+          class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl">
+          <p>
+            "{{ $t('about.quote') }}
+            <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
+              {{ $t('about.frontend') }} </span
+            >."
+          </p>
+          <cite
+            class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl">
+            Brad Frost,
+            {{ $t('about.author') }}
+            <a
+              href="http://atomicdesign.bradfrost.com"
+              class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
+              target="_blank"
+            >Atomic Design</a
+            >
+          </cite>
+        </blockquote>
+      </div>
+    </section>
 
     <div
-      v-element-visibility="onTextBlockVisibility"
-      :class="{
-        'animate__animated animate__fadeIn animate__delay-1s': isTextBlockVisible,
-        'tw-will-change': isTextBlockVisible,
-      }"
-      class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]">
+      class="about-text tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]">
       <div class="tw-my-12 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p
           class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l">
@@ -74,11 +62,6 @@
 
     <div
       ref="link"
-      v-element-visibility="onLinkVisibility"
-      :class="{
-        'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible,
-        'tw-will-change': isLinkVisible,
-      }"
       class="tw-container tw-mb-20 tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0">
       <div
         class="tw-hidden tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-flex xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16">
@@ -110,5 +93,80 @@
       container-class="tw-block md:tw-mt-40"
       target="#expertise"
       :title="$t('nav.skills-long')" />
-  </section>
+  </article>
 </template>
+
+<style>
+article {
+	view-timeline: --article;
+}
+
+blockquote {
+	animation: slide-in, fade-scale-in, blur-out, fade-out;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-timeline: view(), view(), --article, --article;
+	animation-range:
+		entry 10% cover 0%,
+		entry 0% cover 10%,
+		exit 2% exit 11%,
+		exit 10% exit 3%;
+}
+
+.about-text {
+	animation: slide-in, fade-in, blur-out, fade-out;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-timeline: view(), view(), --article, --article;
+	animation-range:
+		entry 0% cover 20%,
+		entry 0% cover 50%,
+		exit 2% exit 11%,
+		exit 10% exit 3%;
+}
+
+@keyframes slide-in {
+	0% {
+		translate: 100% 50%;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		filter: blur(1rem);
+	}
+}
+
+@keyframes fade-scale-in {
+	0% {
+		opacity: 0;
+		scale: 2.9;
+	}
+}
+
+@keyframes fade-away {
+	to {
+		filter: blur(4rem);
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		translate: 100% 50%;
+		scale: 12.9;
+	}
+}
+
+@keyframes blur-out {
+	to {
+		filter: blur(2rem);
+	}
+}
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+</style>

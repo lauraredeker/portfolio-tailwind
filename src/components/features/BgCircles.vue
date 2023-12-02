@@ -27,6 +27,10 @@
   const circleLocation = ref<DOMRect | undefined>(undefined)
   const translateX = ref()
   const translateY = ref()
+  const minLeftValue = -160
+  const maxLeftValue = 1000
+  const minTopValue = -500
+  const maxTopValue = 150
 
   onMounted(() => {
     circleLocation.value = circle?.value?.getBoundingClientRect()
@@ -63,8 +67,10 @@
     [mouseX, mouseY],
     ([x, y]) => {
       if (circleLocation.value && isGreaterThanLg) {
-        translateX.value = (x - circleLocation.value.right) * 0.2
-        translateY.value = (y - circleLocation.value.top) * 0.2
+        const newXValue = (x - circleLocation.value.right) * 0.2
+        const newYValue = (y - circleLocation.value.top) * 0.2
+        translateX.value = Math.max(minLeftValue, Math.min(newXValue, maxLeftValue))
+        translateY.value = Math.max(minTopValue, Math.min(newYValue, maxTopValue))
       }
     },
     { throttle: 1000 / 60 }
@@ -84,9 +90,6 @@
     <!-- dark big bg circle -->
     <div
       aria-hidden="true"
-      :class="{
-        'custom-circle-animation-3': isSectionVisible,
-      }"
       class="tw-absolute tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-top-10 2xl:tw-h-[70rem] 2xl:tw-w-[70rem]" />
 
     <!-- small bg circle -->
@@ -97,44 +100,14 @@
   </div>
 </template>
 
-<style>
-.custom-circle-animation-1 {
+<style scoped>
+.custom-circle-animation {
 	@media (prefers-reduced-motion: no-preference) {
-		animation: customSpinAnimation 40s linear infinite alternate-reverse;
-	}
-}
-.custom-circle-animation-2 {
-	@media (prefers-reduced-motion: no-preference) {
-		animation: customAnimation 30s linear infinite alternate-reverse;
-	}
-}
-.custom-circle-animation-3 {
-	@media (prefers-reduced-motion: no-preference) {
-		animation: customAnimation2 50s linear infinite alternate-reverse;
-	}
-}
-
-@keyframes customSpinAnimation {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(360deg);
+		animation: customAnimation 50s linear infinite alternate-reverse;
 	}
 }
 
 @keyframes customAnimation {
-	0% {
-		transform: rotate(0);
-		transform-origin: 40% 55%;
-	}
-	100% {
-		transform: rotate(80deg);
-		transform-origin: 58% 48%;
-	}
-}
-
-@keyframes customAnimation2 {
 	0% {
 		transform: rotate(0);
 		transform-origin: 60% 60%;
