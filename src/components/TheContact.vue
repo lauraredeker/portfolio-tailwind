@@ -10,6 +10,7 @@
 
   const { isSupported, copied, copy } = useClipboard({ legacy: true })
   const [isSectionVisible, onSectionVisibility] = useVisibility()
+
 </script>
 
 <template>
@@ -23,7 +24,7 @@
         class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 3xl:tw-w-1/2"
       >
         <h2
-          class="tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl"
+          class="tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl"
         >
           {{ $t('contact.headline') }}
         </h2>

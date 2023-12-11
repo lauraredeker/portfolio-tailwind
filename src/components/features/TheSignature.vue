@@ -3,16 +3,11 @@
 
   // Composables
   import { useElementVisibility, useDocumentVisibility, debouncedWatch } from '@vueuse/core'
-  import { watch } from 'vue'
 
   const signature = ref(null)
   const signatureIsVisible = useElementVisibility(signature)
   const visibility = useDocumentVisibility()
-  const masks = ['L', 'A', 'U', 'R', 'AA', 'AAend']
-
-  watch(signatureIsVisible, () => {
-    console.log('watch', signatureIsVisible.value)
-  })
+  const masks = ['L', 'A', 'U', 'R', 'AA']
   
   /**
    * Debounce the watch function to prevent it from running too often.
@@ -26,8 +21,6 @@
 
       if (newVal) {
         drawLetter()
-      }  else {
-        resetLetters()
       }
     },
     { debounce: 500 }
@@ -47,21 +40,6 @@
       }
     })
   }
-
-  /**
-   * Reset the letter by resetting the strokeDasharray.
-   */
-  function resetLetters() {
-    masks.forEach((mask: string) => {
-      const id = `#mask-${mask}`
-      const path: SVGPathElement | null = document.querySelector<SVGPathElement>(id)
-      if (path) {
-        path.style.strokeDasharray = '1000'
-        path.style.strokeDashoffset = '1000'
-      }
-    })
-  }
-
 </script>
 
 <template>
@@ -83,6 +61,8 @@
           <path
             id="mask-L"
             class="mask"
+            stroke-dasharray="1000"
+            stroke-dashoffset="1000"
             d="m58.77.26s-1.19,18.55-8.96,41c-9,26-22,56-41,76-6.5,6.84-4.79-.18-4-2,2.75-6.34,10.55-18.39,32.13-18.39,37.24,0,65.17-39.9,63.87-38.61"
           />
         </mask>
@@ -90,6 +70,8 @@
           <path
             id="mask-A"
             class="mask"
+            stroke-dasharray="1000"
+            stroke-dashoffset="1000"
             d="m114.31,61.76c-2.4,6.01-18.42,18.04-12,6,7.14-13.39,13.4-5.37,13.4-5.37,0,0-12.4,30.37,13.6,8.37"
           />
         </mask>
@@ -97,6 +79,8 @@
           <path
             id="mask-U"
             class="mask"
+            stroke-dasharray="1000"
+            stroke-dashoffset="1000"
             d="m134.31,63.76s-22.2,42.99,11.24,4.42c0,0,2.08-2.4,3.17,8.71,0,0,14.13-6.89,16.36-10.01"
           />
         </mask>
@@ -104,6 +88,8 @@
           <path
             id="mask-R"
             class="mask"
+            stroke-dasharray="1000"
+            stroke-dashoffset="1000"
             d="m163.47,67.77c1.05-.98,2.17-1.03,3.25-2.25,8.59-9.76-4.41-7.76-4.71-1.66,0,0,7.41-.28,9.3,7.9.14.62.05,5.37,0,6-.22,2.8-.98,8.33,6.01,5.53,8.39-3.35,16.36-13.29,19.92-22.58"
           />
           />
@@ -112,6 +98,8 @@
           <path
             id="mask-AA"
             class="mask"
+            stroke-dasharray="1000"
+            stroke-dashoffset="1000"
             d="m205.83,61.48c-2.6-1.45-10.53-2.72-11.82,10.7,0,0,1.76,4.39,10.14-5.67,0,0,5.15-2.76,2.15-5.76-.44-.44-.44,2.94-.86,6.96-.54,5.2-1.09,11.48,2.86,12.04,5.05.72,18-12,18-17"
           />
         </mask>
@@ -205,7 +193,7 @@
 </template>
 
 <style scoped>
-    .font {
+.font {
 	 @apply tw-fill-indigo-400;
 	stroke: none;
 }
@@ -213,8 +201,7 @@
 .mask {
 	fill: none;
 	stroke-width: 12px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    animation-delay: 4s;
 }
 
 @keyframes strokeOffset {
@@ -230,12 +217,12 @@
 	animation: strokeOffset 0.5s linear forwards 1.5s;
 }
 #mask-U {
-	animation: strokeOffset 0.5s linear forwards 2.5s;
+	animation: strokeOffset 0.5s linear forwards 2s;
 }
 #mask-R {
-	animation: strokeOffset 0.5s linear forwards 3s;
+	animation: strokeOffset 0.5s linear forwards 2.5s;
 }
 #mask-AA {
-	animation: strokeOffset 0.5s linear forwards 4s;
+	animation: strokeOffset 0.5s linear forwards 3s;
 }
 </style>
