@@ -3,6 +3,7 @@
   import { vElementVisibility } from '@vueuse/components'
   import BaseNextSection from './common/BaseNextSection.vue'
   import BaseBtn from './common/BaseBtn.vue'
+  import TheSignature from './features/TheSignature.vue'
 
   // Composables
   import { useVisibility } from '../composables/useVisibility'
@@ -16,16 +17,16 @@
   <section class="tw-relative tw-mx-auto tw-pt-1">
     <div
       v-element-visibility="onQuoteVisibility"
-      class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 xl:tw-w-3/4 3xl:tw-w-4/6">
+      class="tw-mx-auto tw-mt-10 tw-max-w-full md:tw-mt-80 md:tw-p-8 2xl:tw-w-3/4 3xl:tw-w-4/6">
       <blockquote
         lang="en"
         :class="{
           'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
           'tw-will-change': isQuoteVisible,
         }"
-        class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-opacity-40 lg:tw-text-3xl xl:tw-text-5xl">
+        class="tw-mb-4 tw-hyphens-auto tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-opacity-40 lg:tw-text-3xl xl:tw-text-4xl 3xl:tw-text-5xl">
         <span
-          class="tw-i-ph-quotes-light tw-text-5xl"
+          class="tw-i-ph-quotes-light tw-mr-2 tw-inline-block tw-text-2xl md:tw-text-3xl xl:tw-text-5xl"
           aria-hidden="true"></span>
         {{ $t('about.testimonial') }}
         <cite
@@ -36,7 +37,7 @@
             href="https://neverdone.app/"
             target="_blank"
             rel="noopener noreferrer"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black">
+            class="tw-rounded-lg tw-px-1 tw-py-1 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black">
             neverdone
           </a>
         </cite>
@@ -58,9 +59,6 @@
           &middot; 33 &middot;
           {{ $t('general.location') }}
         </p>
-        <h1 class="tw-text-4xl tw-font-bold dark:tw-text-indigo-50">
-          {{ $t('about.heading') }}
-        </h1>
         <div class="tw-hyphens-auto tw-text-justify">
           <p class="tw-my-6">
             <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
@@ -77,6 +75,9 @@
             <br /><br />
             {{ $t('about.text3') }}
           </p>
+          <TheSignature
+            id="signature"
+            class="tw-relative tw-inline-block tw-w-2/3 tw-fill-none tw-stroke-white tw-pt-10 md:tw-w-1/3" />
         </div>
       </div>
     </div>
