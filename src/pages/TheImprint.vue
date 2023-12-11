@@ -8,7 +8,8 @@
     <BaseBreadcrumbs :currentPage="$t('imprint.headline')" />
 
     <h1
-      class="tw-mb-10 tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl xl:tw-text-7xl">
+      class="tw-mb-10 tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-text-6xl xl:tw-text-7xl"
+    >
       {{ $t('imprint.headline') }}
     </h1>
     <section>
@@ -19,14 +20,15 @@
         {{ $t('imprint.tgm') }}
       </h4>
       <p>
-        {{ defaults.COMPANY_NAME }}<br />
-        Firstalmstr. 19, 81539 München, {{ $t('general.germany') }}<br /><br />
+        {{ defaults.COMPANY_NAME }}<br>
+        Firstalmstr. 19, 81539 München, {{ $t('general.germany') }}<br><br>
       </p>
       <p>
         Email:
         <a
           class="tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          :href="`mailto:${defaults.EMAIL}`">
+          :href="`mailto:${defaults.EMAIL}`"
+        >
           {{ defaults.EMAIL }}
         </a>
       </p>

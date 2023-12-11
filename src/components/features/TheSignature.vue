@@ -2,24 +2,40 @@
   import { ref } from 'vue'
 
   // Composables
-  import { useElementVisibility, debouncedWatch } from '@vueuse/core'
+  import { useElementVisibility, useDocumentVisibility, debouncedWatch } from '@vueuse/core'
+  import { watch } from 'vue'
 
   const signature = ref(null)
   const signatureIsVisible = useElementVisibility(signature)
+  const visibility = useDocumentVisibility()
   const masks = ['L', 'A', 'U', 'R', 'AA', 'AAend']
 
+  watch(signatureIsVisible, () => {
+    console.log('watch', signatureIsVisible.value)
+  })
+  
+  /**
+   * Debounce the watch function to prevent it from running too often.
+   * @param {boolean} signatureIsVisible
+   * @param {string} visibility
+   */
   debouncedWatch(
-    signatureIsVisible,
-    () => {
-      console.log(signatureIsVisible.value)
+    [signatureIsVisible, visibility],
+    (newVal) => {
+      console.log('debouncedWatch', newVal)
 
-      if (signatureIsVisible.value) {
+      if (newVal) {
         drawLetter()
+      }  else {
+        resetLetters()
       }
     },
-    { debounce: 800 }
+    { debounce: 500 }
   )
 
+  /**
+   * Draw the letter by updating the strokeDasharray.
+   */
   function drawLetter() {
     masks.forEach((mask: string) => {
       const id = `#mask-${mask}`
@@ -31,6 +47,21 @@
       }
     })
   }
+
+  /**
+   * Reset the letter by resetting the strokeDasharray.
+   */
+  function resetLetters() {
+    masks.forEach((mask: string) => {
+      const id = `#mask-${mask}`
+      const path: SVGPathElement | null = document.querySelector<SVGPathElement>(id)
+      if (path) {
+        path.style.strokeDasharray = '1000'
+        path.style.strokeDashoffset = '1000'
+      }
+    })
+  }
+
 </script>
 
 <template>
@@ -43,7 +74,8 @@
     y="0px"
     viewBox="0 0 233.58 136.53"
     style="enable-background: new 0 0 233.58 136.53"
-    xml:space="preserve">
+    xml:space="preserve"
+  >
     <title>Laura</title>
     <defs>
       <g id="laura-signature-mask">
@@ -51,32 +83,37 @@
           <path
             id="mask-L"
             class="mask"
-            d="m58.77.26s-1.19,18.55-8.96,41c-9,26-22,56-41,76-6.5,6.84-4.79-.18-4-2,2.75-6.34,10.55-18.39,32.13-18.39,37.24,0,65.17-39.9,63.87-38.61" />
+            d="m58.77.26s-1.19,18.55-8.96,41c-9,26-22,56-41,76-6.5,6.84-4.79-.18-4-2,2.75-6.34,10.55-18.39,32.13-18.39,37.24,0,65.17-39.9,63.87-38.61"
+          />
         </mask>
         <mask id="mask-laura-A">
           <path
             id="mask-A"
             class="mask"
-            d="m114.31,61.76c-2.4,6.01-18.42,18.04-12,6,7.14-13.39,13.4-5.37,13.4-5.37,0,0-12.4,30.37,13.6,8.37" />
+            d="m114.31,61.76c-2.4,6.01-18.42,18.04-12,6,7.14-13.39,13.4-5.37,13.4-5.37,0,0-12.4,30.37,13.6,8.37"
+          />
         </mask>
         <mask id="mask-laura-U">
           <path
             id="mask-U"
             class="mask"
-            d="m134.31,63.76s-22.2,42.99,11.24,4.42c0,0,2.08-2.4,3.17,8.71,0,0,14.13-6.89,16.36-10.01" />
+            d="m134.31,63.76s-22.2,42.99,11.24,4.42c0,0,2.08-2.4,3.17,8.71,0,0,14.13-6.89,16.36-10.01"
+          />
         </mask>
         <mask id="mask-laura-R">
           <path
             id="mask-R"
             class="mask"
-            d="m163.47,67.77c1.05-.98,2.17-1.03,3.25-2.25,8.59-9.76-4.41-7.76-4.71-1.66,0,0,7.41-.28,9.3,7.9.14.62.05,5.37,0,6-.22,2.8-.98,8.33,6.01,5.53,8.39-3.35,16.36-13.29,19.92-22.58" />
+            d="m163.47,67.77c1.05-.98,2.17-1.03,3.25-2.25,8.59-9.76-4.41-7.76-4.71-1.66,0,0,7.41-.28,9.3,7.9.14.62.05,5.37,0,6-.22,2.8-.98,8.33,6.01,5.53,8.39-3.35,16.36-13.29,19.92-22.58"
+          />
           />
         </mask>
         <mask id="mask-laura-AA">
           <path
             id="mask-AA"
             class="mask"
-            d="m205.83,61.48c-2.6-1.45-10.53-2.72-11.82,10.7,0,0,1.76,4.39,10.14-5.67,0,0,5.15-2.76,2.15-5.76-.44-.44-.44,2.94-.86,6.96-.54,5.2-1.09,11.48,2.86,12.04,5.05.72,18-12,18-17" />
+            d="m205.83,61.48c-2.6-1.45-10.53-2.72-11.82,10.7,0,0,1.76,4.39,10.14-5.67,0,0,5.15-2.76,2.15-5.76-.44-.44-.44,2.94-.86,6.96-.54,5.2-1.09,11.48,2.86,12.04,5.05.72,18-12,18-17"
+          />
         </mask>
       </g>
     </defs>
@@ -100,7 +137,8 @@
 		c-2.02,2.98-4.04,5.35-6.07,7.09c-2.02,1.74-3.89,2.15-5.62,1.23c-0.44-0.32-0.82-0.79-1.14-1.41c-0.32-0.62-0.5-1.25-0.54-1.89
 		c0.04-1.64,0.79-3.63,2.25-5.98c1.46-2.34,3.41-4.71,5.86-7.12C13.94,106.58,17.04,104.57,20.08,103.61z M10.59,118.33
 		c0.64-0.64,1.38-1.44,2.22-2.4c0.84-0.96,1.59-1.88,2.25-2.76c0.66-0.88,0.99-1.44,0.99-1.68c0-0.16-0.26-0.01-0.78,0.45
-		c-0.52,0.46-1.13,1.07-1.83,1.83c-0.7,0.76-1.39,1.56-2.07,2.4C8.93,119.25,8.67,119.97,10.59,118.33z" />
+		c-0.52,0.46-1.13,1.07-1.83,1.83c-0.7,0.76-1.39,1.56-2.07,2.4C8.93,119.25,8.67,119.97,10.59,118.33z"
+      />
       <path
         id="A"
         mask="url(#mask-laura-A)"
@@ -114,7 +152,8 @@
 		c0.16,0.48,0.24,0.94,0.24,1.38c0,1.32-0.4,2.22-1.2,2.7c-0.36,0.16-1.32,0.92-2.88,2.28c-2.48,2.16-4.9,4.05-7.27,5.68
 		c-2.36,1.62-4.16,2.61-5.41,2.97C118.58,84.7,117.82,84.82,117.01,84.82z M103.8,76.41c0.88,0,2.5-1.04,4.86-3.12
 		c2.04-1.8,3.24-3.1,3.6-3.9c0.12-0.28,0.18-0.68,0.18-1.2c0-0.72-0.36-1.08-1.08-1.08c-0.68,0-1.58,0.36-2.7,1.08
-		c-2.28,1.48-3.86,3.24-4.74,5.29c-0.44,1-0.66,1.76-0.66,2.28C103.26,76.19,103.44,76.41,103.8,76.41z" />
+		c-2.28,1.48-3.86,3.24-4.74,5.29c-0.44,1-0.66,1.76-0.66,2.28C103.26,76.19,103.44,76.41,103.8,76.41z"
+      />
       <path
         id="U"
         mask="url(#mask-laura-U)"
@@ -128,7 +167,8 @@
 		c0-0.76,0.28-1.46,0.84-2.1c0.56-0.64,1.18-0.96,1.86-0.96c0.56,0,1.09,0.14,1.59,0.42c0.5,0.28,0.75,0.68,0.75,1.2
 		c0,1.16-0.83,2.44-2.49,3.84c-1.66,1.4-3.55,2.69-5.68,3.87c-2.12,1.18-3.68,1.97-4.68,2.37c-1.76,0.72-3.28,1.08-4.56,1.08
 		c-1.28,0-2.22-0.54-2.82-1.62c-0.52-0.84-0.78-1.84-0.78-3c0-0.96-0.16-1.48-0.48-1.56c-0.16,0-2.4,2.12-6.73,6.37
-		c-2.24,2.2-3.98,3.88-5.22,5.04C133.05,88.82,131.39,89.84,130.23,89.92z" />
+		c-2.24,2.2-3.98,3.88-5.22,5.04C133.05,88.82,131.39,89.84,130.23,89.92z"
+      />
       <path
         id="R"
         mask="url(#mask-laura-R)"
@@ -142,7 +182,8 @@
 		c0.28,0,0.58,0.08,0.9,0.24c0.8,0.52,1.2,1.28,1.2,2.28c0,0.12-0.02,0.49-0.06,1.11c-0.04,0.62-0.54,1.33-1.5,2.13
 		c-0.44,0.28-1.1,1.06-1.98,2.34c-3.12,4.68-6.83,8.73-11.11,12.13C181.08,88.44,178.23,89.92,176.23,89.92z M165.96,69.08
 		c0.4,0,0.9-0.52,1.5-1.56c0.36-0.8,0.54-1.42,0.54-1.86c0-0.32-0.08-0.48-0.24-0.48c-0.28,0-0.6,0.24-0.96,0.72
-		s-0.63,0.97-0.81,1.47c-0.18,0.5-0.27,0.91-0.27,1.23C165.72,68.92,165.8,69.08,165.96,69.08z" />
+		s-0.63,0.97-0.81,1.47c-0.18,0.5-0.27,0.91-0.27,1.23C165.72,68.92,165.8,69.08,165.96,69.08z"
+      />
       <path
         id="AA"
         mask="url(#mask-laura-AA)"
@@ -157,20 +198,23 @@
 		c-0.36,0.16-1.32,0.92-2.88,2.28c-2.48,2.16-4.9,4.05-7.27,5.68c-2.36,1.62-4.16,2.61-5.41,2.97
 		C210.52,84.7,209.76,84.82,208.96,84.82z M195.75,76.41c0.88,0,2.5-1.04,4.86-3.12c2.04-1.8,3.24-3.1,3.6-3.9
 		c0.12-0.28,0.18-0.68,0.18-1.2c0-0.72-0.36-1.08-1.08-1.08c-0.68,0-1.58,0.36-2.7,1.08c-2.28,1.48-3.86,3.24-4.74,5.29
-		c-0.44,1-0.66,1.76-0.66,2.28C195.21,76.19,195.39,76.41,195.75,76.41z" />
+		c-0.44,1-0.66,1.76-0.66,2.28C195.21,76.19,195.39,76.41,195.75,76.41z"
+      />
     </g>
   </svg>
 </template>
 
 <style scoped>
-.font {
-	@apply tw-fill-indigo-400;
+    .font {
+	 @apply tw-fill-indigo-400;
 	stroke: none;
 }
 
 .mask {
 	fill: none;
-	stroke-width: 15px;
+	stroke-width: 12px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 
 @keyframes strokeOffset {
@@ -180,10 +224,10 @@
 }
 
 #mask-L {
-	animation: strokeOffset 1s linear forwards 1s;
+	animation: strokeOffset 0.5s linear forwards 1s;
 }
 #mask-A {
-	animation: strokeOffset 1s linear forwards 2s;
+	animation: strokeOffset 0.5s linear forwards 1.5s;
 }
 #mask-U {
 	animation: strokeOffset 0.5s linear forwards 2.5s;
@@ -192,6 +236,6 @@
 	animation: strokeOffset 0.5s linear forwards 3s;
 }
 #mask-AA {
-	animation: strokeOffset 0.5s linear forwards 3.5s;
+	animation: strokeOffset 0.5s linear forwards 4s;
 }
 </style>

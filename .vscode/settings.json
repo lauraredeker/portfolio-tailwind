@@ -14,8 +14,5 @@
 	],
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true
-	},
-	// For Prettier
-	"editor.formatOnSave": true,
-	"prettier.requireConfig": true
+	}
 }

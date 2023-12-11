@@ -5,12 +5,13 @@ module.exports = {
 	},
 	ignorePatterns: ['dist/**/*'],
 	extends: [
-		'plugin:vue/essential',
+		'plugin:vue/base',
+		'plugin:vue/vue3-essential',
 		'plugin:vue/vue3-recommended',
-		'plugin:vue/essential',
+		'plugin:vue/vue3-strongly-recommended',
+		'@vue/typescript/recommended',
 		'plugin:vuejs-accessibility/recommended',
 		'@vue/eslint-config-typescript/recommended',
-		'prettier', // LAST in the extensions list so it overrides other eslint rules!
 	],
 	parserOptions: {
 		parser: '@typescript-eslint/parser',
@@ -92,4 +93,4 @@ module.exports = {
 			},
 		},
 	],
-};
+}

@@ -51,23 +51,27 @@
   <component
     :is="element"
     :href="props.href"
-    :to="to">
+    :to="to"
+  >
     <span
       ref="btn"
       :style="`--x: ${translateX}; --y: ${translateY})`"
-      class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4">
+      class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4"
+    >
       <span
         ref="circle"
-        class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-bottom-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform">
+        class="custom-button__back tw-pointer-events-none tw-absolute tw-inset-0 tw-bottom-0 tw-z-0 tw-overflow-hidden tw-rounded-full tw-transition-transform"
+      >
         <span
-          class="tw-pointer-events-none tw-absolute tw-inline-block tw-overflow-hidden tw-rounded-full">
-        </span>
+          class="tw-pointer-events-none tw-absolute tw-inline-block tw-overflow-hidden tw-rounded-full"
+        />
       </span>
       <span class="tw-relative tw-z-10 tw-flex tw-flex-row tw-items-center tw-align-middle">
         <span>{{ text }}</span>
         <span
           v-if="hasArrow"
-          class="tw-i-ph-arrow-right-bold tw-ml-3" />
+          class="tw-i-ph-arrow-right-bold tw-ml-3"
+        />
         <slot />
       </span>
     </span>

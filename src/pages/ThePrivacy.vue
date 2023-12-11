@@ -8,7 +8,8 @@
     <BaseBreadcrumbs :currentPage="$t('privacy.headline')" />
 
     <h1
-      class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-mb-20 md:tw-text-6xl xl:tw-text-7xl">
+      class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-mb-20 md:tw-text-6xl xl:tw-text-7xl"
+    >
       {{ $t('privacy.headline') }}
     </h1>
     <section class="tw-mt-5 md:tw-mt-20">
@@ -32,8 +33,7 @@
         <a
           class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           :href="`mailto:${defaults.EMAIL}`"
-        >{{ defaults.EMAIL }}</a
-        >.
+        >{{ defaults.EMAIL }}</a>.
       </p>
       <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
         {{ $t('privacy.right2') }}
@@ -43,8 +43,7 @@
         <a
           class="tw-transition-color tw-rounded-md tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           :href="`mailto:${defaults.EMAIL}`"
-        >{{ defaults.EMAIL }}</a
-        >
+        >{{ defaults.EMAIL }}</a>
       </p>
       <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
         {{ $t('privacy.changes') }}
@@ -75,8 +74,7 @@
           href="https://www.netlify.com/privacy/"
           target="_blank"
           rel="noopener noreferrer"
-        >{{ $t('privacy.netlify_link1') }}.</a
-        ><br />
+        >{{ $t('privacy.netlify_link1') }}.</a><br>
 
         {{ $t('privacy.netlify_text2') }}
         <a
@@ -84,8 +82,7 @@
           href="https://www.netlify.com/gdpr-ccpa"
           target="_blank"
           rel="noopener noreferrer"
-        >{{ $t('privacy.netlify_link2') }} </a
-        >.<br />
+        >{{ $t('privacy.netlify_link2') }} </a>.<br>
       </p>
       <p>
         {{ $t('privacy.netlify_text3') }}
