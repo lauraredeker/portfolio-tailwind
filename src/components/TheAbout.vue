@@ -23,21 +23,22 @@
           'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
           'tw-will-change': isQuoteVisible,
         }"
-        class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl">
-        "{{ $t('about.quote') }}
-        <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
-          {{ $t('about.frontend') }} </span
-        >."
+        class="tw-mb-4 tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-20 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-py-40 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-border-indigo-400 md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-opacity-40 lg:tw-text-3xl xl:tw-text-5xl">
+        <span
+          class="tw-i-ph-quotes-light tw-text-5xl"
+          aria-hidden="true"></span>
+        {{ $t('about.testimonial') }}
         <cite
           class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl">
-          Brad Frost,
-          {{ $t('about.author') }}
+          Lukas Ponikowski, Senior UX/UI Designer
+          {{ $t('general.at') }}
           <a
-            href="http://atomicdesign.bradfrost.com"
-            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            href="https://neverdone.app/"
             target="_blank"
-          >Atomic Design</a
-          >
+            rel="noopener noreferrer"
+            class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black">
+            neverdone
+          </a>
         </cite>
       </blockquote>
     </div>
@@ -57,6 +58,9 @@
           &middot; 33 &middot;
           {{ $t('general.location') }}
         </p>
+        <h1 class="tw-text-4xl tw-font-bold dark:tw-text-indigo-50">
+          {{ $t('about.heading') }}
+        </h1>
         <div class="tw-hyphens-auto tw-text-justify">
           <p class="tw-my-6">
             <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
@@ -65,8 +69,13 @@
           </p>
           <p>
             {{ $t('about.text1') }}
-            <br /><br />
+            <span
+              class="tw-whitespace-nowrap tw-border-amber-600 tw-font-semibold tw-underline tw-decoration-wavy tw-underline-offset-4">
+              {{ $t('about.frontend') }}</span
+            >
             {{ $t('about.text2') }}
+            <br /><br />
+            {{ $t('about.text3') }}
           </p>
         </div>
       </div>

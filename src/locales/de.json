@@ -8,7 +8,8 @@
 		"contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
 		"contact-button": "Schreib mir",
 		"skills": "Kenntnisse",
-		"germany": "Deutschland"
+		"germany": "Deutschland",
+		"at": "bei"
 	},
 	"nav": {
 		"menu-open": "Menü öffnen",
@@ -38,13 +39,15 @@
 		"intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
 	},
 	"about": {
+		"testimonial": "Laura nailed the perfect mix of cool design and top-notch functionality. The websites she creates are not just user-friendly for everyone; they're downright fun to explore.",
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
-		"frontend": "frontend design",
-		"author": "Autor von",
 		"pronouns": "sie/ihr",
+		"heading": "Eine kurze Vorstellung",
 		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der IT. 👻",
-		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin laut Definition nach Brad Frost.",
-		"text2": "Durch meine langjährige Ausbildung im Bereich Medien & Design kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin mit mehrjähriger Berufserfahrung lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die performant, responsiv und barrierefrei sind.",
+		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als ",
+		"frontend": "Frontend Designerin",
+		"text2": " nach Definition von Brad Frost.",
+		"text3": "Durch meine langjährige Ausbildung im Bereich Medien & Design kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und Benutzeroberflächen, die performant, intuitiv und barrierefrei sind, und Spaß machen.",
 		"vita": "Was bisher geschehen ist"
 	},
 	"skills": {
