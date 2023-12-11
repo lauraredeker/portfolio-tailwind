@@ -17,8 +17,6 @@
   debouncedWatch(
     [signatureIsVisible, visibility],
     (newVal) => {
-      console.log('debouncedWatch', newVal)
-
       if (newVal) {
         drawLetter()
       }
@@ -201,7 +199,6 @@
 .mask {
 	fill: none;
 	stroke-width: 12px;
-    animation-delay: 4s;
 }
 
 @keyframes strokeOffset {
@@ -211,18 +208,18 @@
 }
 
 #mask-L {
-	animation: strokeOffset 0.5s linear forwards 1s;
+	animation: strokeOffset 1s linear forwards 3s;
 }
 #mask-A {
-	animation: strokeOffset 0.5s linear forwards 1.5s;
+	animation: strokeOffset 1s linear forwards 3.5s;
 }
 #mask-U {
-	animation: strokeOffset 0.5s linear forwards 2s;
+	animation: strokeOffset 1s linear forwards 5s;
 }
 #mask-R {
-	animation: strokeOffset 0.5s linear forwards 2.5s;
+	animation: strokeOffset 1s linear forwards 5.5s;
 }
 #mask-AA {
-	animation: strokeOffset 0.5s linear forwards 3s;
+	animation: strokeOffset 1s linear forwards 6s;
 }
 </style>
