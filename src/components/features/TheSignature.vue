@@ -208,18 +208,18 @@
 }
 
 #mask-L {
-	animation: strokeOffset 1s linear forwards 3s;
+	animation: strokeOffset .8s linear forwards 3s;
 }
 #mask-A {
-	animation: strokeOffset 1s linear forwards 3.5s;
+	animation: strokeOffset .6s linear forwards 4s;
 }
 #mask-U {
-	animation: strokeOffset 1s linear forwards 5s;
+	animation: strokeOffset .6s linear forwards 4.6s;
 }
 #mask-R {
-	animation: strokeOffset 1s linear forwards 5.5s;
+	animation: strokeOffset .6s linear forwards 5.2s;
 }
 #mask-AA {
-	animation: strokeOffset 1s linear forwards 6s;
+	animation: strokeOffset .6s linear forwards 5.8s;
 }
 </style>
