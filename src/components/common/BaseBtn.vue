@@ -50,8 +50,8 @@
 <template>
   <component
     :is="element"
-    :href="props.href"
-    :to="to"
+    :href="props.href || ''"
+    :to="props.to"
   >
     <span
       ref="btn"

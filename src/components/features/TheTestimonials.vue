@@ -8,14 +8,14 @@
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-slate-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20"
+    class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-slate-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20 xl:tw-pb-48 xl:tw-pt-36"
   >
     <blockquote
       :class="{
         'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
         'tw-will-change': isQuoteVisible,
       }"
-      class="tw-mx-auto tw-mb-4 tw-w-4/5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-text-xl md:tw-mb-10 md:tw-w-2/3 md:tw-py-10 md:tw-text-2xl md:tw-text-indigo-700 lg:tw-text-3xl xl:tw-px-20 3xl:tw-text-4xl"
+      class="tw-mx-auto tw-mb-4 tw-w-4/5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-text-xl md:tw-mb-10 md:tw-w-2/3 md:tw-py-10 md:tw-text-2xl md:tw-text-indigo-700 lg:tw-text-3xl xl:tw-px-20 2xl:tw-w-3/5 3xl:tw-text-4xl"
     >
       <span
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl"
