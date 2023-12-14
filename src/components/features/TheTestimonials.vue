@@ -8,7 +8,7 @@
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="dark:tw-bg-indigo-90 md:tw-pt-30 md:tw-pb-30 tw-my-20 tw-bg-slate-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pt-28 xl:tw-pb-48 xl:tw-pt-36"
+    class="tw-my-20 tw-bg-indigo-200 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-28 xl:tw-pb-32 xl:tw-pt-36"
   >
     <div class="tw-container">
       <blockquote
@@ -16,7 +16,7 @@
           'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
           'tw-will-change': isQuoteVisible,
         }"
-        class="tw-mx-auto tw-mb-4 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-text-indigo-300 sm:tw-text-xl md:tw-mb-10 md:tw-text-2xl md:tw-text-indigo-700 lg:tw-text-4xl xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-text-5xl"
+        class="tw-mx-auto tw-mb-4 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-600 dark:tw-text-indigo-300 sm:tw-text-xl md:tw-mb-10 md:tw-text-2xl lg:tw-text-4xl xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-text-5xl"
       >
         <span
           class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl"
