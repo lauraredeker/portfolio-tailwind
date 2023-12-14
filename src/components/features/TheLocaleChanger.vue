@@ -114,11 +114,13 @@
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
-      @focusout="showTitle = false">
+      @focusout="showTitle = false"
+    >
       <span
         v-show="showTitle"
         class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 lg:tw-block"
-        for="lang-button">
+        for="lang-button"
+      >
         <span class="tw-inline-block tw-h-full tw-align-middle tw-font-semibold tw-shadow-sm">
           {{ $t('nav.switch-language') }}
         </span>

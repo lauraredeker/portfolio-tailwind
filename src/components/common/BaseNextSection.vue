@@ -20,16 +20,19 @@
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
-      @focusout="showTitle = false">
+      @focusout="showTitle = false"
+    >
       <Transition name="fade">
         <span
           v-show="showTitle"
-          class="tw-absolute tw-bottom-12 tw-left-16 tw-hidden tw-w-56 tw-select-none tw-text-left tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-left-20 md:tw-block">
+          class="tw-absolute tw-bottom-12 tw-left-16 tw-hidden tw-w-56 tw-select-none tw-text-left tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-left-20 md:tw-block"
+        >
           {{ title }}
         </span>
       </Transition>
       <span
-        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-indigo-400 lg:tw-h-14 lg:tw-w-14" />
+        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-indigo-400 lg:tw-h-14 lg:tw-w-14"
+      />
     </RouterLink>
   </div>
 </template>

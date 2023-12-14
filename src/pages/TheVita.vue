@@ -3,7 +3,8 @@
     <BaseBreadcrumbs currentPage="Résumé" />
 
     <h1
-      class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-mb-20 md:tw-text-6xl xl:tw-text-7xl">
+      class="tw-mt-10 tw-text-4xl tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-300 md:tw-mb-20 md:tw-text-6xl xl:tw-text-7xl"
+    >
       Résumé
     </h1>
 
@@ -17,10 +18,11 @@
         {{ $t('general.jobtitle') }}
       </h4>
       <p>
-        {{ $t('general.contact-text') }}<br /><br />
+        {{ $t('general.contact-text') }}<br><br>
         <router-link
           class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          to="/#contact">
+          to="/#contact"
+        >
           {{ $t('general.contact-button') }}
           <span class="tw-i-ph-arrow-right-bold tw-ml-1 tw-h-4 tw-w-4" />
         </router-link>
@@ -74,8 +76,7 @@
           href="http://www.senseven.net"
           class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           target="_blank"
-        >senseven.net</a
-        >
+        >senseven.net</a>
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">

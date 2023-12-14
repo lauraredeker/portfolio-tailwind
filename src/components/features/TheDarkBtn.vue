@@ -4,12 +4,17 @@
 
   const showTitle = ref(false)
 
+  /**
+   * Toggle the dark mode by updating the store and the local storage
+   */
   function toggleDarkMode() {
     store.isDarkMode = !store.isDarkMode
     setTheme(store.isDarkMode ? 'dark' : 'light')
   }
 
-  // read the local storage and check whether the theme has been set already
+  /** 
+   * Read the local storage and check whether the theme has been set already
+   */
   function getPersistedTheme() {
     const persistedTheme = localStorage.getItem('user-theme') || 'dark'
     return persistedTheme
@@ -21,8 +26,6 @@
    */
   function setTheme(theme: string): void {
     store.isDarkMode = theme === 'dark'
-
-    // persist the chosen theme by saving it into the local storage
     localStorage.setItem('user-theme', theme)
   }
 
@@ -49,19 +52,23 @@
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
       @focusout="showTitle = false"
-      @click="toggleDarkMode">
+      @click="toggleDarkMode"
+    >
       <span
         v-show="showTitle"
         class="animate__animated animate__fadeIn tw-mr-5 tw-hidden tw-whitespace-nowrap tw-text-right tw-text-sm tw-font-semibold tw-text-gray-900 dark:tw-text-indigo-100 lg:tw-block"
-        for="theme-toggle">
+        for="theme-toggle"
+      >
         {{ store.isDarkMode ? $t('nav.theme-light') : $t('nav.theme-dark') }}
       </span>
       <span
         :class="store.isDarkMode ? 'tw-hidden' : 'tw-block'"
-        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5" />
+        class="tw-i-ph-moon-stars-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5"
+      />
       <span
         :class="store.isDarkMode ? 'tw-block' : 'tw-hidden'"
-        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5" />
+        class="tw-i-ph-sun-fill tw-h-9 tw-w-9 tw-shadow-sm lg:tw-h-5 lg:tw-w-5"
+      />
     </button>
   </div>
 </template>

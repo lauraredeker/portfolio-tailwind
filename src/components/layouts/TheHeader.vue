@@ -52,12 +52,14 @@
 
 <template>
   <header
-    class="tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0">
+    class="tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0"
+  >
     <div class="tw-flex tw-w-full tw-justify-between tw-px-3 sm:tw-space-x-2">
       <RouterLink
         class="tw-select-none tw-rounded-lg tw-px-2 tw-py-6 tw-text-l tw-font-semibold hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white dark:hover:tw-text-purple-200 md:tw-text-xl lg:tw-px-3 lg:tw-py-2 lg:tw-text-2xl"
         to="/"
-        @click="isSubpage ?? scrollToTop()">
+        @click="isSubpage ?? scrollToTop()"
+      >
         laura a. redeker
       </RouterLink>
       <TheNav v-if="!isSmallerThanLg" />
@@ -66,10 +68,12 @@
     <Transition name="fade">
       <div
         v-if="!isSmallerThanLg"
-        class="tw-fixed tw-right-4 tw-top-24 tw-hidden lg:tw-block">
+        class="tw-fixed tw-right-4 tw-top-24 tw-hidden lg:tw-block"
+      >
         <div
           v-show="isScrolling"
-          class="tw-flex tw-flex-col tw-items-end">
+          class="tw-flex tw-flex-col tw-items-end"
+        >
           <TheDarkBtn />
           <TheLocaleChanger class="tw-mt-3" />
         </div>
