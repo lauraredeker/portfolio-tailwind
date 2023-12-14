@@ -89,7 +89,7 @@
               'animate__animated animate__fadeInBottomRight': isSectionVisible,
               'tw-will-change': !isSectionVisible,
             }"
-            class="tw-relative tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-z-10 sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 2xl:tw-h-128 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-h-144 3xl:tw-w-144"
+            class="tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 2xl:tw-h-128 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-h-144 3xl:tw-w-144"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.png"
           >

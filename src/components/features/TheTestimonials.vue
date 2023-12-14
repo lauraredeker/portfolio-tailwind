@@ -21,7 +21,7 @@
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl"
         aria-hidden="true"
       />
-      {{ $t('about.testimonial') }}
+      {{ $t('testimonials.lukas') }}
       <cite
         class="tw-mt-5 tw-block tw-text-sm tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 md:tw-text-l 2xl:tw-text-l"
       >

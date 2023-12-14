@@ -15,7 +15,7 @@
 </script>
 
 <template>
-  <div class="tw-mb-32 tw-mt-10 tw-text-center xl:tw-mb-20 xl:tw-mt-20">
+  <div class="tw-mb-32 tw-mt-16 tw-text-center xl:tw-mb-20 xl:tw-mt-20">
     <div
       v-element-visibility="onSectionVisibility" 
       class="tw-container"
@@ -64,7 +64,7 @@
               :class="{
                 ' tw-rotate-45': isContentVisible,
               }"
-              class="tw-i-ph-plus-bold tw-ml-4 tw-inline-block tw-h-8 tw-w-8  tw-transition-transform md:tw-h-12 md:tw-w-12"
+              class="tw-i-ph-plus-bold tw-ml-4 tw-inline-block tw-h-8 tw-w-8 tw-transition-transform md:tw-h-12 md:tw-w-12"
             />
           </span>
         </button>

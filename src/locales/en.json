@@ -42,7 +42,7 @@
 	},
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
-		"testimonial": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore.",
+		"author": "author of",
 		"pronouns": "she/her",
 		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
 		"text1": "Fast-forward to 2023 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
@@ -61,6 +61,9 @@
 		"ally-text1": "My goal is to make the web a more accessible and engaging place.",
 		"ally-text2": "Equality is very high on my priority list, which is why I want to develop digital services and products that are accessible to everyone and adapt smoothly to different devices and screen sizes.",
 		"ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
+	},
+	"testimonials": {
+		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
 		"headline": "Say hello!",
