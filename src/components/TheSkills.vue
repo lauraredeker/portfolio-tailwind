@@ -5,7 +5,6 @@
   import { useVisibility } from '../composables/useVisibility'
 
   const [isSectionVisible, onSectionVisibility] = useVisibility()
-  const [isQuoteVisible, onQuoteVisibility] = useVisibility()
 
 </script>
 

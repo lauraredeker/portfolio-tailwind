@@ -9,7 +9,9 @@
 		"contact-button": "Write me",
 		"skills": "Skills",
 		"germany": "Germany",
-		"at": "at"
+		"at": "at",
+		"show": "display",
+		"hide": "hide"
 	},
 	"nav": {
 		"menu-open": "Open menu",
@@ -43,14 +45,13 @@
 		"testimonial": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore.",
 		"pronouns": "she/her",
 		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
-		"text1": "Fast-forward to 2023 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a ",
-		"frontend": "Frontend Designer",
-		"text2": " according to Brad Frost.",
-		"text3": "Thanks to my many years of training in media creation and design, I am very familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are not only intuitive and performant, but also have a playful and creative touch. ✨",
+		"text1": "Fast-forward to 2023 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
+		"text2": "Thanks to my many years of training in media creation and design, I am very familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are not only intuitive and performant, but also have a playful and creative touch. ✨",
 		"vita": "my work experience"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
+		"headline-additional": "– I'm familiar with",
 		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
 		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
 		"design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",

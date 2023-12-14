@@ -207,6 +207,12 @@
 	}
 }
 
+@keyframes strokeOffset1 {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 #mask-L {
 	animation: strokeOffset .8s linear forwards 3s;
 }

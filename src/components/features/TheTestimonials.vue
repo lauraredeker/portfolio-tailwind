@@ -8,14 +8,14 @@
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="tw-mx-auto tw-mb-20 tw-max-w-full tw-px-8 md:tw-mb-40 md:tw-p-8 lg:tw-w-4/5 2xl:tw-w-3/5 3xl:tw-w-1/2"
+    class="dark:tw-bg-indigo-90 tw-my-20 tw-bg-slate-100 tw-py-20 dark:tw-bg-indigo-900 dark:tw-bg-opacity-70 md:tw-my-40 md:tw-pb-32 md:tw-pt-20"
   >
     <blockquote
       :class="{
         'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
         'tw-will-change': isQuoteVisible,
       }"
-      class="tw-text-m tw-mb-4 tw-hyphens-auto tw-border-[4px] tw-bg-indigo-200 tw-bg-opacity-40 tw-px-8 tw-py-10 tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-600 dark:tw-bg-indigo-800 dark:tw-bg-opacity-40 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-text-l md:tw-mb-10 md:tw-border-[10px] md:tw-border-amber-400 md:tw-py-10 md:tw-text-2xl md:tw-text-indigo-700 lg:tw-text-3xl xl:tw-px-20  3xl:tw-text-4xl"
+      class="tw-mx-auto tw-mb-4 tw-w-4/5 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-text-indigo-300 sm:tw-p-10 sm:tw-text-xl md:tw-mb-10 md:tw-w-2/3 md:tw-py-10 md:tw-text-2xl md:tw-text-indigo-700 lg:tw-text-3xl xl:tw-px-20 3xl:tw-text-4xl"
     >
       <span
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl"
