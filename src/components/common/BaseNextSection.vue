@@ -17,7 +17,7 @@
     <RouterLink
       :to="target ? target : '/#'"
       :aria-label="title"
-      class="tw-relative tw-rounded-lg tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500"
+      class="tw-relative tw-rounded-full tw-px-3 tw-py-4 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"
       @mouseout="showTitle = false"
@@ -33,7 +33,7 @@
       </Transition>
       <span
         :class="arrowClass"
-        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-purple-300 hover:dark:tw-text-indigo-300 lg:tw-h-14 lg:tw-w-14"
+        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-indigo-300 hover:dark:tw-text-purple-300 lg:tw-h-14 lg:tw-w-14"
       />
     </RouterLink>
   </div>
