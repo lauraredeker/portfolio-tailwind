@@ -20,7 +20,7 @@
           class="tw-mx-auto tw-mb-4 tw-font-semibold tw-text-black dark:tw-text-white sm:tw-text-xl md:tw-mb-10 xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-w-full"
         >
           <span
-            class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl"
+            class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl 3xl:tw-text-6xl"
             aria-hidden="true"
           />
           <span class="tw-text-l tw-leading-snug md:tw-text-2xl lg:tw-text-4xl 3xl:tw-text-6xl">
@@ -49,6 +49,16 @@
             </span>
           </cite>
         </blockquote>
+
+        <BaseNextSection
+          container-class="tw-block tw-mb-0 md:tw-mt-20"
+          :class="{
+            'animate__animated animate__fadeIn': onQuoteVisibility,
+            'tw-will-change': !onQuoteVisibility,
+          }"
+          target="#contact"
+          title="Contact Me"
+        />
       </div>
     </div>
   </div>
