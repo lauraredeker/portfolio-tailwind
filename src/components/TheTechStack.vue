@@ -21,7 +21,7 @@
       class="tw-container"
     >
       <div
-        class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-purple-500 dark:tw-border-purple-300 md:tw-rounded-lg 2xl:tw-w-4/5"
+        class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-purple-500 dark:tw-border-purple-300 md:tw-rounded-lg"
         :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
       >
         <button 
@@ -86,24 +86,24 @@
               aria-hidden="true"
             >
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
             </div>
             <div
               :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
-              class="tw-text-base md:tw-text-l xl:tw-mt-10"
+              class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
                 Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation,
@@ -125,24 +125,24 @@
               aria-hidden="true"
             >
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-asterisk-bold tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-asterisk-bold tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
             </div>
             <div
               :class="{ 'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible }"
-              class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10"
+              class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
                 Figma, Web Accessibility, WCAG, Vuex, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
@@ -164,24 +164,24 @@
               aria-hidden="true"
             >
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-smiley-sticker-duotone tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-asterisk-bold tw-mr-1 tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
               <span
-                class="tw-i-ph-asterisk-bold tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-10 3xl:tw-w-10"
+                class="tw-i-ph-asterisk-bold tw-h-8 tw-w-8 tw-text-indigo-700 dark:tw-text-amber-200 3xl:tw-h-12 3xl:tw-w-12"
               />
             </div>
             <div
               :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
-              class="tw-text-base md:tw-text-l xl:tw-mt-10"
+              class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>Vuetify, TypeScript, SVG, Node.js, NPM, Grunt, Gulp</p>
             </div>

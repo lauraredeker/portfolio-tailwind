@@ -10,22 +10,24 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
-    <div class="tw-h-screen tw-bg-indigo-100 tw-bg-opacity-50 tw-py-32 dark:tw-bg-black md:tw-py-52">
+    <div class="tw-flex tw-h-screen tw-flex-row tw-items-center tw-bg-indigo-100 tw-bg-opacity-60 tw-py-32 dark:tw-bg-black dark:tw-bg-opacity-40 md:tw-py-52">
       <div class="tw-container">
         <blockquote
           :class="{
             'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
             'tw-will-change': isQuoteVisible,
           }"
-          class="tw-mx-auto tw-mb-4 tw-bg-transparent tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-950 dark:tw-text-white sm:tw-text-xl md:tw-mb-10 md:tw-text-2xl lg:tw-text-4xl xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-text-5xl"
+          class="tw-mx-auto tw-mb-4 tw-font-semibold tw-text-black dark:tw-text-white sm:tw-text-xl md:tw-mb-10 xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-w-full"
         >
           <span
-            class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl"
+            class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl"
             aria-hidden="true"
           />
-          {{ $t('testimonials.lukas') }}
+          <span class="tw-text-l tw-leading-snug md:tw-text-2xl lg:tw-text-4xl 3xl:tw-text-6xl">
+            {{ $t('testimonials.lukas') }}
+          </span>
           <cite
-            class="tw-mt-5 tw-block tw-text-sm tw-font-semibold tw-not-italic tw-tracking-normal tw-text-indigo-800 dark:tw-text-white md:tw-mt-10 md:tw-text-l 2xl:tw-text-xl"
+            class="tw-mt-5 tw-block tw-text-sm tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-700 dark:tw-text-white md:tw-mt-10 md:tw-text-l 2xl:tw-text-2xl"
           >
             <span class="tw-flex tw-flex-row tw-items-center">
               <span
@@ -58,8 +60,8 @@
 .custom-parallax {
     /* The image used */
     background-image: image-set(
-      url("img/pictures/banner-moi.webp") type("image/webp"),
-      url("img/pictures/banner-moi.jpg") type("image/jpeg")
+      url("../img/pictures/banner-moi.webp") type("image/webp"),
+      url("../img/pictures/banner-moi.jpg") type("image/jpeg")
     );
     /* Set a specific height */
     min-height: 400px;

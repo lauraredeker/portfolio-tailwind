@@ -22,7 +22,7 @@
             'animate__animated animate__slideInDown': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
+          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9] 3xl:tw-text-10xl 3xl:tw-leading-[0.875]"
         >
           <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t('start.hello1') }}
@@ -37,7 +37,7 @@
             'animate__animated animate__bounceInLeft': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
+          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
         >
           {{ $t('start.intro1') }}
           <RouterLink
@@ -82,7 +82,7 @@
             :class="{
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-right-[2%] 3xl:tw-h-[30%] 3xl:tw-w-[30%]"
+            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-bottom-[30%]  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >
