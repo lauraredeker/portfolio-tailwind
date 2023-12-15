@@ -75,17 +75,16 @@
             type="image/webp"
           >
           <source
-            srcset="/img/pictures/moi.png"
+            srcset="/img/pictures/moi.jpg"
             type="image/jpeg"
           >
           <img
             :class="{
-              'animate__animated animate__fadeInBottomRight': isSectionVisible,
-              'tw-will-change': !isSectionVisible,
+              'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-right-[2%] 3xl:tw-h-[30%] 3xl:tw-w-[30%]"
+            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-right-[2%] 3xl:tw-h-[30%] 3xl:tw-w-[30%]"
             alt="Picture of Laura sneaking around the corner."
-            src="/img/pictures/moi.png"
+            src="/img/pictures/moi.jpg"
           >
         </picture>
       </Transition>
@@ -102,3 +101,9 @@
     />
   </section>
 </template>
+
+<style scoped>
+.custom-image {
+  clip-path: circle(50% at 50% 50%);
+}
+</style>
