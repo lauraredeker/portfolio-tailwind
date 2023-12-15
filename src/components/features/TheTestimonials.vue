@@ -10,7 +10,7 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
-    <div class="tw-flex tw-h-screen tw-flex-row tw-items-center tw-bg-indigo-100 tw-bg-opacity-60 tw-py-32 dark:tw-bg-black dark:tw-bg-opacity-40 md:tw-py-52">
+    <div class="tw-flex tw-h-screen tw-flex-row tw-items-center tw-bg-indigo-100 tw-bg-opacity-60 tw-py-32 dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-py-52">
       <div class="tw-container">
         <blockquote
           :class="{
