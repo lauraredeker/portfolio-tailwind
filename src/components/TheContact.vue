@@ -14,9 +14,9 @@
 </script>
 
 <template>
-  <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40">
+  <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40 3xl:tw-h-screen">
     <section
-      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center lg:tw-pb-48 3xl:tw-pb-52"
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center lg:tw-pb-28 3xl:tw-pt-40"
     >
       <div
         v-element-visibility="onSectionVisibility"

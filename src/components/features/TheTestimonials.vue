@@ -10,14 +10,14 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
-    <div class="tw-flex tw-h-screen tw-flex-row tw-items-center tw-bg-indigo-100 tw-bg-opacity-60 tw-py-32 dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-py-52">
+    <div class="tw-flex tw-h-screen tw-flex-row tw-items-center tw-bg-white tw-bg-opacity-50 tw-py-32 dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-py-52">
       <div class="tw-container">
         <blockquote
           :class="{
             'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
             'tw-will-change': isQuoteVisible,
           }"
-          class="tw-mx-auto tw-mb-4 tw-font-semibold tw-text-black dark:tw-text-white sm:tw-text-xl md:tw-mb-10 xl:tw-px-0 2xl:tw-w-4/5 3xl:tw-w-full"
+          class="tw-mx-auto tw-mb-4 tw-font-semibold tw-text-black dark:tw-text-indigo-50 sm:tw-text-xl md:tw-mb-10 xl:tw-px-0"
         >
           <span
             class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl 3xl:tw-text-6xl"
@@ -27,7 +27,7 @@
             {{ $t('testimonials.lukas') }}
           </span>
           <cite
-            class="tw-mt-5 tw-block tw-text-sm tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-700 dark:tw-text-white md:tw-mt-10 md:tw-text-l 2xl:tw-text-2xl"
+            class="tw-mt-5 tw-block tw-text-sm tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-gray-300 md:tw-mt-10 md:tw-text-l 2xl:tw-text-xl"
           >
             <span class="tw-flex tw-flex-row tw-items-center">
               <span

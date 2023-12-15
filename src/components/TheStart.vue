@@ -60,7 +60,7 @@
           'animate__animated animate__fadeIn': isSectionVisible,
           'tw-will-change': !isSectionVisible,
         }"
-        container-class="tw-mt-10 tw-mb-6 md:tw-hidden"
+        container-class="tw-mt-10 tw-mb-6 xl:tw-hidden"
         target="#about"
         :title="$t('nav.about-long')"
       />
@@ -82,7 +82,7 @@
             :class="{
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-bottom-[30%]  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
+            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-mt-20 xl:tw-absolute xl:-tw-bottom-[20%] xl:-tw-right-[8%] xl:tw-mt-0 xl:tw-h-128 xl:tw-w-128 3xl:-tw-bottom-[30%]  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >
@@ -95,7 +95,7 @@
         'animate__animated animate__fadeIn': isSectionVisible,
         'tw-will-change': !isSectionVisible,
       }"
-      container-class="tw-relative tw-z-50 tw-hidden md:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
+      container-class="tw-relative tw-z-50 tw-hidden xl:tw-block sm:-tw-mt-20 3xl:-tw-mt-32"
       target="#about"
       :title="$t('nav.about-long')"
     />
