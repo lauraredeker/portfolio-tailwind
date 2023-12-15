@@ -22,7 +22,7 @@
             'animate__animated animate__slideInDown': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9]"
+          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9] 3xl:tw-text-10xl 3xl:tw-leading-[0.875]"
         >
           <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t('start.hello1') }}
@@ -37,7 +37,7 @@
             'animate__animated animate__bounceInLeft': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl"
+          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
         >
           {{ $t('start.intro1') }}
           <RouterLink
@@ -54,12 +54,6 @@
           {{ $t('start.intro4') }}
         </h2>
       </div>
-
-      <!-- dotted border circle -->
-      <div
-        aria-hidden="true"
-        class="custom-circle-animation-1 tw-absolute -tw-right-10 tw-bottom-0 tw-h-80 tw-w-80 tw-rounded-full tw-border-[5px] tw-border-dotted tw-border-indigo-100 tw-transition-all dark:tw-border-indigo-900 dark:tw-bg-transparent md:-tw-bottom-[15%] md:-tw-right-[25%] md:tw-h-128 md:tw-w-128 lg:-tw-bottom-[26%] lg:-tw-right-[18%] lg:tw-h-[600px] lg:tw-w-[600px] 2xl:-tw-bottom-[28%] 2xl:-tw-right-[15%] 2xl:tw-h-[48rem] 2xl:tw-w-[48rem]"
-      />
 
       <BaseNextSection
         :class="{
@@ -81,17 +75,16 @@
             type="image/webp"
           >
           <source
-            srcset="/img/pictures/moi.png"
+            srcset="/img/pictures/moi.jpg"
             type="image/jpeg"
           >
           <img
             :class="{
-              'animate__animated animate__fadeInBottomRight': isSectionVisible,
-              'tw-will-change': !isSectionVisible,
+              'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[20%] md:-tw-right-20 2xl:-tw-right-[16%] 2xl:tw-h-128 2xl:tw-w-128 3xl:-tw-right-[5%] 3xl:tw-h-144 3xl:tw-w-144"
+            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-absolute md:-tw-bottom-[40%] md:-tw-right-20 xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 2xl:-tw-right-[8%] 3xl:-tw-bottom-[30%]  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
             alt="Picture of Laura sneaking around the corner."
-            src="/img/pictures/moi.png"
+            src="/img/pictures/moi.jpg"
           >
         </picture>
       </Transition>
@@ -108,3 +101,9 @@
     />
   </section>
 </template>
+
+<style scoped>
+.custom-image {
+  clip-path: circle(50% at 50% 50%);
+}
+</style>

@@ -109,7 +109,7 @@
         'tw-justify-center lg:tw-w-16': !showTitle,
       }"
       :aria-label="`Change language to ${lang.text}`"
-      class="tw-flex tw-w-36 tw-flex-row tw-rounded-lg tw-border-4 tw-border-indigo-200 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-800 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-w-48 lg:tw-bg-indigo-100 lg:tw-px-4 lg:tw-py-4 lg:tw-text-sm lg:tw-shadow-md"
+      class="tw-flex tw-w-36 tw-flex-row tw-rounded-lg tw-border-4 tw-border-blue-400 tw-bg-indigo-50 tw-px-4 tw-py-4 tw-text-center tw-align-middle tw-text-xl tw-text-blue-600 tw-transition-all hover:tw-bg-indigo-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-border-purple-300 dark:tw-border-indigo-700 dark:tw-bg-indigo-800 dark:tw-text-amber-50 dark:hover:tw-bg-indigo-900 dark:active:tw-border-purple-300 md:tw-w-48 lg:tw-bg-indigo-100 lg:tw-px-4 lg:tw-py-4 lg:tw-text-sm lg:tw-shadow-md"
       @click="changeLocale(lang)"
       @mouseover="showTitle = true"
       @focusin="showTitle = true"

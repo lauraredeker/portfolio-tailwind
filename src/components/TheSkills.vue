@@ -90,13 +90,18 @@
 
     <TheTechStack />
 
-
-    <TheTestimonials />
-
     <BaseNextSection
+      :class="{
+        'animate__animated animate__fadeIn': isSectionVisible,
+        'tw-will-change': !isSectionVisible,
+      }"
       container-class="tw-block md:tw-mt-40 md:tw-mb-40"
-      target="#contact"
-      title="Contact Me"
+      target="#testimonials"
+      :title="$t('nav.testimonials')"
     />
+
+    <TheTestimonials id="testimonials" />
   </section>
 </template>
+
+

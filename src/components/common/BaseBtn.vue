@@ -52,11 +52,12 @@
     :is="element"
     :href="props.href || ''"
     :to="props.to"
+    class="tw-relative tw-block tw-rounded-full focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500"
   >
     <span
       ref="btn"
       :style="`--x: ${translateX}; --y: ${translateY})`"
-      class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4"
+      class="custom-button tw-relative tw-flex tw-cursor-pointer tw-flex-row tw-items-center tw-justify-center tw-self-center tw-overflow-hidden tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-4 tw-font-semibold tw-text-white tw-transition-all hover:tw-border-indigo-800 hover:tw-text-white dark:tw-text-white md:tw-mt-0 md:tw-px-16 md:tw-py-4"
     >
       <span
         ref="circle"

@@ -11,7 +11,8 @@
 		"germany": "Germany",
 		"at": "at",
 		"show": "display",
-		"hide": "hide"
+		"hide": "hide",
+		"stars": "Stars"
 	},
 	"nav": {
 		"menu-open": "Open menu",
@@ -23,6 +24,7 @@
 		"about-long": "more about me",
 		"skills": "expertise",
 		"skills-long": "my skills",
+		"testimonials": "what others say",
 		"contact": "contact"
 	},
 	"footer": {
@@ -46,7 +48,7 @@
 		"pronouns": "she/her",
 		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
 		"text1": "Fast-forward to 2023 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
-		"text2": "Thanks to my many years of training in media creation and design, I am very familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are not only intuitive and performant, but also have a playful and creative touch. ✨",
+		"text2": "Thanks to my many years of training in media creation and design, I am very familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
 		"vita": "my work experience"
 	},
 	"skills": {
@@ -54,7 +56,7 @@
 		"headline-additional": "– I'm familiar with",
 		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
 		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
-		"design-text3": "I'm a big fan of designing with code: By developing living style guides, it is often easier for teams to maintain scalable and consistent UIs. However, I still mostly use tools like Figma for ideation and sketching, and to create wireframes and mockups.",
+		"design-text3": "I like to use tools like Figma for ideation and sketching, and to create wireframes and interactive prototypes so that my designs can be tested and validated early on. Further on, it can make sense to develop Living Style Guides, that make it easier for teams to maintain scalable and consistent UIs.",
 		"code-text1": "Writing code is my favorite way to bring designs to life:",
 		"code-text2": "As an 'architect' of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
 		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",

@@ -124,6 +124,12 @@ module.exports = {
 					lineHeight: '1',
 				},
 			],
+			'10xl': [
+				'10.75rem',
+				{
+					lineHeight: '1',
+				},
+			],
 		},
 		fontFamily: {
 			sans: ['Poppins', ...defaultTheme.fontFamily.sans],
