@@ -18,7 +18,7 @@
     <div class="tw-py-30 tw-flex tw-h-[70vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60  dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
-          'animate__animated animate__fadeIn animate__slow animate__delay-5s': isQuoteVisible,
+          'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
         }"
         class="tw-mx-auto focus:tw-outline-none 2xl:tw-max-w-screen-2xl 3xl:tw-max-w-screen-3xl"
         :i18n="{
