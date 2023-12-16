@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import TheTechStack from './TheTechStack.vue'
+  import TheTechStack from './features/TheTechStack.vue'
   import TheTestimonials from './features/TheTestimonials.vue'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
@@ -96,8 +96,8 @@
 
     <BaseNextSection
       :class="{
-        'animate__animated animate__slideInUp  animate__delay-4s': isSectionVisible,
-        'tw-will-change': !isSectionVisible,
+        'animate__animated animate__slideInUp  animate__delay-5s': isSection3Visible,
+        'tw-will-change': !isSection3Visible,
       }"
       container-class="tw-block md:tw-mt-40 md:tw-mb-40"
       target="#testimonials"

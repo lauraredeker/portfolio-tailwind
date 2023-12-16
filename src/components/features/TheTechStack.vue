@@ -3,7 +3,7 @@
 
   // Composables
   import { vElementVisibility } from '@vueuse/components'
-  import { useVisibility } from '../composables/useVisibility'
+  import { useVisibility } from '../../composables/useVisibility'
 
   const [isSectionVisible, onSectionVisibility] = useVisibility()
   const isContentVisible = ref(false)
@@ -18,7 +18,7 @@
   <div class="tw-mb-32 tw-mt-16 tw-text-center xl:tw-mb-20 xl:tw-mt-20 2xl:tw-mb-48">
     <div
       v-element-visibility="onSectionVisibility" 
-      :class="{ 'animate__animated animate__slideInUp animate__delay-1s': isSectionVisible }"
+      :class="{ 'animate__animated animate__fadeIn animate__delay-5s': isSectionVisible }"
       class="tw-container"
     >
       <div
