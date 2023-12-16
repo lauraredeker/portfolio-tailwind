@@ -5,14 +5,13 @@
 
   // Composables
   import { useVisibility } from '../../composables/useVisibility'
-
   const [isQuoteVisible, onQuoteVisibility] = useVisibility()
 </script>
 
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="xl:tw-mt-54 tw-relative tw-z-0 tw-mx-auto -tw-mt-48 tw-flex tw-max-w-full tw-flex-row md:tw-mt-64 md:tw-p-8 2xl:tw-mt-80 2xl:tw-w-3/4 3xl:tw-w-4/6"
+    class="tw-relative tw-z-0 tw-mx-auto -tw-mt-48 tw-flex tw-max-w-full tw-flex-row md:tw-mt-0 md:tw-p-8 xl:tw-mt-80 2xl:tw-mt-80 2xl:tw-w-3/4 3xl:tw-w-4/6"
   >
     <blockquote
       lang="en"
@@ -20,7 +19,7 @@
         'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
         'tw-will-change': isQuoteVisible,
       }"
-      class="tw-border-indigo-400 tw-bg-indigo-300 tw-bg-opacity-40 tw-px-8 tw-pb-32 tw-pt-36 tw-text-xl tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900  dark:tw-text-indigo-300 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
+      class="tw-border-indigo-400  tw-bg-indigo-300 tw-bg-opacity-30 tw-px-8 tw-pb-32 tw-pt-36 tw-text-xl tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-text-xl  md:tw-mb-10 md:tw-border-[10px] md:tw-p-10  md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
     >
       <span
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-5xl"
