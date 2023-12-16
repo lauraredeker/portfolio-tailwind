@@ -11,11 +11,11 @@
 <template>
   <section
     v-element-visibility="onSectionVisibility"
-    class="tw-container tw-relative tw-w-full xl:tw-px-0"
+    class="tw-container tw-relative tw-z-10 tw-w-full"
   >
     <TheBgCircles />
 
-    <section class="tw-flex tw-flex-col tw-align-middle md:tw-h-screen">
+    <section class="tw-flex tw-flex-col tw-align-middle xl:tw-h-screen">
       <div class="tw-relative tw-z-20 tw-mx-auto -tw-mt-5 md:tw-mt-20 xl:tw-w-11/12">
         <h1
           :class="{
@@ -69,7 +69,10 @@
         name="slide"
         appear
       >
-        <picture id="picture">
+        <picture
+          id="picture"
+          class="tw-mx-auto tw-mb-24 tw-rounded-full tw-border-4 tw-border-white md:tw-mt-10"
+        >
           <source
             srcset="/img/pictures/moi.webp"
             type="image/webp"
@@ -82,7 +85,7 @@
             :class="{
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="custom-image tw-relative tw-z-20 tw-mx-auto tw-mb-24 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-mt-20 xl:tw-absolute xl:-tw-bottom-[30%] xl:-tw-right-[8%] xl:tw-h-128 xl:tw-w-128  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
+            class="custom-image tw-relative tw-z-30 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 xl:tw-absolute xl:-tw-bottom-[36%] xl:-tw-right-[14%] xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[26%] 3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >

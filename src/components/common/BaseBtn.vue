@@ -52,7 +52,7 @@
     :is="element"
     :href="props.href || ''"
     :to="props.to"
-    class="tw-relative tw-block tw-rounded-full focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500"
+    class="tw-relative tw-block tw-rounded-full focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500"
   >
     <span
       ref="btn"

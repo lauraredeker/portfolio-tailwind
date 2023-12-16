@@ -25,7 +25,7 @@
       }"
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
-      <div class="tw-my-12 md:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
+      <div class="tw-my-12 md:tw-my-10 xl:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p
           class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l"
         >
