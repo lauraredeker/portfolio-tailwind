@@ -18,11 +18,11 @@
   <div class="tw-mb-32 tw-mt-16 tw-text-center xl:tw-mb-20 xl:tw-mt-20 2xl:tw-mb-48">
     <div
       v-element-visibility="onSectionVisibility" 
+      :class="{ 'animate__animated animate__slideInUp animate__delay-1s': isSectionVisible }"
       class="tw-container"
     >
       <div
         class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-indigo-500 md:tw-rounded-lg"
-        :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
       >
         <button 
           class="tw-flex tw-w-full tw-items-center tw-justify-between tw-px-4 tw-py-5 tw-align-middle tw-text-purple-400 tw-ring-inset tw-transition-all hover:tw-cursor-pointer hover:tw-text-purple-600 focus:tw-outline-none focus-visible:tw-ring-8 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 hover:dark:tw-text-purple-50 dark:focus-visible:tw-ring-purple-400 md:tw-px-10 md:tw-py-8"

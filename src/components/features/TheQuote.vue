@@ -20,7 +20,7 @@
         'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
         'tw-will-change': isQuoteVisible,
       }"
-      class="tw-border-indigo-400 tw-bg-indigo-300 tw-bg-opacity-40 tw-px-8 tw-pb-32 tw-pt-36 tw-text-l tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900  dark:tw-text-indigo-300 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
+      class="tw-border-indigo-400 tw-bg-indigo-300 tw-bg-opacity-40 tw-px-8 tw-pb-32 tw-pt-36 tw-text-xl tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900  dark:tw-text-indigo-300 sm:tw-text-xl md:tw-mb-10 md:tw-border-[10px] md:tw-p-10 md:tw-px-20 md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
     >
       <span
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-5xl"
@@ -30,7 +30,7 @@
       <span class="tw-whitespace-nowrap tw-underline tw-decoration-wavy">
         frontend design</span>.
       <cite
-        class="tw-mt-5 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white md:tw-mt-10 2xl:tw-text-xl"
+        class="tw-mt-10 tw-block tw-text-base tw-font-semibold tw-not-italic tw-tracking-normal tw-text-gray-800 dark:tw-text-white 2xl:tw-text-xl"
       >
         Brad Frost,
         {{ $t('about.author') }}

@@ -7,15 +7,14 @@
 
 <template>
   <div
-    v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
     <div class="tw-py-30 tw-flex tw-h-[80vh] tw-flex-row tw-items-center tw-bg-blue-100 tw-bg-opacity-40 dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <div class="tw-container">
         <blockquote
+          v-element-visibility="onQuoteVisibility"
           :class="{
-            'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
-            'tw-will-change': isQuoteVisible,
+            'animate__animated animate__fadeIn animate__slow animate__delay-3s': isQuoteVisible,
           }"
           class="tw-mx-auto tw-mb-4 tw-font-semibold tw-text-black dark:tw-text-indigo-50 sm:tw-text-xl md:tw-mb-10 xl:tw-px-0"
         >

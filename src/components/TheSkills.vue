@@ -4,19 +4,21 @@
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
 
-  const [isSectionVisible, onSectionVisibility] = useVisibility()
+  const [isSection1Visible, onSection1Visibility] = useVisibility()
+  const [isSection2Visible, onSection2Visibility] = useVisibility()
+  const [isSection3Visible, onSection3Visibility] = useVisibility()
 
 </script>
 
 <template>
   <section class="tw-relative">
     <div
-      v-element-visibility="onSectionVisibility"
       class="tw-container tw-w-full tw-hyphens-auto md:tw-pt-20"
     >
       <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 2xl:tw-gap-20">
         <div
-          :class="{ 'animate__animated animate__slideInUp': isSectionVisible }"
+          v-element-visibility="onSection1Visibility"
+          :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
           class="tw-text-center"
         >
           <span
@@ -41,7 +43,8 @@
         </div>
 
         <div
-          :class="{ 'animate__animated animate__slideInUp animate__delay-1s': isSectionVisible }"
+          v-element-visibility="onSection2Visibility"
+          :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
           class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
         >
           <span
@@ -64,7 +67,8 @@
         </div>
 
         <div
-          :class="{ 'animate__animated animate__slideInUp  animate__delay-2s': isSectionVisible }"
+          v-element-visibility="onSection3Visibility"
+          :class="{ 'animate__animated animate__slideInUp  animate__delay-3s': isSection3Visible }"
           class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
         >
           <span
@@ -92,7 +96,7 @@
 
     <BaseNextSection
       :class="{
-        'animate__animated animate__fadeIn': isSectionVisible,
+        'animate__animated animate__slideInUp  animate__delay-4s': isSectionVisible,
         'tw-will-change': !isSectionVisible,
       }"
       container-class="tw-block md:tw-mt-40 md:tw-mb-40"
