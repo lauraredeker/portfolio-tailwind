@@ -3,7 +3,7 @@
   import { RouterLink } from 'vue-router'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
-  import BgCircles from '@/components/features/BgCircles.vue'
+  import TheBgCircles from '@/components/features/TheBgCircles.vue'
 
   const [isSectionVisible, onSectionVisibility] = useVisibility()
 </script>
@@ -13,7 +13,7 @@
     v-element-visibility="onSectionVisibility"
     class="tw-container tw-relative tw-w-full xl:tw-px-0"
   >
-    <BgCircles />
+    <TheBgCircles />
 
     <section class="tw-flex tw-flex-col tw-align-middle md:tw-h-screen">
       <div class="tw-relative tw-z-20 tw-mx-auto -tw-mt-5 md:tw-mt-20 xl:tw-w-11/12">
@@ -82,7 +82,7 @@
             :class="{
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="custom-image tw-relative tw-z-10 tw-mx-auto tw-mb-20 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-mt-20 xl:tw-absolute xl:-tw-bottom-[20%] xl:-tw-right-[8%] xl:tw-mt-0 xl:tw-h-128 xl:tw-w-128 3xl:-tw-bottom-[30%]  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
+            class="custom-image tw-relative tw-z-20 tw-mx-auto tw-mb-24 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 md:tw-mt-20 xl:tw-absolute xl:-tw-bottom-[30%] xl:-tw-right-[8%] xl:tw-h-128 xl:tw-w-128  3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >

@@ -21,7 +21,7 @@
       class="tw-container"
     >
       <div
-        class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-4 tw-border-solid tw-border-indigo-500 md:tw-rounded-lg"
+        class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-indigo-500 md:tw-rounded-lg"
         :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
       >
         <button 

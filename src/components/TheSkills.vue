@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <section>
+  <section class="tw-relative">
     <div
       v-element-visibility="onSectionVisibility"
       class="tw-container tw-w-full tw-hyphens-auto md:tw-pt-20"
