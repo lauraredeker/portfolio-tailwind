@@ -79,7 +79,7 @@
       ref="circle"
       aria-hidden="true"
       :style="`transform: translate(${translateX}px, ${translateY}px)`"
-      class="tw-absolute -tw-left-[15%] tw-h-128 tw-w-128 tw-rounded-full tw-border-2 tw-border-amber-300 tw-bg-opacity-30 tw-transition-transform dark:tw-border-indigo-800 md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] md:tw-border-4 lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:-tw-left-[2%] 2xl:-tw-top-[10%] 2xl:tw-h-[110vmin] 2xl:tw-w-[110vmin]"
+      class="tw-z-5 tw-absolute -tw-left-[15%] -tw-top-[7%] tw-h-128 tw-w-128 tw-rounded-full tw-border-2 tw-border-blue-300 tw-bg-opacity-30 tw-transition-transform dark:tw-border-indigo-800 md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] md:tw-border-4 lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:-tw-left-[2%] 2xl:-tw-top-[10%] 2xl:tw-h-[110vmin] 2xl:tw-w-[110vmin]"
     />
 
     <!-- dark big bg circle -->
@@ -88,7 +88,7 @@
       :class="{
         'custom-circle-animation-3': isSectionVisible,
       }"
-      class="tw-absolute tw-left-[7%] tw-top-[5%] tw-z-0 tw-h-[27rem] tw-w-[27rem] tw-rounded-full tw-bg-gray-200 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-left-[6vmin] 2xl:-tw-top-20  2xl:tw-h-[124vmin] 2xl:tw-w-[124vmin] 3xl:-tw-left-[11vmin]"
+      class="tw-absolute tw-left-[2%] tw-top-[-5%] tw-z-0 tw-h-[37rem] tw-w-[37rem] tw-rounded-full tw-bg-indigo-100 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-left-[6vmin] 2xl:-tw-top-20  2xl:tw-h-[124vmin] 2xl:tw-w-[124vmin] 3xl:-tw-left-[11vmin]"
     />
 
     <!-- small bg circle -->

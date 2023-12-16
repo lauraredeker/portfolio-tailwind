@@ -32,8 +32,8 @@
         </span>
       </Transition>
       <span
-        :class="arrowClass"
-        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-text-purple-500 tw-transition hover:tw-text-blue-600 motion-safe:tw-animate-bounce dark:tw-text-indigo-300 hover:dark:tw-text-purple-300 lg:tw-h-14 lg:tw-w-14"
+        :class="arrowClass ? arrowClass : 'tw-text-purple-500 hover:tw-text-blue-600 dark:tw-text-indigo-300 hover:dark:tw-text-purple-300'"
+        class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-transition motion-safe:tw-animate-bounce lg:tw-h-14 lg:tw-w-14"
       />
     </RouterLink>
   </div>

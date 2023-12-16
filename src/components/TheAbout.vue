@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <section class="tw-relative tw-mx-auto tw-pt-1">
+  <section class="tw-relative tw-mx-auto">
     <TheQuote />
 
     <div
