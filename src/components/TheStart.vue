@@ -71,7 +71,7 @@
       >
         <picture
           id="picture"
-          class="tw-mx-auto tw-mb-24 tw-rounded-full tw-border-4 tw-border-white md:tw-mt-10"
+          class="tw-mx-auto tw-mb-24 tw-rounded-full md:tw-mt-10"
         >
           <source
             srcset="/img/pictures/moi.webp"
