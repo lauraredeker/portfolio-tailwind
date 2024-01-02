@@ -12,7 +12,11 @@
 		"at": "bei",
 		"show": "anzeigen",
 		"hide": "ausblenden",
-		"stars": "Sterne"
+		"stars": "Sterne",
+		"days": "Tage",
+		"hours": "Stunde(n)",
+		"minutes": "Minuten",
+		"seconds": "Sekunden"
 	},
 	"nav": {
 		"menu-open": "Menü öffnen",
