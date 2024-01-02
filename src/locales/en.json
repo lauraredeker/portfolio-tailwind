@@ -12,7 +12,11 @@
 		"at": "at",
 		"show": "display",
 		"hide": "hide",
-		"stars": "Stars"
+		"stars": "Stars",
+		"days": "days",
+		"hours": "hour(s)",
+		"minutes": "minutes",
+		"seconds": "seconds"
 	},
 	"nav": {
 		"menu-open": "Open menu",

@@ -16,10 +16,12 @@
   // Props
   export interface Props {
     isSubpage?: boolean;
+    isNavVisible?: boolean;
   }
 
   withDefaults(defineProps<Props>(), {
     isSubpage: false,
+    isNavVisible: true
   })
 
   const { width, height } = useWindowSize()
@@ -62,13 +64,17 @@
       >
         laura a. redeker
       </RouterLink>
-      <TheNav v-if="!isSmallerThanLg" />
+      <TheNav v-if="!isSmallerThanLg && isNavVisible" />
     </div>
 
     <Transition name="fade">
       <div
         v-if="!isSmallerThanLg"
-        class="tw-fixed tw-right-4 tw-top-24 tw-hidden lg:tw-block"
+        class="tw-fixed tw-right-4 tw-hidden lg:tw-block"
+        :class="{
+          'tw-top-24': isNavVisible,
+          'tw-top-6': !isNavVisible
+        }"
       >
         <div
           v-show="isScrolling"

@@ -1,33 +1,22 @@
 <script lang="ts" setup>
-  import { ref } from 'vue'
+  import { ref, watchEffect } from 'vue'
+  import { useElementVisibility } from '@vueuse/core'
 
-  // Composables
-  import { useElementVisibility, useDocumentVisibility, debouncedWatch } from '@vueuse/core'
-
-  const signature = ref(null)
-  const signatureIsVisible = useElementVisibility(signature)
-  const visibility = useDocumentVisibility()
-  const masks = ['L', 'A', 'U', 'R', 'AA']
-  
-  /**
-   * Debounce the watch function to prevent it from running too often.
-   * @param {boolean} signatureIsVisible
-   * @param {string} visibility
-   */
-  debouncedWatch(
-    [signatureIsVisible, visibility],
-    (newVal) => {
-      if (newVal) {
-        drawLetter()
-      }
-    },
-    { debounce: 500 }
-  )
+  const target = ref(null)
+  const signatureIsVisible = useElementVisibility(target)
+ 
+  watchEffect(() => {
+    if (signatureIsVisible.value) {
+      drawLetter()
+    } 
+  })
 
   /**
    * Draw the letter by updating the strokeDasharray.
    */
   function drawLetter() {
+    const masks = ['L', 'A', 'U', 'R', 'AA']
+
     masks.forEach((mask: string) => {
       const id = `#mask-${mask}`
       const path: SVGPathElement | null = document.querySelector<SVGPathElement>(id)
@@ -42,7 +31,7 @@
 
 <template>
   <svg
-    ref="signature"
+    ref="target"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -192,7 +181,7 @@
 
 <style scoped>
 .font {
-	 @apply tw-fill-indigo-400;
+	@apply tw-fill-indigo-400;
 	stroke: none;
 }
 
@@ -214,18 +203,18 @@
 }
 
 #mask-L {
-	animation: strokeOffset .8s linear forwards 3s;
+	animation: strokeOffset .8s linear forwards 6s;
 }
 #mask-A {
-	animation: strokeOffset .6s linear forwards 4s;
+	animation: strokeOffset .6s linear forwards 7s;
 }
 #mask-U {
-	animation: strokeOffset .6s linear forwards 4.6s;
+	animation: strokeOffset .6s linear forwards 7.6s;
 }
 #mask-R {
-	animation: strokeOffset .6s linear forwards 5.2s;
+	animation: strokeOffset .6s linear forwards 8.2s;
 }
 #mask-AA {
-	animation: strokeOffset .6s linear forwards 5.8s;
+	animation: strokeOffset .6s linear forwards 8.8s;
 }
 </style>
