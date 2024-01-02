@@ -2,7 +2,7 @@
 <script setup>
   import { ref, onMounted } from 'vue'
 
-  const countdownDate = new Date('2024-07-28T20:00:00')
+  const countdownDate = new Date('2024-07-28T19:00:00')
   const days = ref(0)
   const hours = ref(0)
   const minutes = ref(0)
