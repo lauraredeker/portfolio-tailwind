@@ -2,7 +2,7 @@
 <script setup>
   import { ref, onMounted } from 'vue'
 
-  const countdownDate = new Date('2024-07-28T20:00:00')
+  const countdownDate = new Date('2024-07-28T19:00:00')
   const days = ref(0)
   const hours = ref(0)
   const minutes = ref(0)
@@ -31,30 +31,35 @@
 <template>
   <div class="tw-h-full tw-w-full tw-border-8 tw-border-purple-300 tw-py-10 xl:tw-py-20 ">
     <section class="tw-flex tw-flex-col tw-justify-between">
-      <section class="tw-pb-10 tw-pt-16 tw-text-center">
-        <h1
-          class="tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-7xl 2xl:tw-text-8xl 2xl:tw-leading-[0.9]"
-        >
-          Taylor Swift
-        </h1>
-        <h2 class="tw-mt-6 tw-text-xl tw-font-semibold tw-leading-relaxed md:tw-text-2xl">
-          in {{ $t('general.location') }} (28.07.2024)
-        </h2>
-        <div class="tw-mx-auto tw-mt-10 tw-px-10 tw-py-10 tw-text-l sm:tw-text-xl md:tw-w-1/2 md:tw-text-2xl">
-          <p class="tw-mb-5">
-            <span class="tw-text-xl tw-font-semibold sm:tw-text-3xl md:tw-text-5xl">
-              {{ days }} {{ $t('general.days') }}
-              <span
-                class="tw-i-ph-confetti-light"
-                aria-hidden="true"
-              />
-            </span>
-          </p>
-          <p>{{ hours }} {{ $t('general.hours') }}</p>
-          <p>{{ minutes }} {{ $t('general.minutes') }}</p>
-          <p>{{ seconds }} {{ $t('general.seconds') }}</p>
-        </div>
-      </section>
+      <Transition
+        name="fade"
+        appear
+      >
+        <section class="tw-pb-10 tw-pt-16 tw-text-center">
+          <h1
+            class="tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-[#250592] tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-7xl 2xl:tw-text-8xl 2xl:tw-leading-[0.9]"
+          >
+            Taylor Swift
+          </h1>
+          <h2 class="tw-mt-6 tw-text-xl tw-font-semibold tw-leading-relaxed md:tw-text-2xl">
+            in {{ $t('general.location') }} (28.07.2024)
+          </h2>
+          <div class="tw-mx-auto tw-mt-10 tw-px-10 tw-py-10 tw-text-l sm:tw-text-xl md:tw-w-1/2 md:tw-text-2xl">
+            <p class="tw-mb-5">
+              <span class="tw-text-xl tw-font-semibold sm:tw-text-3xl md:tw-text-5xl">
+                {{ days }} {{ $t('general.days') }}
+                <span
+                  class="tw-i-ph-confetti-light"
+                  aria-hidden="true"
+                />
+              </span>
+            </p>
+            <p>{{ hours }} {{ $t('general.hours') }}</p>
+            <p>{{ minutes }} {{ $t('general.minutes') }}</p>
+            <p>{{ seconds }} {{ $t('general.seconds') }}</p>
+          </div>
+        </section>
+      </Transition>
     </section>
   </div>
 </template>
