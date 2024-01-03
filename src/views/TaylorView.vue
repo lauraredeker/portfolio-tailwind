@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="tw-border-8 tw-border-purple-300 ">
+  <div class="tw-border-4 tw-border-purple-300 ">
     <the-header
       :is-subpage="true"
       :is-nav-visible="false"
