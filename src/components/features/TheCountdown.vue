@@ -29,7 +29,7 @@
 </script>
 
 <template>
-  <div class="">
+  <div class="md:tw-h-full">
     <Transition
       name="fade"
       appear
@@ -43,7 +43,7 @@
         <h2 class="tw-mt-6 tw-text-xl tw-font-semibold tw-leading-relaxed md:tw-text-2xl">
           in {{ $t('general.location') }} (28.07.2024)
         </h2>
-        <div class="tw-mx-auto tw-mt-10 tw-px-10 tw-py-10 tw-text-l sm:tw-text-xl md:tw-mb-56 md:tw-w-1/2 md:tw-text-2xl">
+        <div class="tw-mx-auto tw-mb-56 tw-px-10 tw-py-10 tw-text-l sm:tw-text-xl md:tw-mt-10 md:tw-w-1/2 md:tw-text-2xl">
           <p class="tw-mb-5">
             <span class="tw-text-xl tw-font-semibold sm:tw-text-3xl md:tw-text-5xl">
               {{ days }} {{ $t('general.days') }}
