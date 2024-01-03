@@ -15,8 +15,8 @@
 		"stars": "Stars",
 		"days": "days",
 		"hours": "hour(s)",
-		"minutes": "minutes",
-		"seconds": "seconds"
+		"minutes": "minute(s)",
+		"seconds": "second(s)"
 	},
 	"nav": {
 		"menu-open": "Open menu",
