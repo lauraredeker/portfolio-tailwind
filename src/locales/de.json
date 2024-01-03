@@ -15,8 +15,8 @@
 		"stars": "Sterne",
 		"days": "Tage",
 		"hours": "Stunde(n)",
-		"minutes": "Minuten",
-		"seconds": "Sekunden"
+		"minutes": "Minute(n)",
+		"seconds": "Sekunde(n)"
 	},
 	"nav": {
 		"menu-open": "Menü öffnen",
