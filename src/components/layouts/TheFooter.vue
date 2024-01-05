@@ -39,7 +39,7 @@
             {{ $t('footer.github') }}
             <a
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
-              href="//github.com/therobotzombie"
+              href="//github.com/therobotzombie/portfolio-tailwind"
             >GitHub</a>
           </span>
         </div>
