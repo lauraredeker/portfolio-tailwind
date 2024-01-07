@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
-    <div class="tw-py-30 tw-flex tw-h-[70vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60  dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
+    <div class="tw-py-30 tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60  dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
@@ -39,7 +39,7 @@
           >
             <BaseQuote :quote="$t('testimonials.lukas')">
               <template #author>
-                <span class="tw-inline-block tw-leading-tight">
+                <span class="tw-inline-block">
                   Lukas Ponikowski<br>
                   Senior UX/UI Designer 
                   {{ $t('general.at') }}
@@ -61,7 +61,7 @@
           >
             <BaseQuote :quote="$t('testimonials.nicole')">
               <template #author>
-                <span class="tw-inline-block tw-leading-tight">
+                <span class="tw-inline-block">
                   <a
                     href="https://www.linkedin.com/in/nicole-reiter-1601129a/"
                     target="_blank"
@@ -82,9 +82,9 @@
           >
             <BaseQuote :quote="$t('testimonials.michael')">
               <template #author>
-                <span class="tw-inline-block tw-leading-tight">
+                <span class="tw-inline-block">
                   Michael Schauer<br>
-                  Photographer &amp; Artist
+                  {{ $t('testimonials.michael-job') }}
                 </span>
               </template>
             </BaseQuote>

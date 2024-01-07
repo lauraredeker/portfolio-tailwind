@@ -19,6 +19,7 @@
 		"seconds": "second(s)"
 	},
 	"nav": {
+		"menu": "Menu",
 		"menu-open": "Open menu",
 		"menu-close": "Close menu",
 		"theme-light": "Light Theme",
@@ -71,6 +72,7 @@
 	"testimonials": {
 		"nicole": "In our collaboration, Laura has always carefully thought through projects, provided valuable input and proved to be an indispensable team member. I would hire her as a freelancer, as a permanent team member or welcome her back as a colleague at any time.",
 		"michael": "Laura's creativity and technical skill transformed my vision for a website into an interactive piece of art, that not only showcases my work, but enhances the entire artistic experience.",
+		"michael-job": "Photographer &amp; Artist",
 		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
