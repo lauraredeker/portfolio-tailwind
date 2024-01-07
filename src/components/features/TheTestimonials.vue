@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-my-20"
   >
-    <div class="tw-py-30 tw-flex tw-h-[70vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60  dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
+    <div class="tw-py-30 tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60  dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
@@ -39,7 +39,7 @@
           >
             <BaseQuote :quote="$t('testimonials.lukas')">
               <template #author>
-                <span class="tw-inline-block tw-leading-tight">
+                <span class="tw-inline-block">
                   Lukas Ponikowski<br>
                   Senior UX/UI Designer 
                   {{ $t('general.at') }}
@@ -47,31 +47,52 @@
                     href="https://neverdone.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-rounded-lg tw-px-1 tw-text-white tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-rounded-lg tw-text-white tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
                   >
                     neverdone
                   </a>
                 </span>
               </template>
             </BaseQuote>
-          </slide>
+          </Slide>
 
-          <slide
+          <Slide
             key="two"
           >
-            <BaseQuote :quote="$t('testimonials.michael')">
+            <BaseQuote :quote="$t('testimonials.nicole')">
               <template #author>
-                <span class="tw-inline-block tw-leading-tight">
-                  Michael Schauer<br>
-                  Photographer &amp; Artist
+                <span class="tw-inline-block">
+                  <a
+                    href="https://www.linkedin.com/in/nicole-reiter-1601129a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="tw-inline-block tw-rounded-lg tw-text-white tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                  >
+                    Nicole Reiter
+                  </a>
+                  <br>
+                  Head Of Project Management {{ $t('general.at') }} port-neo | Business Coach
                 </span>
               </template>
             </BaseQuote>
-          </slide>
+          </Slide>
+
+          <Slide
+            key="three"
+          >
+            <BaseQuote :quote="$t('testimonials.michael')">
+              <template #author>
+                <span class="tw-inline-block">
+                  Michael Schauer<br>
+                  {{ $t('testimonials.michael-job') }}
+                </span>
+              </template>
+            </BaseQuote>
+          </Slide>
         </template>
         <template #addons>
           <Navigation class="tw-hidden md:tw-block" />
-          <Pagination class="tw-mt-10 md:tw-hidden" />
+          <Pagination class="tw-mt-10" />
         </template>
       </Carousel>
     </div>
