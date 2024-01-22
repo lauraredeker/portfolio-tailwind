@@ -35,6 +35,7 @@
 
         <div class="tw-mt-10 tw-inline-block tw-text-center">
           <BaseBtn
+            :hasArrow="true"
             :href="`mailto:${defaults.EMAIL}`"
             :text="defaults.EMAIL"
           />
