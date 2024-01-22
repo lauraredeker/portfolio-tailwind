@@ -43,7 +43,7 @@
             class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle"
           >
             <button
-              class="tw-mt-3 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-px-4 tw-text-indigo-600 tw-underline tw-underline-offset-4 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
+              class="tw-mt-5 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-border-2 tw-border-purple-200 tw-px-4 tw-py-1 tw-text-indigo-600 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': copied,
@@ -64,7 +64,7 @@
                   :class="{
                     'tw-text-green-500 dark:tw-text-green-300': copied,
                   }"
-                  class="tw-mb-1 tw-block tw-text-sm tw-font-semibold md:tw-text-base"
+                  class="tw-block tw-text-sm tw-font-semibold md:tw-text-base"
                 >
                   {{ copied ? $t('contact.copied') : $t('contact.copy') }}
                 </span>
