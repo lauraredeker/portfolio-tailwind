@@ -107,7 +107,7 @@
             >
               <p>
                 Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation,
-                PatternLab.io, Handlebars.js, Atomic Design, Responsive Design, UI/UX Design, Git, GitHub,
+                PatternLab.io, Handlebars.js, Atomic Design, Responsive Design, Figma, Prototyping, UI/UX Design, Git, GitHub,
                 Sketch, Zeplin, Cross-Browser Development
               </p>
             </div>
@@ -145,7 +145,7 @@
               class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                Figma, Web Accessibility, WCAG, Vuex, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
+                Web Accessibility, WCAG, Vuex, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
                 Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Chrome DevTools
               </p>
             </div>

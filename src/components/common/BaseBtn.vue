@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { useMouse, useWindowSize, watchThrottled, debouncedWatch } from '@vueuse/core'
-  import { defineProps, ref, onMounted } from 'vue'
+  import { ref, onMounted } from 'vue'
 
   const props = defineProps<{
     hasArrow?: boolean;
@@ -68,7 +68,9 @@
         />
       </span>
       <span class="tw-relative tw-z-10 tw-flex tw-flex-row tw-items-center tw-align-middle">
-        <span>{{ text }}</span>
+        <span :class="{ 'tw-underline tw-underline-offset-8': hasArrow }">
+          {{ text }}
+        </span>
         <span
           v-if="hasArrow"
           class="tw-i-ph-arrow-right-bold tw-ml-3"

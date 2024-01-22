@@ -5,7 +5,8 @@
 		"and": "und",
 		"today": "heute",
 		"contact": "Kontakt",
-		"contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"available-contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"contact-text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
 		"contact-button": "Schreib mir",
 		"skills": "Kenntnisse",
 		"germany": "Deutschland",
@@ -78,7 +79,7 @@
 	},
 	"contact": {
 		"headline": "Kontakt",
-		"text": "Ich bin aktuell in Teilzeit für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder ein Projekt mit mir besprechen möchtest.",
 		"copy": "E-Mail kopieren",
 		"copied": "E-Mail kopiert!",
 		"socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
