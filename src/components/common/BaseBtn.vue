@@ -68,9 +68,7 @@
         />
       </span>
       <span class="tw-relative tw-z-10 tw-flex tw-flex-row tw-items-center tw-align-middle">
-        <span :class="{ 'tw-underline tw-underline-offset-8': hasArrow }">
-          {{ text }}
-        </span>
+        {{ text }}
         <span
           v-if="hasArrow"
           class="tw-i-ph-arrow-right-bold tw-ml-3"

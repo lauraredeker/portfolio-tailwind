@@ -44,7 +44,7 @@
             class="tw-relative tw-flex tw-flex-row tw-justify-center tw-align-middle"
           >
             <button
-              class="tw-mt-5 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-border-2 tw-border-purple-200 tw-px-4 tw-py-1 tw-text-indigo-600 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
+              class="tw-mt-6 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-border-2 tw-border-indigo-200 tw-px-4 tw-py-1 tw-text-indigo-600 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
               :class="{
                 'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
                 'tw-text-green-500 dark:tw-text-green-300': copied,
