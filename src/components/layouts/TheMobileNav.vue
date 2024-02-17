@@ -118,7 +118,7 @@
         </div>
 
         <p class="tw-mb-16 tw-text-center tw-text-black dark:tw-text-indigo-100">
-          &copy; 2023 Laura A. Redeker
+          &copy; 2023-{{ new Date().getFullYear() }} Laura A. Redeker 
         </p>
       </div>
     </div>

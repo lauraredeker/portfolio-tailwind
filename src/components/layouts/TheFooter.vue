@@ -10,7 +10,7 @@
       >
         <div class="tw-mb-2 tw-text-center md:tw-mb-0 lg:tw-w-4/12 lg:tw-text-left">
           <p class="tw-py-1">
-            &copy; 2023 Laura A. Redeker
+            &copy; 2023-{{ new Date().getFullYear() }} Laura A. Redeker 
             <router-link
               to="/taytay"
             >

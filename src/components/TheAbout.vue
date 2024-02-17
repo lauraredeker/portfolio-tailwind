@@ -11,6 +11,15 @@
 
   const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
   const [isLinkVisible, onLinkVisibility] = useVisibility()
+
+  // calculate current age
+  const birthDate = new Date('1990-04-21') 
+  const currentDate = new Date()
+  const diffInMilliseconds = currentDate.getTime() - birthDate.getTime()
+  const ageInMilliseconds = new Date(diffInMilliseconds)
+
+  // Subtract 1970 since that's the epoch year
+  const currentAge = Math.abs(ageInMilliseconds.getUTCFullYear() - 1970)
 </script>
 
 <template>
@@ -31,7 +40,7 @@
         >
           Laura,
           {{ $t('about.pronouns') }}
-          &middot; 33 &middot;
+          &middot; {{ currentAge }} &middot;
           {{ $t('general.location') }}
         </p>
         <div class="tw-hyphens-auto tw-text-justify">
