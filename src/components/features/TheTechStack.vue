@@ -106,8 +106,8 @@
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                UI/UX Design, Figma, Prototyping, Mobile App Design, Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation,
-                PResponsive Design, Git, GitHub, Sketch, Zeplin, Cross-Browser Development
+                TailwindCSS, UI/UX Design, Figma, Prototyping, Mobile App Design, Web Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
+                Responsive Design, Git, GitHub, Sketch, Zeplin, Cross-Browser Development
               </p>
             </div>
           </div>
