@@ -23,12 +23,16 @@
           <a
             class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
             href="//www.vuejs.org"
+            target="_blank"
+            rel="noopener noreferrer"
             title="Vue.js 3"
           >Vue.js</a>
           {{ $t('general.and') }}
           <a
             class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
             href="//www.tailwindcss.com"
+            rel="noopener noreferrer"
+            target="_blank"
             title="TailwindCSS"
           >
             TailwindCSS
@@ -38,6 +42,8 @@
           <span class="tw-whitespace-nowrap tw-px-1">
             {{ $t('footer.github') }}
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
               href="//github.com/therobotzombie/portfolio-tailwind"
             >GitHub</a>

@@ -12,8 +12,9 @@
     >
       {{ $t('privacy.headline') }}
     </h1>
+    
     <section class="tw-mt-5 md:tw-mt-20">
-      <h4 class="tw-mb-2 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-xl">
         {{ $t('privacy.info') }}
       </h4>
       <p>
@@ -25,7 +26,7 @@
       <p>
         {{ $t('privacy.text3') }}
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.right1') }}
       </h4>
       <p>
@@ -35,7 +36,7 @@
           :href="`mailto:${defaults.EMAIL}`"
         >{{ defaults.EMAIL }}</a>.
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.right2') }}
       </h4>
       <p>
@@ -45,25 +46,25 @@
           :href="`mailto:${defaults.EMAIL}`"
         >{{ defaults.EMAIL }}</a>
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.changes') }}
       </h4>
       <p>
         {{ $t('privacy.changes_text') }}
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.ssl') }}
       </h4>
       <p>
         {{ $t('privacy.ssl_text') }}
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.links') }}
       </h4>
       <p>
         {{ $t('privacy.links_text') }}
       </p>
-      <h4 class="tw-mb-2 tw-mt-8 tw-text-xl tw-font-semibold">
+      <h4 class="tw-mb-2 tw-mt-10 tw-text-l tw-font-semibold md:tw-mt-16 md:tw-text-xl">
         {{ $t('privacy.netlify') }}
       </h4>
       <p>

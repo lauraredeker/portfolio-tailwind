@@ -19,7 +19,7 @@
           class="tw-i-ph-quotes-fill tw-mr-2 tw-inline-block tw-text-l tw-text-purple-200 tw-drop-shadow-sm sm:tw-text-xl md:tw-mr-5 md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl"
           aria-hidden="true"
         />
-        <span class="tw-hyphens-auto tw-text-l tw-leading-snug sm:tw-text-xl md:tw-text-2xl lg:tw-text-4xl 3xl:tw-text-5xl">
+        <span class="tw-text-pretty tw-text-l tw-leading-snug sm:tw-text-xl md:tw-text-2xl lg:tw-text-4xl 3xl:tw-text-5xl">
           {{ quote }}
         </span>
         <cite
