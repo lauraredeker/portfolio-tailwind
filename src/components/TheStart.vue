@@ -37,7 +37,7 @@
             'animate__animated animate__bounceInLeft': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-mt-5 tw-select-none tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
+          class="tw-mt-5  tw-select-none tw-text-pretty tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
         >
           {{ $t('start.intro1') }}
           <RouterLink

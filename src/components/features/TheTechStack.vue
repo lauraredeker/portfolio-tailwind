@@ -106,9 +106,8 @@
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                Vue.js, HTML5, CSS3, SCSS/SASS, TailwindCSS, JavaScript, jQuery, Bootstrap, Foundation,
-                PatternLab.io, Handlebars.js, Atomic Design, Responsive Design, Figma, Prototyping, UI/UX Design, Git, GitHub,
-                Sketch, Zeplin, Cross-Browser Development
+                TailwindCSS, UI/UX Design, Figma, Prototyping, Mobile App Design, Web Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
+                Responsive Design, Git, GitHub, Sketch, Zeplin, Cross-Browser Development
               </p>
             </div>
           </div>
@@ -145,7 +144,7 @@
               class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                Web Accessibility, WCAG, Vuex, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
+                Web Accessibility, WCAG, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
                 Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Chrome DevTools
               </p>
             </div>
@@ -183,7 +182,7 @@
               :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
-              <p>Vuetify, TypeScript, SVG, Node.js, NPM, Grunt, Gulp</p>
+              <p>Vuetify, Vuex, TypeScript, SVG, Node.js, NPM, Grunt, Gulp</p>
             </div>
           </div>
         </div>

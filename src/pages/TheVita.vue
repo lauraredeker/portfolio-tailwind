@@ -10,7 +10,7 @@
 
     <section>
       <p class="tw-mb-2 tw-mt-10 tw-block tw-font-semibold tw-text-indigo-400">
-        10/2023 - {{ $t('general.today') }}<span class="tw-mx-2 md:tw-mx-4">&middot;</span>
+        10/2023 - {{ $t('general.today') }}<span class="tw-mx-2">&middot;</span>
         {{ $t('general.location') }}
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
@@ -29,7 +29,7 @@
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        04/2019 - {{ $t('general.today') }}<span class="tw-mx-2 md:tw-mx-4">&middot;</span> Pharma4u
+        04/2019 - {{ $t('general.today') }}<span class="tw-mx-2">&middot;</span> Pharma4u
         GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
@@ -40,12 +40,12 @@
       </p>
       <p class="tw-mt-5">
         <strong>{{ $t('general.skills') }}:</strong>
-        Vue.js · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · CSS3/SCSS · HTML5 · SCRUM · Git
-        · Jira · Confluence · Bitbucket · Figma · Zeplin · Sketch
+        Vue.js · Figma · Vuex · Cypress.io · JavaScript · ES6 · jQuery · Jest · CSS3/SCSS · HTML5 · SCRUM · Git
+        · Jira · Confluence · Bitbucket · UX/UI Design · App Design · Web Design 
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        07/2017 - 03/2019 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> Interone GmbH
+        07/2017 - 03/2019 <span class="tw-mx-2">&middot;</span> Interone GmbH
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
         {{ $t('vita.interone_title') }}
@@ -60,7 +60,7 @@
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        2013 - 2017 <span class="tw-mx-2 md:tw-mx-4">&middot;</span>
+        2013 - 2017 <span class="tw-mx-2">&middot;</span>
         LMU
         {{ $t('general.location') }}
       </p>
@@ -74,13 +74,14 @@
         <strong>{{ $t('vita.kumu_exhibition') }}:</strong>
         <a
           href="http://www.senseven.net"
+          rel="noopener noreferrer"
           class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           target="_blank"
         >senseven.net</a>
       </p>
 
       <p class="tw-mb-2 tw-mt-20 tw-block tw-font-semibold tw-text-indigo-400">
-        2010 - 2013 <span class="tw-mx-2 md:tw-mx-4">&middot;</span> eventa AG
+        2010 - 2013 <span class="tw-mx-2">&middot;</span> eventa AG
       </p>
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
         {{ $t('vita.eventa_title') }}

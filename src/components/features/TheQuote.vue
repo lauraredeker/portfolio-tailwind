@@ -19,7 +19,7 @@
         'animate__animated animate__fadeIn animate__slow': isQuoteVisible,
         'tw-will-change': isQuoteVisible,
       }"
-      class="tw-border-indigo-400  tw-bg-indigo-300 tw-bg-opacity-30 tw-px-8 tw-pb-32 tw-pt-36 tw-text-xl tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-text-xl  md:tw-mb-10 md:tw-border-[10px] md:tw-p-10  md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
+      class="tw-text-pretty tw-border-indigo-400 tw-bg-indigo-300 tw-bg-opacity-30 tw-px-8 tw-pb-32 tw-pt-36 tw-text-xl tw-font-semibold tw-leading-tight tw-text-indigo-900 dark:tw-border-indigo-800 dark:tw-bg-indigo-900 dark:tw-text-indigo-300 sm:tw-text-xl  md:tw-mb-10 md:tw-border-[10px] md:tw-p-10  md:tw-text-2xl md:tw-text-indigo-700 md:dark:tw-bg-transparent lg:tw-text-3xl xl:tw-text-5xl"
     >
       <span
         class="tw-text-m tw-i-ph-quotes-fill tw-mr-2 tw-inline-block md:tw-text-3xl xl:tw-text-5xl"
@@ -35,6 +35,7 @@
         {{ $t('about.author') }}
         <a
           href="http://atomicdesign.bradfrost.com"
+          rel="noopener noreferrer nofollow"
           class="tw-rounded-lg tw-px-2 tw-py-2 tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
           target="_blank"
         >Atomic Design</a>
