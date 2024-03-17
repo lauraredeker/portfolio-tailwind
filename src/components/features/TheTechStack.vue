@@ -35,7 +35,7 @@
           <span class="tw-flex tw-flex-row tw-items-center tw-justify-start tw-align-middle">
             <span
               aria-hidden="true"
-              class="tw-i-ph-terminal-window-light tw-mr-4 tw-h-10 tw-w-10 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-inline-block md:tw-h-12 md:tw-w-12 xl:tw-h-20 xl:tw-w-20 2xl:tw-mr-8"
+              class="tw-i-ph-smiley-sticker-duotone tw-mr-4 tw-h-10 tw-w-10 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-inline-block md:tw-h-12 md:tw-w-12 xl:tw-h-20 xl:tw-w-20 2xl:tw-mr-8"
             />
             <h3
               class="tw-inline-block tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-text-3xl"

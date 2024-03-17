@@ -16,7 +16,7 @@
     <TheBgCircles />
 
     <section class="tw-flex tw-flex-col tw-align-middle xl:tw-h-screen">
-      <div class="tw-relative tw-z-20 tw-mx-auto -tw-mt-5 md:tw-mt-20 xl:tw-w-11/12">
+      <div class="tw-relative tw-z-20 tw-mx-auto md:tw-mt-20 xl:tw-w-11/12">
         <h1
           :class="{
             'animate__animated animate__slideInDown': isSectionVisible,
