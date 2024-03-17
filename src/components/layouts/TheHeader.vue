@@ -54,7 +54,7 @@
 
 <template>
   <header
-    class="tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0"
+    class="tw-relative tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0"
   >
     <div class="tw-flex tw-w-full tw-justify-between tw-px-3 sm:tw-space-x-2">
       <RouterLink
@@ -64,8 +64,11 @@
       >
         laura a. redeker
       </RouterLink>
+      
       <TheNav v-if="!isSmallerThanLg && isNavVisible" />
     </div>
+
+
 
     <Transition name="fade">
       <div
@@ -88,6 +91,15 @@
 
     <TheMobileNav v-if="isSmallerThanLg" />
   </header>
+
+  <Transition name="fade">
+    <div
+      class="tw-absolute tw-left-0 tw-top-12 tw-flex tw-select-none tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-xs tw-uppercase focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white md:tw-fixed md:-tw-left-20 md:tw-top-36 md:-tw-rotate-90 md:tw-px-7 md:tw-py-0 md:tw-text-l md:tw-font-semibold"
+    >
+      Status &dash; full
+      <i class="tw-i-ph-circle-fill tw-w-5 tw-text-yellow-300 md:tw-ml-3" />
+    </div>
+  </Transition>
 </template>
 
 <style>

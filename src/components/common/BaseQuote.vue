@@ -16,7 +16,7 @@
         class="tw-mx-auto tw-mb-4 tw-text-left tw-font-semibold tw-text-black dark:tw-text-indigo-50 sm:tw-text-xl md:tw-mb-10 xl:tw-px-0"
       >
         <span
-          class="tw-i-ph-quotes-fill tw-mr-2 tw-inline-block tw-text-l tw-text-purple-200 tw-drop-shadow-sm sm:tw-text-xl md:tw-mr-5 md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl"
+          class="tw-i-ph-quotes-fill tw-mr-2 tw-inline-block tw-text-l tw-text-white tw-drop-shadow-sm sm:tw-text-xl md:tw-mr-5 md:tw-text-3xl xl:tw-text-4xl 2xl:tw-text-5xl"
           aria-hidden="true"
         />
         <span class="tw-text-pretty tw-text-l tw-leading-snug sm:tw-text-xl md:tw-text-2xl lg:tw-text-4xl 3xl:tw-text-5xl">
