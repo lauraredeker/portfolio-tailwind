@@ -21,6 +21,7 @@
 		"@iconify-json/ph": "^1.1.6",
 		"@tailwindcss/forms": "^0.4.0",
 		"@tailwindcss/typography": "^0.5.2",
+		"@unpic/vue": "^0.0.50",
 		"@vitejs/plugin-vue": "^4.4.0",
 		"@vueuse/components": "^10.6.1",
 		"@vueuse/core": "^10.6.1",

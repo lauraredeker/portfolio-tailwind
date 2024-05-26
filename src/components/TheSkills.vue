@@ -100,11 +100,9 @@
         'tw-will-change': !isSection3Visible,
       }"
       container-class="tw-block md:tw-mt-40 md:tw-mb-40"
-      target="#testimonials"
-      :title="$t('nav.testimonials')"
+      target="#projects"
+      :title="$t('nav.projects')"
     />
-
-    <TheTestimonials id="testimonials" />
   </section>
 </template>
 

@@ -2,11 +2,11 @@
   // Components
   import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
   import 'vue3-carousel/dist/carousel.css'
-  import BaseQuote from '../common/BaseQuote.vue'
+  import BaseQuote from './common/BaseQuote.vue'
   import { vElementVisibility } from '@vueuse/components'
 
   // Composables
-  import { useVisibility } from '../../composables/useVisibility'
+  import { useVisibility } from '../composables/useVisibility'
   const [isQuoteVisible, onQuoteVisibility] = useVisibility()
 </script>
 

@@ -106,8 +106,8 @@
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                TailwindCSS, UI/UX Design, Figma, Prototyping, Mobile App Design, Web Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
-                Responsive Design, Git, GitHub, Sketch, Zeplin, Cross-Browser Development
+                TailwindCSS, UI Design, UX Design, Figma, Prototyping, Web &amp; App Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
+                Responsive Design, Git, GitHub, Sketch, Cross-Browser Development
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@
             >
               <p>
                 Web Accessibility, WCAG, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
-                Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), Chrome DevTools
+                Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), SVG
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@
               :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
-              <p>Vuetify, Vuex, TypeScript, SVG, Node.js, NPM, Grunt, Gulp</p>
+              <p>Svelte, SvelteKit, Builder.io, Vuetify, Vuex, TypeScript, Node.js, NPM, Grunt, Gulp</p>
             </div>
           </div>
         </div>
