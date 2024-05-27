@@ -7,7 +7,7 @@
 		"contact": "Contact",
 		"contact-available": "I'm currently taking on new clients, and would love to hear about your project!",
 		"contact-text": "Write me if you want to know more about me or if you have a project in mind.",
-		"contact-button": "Write me",
+		"contact-button": "Contact",
 		"skills": "Skills",
 		"germany": "Germany",
 		"at": "at",
@@ -47,7 +47,7 @@
 		"intro1": "As a",
 		"intro2": "designer-developer",
 		"intro3": "hybrid",
-		"intro4": "I understand both the visual and functional aspects of creating for the web."
+		"intro4": "I understand both the visual and functional aspects of creating user interfaces."
 	},
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
@@ -91,8 +91,11 @@
 		"button": "home page"
 	},
 	"vita": {
+		"freelance_title": "Freelance Frontend Designer & Developer",
+		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position at Pharma4u.",
 		"pharma4u_title": "Frontend Developer & UX Designer",
-		"pharma4u_text": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
+		"pharma4u_text1": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
+		"pharma4u_text2": "Most recently, I designed a learning app for pharmacy students and developed a high-fidelity prototype in Figma. The prototype is currently being validated with user tests and then transferred to development.",
 		"interone_title": "Junior Web Developer",
 		"interone_text": "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, SCSS, JavaScript, and jQuery. Clients included BMW, SOS Kinderdorf, ProSiebenSat.1 Media and E.ON.",
 		"kumu_title": "B.A. Fine Arts and Multimedia, Minor Subject: Computer Sciences for Media",

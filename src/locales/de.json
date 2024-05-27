@@ -7,7 +7,7 @@
 		"contact": "Kontakt",
 		"available-contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
 		"contact-text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-		"contact-button": "Schreib mir",
+		"contact-button": "Kontakt",
 		"skills": "Kenntnisse",
 		"germany": "Deutschland",
 		"at": "bei",
@@ -47,7 +47,7 @@
 		"intro1": "Als",
 		"intro2": "Designerin",
 		"intro3": "& Entwicklerin",
-		"intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
+		"intro4": "baue ich Interfaces, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
 	},
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
@@ -91,8 +91,12 @@
 		"button": "Startseite"
 	},
 	"vita": {
+		"freelance_title": "Freiberufliche Frontend Designerin & Entwicklerin",
+		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung bei Pharma4u Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten.",
 		"pharma4u_title": "Frontend Developer & UX Designer",
-		"pharma4u_text": "Bei Pharma4u bin ich verantwortlich für das UX/UI Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mock-Ups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern. Außerdem beteilige ich mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
+		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
+		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",
+		"pharma4u_skills": "Vue.js · Figma · Vuex · Cypress.io · JavaScript · ES6 · jQuery · CSS3/SCSS · HTML5 · SCRUM · Git · Jira · Confluence · Bitbucket · UX/UI Design · App Design · Web Design · Accessibility · Responsive Design",
 		"interone_title": "Junior Web Developer",
 		"interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
 		"kumu_title": "B.A. Kunst und Multimedia, Nebenfach Medieninformatik",
