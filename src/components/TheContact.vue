@@ -2,7 +2,6 @@
 // Components
   import TheFooter from '../components/layouts/TheFooter.vue'
   import { vElementVisibility } from '@vueuse/components'
-  import TheTestimonials from '../components/TheTestimonials.vue'
 
   // Utilities
   import defaults from '../utils/config'
@@ -15,10 +14,9 @@
 </script>
 
 <template>
-  <TheTestimonials />
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40 3xl:tw-h-screen">
     <section
-      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-20 tw-pt-16 tw-text-center lg:tw-pb-28 3xl:tw-pt-40"
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-16 tw-pt-24 tw-text-center lg:tw-pb-28 3xl:tw-pt-40"
     >
       <div
         v-element-visibility="onSectionVisibility"

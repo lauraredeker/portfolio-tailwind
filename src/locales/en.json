@@ -72,7 +72,7 @@
 		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",
 		"ally-text1": "My goal is to make the web a more accessible and engaging place.",
 		"ally-text2": "Equality is very high on my priority list, which is why I want to develop digital services and products that are accessible to everyone and adapt smoothly to different devices and screen sizes.",
-		"ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
+		"ally-text3": "Using end-to-end testing tools I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
 	"projects": {
 		"schauer-headline": "A GenArt Portfolio",
@@ -88,10 +88,10 @@
 	"contact": {
 		"headline": "Say hi! 👋",
 		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
-		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. Please include as much information as possible about the scope, your timelines, and your budget.",
+		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. I'm looking forward to hearing from you!",
 		"copy": "Click to copy email",
 		"copied": "Copied to clipboard!",
-		"socials": "Also, feel free to connect with me on the following platforms:"
+		"socials": "Feel free to connect with me:"
 	},
 	"404": {
 		"headline": "Not found",
