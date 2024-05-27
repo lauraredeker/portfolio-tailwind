@@ -48,7 +48,7 @@
 		"intro1": "As a",
 		"intro2": "designer-developer",
 		"intro3": "hybrid",
-		"intro4": "I understand both the visual and functional aspects of creating user interfaces."
+		"intro4": "I understand both the visual and functional aspects of creating websites."
 	},
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
@@ -74,6 +74,11 @@
 		"ally-text2": "Equality is very high on my priority list, which is why I want to develop digital services and products that are accessible to everyone and adapt smoothly to different devices and screen sizes.",
 		"ally-text3": "Using end-to-end testing tools like Cypress.io, I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
+	"projects": {
+		"schauer-headline": "A GenArt Portfolio",
+		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. For this project, I created a custom design prototype in Figma and implemented the website with SvelteKit, GSAP and TailwindCSS. My goal was to create a website that is as unique as the art it presents.",
+		"schauer-text2": "The website is currently in development and will be launched soon."
+	},
 	"testimonials": {
 		"nicole": "In our collaboration, Laura has always carefully thought through projects, provided valuable input and proved to be an indispensable team member. I would hire her as a freelancer, as a permanent team member or welcome her back as a colleague at any time.",
 		"michael": "Laura's creativity and technical skill transformed my vision for a website into an interactive piece of art, that not only showcases my work, but enhances the entire artistic experience.",
@@ -81,8 +86,8 @@
 		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
-		"headline": "Call me maybe",
-		"old-text": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
+		"headline": "Say hi! 👋",
+		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
 		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. Please include as much information as possible about the scope, your timelines, and your budget.",
 		"copy": "Click to copy email",
 		"copied": "Copied to clipboard!",

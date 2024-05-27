@@ -1,65 +1,67 @@
 <script lang="ts" setup>
-  import { Image } from "@unpic/vue"
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
+  //import { Image } from "@unpic/vue"
 
   const [isSection1Visible, onSection1Visibility] = useVisibility()
   const [isSection2Visible, onSection2Visibility] = useVisibility()
-  const [isSection3Visible, onSection3Visibility] = useVisibility()
-
+  const [isSection3Visible] = useVisibility()
 </script>
 
 <template>
-  <section class="tw-relative">
-    <div
-      class="tw-container tw-w-full tw-hyphens-auto md:tw-pt-20"
-    >
-      <h2
-        class="tw-mt-5  tw-select-none tw-text-pretty tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
+  <section class="tw-relative tw-mx-auto tw-max-w-screen-3xl tw-px-4 tw-pb-36 tw-pt-16 md:tw-px-24 md:tw-pb-56">
+    <div class="tw-full tw-grid tw-grid-cols-8 tw-gap-12 lg:tw-gap-20">
+      <div
+        v-element-visibility="onSection1Visibility"
+        class="tw-col-span-full tw-h-auto tw-w-full xl:tw-col-span-5"
+        :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
       >
-        {{ $t('nav.projects') }}
-      </h2>
-      <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 2xl:tw-gap-20">
-        <div
-          v-element-visibility="onSection1Visibility"
-          :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
-          class="tw-text-center"
-        >
-          <Image
-            src="https://cdn.shopify.com/static/sample-images/bath_grande_crop_center.jpeg"
+        <!--  <Image
+            src="/img/projects/schauer-series01.png"
             layout="constrained"
             width="800"
-            height="600"
-            alt="A lovely bath"
-          />
-        </div>
+            aspect-ratio="16/9"
+            alt="Website Portfolio for Michael Schauer"
+          />--> 
 
-        <div
-          v-element-visibility="onSection2Visibility"
-          :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
-          class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
-        >
-          <Image
-            src="https://cdn.shopify.com/static/sample-images/bath_grande_crop_center.jpeg"
-            layout="constrained"
-            width="800"
-            height="600"
-            alt="A lovely bath"
-          />
+        <div class="tw-rounded-md tw-border-2 tw-border-black tw-bg-black dark:tw-border-black">
+          <video
+            autoplay
+            muted
+            webkit-playsinline
+            playsinline
+            poster="/img/projects/schauer-poster.png"
+            preload="none"
+            loop
+          >
+            <source
+              src="/img/projects/schauer.mp4"
+              type="video/mp4"
+            >
+            Your browser does not support the video tag.
+          </video>
         </div>
+      </div>
 
-        <div
-          v-element-visibility="onSection3Visibility"
-          :class="{ 'animate__animated animate__slideInUp  animate__delay-3s': isSection3Visible }"
-          class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
-        >
-          <Image
-            src="https://cdn.shopify.com/static/sample-images/bath_grande_crop_center.jpeg"
-            layout="constrained"
-            width="800"
-            height="600"
-            alt="A lovely bath"
-          />
+      <div
+        v-element-visibility="onSection2Visibility"
+        :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
+        class="tw-col-span-full tw-flex tw-items-center xl:tw-col-span-3"
+      >
+        <div class="tw-hyphens-auto tw-pb-12">
+          <h3
+            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-text-3xl"
+          >
+            01 &dash; {{ $t('projects.schauer-headline') }}
+          </h3>
+          <div class="tw-text-justify ">
+            <p>
+              {{ $t('projects.schauer-text1') }}
+            </p>
+            <p class="tw-mt-5 tw-font-semibold">
+              {{ $t('projects.schauer-text2') }}
+            </p>
+          </div>
         </div>
       </div>
     </div>

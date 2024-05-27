@@ -48,7 +48,7 @@
 		"intro1": "Als",
 		"intro2": "Designerin",
 		"intro3": "& Entwicklerin",
-		"intro4": "baue ich Interfaces, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
+		"intro4": "baue ich Webseiten, die Ästhetik und Funktionalität nahtlos miteinander verbinden."
 	},
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
@@ -75,6 +75,11 @@
 		"ally-text2": "Da mir Gleichberechtigung sehr am Herzen liegt, möchte ich digitale Angebote und Produkte entwickeln, die für jeden zugänglich sind und sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
 		"ally-text3": "Mit Hilfe von UI-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
 	},
+	"projects": {
+		"schauer-headline": "GenArt Portfolio",
+		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die so außergewöhnlich ist wie die Kunstwerke selbst.",
+		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung und wird in Kürze online gehen."
+	},
 	"testimonials": {
 		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde Laura jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",
 		"michael": "Lauras Kreativität und technisches Geschick haben meine Vision für eine Website in ein interaktives Kunstwerk verwandelt. Sie präsentiert nicht nur meine Arbeit, sondern trägt auch zum künstlerischen Gesamterlebnis bei.",
@@ -82,7 +87,7 @@
 		"lukas": "Laura hat die perfekte Mischung aus coolem Design und erstklassiger Funktionalität getroffen. Die von ihr erstellten Websites sind nicht nur nutzerfreundlich, sondern machen auch einfach Spaß."
 	},
 	"contact": {
-		"headline": "Call me maybe",
+		"headline": "Say hi! 👋",
 		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder ein Projekt mit mir besprechen möchtest.",
 		"copy": "E-Mail kopieren",
 		"copied": "E-Mail kopiert!",
