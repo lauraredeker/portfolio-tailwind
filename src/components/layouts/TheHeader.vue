@@ -56,7 +56,7 @@
 <template>
   <Transition name="fade">
     <div
-      class="tw-fixed -tw-left-28 tw-bottom-12 tw-flex tw-w-64 -tw-rotate-90 tw-select-none tw-items-center tw-justify-end tw-text-xs tw-font-semibold tw-uppercase tw-leading-tight tw-text-black tw-transition-colors dark:tw-text-indigo-400 sm:-tw-left-40 sm:tw-bottom-auto sm:tw-top-72 sm:tw-w-96 sm:tw-px-7 sm:tw-py-0 md:tw-text-base"
+      class="tw-fixed -tw-left-28 tw-bottom-12 tw-flex tw-w-64 -tw-rotate-90 tw-select-none tw-items-center tw-justify-end tw-text-xs tw-font-semibold tw-uppercase tw-leading-tight tw-text-black tw-transition-colors dark:tw-text-indigo-400 sm:-tw-left-40 sm:tw-bottom-auto sm:tw-top-56 sm:tw-w-96 sm:tw-px-7 sm:tw-py-0 md:tw-text-base"
     >
       Status &dash; 
       {{ $t('general.currentStatus') }}
