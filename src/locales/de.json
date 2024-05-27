@@ -1,7 +1,7 @@
 {
 	"general": {
 		"currentStatus": "verfügbar",
-		"location": "München",
+		"location": "München (remote)",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "und",
 		"today": "heute",
@@ -55,7 +55,7 @@
 		"author": "author of",
 		"pronouns": "sie/ihr",
 		"heading": "Eine kurze Vorstellung",
-		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der IT. ",
+		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
 		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
 		"text2": "Durch meine ",
 		"text3": "langjährige Erfahrung",
@@ -77,7 +77,7 @@
 	},
 	"projects": {
 		"schauer-headline": "GenArt Portfolio",
-		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die so außergewöhnlich ist wie die Kunstwerke selbst.",
+		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
 		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung und wird in Kürze online gehen."
 	},
 	"testimonials": {
