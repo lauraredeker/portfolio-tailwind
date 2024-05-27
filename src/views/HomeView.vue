@@ -9,3 +9,9 @@
     <TheHome />
   </div>
 </template>
+
+<style>
+::selection {
+   @apply tw-text-black tw-bg-green-300;
+}
+</style>
