@@ -2,7 +2,6 @@
   import TheStart from '../components/TheStart.vue'
   import TheAbout from '../components/TheAbout.vue'
   import TheProjects from '../components/TheProjects.vue'
-  import TheTestimonials from '../components/TheTestimonials.vue'
   import TheSkills from '../components/TheSkills.vue'
   import TheContact from '../components/TheContact.vue'
 </script>
@@ -10,11 +9,10 @@
 <template>
   <div>
     <TheStart id="hi" />
-    <div v-scroll-spy="{ allowNoActive: true, offset: 0 }">
+    <div v-scroll-spy="{ allowNoActive: false, offset: 100 }">
       <TheAbout id="about" />
       <TheSkills id="expertise" />
       <TheProjects id="projects" />
-      <TheTestimonials id="testimonials" />
       <TheContact id="contact" />
     </div>
   </div>

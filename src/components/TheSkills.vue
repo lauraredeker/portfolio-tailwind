@@ -1,6 +1,5 @@
 <script lang="ts" setup>
   import TheTechStack from './features/TheTechStack.vue'
-  import TheTestimonials from './features/TheTestimonials.vue'
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
 
