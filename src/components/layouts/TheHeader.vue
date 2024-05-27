@@ -4,6 +4,7 @@
   import TheLocaleChanger from '../features/TheLocaleChanger.vue'
   import TheMobileNav from './TheMobileNav.vue'
   import TheNav from './TheNav.vue'
+  import Logo from '../common/Logo.vue'
 
   // Utilities
   import { watchEffect } from '@vue/runtime-core'
@@ -53,26 +54,29 @@
 </script>
 
 <template>
+  <!--
   <Transition name="fade">
     <div
-      class="tw-fixed -tw-left-28 tw-bottom-12 tw-flex tw-w-64 -tw-rotate-90 tw-select-none tw-items-center tw-justify-end tw-text-xs tw-font-semibold tw-uppercase tw-leading-tight tw-text-indigo-400 tw-transition-colors dark:tw-text-indigo-400 sm:-tw-left-40 sm:tw-bottom-auto sm:tw-top-56 sm:tw-w-96 sm:tw-px-7 sm:tw-py-0 md:tw-text-l"
+      class="tw-fixed tw-flex tw-items-center tw-justify-end tw-w-64 tw-text-xs tw-font-semibold tw-leading-tight tw-text-black tw-uppercase tw-transition-colors tw-select-none -tw-left-28 tw-bottom-12 -tw-rotate-90 dark:tw-text-indigo-400 sm:-tw-left-40 sm:tw-bottom-auto sm:tw-top-72 sm:tw-w-96 sm:tw-px-7 sm:tw-py-0 md:tw-text-base"
     >
       Status &dash; 
       {{ $t('general.currentStatus') }}
-      <i class="tw-i-ph-circle-fill tw-ml-2 tw-inline-block tw-w-5 tw-text-green-300 md:tw-ml-4" />
+      <i class="tw-inline-block tw-w-5 tw-ml-2 tw-text-green-300 tw-i-ph-circle-fill md:tw-ml-4" />
     </div>
   </Transition>
-
+-->
   <header
     class="tw-relative tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0"
   >
-    <div class="tw-flex tw-w-full tw-justify-between tw-px-3 sm:tw-space-x-2">
+    <div class="tw-flex tw-w-full tw-items-start tw-justify-between tw-px-3 sm:tw-space-x-2">
       <RouterLink
-        class="tw-select-none tw-rounded-lg tw-px-2 tw-py-6 tw-text-l tw-font-semibold hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white dark:hover:tw-text-purple-200 md:tw-text-xl lg:tw-px-3 lg:tw-py-2 lg:tw-text-2xl"
+        class="hover:tw-cursor-pointer focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500"
         to="/"
         @click="isSubpage ?? scrollToTop()"
       >
-        laura redeker frontend/design
+        <Logo 
+          class="tw-h-20 tw-rounded-md tw-py-2 sm:tw-px-1 md:tw-h-28 md:tw-px-2 md:tw-py-4"
+        />
       </RouterLink>
       
       <TheNav v-if="!isSmallerThanLg && isNavVisible" />
@@ -81,11 +85,7 @@
     <Transition name="fade">
       <div
         v-if="!isSmallerThanLg"
-        class="tw-fixed tw-right-4 tw-hidden lg:tw-block"
-        :class="{
-          'tw-top-24': isNavVisible,
-          'tw-top-6': !isNavVisible
-        }"
+        class="tw-fixed tw-right-4 tw-top-32 tw-hidden lg:tw-block"
       >
         <div
           v-show="isScrolling"

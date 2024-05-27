@@ -8,7 +8,7 @@
     v-scroll-spy-active
     v-scroll-spy-link="{ selector: '.custom-nav-link' }"
     role="navigation"
-    class="tw-flex tw-w-full tw-select-none tw-flex-col tw-px-2 tw-py-1 tw-text-center tw-text-xl tw-font-semibold sm:tw-w-auto md:tw-text-2xl lg:tw-flex-row lg:tw-items-start lg:tw-space-x-4 lg:tw-px-0 lg:tw-align-top"
+    class="tw-flex tw-w-full tw-select-none tw-flex-col tw-px-2 tw-py-1 tw-text-center tw-text-xl tw-font-semibold sm:tw-w-auto sm:tw-pt-6 md:tw-space-x-4 md:tw-text-2xl lg:tw-flex-row lg:tw-items-start lg:tw-px-0 lg:tw-align-top 2xl:tw-space-x-8"
   >
     <RouterLink
       to="/#about"

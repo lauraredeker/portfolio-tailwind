@@ -159,6 +159,9 @@
       <h4 class="tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl">
         {{ $t('vita.eventa_title') }}
       </h4>
+      <p>
+        {{ $t('vita.eventa_text') }}
+      </p>
     </section>
   </BaseContainer>
 </template>
