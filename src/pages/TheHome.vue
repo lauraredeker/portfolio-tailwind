@@ -9,7 +9,7 @@
 <template>
   <div>
     <TheStart id="hi" />
-    <div v-scroll-spy="{ allowNoActive: false, offset: 100 }">
+    <div v-scroll-spy="{ allowNoActive: false, offset: 0 }">
       <TheAbout id="about" />
       <TheSkills id="expertise" />
       <TheProjects id="projects" />
