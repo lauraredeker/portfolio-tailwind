@@ -9,8 +9,8 @@
 </script>
 
 <template>
-  <section class="tw-relative tw-mx-auto tw-max-w-screen-3xl tw-px-4 tw-pb-36 tw-pt-16 md:tw-px-24 md:tw-pb-56">
-    <div class="tw-full tw-grid tw-grid-cols-8 tw-gap-12 lg:tw-gap-20">
+  <section class="tw-relative tw-mx-auto tw-max-w-screen-lg tw-px-8 tw-py-36 sm:tw-px-6 md:tw-px-24 md:tw-pb-0 md:tw-pt-20 xl:tw-max-w-screen-3xl">
+    <div class="tw-full tw-grid tw-grid-cols-8 tw-items-center tw-gap-12 2xl:tw-gap-20">
       <div
         v-element-visibility="onSection1Visibility"
         class="tw-col-span-full tw-h-auto tw-w-full xl:tw-col-span-5"
@@ -50,11 +50,11 @@
       >
         <div class="tw-hyphens-auto tw-pb-12">
           <h3
-            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-text-3xl"
+            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-text-2xl"
           >
             01 &dash; {{ $t('projects.schauer-headline') }}
           </h3>
-          <div class="tw-text-justify ">
+          <div class="tw-text-justify">
             <p>
               {{ $t('projects.schauer-text1') }}
             </p>
@@ -71,7 +71,7 @@
         'animate__animated animate__slideInUp  animate__delay-5s': isSection3Visible,
         'tw-will-change': !isSection3Visible,
       }"
-      container-class="tw-block md:tw-mt-40 md:tw-mb-40"
+      container-class="tw-block tw-mt-24 md:tw-mt-40 md:tw-mb-40"
       target="#testimonials"
       :title="$t('nav.testimonials')"
     />

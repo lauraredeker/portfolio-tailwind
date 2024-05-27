@@ -67,12 +67,12 @@
 		"headline-additional": "– die mir vertraut sind",
 		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer das Nutzererlebnis im Fokus und lebe meine Liebe zum Detail aus.",
 		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
-		"design-text3": "Zur Ideenfindung und der Erstellung von Wireframes verwende ich gerne Figma. Insbesondere durch interaktive Prototypen kann die Nutzererfahrung dann schon frühzeitig getestet werden. Um skalierbare und konsistente Designsysteme zu pflegen, kann aber auch die Entwicklung von Living Styleguides sinnvoll sein.",
+		"design-text3": "Zur Ideenfindung und zum Wireframing verwende ich gerne Figma, aber auch um interaktive (High-Fidelity) Prototypen zu erstellen, mit deren Hilfe die Nutzererfahrung dann schon frühzeitig getestet werden kann.",
 		"code-text1": "JavaScript, HTML und CSS sind meine täglichen Begleiter:",
-		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
+		"code-text2": "Ich kümmere mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
 		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde mich schnell in neuen Projekten zurecht. Meine aktuellen Favoriten sind Vue.js und TailwindCSS.",
 		"ally-text1": "Mein Ziel ist es, das Web inklusiver und ansprechender zu gestalten.",
-		"ally-text2": "Da mir Gleichberechtigung sehr am Herzen liegt, möchte ich digitale Angebote und Produkte entwickeln, die für jeden zugänglich sind und sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
+		"ally-text2": "Ich möchte barrierefreihe Webseiten entwickeln, die für jeden zugänglich, benutzbar und verständlich sind.",
 		"ally-text3": "Mit Hilfe von UI-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
 	},
 	"projects": {

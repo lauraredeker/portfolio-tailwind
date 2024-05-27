@@ -14,7 +14,7 @@
     <div
       class="tw-container tw-w-full tw-hyphens-auto md:tw-pt-20"
     >
-      <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 2xl:tw-gap-20">
+      <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 3xl:tw-gap-20">
         <div
           v-element-visibility="onSection1Visibility"
           :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"

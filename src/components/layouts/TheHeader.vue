@@ -84,7 +84,7 @@
     <Transition name="fade">
       <div
         v-if="!isSmallerThanLg"
-        class="tw-fixed tw-right-4 tw-top-32 tw-hidden lg:tw-block"
+        class="tw-fixed tw-right-4 tw-top-24 tw-hidden lg:tw-block"
       >
         <div
           v-show="isScrolling"
