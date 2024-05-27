@@ -1,5 +1,6 @@
 {
 	"general": {
+		"currentStatus": "verfügbar",
 		"location": "München",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "und",
@@ -54,9 +55,11 @@
 		"author": "author of",
 		"pronouns": "sie/ihr",
 		"heading": "Eine kurze Vorstellung",
-		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der IT. 👻",
+		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der IT. ",
 		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
-		"text2": "Durch meine langjährige Erfahrung kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
+		"text2": "Durch meine ",
+		"text3": "langjährige Erfahrung",
+		"text4": " kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
 		"vita": "Was bisher so los war"
 	},
 	"skills": {
@@ -93,7 +96,7 @@
 	"vita": {
 		"freelance_title": "Freiberufliche Frontend Designerin & Entwicklerin",
 		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung bei Pharma4u Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten.",
-		"pharma4u_title": "Frontend Developer & UX Designer",
+		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",
 		"pharma4u_skills": "Vue.js · Figma · Vuex · Cypress.io · JavaScript · ES6 · jQuery · CSS3/SCSS · HTML5 · SCRUM · Git · Jira · Confluence · Bitbucket · UX/UI Design · App Design · Web Design · Accessibility · Responsive Design",

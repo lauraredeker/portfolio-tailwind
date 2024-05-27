@@ -45,14 +45,24 @@
 
   watchEffect(() => {
     store.isMobileNavVisible
-      ? document.body.classList.add('overflow-hidden')
-      : document.body.classList.remove('overflow-hidden')
+      ? document.body.classList.add('tw-overflow-hidden')
+      : document.body.classList.remove('tw-overflow-hidden')
   })
 
   const { isScrolling } = useScrolling(800, true)
 </script>
 
 <template>
+  <Transition name="fade">
+    <div
+      class="tw-fixed -tw-left-28 tw-bottom-12 tw-flex tw-w-64 -tw-rotate-90 tw-select-none tw-items-center tw-justify-end tw-text-xs tw-font-semibold tw-uppercase tw-leading-tight tw-text-indigo-400 tw-transition-colors dark:tw-text-indigo-400 sm:-tw-left-40 sm:tw-bottom-auto sm:tw-top-56 sm:tw-w-96 sm:tw-px-7 sm:tw-py-0 md:tw-text-l"
+    >
+      Status &dash; 
+      {{ $t('general.currentStatus') }}
+      <i class="tw-i-ph-circle-fill tw-ml-2 tw-inline-block tw-w-5 tw-text-green-300 md:tw-ml-4" />
+    </div>
+  </Transition>
+
   <header
     class="tw-relative tw-left-0 tw-top-0 tw-z-50 tw-mx-auto tw-h-24 tw-w-full tw-flex-none sm:tw-top-2 sm:tw-bg-transparent sm:dark:tw-bg-transparent lg:tw-fixed lg:tw-py-0"
   >
@@ -62,13 +72,11 @@
         to="/"
         @click="isSubpage ?? scrollToTop()"
       >
-        laura a. redeker
+        laura redeker frontend/design
       </RouterLink>
       
       <TheNav v-if="!isSmallerThanLg && isNavVisible" />
     </div>
-
-
 
     <Transition name="fade">
       <div
@@ -91,19 +99,4 @@
 
     <TheMobileNav v-if="isSmallerThanLg" />
   </header>
-
-  <Transition name="fade">
-    <div
-      class="tw-absolute tw-left-0 tw-top-12 tw-flex tw-select-none tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-xs tw-uppercase focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white md:tw-fixed md:-tw-left-20 md:tw-top-36 md:-tw-rotate-90 md:tw-px-7 md:tw-py-0 md:tw-text-l md:tw-font-semibold"
-    >
-      Status &dash; full
-      <i class="tw-i-ph-circle-fill tw-w-5 tw-text-yellow-300 md:tw-ml-3" />
-    </div>
-  </Transition>
 </template>
-
-<style>
-.overflow-hidden {
-	overflow: hidden;
-}
-</style>

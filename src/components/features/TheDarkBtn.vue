@@ -36,7 +36,7 @@
 
 <template>
   <div>
-    <span class="tw-mb-1 tw-block tw-text-sm lg:tw-hidden">
+    <span class="tw-mb-1 tw-block tw-text-sm tw-font-semibold lg:tw-hidden">
       {{ store.isDarkMode ? $t('nav.theme-light') : $t('nav.theme-dark') }}
     </span>
 

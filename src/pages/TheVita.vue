@@ -10,10 +10,9 @@
     "App Design",
     "Frontend Development",
     "Vue.js",
-    "Svelte/SvelteKit",
     "JavaScript",
     "HTML5",
-    "CSS3/SCSS",
+    "CSS",
   ]
 
   const pharma4u_skills = [

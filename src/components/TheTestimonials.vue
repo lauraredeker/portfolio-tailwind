@@ -13,7 +13,7 @@
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="custom-parallax tw-my-20"
+    class="custom-parallax tw-relative tw-my-20"
   >
     <div class="tw-py-30 tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200  tw-bg-opacity-60 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel

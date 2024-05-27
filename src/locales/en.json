@@ -1,5 +1,6 @@
 {
 	"general": {
+		"currentStatus": "available",
 		"location": "Munich, Germany",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "and",
@@ -53,9 +54,11 @@
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
 		"author": "author of",
 		"pronouns": "she/her",
-		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. 👻",
+		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor.",
 		"text1": "Fast-forward to 2024 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
-		"text2": "Thanks to many years of work experience, I am very familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
+		"text2": "Thanks to many years of ",
+		"text3": "work experience",
+		"text4": ", I am familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
 		"vita": "my work experience"
 	},
 	"skills": {
@@ -93,7 +96,7 @@
 	"vita": {
 		"freelance_title": "Freelance Frontend Designer & Developer",
 		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position at Pharma4u.",
-		"pharma4u_title": "Frontend Developer & UX Designer",
+		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
 		"pharma4u_text2": "Most recently, I designed a learning app for pharmacy students and developed a high-fidelity prototype in Figma. The prototype is currently being validated with user tests and then transferred to development.",
 		"interone_title": "Junior Web Developer",

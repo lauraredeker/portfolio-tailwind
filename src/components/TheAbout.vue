@@ -53,6 +53,12 @@
             {{ $t('about.text1') }}
             <br><br>
             {{ $t('about.text2') }}
+            <router-link
+              to="/vita"
+              class="tw-transition-color tw-mt-2 tw-inline-block tw-rounded-md tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            >
+              {{ $t('about.text3') }}
+            </router-link>{{ $t('about.text4') }}
           </p>
           <TheSignature
             id="signature"
