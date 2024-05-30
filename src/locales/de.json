@@ -7,7 +7,7 @@
 		"today": "heute",
 		"contact": "Kontakt",
 		"available-contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-		"contact-text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"contact-text": "Schreib mir gerne eine Nachricht, wenn du ein Projekt mit mir besprechen möchtest. Ich bin aktuell ca. 1 - 2 Tage die Woche für Freelance-Projekte verfügbar.",
 		"contact-button": "Kontakt",
 		"skills": "Kenntnisse",
 		"germany": "Deutschland",
@@ -101,8 +101,8 @@
 		"button": "Startseite"
 	},
 	"vita": {
-		"freelance_title": "Freiberufliche Frontend Designerin & Entwicklerin",
-		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung bei Pharma4u Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten.",
+		"freelance_title": "Freelance Frontend Designerin & Entwicklerin",
+		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle komplette Designsysteme und Komponentenbibliotheken.",
 		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",

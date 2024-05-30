@@ -16,7 +16,7 @@
 
 @layer components {
 	.tw-container {
-		@apply tw-max-w-screen-2xl;
+		@apply tw-max-w-screen-3xl;
 	  }
 }
 

@@ -7,7 +7,7 @@
 		"today": "today",
 		"contact": "Contact",
 		"contact-available": "I'm currently taking on new clients, and would love to hear about your project!",
-		"contact-text": "Write me if you want to know more about me or if you have a project in mind.",
+		"contact-text": "Write me if you have a design or frontend project in mind. Please not that I'm only available for freelance work at the moment (1 - 2 days per week).",
 		"contact-button": "Contact",
 		"skills": "Skills",
 		"germany": "Germany",
@@ -102,7 +102,7 @@
 	},
 	"vita": {
 		"freelance_title": "Freelance Frontend Designer & Developer",
-		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position at Pharma4u.",
+		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position. I create custom design prototypes and develop websites with modern frontend technologies such as Vue.js, SvelteKit and TailwindCSS. I also advise on design and UX/UI issues and create full design systems and component libraries.",
 		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
 		"pharma4u_text2": "Most recently, I designed a learning app for pharmacy students and developed a high-fidelity prototype in Figma. The prototype is currently being validated with user tests and then transferred to development.",

@@ -9,10 +9,10 @@
 </script>
 
 <template>
-  <section class="tw-container tw-relative tw-min-h-[100vh] tw-max-w-screen-4xl tw-py-36 tw-text-center md:tw-pb-64 md:tw-pt-20">
+  <section class="tw-container tw-relative tw-min-h-[100vh] tw-max-w-screen-3xl tw-py-36 tw-text-center md:tw-pb-64 md:tw-pt-20">
     <span
       aria-hidden="true"
-      class="tw-i-ph-stairs-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+      class="tw-i-ph-steps-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
     />
     <h3
       class="tw-mb-16 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-24 md:tw-text-5xl"
