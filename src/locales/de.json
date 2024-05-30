@@ -1,13 +1,14 @@
 {
 	"general": {
-		"location": "München",
+		"currentStatus": "verfügbar",
+		"location": "München/Leipzig (remote)",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "und",
 		"today": "heute",
 		"contact": "Kontakt",
 		"available-contact-text": "Ich bin aktuell für neue Projekte verfügbar! Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-		"contact-text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich erfahren oder ein Projekt mit mir besprechen möchtest.",
-		"contact-button": "Schreib mir",
+		"contact-text": "Schreib mir gerne eine Nachricht, wenn du ein Projekt mit mir besprechen möchtest. Ich bin aktuell ca. 1 - 2 Tage die Woche für Freelance-Projekte verfügbar.",
+		"contact-button": "Kontakt",
 		"skills": "Kenntnisse",
 		"germany": "Deutschland",
 		"at": "bei",
@@ -17,7 +18,8 @@
 		"days": "Tage",
 		"hours": "Stunde(n)",
 		"minutes": "Minute(n)",
-		"seconds": "Sekunde(n)"
+		"seconds": "Sekunde(n)",
+		"last-update": "Letztes Update"
 	},
 	"nav": {
 		"menu": "Menü",
@@ -30,6 +32,7 @@
 		"about-long": "mehr über mich",
 		"skills": "expertise",
 		"skills-long": "meine skills",
+		"projects": "projekte",
 		"testimonials": "was andere sagen",
 		"contact": "kontakt"
 	},
@@ -53,23 +56,31 @@
 		"author": "author of",
 		"pronouns": "sie/ihr",
 		"heading": "Eine kurze Vorstellung",
-		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch meine Leidenschaft für Code entdeckt und gefühlt einen Moment später saß ich schon Vollzeit in der IT. 👻",
+		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
 		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
-		"text2": "Durch meine langjährige Erfahrung kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
+		"text2": "Durch meine ",
+		"text3": "langjährige Erfahrung",
+		"text4": " kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
 		"vita": "Was bisher so los war"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
 		"headline-additional": "– die mir vertraut sind",
-		"design-text1": "Bei der Gestaltung von Webseiten habe ich immer das Nutzererlebnis im Fokus und lebe meine Liebe zum Detail aus.",
+		"design-text1": "Bei der Gestaltung von Webseiten und Apps habe ich immer das Nutzererlebnis im Fokus.",
 		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
-		"design-text3": "Zur Ideenfindung und der Erstellung von Wireframes verwende ich gerne Figma. Insbesondere durch interaktive Prototypen kann die Nutzererfahrung dann schon frühzeitig getestet werden. Um skalierbare und konsistente Designsysteme zu pflegen, kann aber auch die Entwicklung von Living Styleguides sinnvoll sein.",
+		"design-text3": "Zur Ideenfindung und zum Wireframing verwende ich gerne Figma, aber auch um interaktive Prototypen zu erstellen, mit deren Hilfe die Nutzererfahrung schon frühzeitig getestet werden kann. Bei größeren Projekten können aber auch Design Systeme (oder sogar Living Style Guides) sinnvoll sein, um die UI konsistent und skalierbar zu halten.",
 		"code-text1": "JavaScript, HTML und CSS sind meine täglichen Begleiter:",
-		"code-text2": "Als Frontendlerin kümmere ich mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
-		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde mich schnell in neuen Projekten zurecht. Meine aktuellen Favoriten sind Vue.js und TailwindCSS.",
+		"code-text2": "Ich kümmere mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
+		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde mich erfahrungsgemäß schnell in neuen Projekten zurecht. Meine aktuellen Favoriten sind Vue.js und TailwindCSS.",
 		"ally-text1": "Mein Ziel ist es, das Web inklusiver und ansprechender zu gestalten.",
-		"ally-text2": "Da mir Gleichberechtigung sehr am Herzen liegt, möchte ich digitale Angebote und Produkte entwickeln, die für jeden zugänglich sind und sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
+		"ally-text2": "Ich möchte barrierefreihe Webseiten entwickeln, die für jeden zugänglich, benutzbar und verständlich sind und sich reibungslos an verschiedene Geräte und Bildschirmgrößen anpassen.",
 		"ally-text3": "Mit Hilfe von UI-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
+	},
+	"projects": {
+		"headline": "Aktuelle Projekte",
+		"schauer-headline": "GenArt Portfolio",
+		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
+		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung und wird in Kürze online gehen."
 	},
 	"testimonials": {
 		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde Laura jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",
@@ -78,11 +89,11 @@
 		"lukas": "Laura hat die perfekte Mischung aus coolem Design und erstklassiger Funktionalität getroffen. Die von ihr erstellten Websites sind nicht nur nutzerfreundlich, sondern machen auch einfach Spaß."
 	},
 	"contact": {
-		"headline": "Call me maybe",
-		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder ein Projekt mit mir besprechen möchtest.",
+		"headline": "Say hi! 👋",
+		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder mir ein Projekt vorstellen möchtest. Ich freue mich darauf, von dir zu hören!",
 		"copy": "E-Mail kopieren",
 		"copied": "E-Mail kopiert!",
-		"socials": "Auf den folgenden Seiten kannst du mich ebenfalls finden:"
+		"socials": "Hier kannst du mich ebenfalls finden:"
 	},
 	"404": {
 		"headline": "404 :(",
@@ -90,8 +101,12 @@
 		"button": "Startseite"
 	},
 	"vita": {
-		"pharma4u_title": "Frontend Developer & UX Designer",
-		"pharma4u_text": "Bei Pharma4u bin ich verantwortlich für das UX/UI Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mock-Ups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern. Außerdem beteilige ich mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
+		"freelance_title": "Freelance Frontend Designerin & Entwicklerin",
+		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle komplette Designsysteme und Komponentenbibliotheken.",
+		"pharma4u_title": "Frontend Developer & Designer",
+		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
+		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",
+		"pharma4u_skills": "Vue.js · Figma · Vuex · Cypress.io · JavaScript · ES6 · jQuery · CSS3/SCSS · HTML5 · SCRUM · Git · Jira · Confluence · Bitbucket · UX/UI Design · App Design · Web Design · Accessibility · Responsive Design",
 		"interone_title": "Junior Web Developer",
 		"interone_text": "Als Junior Web Developer bei Interone habe ich an der Entwicklung von Webseiten und Webanwendungen für Kunden wie BMW, SOS Kinderdorf, ProSiebenSat.1 und E.ON gearbeitet. Dabei habe ich mit unterschiedlichen Frontend-Frameworks und Bibliotheken wie Vue.js und jQuery gearbeitet und meine Kenntnisse in HTML, CSS und JavaScript vertieft.",
 		"kumu_title": "B.A. Kunst und Multimedia, Nebenfach Medieninformatik",

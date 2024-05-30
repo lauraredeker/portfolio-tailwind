@@ -76,6 +76,7 @@ module.exports = {
 				xl: '1280px',
 				'2xl': '1536px',
 				'3xl': '1920px',
+				'4xl': '2560px',
 			},
 			spacing: {
 				128: '32rem',
@@ -83,6 +84,17 @@ module.exports = {
 			},
 			borderRadius: {
 				'4xl': '2rem',
+			},
+		},
+
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: '1.8rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
 			},
 		},
 		fontSize: {
@@ -135,16 +147,6 @@ module.exports = {
 		fontFamily: {
 			sans: ['Poppins', ...defaultTheme.fontFamily.sans],
 			display: ['Bungee Shade', ...defaultTheme.fontFamily.sans],
-		},
-		container: {
-			center: true,
-			padding: {
-				DEFAULT: '1.8rem',
-				sm: '2rem',
-				lg: '4rem',
-				xl: '5rem',
-				'2xl': '6rem',
-			},
 		},
 	},
 }

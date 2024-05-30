@@ -18,7 +18,7 @@
         {{ $t('imprint.text1') }}
       </p>
     
-      <div class="tw-mt-10 tw-rounded-lg tw-border-2 tw-border-indigo-200 tw-px-4 tw-py-5 dark:tw-border-indigo-600 md:tw-px-10 md:tw-py-10">
+      <div class="tw-mt-10 tw-rounded-lg tw-border-4 tw-border-indigo-300 tw-px-4 tw-py-5 dark:tw-border-indigo-800 md:tw-px-10 md:tw-py-10">
         <h4 class="tw-mb-2 tw-text-pretty tw-text-l tw-font-semibold">
           {{ $t('imprint.tgm') }}
         </h4>

@@ -83,12 +83,11 @@
       </div>
       <TheNav
         id="mobile-nav"
-        class="tw-mt-6"
         @link-click="toggleNav()"
       />
-      <hr class="tw-mx-6 tw-mt-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
+      <hr class="tw-mx-6 tw-mt-2 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
 
-      <div class="tw-mx-auto tw-mt-5 tw-flex tw-max-w-lg tw-flex-row tw-justify-between tw-px-6">
+      <div class="tw-mx-auto tw-mt-6 tw-flex tw-max-w-lg tw-flex-row tw-justify-between tw-px-6">
         <TheDarkBtn
           class="tw-mr-2 md:tw-mr-5"
           @click="toggleNav()"
@@ -100,7 +99,7 @@
       </div>
 
       <div>
-        <div class="tw-mb-5 tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
+        <div class="tw-mb-5 tw-mt-6 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link
             to="/impressum"
             class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-font-semibold tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"

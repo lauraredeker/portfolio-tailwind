@@ -34,7 +34,7 @@
       }"
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
-      <div class="tw-my-12 md:tw-my-10 xl:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
+      <div class="tw-my-20 tw-max-w-screen-xl md:tw-my-10 xl:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
         <p
           class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l"
         >
@@ -53,6 +53,12 @@
             {{ $t('about.text1') }}
             <br><br>
             {{ $t('about.text2') }}
+            <router-link
+              to="/vita"
+              class="tw-transition-color tw-mt-2 tw-inline-block tw-rounded-md tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            >
+              {{ $t('about.text3') }}
+            </router-link>{{ $t('about.text4') }}
           </p>
           <TheSignature
             id="signature"
@@ -103,7 +109,7 @@
     </div>
 
     <BaseNextSection
-      container-class="tw-block md:tw-mt-40"
+      container-class="tw-block tw-my-24 md:tw-mt-40"
       target="#expertise"
       :title="$t('nav.skills-long')"
     />
