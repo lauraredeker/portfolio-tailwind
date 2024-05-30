@@ -85,7 +85,7 @@
             :class="{
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
-            class="custom-image tw-relative tw-z-30 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 xl:tw-absolute xl:-tw-bottom-[36%] xl:-tw-right-[14%] xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[26%] 3xl:-tw-right-[18%] 3xl:tw-h-[60vmin] 3xl:tw-w-[60vmin]"
+            class="custom-image tw-relative tw-z-30 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 xl:tw-absolute xl:-tw-bottom-[36%] xl:-tw-right-[14%] xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[16%] 3xl:-tw-bottom-[6%] 3xl:-tw-right-[18%] 3xl:tw-h-144 3xl:tw-w-144 4xl:-tw-right-[22%]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >

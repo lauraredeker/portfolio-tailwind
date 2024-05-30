@@ -1,7 +1,7 @@
 {
 	"general": {
 		"currentStatus": "available",
-		"location": "Munich, Germany (remote)",
+		"location": "Munich/Leipzig, Germany",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "and",
 		"today": "today",
@@ -18,7 +18,8 @@
 		"days": "days",
 		"hours": "hour(s)",
 		"minutes": "minute(s)",
-		"seconds": "second(s)"
+		"seconds": "second(s)",
+		"last-update": "Last update"
 	},
 	"nav": {
 		"menu": "Menu",
@@ -66,15 +67,16 @@
 		"headline-additional": "– I'm familiar with",
 		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
 		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
-		"design-text3": "I like to use tools like Figma for ideation and sketching, and to create wireframes and interactive prototypes so that my designs can be tested and validated early on. Further on, it can make sense to develop Living Style Guides, that make it easier for teams to maintain scalable and consistent UIs.",
+		"design-text3": "I like to use tools like Figma for ideation and sketching, and to create wireframes and interactive (high-fidelity) prototypes, which ensure that my designs can be tested and validated early on. Further on, it can make sense to develop Design Systems - or even Living Style Guides, that make it easier to maintain scalable and consistent UIs.",
 		"code-text1": "Writing code is my favorite way to bring designs to life:",
-		"code-text2": "As an 'architect' of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
-		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. That means I can pick the perfect tools for each project.",
+		"code-text2": "As an architect of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
+		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. Currently, my favorite tools are TailwindCSS and Vue.js.",
 		"ally-text1": "My goal is to make the web a more accessible and engaging place.",
 		"ally-text2": "Equality is very high on my priority list, which is why I want to develop digital services and products that are accessible to everyone and adapt smoothly to different devices and screen sizes.",
 		"ally-text3": "Using end-to-end testing tools I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
 	"projects": {
+		"headline": "Some Projects I did",
 		"schauer-headline": "A GenArt Portfolio",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. For this project, I created a custom design prototype in Figma and implemented the website with SvelteKit, GSAP and TailwindCSS. My goal was to create a website that is as unique as the art it presents.",
 		"schauer-text2": "The website is currently in development and will be launched soon."

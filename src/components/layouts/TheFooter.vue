@@ -3,7 +3,7 @@
     class="custom-wavy-border tw-flex tw-flex-row tw-justify-center tw-bg-indigo-200 tw-py-20 dark:tw-bg-indigo-900 xl:tw-pb-14 xl:tw-pt-16"
   >
     <div
-      class="tw-w-full tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white lg:tw-px-32 xl:tw-text-base"
+      class="tw-w-full tw-max-w-screen-4xl tw-px-6 tw-text-sm tw-font-semibold dark:tw-text-white lg:tw-px-32 xl:tw-text-base"
     >
       <div
         class="tw-flex tw-flex-wrap tw-justify-center tw-align-top tw-leading-relaxed lg:tw-flex-nowrap lg:tw-justify-between"
@@ -48,6 +48,9 @@
               href="//github.com/lauraredeker/portfolio-tailwind"
             >GitHub</a>
           </span>
+          <p class="tw-mt-2 tw-text-sm">
+            Last Update: 31.05.2023
+          </p>
         </div>
         <div class="tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link

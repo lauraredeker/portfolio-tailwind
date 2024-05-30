@@ -14,6 +14,12 @@
 	opacity: 0;
 }
 
+@layer components {
+	.tw-container {
+		@apply tw-max-w-screen-2xl;
+	  }
+}
+
 @layer base {
 	/* All delay classes will take half the time to start */
 	:root {

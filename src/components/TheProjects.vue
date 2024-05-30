@@ -6,12 +6,20 @@
 
   const [isSection1Visible, onSection1Visibility] = useVisibility()
   const [isSection2Visible, onSection2Visibility] = useVisibility()
-  const [isSection3Visible] = useVisibility()
 </script>
 
 <template>
-  <section class="tw-relative tw-mx-auto tw-max-w-screen-lg tw-px-8 tw-py-36 sm:tw-px-6 md:tw-px-24 md:tw-pb-0 md:tw-pt-20 xl:tw-max-w-screen-3xl">
-    <div class="tw-full tw-grid tw-grid-cols-8 tw-items-center tw-gap-12 2xl:tw-gap-20">
+  <section class="tw-container tw-relative tw-min-h-[100vh] tw-max-w-screen-4xl tw-py-36 tw-text-center md:tw-pb-64 md:tw-pt-20">
+    <span
+      aria-hidden="true"
+      class="tw-i-ph-stairs-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+    />
+    <h3
+      class="tw-mb-16 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-24 md:tw-text-5xl"
+    >
+      {{ $t('projects.headline') }}
+    </h3>
+    <div class="tw-full tw-grid tw-grid-cols-8 tw-items-center tw-gap-y-12 sm:tw-gap-16 2xl:tw-gap-24">
       <div
         v-element-visibility="onSection1Visibility"
         class="tw-col-span-full tw-h-auto tw-w-full xl:tw-col-span-5"
@@ -26,6 +34,9 @@
           />--> 
 
         <div class="tw-rounded-md tw-border-2 tw-border-black tw-bg-black dark:tw-border-black">
+          <div class="tw-absolute tw-right-0 tw-top-8 tw-rounded-l-lg tw-bg-purple-300 tw-px-4 tw-py-1 tw-text-center tw-text-base tw-font-semibold tw-text-black sm:tw-top-32 sm:tw-px-8 sm:tw-py-2 sm:tw-text-l">
+            coming soon
+          </div>  
           <video
             autoplay
             muted
@@ -51,7 +62,7 @@
       >
         <div class="tw-hyphens-auto tw-pb-12">
           <h3
-            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-text-2xl"
+            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-l tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 sm:tw-text-xl md:tw-text-2xl"
           >
             01 &dash; {{ $t('projects.schauer-headline') }}
           </h3>
@@ -66,16 +77,6 @@
         </div>
       </div>
     </div>
-
-    <BaseNextSection
-      :class="{
-        'animate__animated animate__slideInUp  animate__delay-5s': isSection3Visible,
-        'tw-will-change': !isSection3Visible,
-      }"
-      container-class="tw-block tw-mt-24 md:tw-mt-40 md:tw-mb-40"
-      target="#testimonials"
-      :title="$t('nav.testimonials')"
-    />
   </section>
 
   <TheTestimonials id="testimonials" />

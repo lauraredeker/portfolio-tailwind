@@ -106,7 +106,7 @@
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p>
-                TailwindCSS, UI Design, UX Design, Figma, Prototyping, Web &amp; App Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
+                TailwindCSS, UI Design, UX Design, Figma, (High-Fidelity) Prototyping, Web &amp; App Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
                 Responsive Design, Git, GitHub, Sketch, Cross-Browser Development
               </p>
             </div>
