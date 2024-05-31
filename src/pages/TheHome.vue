@@ -13,7 +13,7 @@
       <TheAbout id="about" />
       <TheSkills id="expertise" />
       <TheProjects id="projects" />
-      <TheContact id="contact" />
+      <TheContact id="contactme" />
     </div>
   </div>
 </template>

@@ -34,9 +34,6 @@
           />--> 
 
         <div class="tw-rounded-md tw-border-2 tw-border-black tw-bg-black dark:tw-border-black">
-          <div class="tw-absolute tw-right-0 tw-top-8 tw-rounded-l-lg tw-bg-purple-300 tw-px-4 tw-py-1 tw-text-center tw-text-base tw-font-semibold tw-text-black sm:tw-top-32 sm:tw-px-8 sm:tw-py-2 sm:tw-text-l">
-            coming soon
-          </div>  
           <video
             autoplay
             muted
