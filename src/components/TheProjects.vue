@@ -76,7 +76,7 @@
     </div>
   </section>
 
-  <TheTestimonials id="testimonials" />
+  <TheTestimonials />
 </template>
 
 

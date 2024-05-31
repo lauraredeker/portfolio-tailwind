@@ -4,7 +4,6 @@
   import TheLocaleChanger from '../features/TheLocaleChanger.vue'
   import TheMobileNav from './TheMobileNav.vue'
   import TheNav from './TheNav.vue'
-  import Logo from '../common/Logo.vue'
 
   // Utilities
   import { watchEffect } from '@vue/runtime-core'

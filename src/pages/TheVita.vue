@@ -70,7 +70,7 @@
       <p class="md:tw-hyphens-auto md:tw-text-justify">
         {{ $t('vita.freelance_text1') }}
       </p>
-      <div class="tw-mt-10 tw-rounded-lg tw-border-4 tw-border-purple-300 tw-px-5 tw-py-5 tw-text-center md:tw-px-10">
+      <div class="tw-mt-10 tw-rounded-lg tw-border-4 tw-border-purple-300 tw-px-2 tw-py-5 tw-text-center md:tw-px-5">
         <p>{{ $t('general.contact-text') }}</p>
         <CopyEmail class="tw-mb-5 tw-mt-5 2xl:tw-px-20" />
       </div>
