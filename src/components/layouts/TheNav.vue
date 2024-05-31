@@ -32,7 +32,7 @@
       {{ $t('nav.projects') }}
     </RouterLink>
     <RouterLink
-      to="/#contact"
+      to="/#contactme"
       class="custom-nav-link tw-w-full tw-py-5 tw-text-blue-800 tw-underline-offset-4 tw-transition-all hover:tw-underline focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white sm:tw-rounded-lg lg:tw-w-auto lg:tw-px-3 lg:tw-py-1 lg:tw-text-black lg:hover:tw-bg-gray-100 lg:hover:tw-text-purple-500 lg:dark:hover:tw-bg-black lg:dark:hover:tw-text-purple-200"
       @click="$emit('linkClick')"
     >
