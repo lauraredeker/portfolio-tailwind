@@ -26,13 +26,13 @@
       <Transition name="fade">
         <span
           v-show="showTitle"
-          class="tw-absolute tw-bottom-12 tw-left-16 tw-hidden tw-w-56 tw-select-none tw-text-left tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-500 dark:tw-text-indigo-400 md:tw-left-20 md:tw-block"
+          class="tw-absolute tw-bottom-12 tw-left-16 tw-hidden tw-w-56 tw-select-none tw-text-left tw-font-semibold tw-uppercase tw-tracking-wider tw-text-indigo-950 dark:tw-text-indigo-400 md:tw-left-20 md:tw-block"
         >
           {{ title }}
         </span>
       </Transition>
       <span
-        :class="arrowClass ? arrowClass : 'tw-text-purple-500 hover:tw-text-blue-600 dark:tw-text-indigo-300 hover:dark:tw-text-purple-300'"
+        :class="arrowClass ? arrowClass : 'tw-text-indigo-950 hover:tw-text-blue-800 dark:tw-text-indigo-300 hover:dark:tw-text-purple-300'"
         class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-transition motion-safe:tw-animate-bounce lg:tw-h-14 lg:tw-w-14"
       />
     </RouterLink>

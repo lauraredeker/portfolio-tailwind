@@ -12,10 +12,10 @@
   <section class="tw-container tw-relative tw-min-h-[100vh] tw-max-w-screen-3xl tw-py-36 tw-text-center md:tw-pb-64 md:tw-pt-20">
     <span
       aria-hidden="true"
-      class="tw-i-ph-steps-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+      class="custom-icon-color tw-i-ph-stairs-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
     />
     <h3
-      class="tw-mb-16 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-24 md:tw-text-5xl"
+      class="tw-mb-8 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-16 md:tw-text-5xl"
     >
       {{ $t('projects.headline') }}
     </h3>
@@ -55,13 +55,13 @@
       <div
         v-element-visibility="onSection2Visibility"
         :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
-        class="tw-col-span-full tw-flex tw-items-center xl:tw-col-span-3"
+        class="tw-col-span-full tw-flex tw-items-center tw-text-left xl:tw-col-span-3 "
       >
         <div class="tw-hyphens-auto tw-pb-12">
           <h3
-            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-l tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 sm:tw-text-xl md:tw-text-2xl"
+            class="tw-mb-6 tw-inline-block tw-cursor-pointer tw-text-l tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 sm:tw-text-xl md:tw-text-2xl"
           >
-            01 &dash; {{ $t('projects.schauer-headline') }}
+            {{ $t('projects.schauer-headline') }}
           </h3>
           <div class="tw-text-justify">
             <p>

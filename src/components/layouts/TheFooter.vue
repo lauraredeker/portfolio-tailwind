@@ -49,7 +49,7 @@
             >GitHub</a>
           </span>
           <p class="tw-mt-2 tw-text-sm">
-            {{ $t('general.last-update') }}: 31.05.2023
+            {{ $t('general.last-update') }}: 02.06.2024
           </p>
         </div>
         <div class="tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">

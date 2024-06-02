@@ -22,10 +22,10 @@
         >
           <span
             aria-hidden="true"
-            class="tw-i-ph-atom-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+            class="custom-icon-color tw-i-ph-paint-brush-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
           />
           <h3
-            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
+            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
           >
             Design
           </h3>
@@ -48,10 +48,10 @@
         >
           <span
             aria-hidden="true"
-            class="tw-i-ph-magic-wand-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+            class="custom-icon-color tw-i-ph-magic-wand-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
           />
           <h3
-            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
+            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
           >
             Code
           </h3>
@@ -72,10 +72,10 @@
         >
           <span
             aria-hidden="true"
-            class="tw-i-ph-heart-light tw-inline-block tw-h-16 tw-w-16 tw-text-indigo-500 dark:tw-text-purple-400 md:tw-h-28 md:tw-w-28"
+            class="custom-icon-color tw-i-ph-hand-heart-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
           />
           <h3
-            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
+            class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
           >
             A11y
           </h3>

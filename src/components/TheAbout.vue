@@ -38,7 +38,6 @@
         <p
           class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l"
         >
-          Laura,
           {{ $t('about.pronouns') }}
           &middot; {{ currentAge }} &middot;
           {{ $t('general.location') }}

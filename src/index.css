@@ -67,4 +67,8 @@
 		-webkit-mask: var(--mask);
 		mask: var(--mask);
 	}
+
+	.custom-icon-color {
+		@apply tw-bg-gradient-to-bl tw-from-purple-300 tw-to-blue-500 dark:tw-from-indigo-800 dark:tw-to-purple-400;
+	}
 }

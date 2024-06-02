@@ -1,7 +1,7 @@
 {
 	"general": {
 		"currentStatus": "available",
-		"location": "Munich/Leipzig, Germany",
+		"location": "Leipzig, Germany",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "and",
 		"today": "today",
@@ -76,9 +76,9 @@
 		"ally-text3": "Using end-to-end testing tools I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
 	"projects": {
-		"headline": "Some Projects I did",
-		"schauer-headline": "A GenArt Portfolio",
-		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. For this project, I created a custom design prototype in Figma and implemented the website with SvelteKit, GSAP and TailwindCSS. My goal was to create a website that is as unique as the art it presents.",
+		"headline": "Recent Projects",
+		"schauer-headline": "GenArt Portfolio Website",
+		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
 		"schauer-text2": "The website is currently in development and will be launched soon."
 	},
 	"testimonials": {
@@ -88,7 +88,7 @@
 		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
-		"headline": "Say hi! 👋",
+		"headline": "Say hello!",
 		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
 		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. I'm looking forward to hearing from you!",
 		"copy": "Click to copy email",

@@ -20,11 +20,12 @@
         :class="{ 'animate__animated animate__fadeInUp': isSectionVisible }"
         class="tw-container tw-pb-10 md:tw-pt-20 lg:tw-w-2/3 3xl:tw-w-1/2"
       >
-        <h2
-          class="tw-text-2xl tw-font-semibold tw-text-indigo-800 dark:tw-text-indigo-100 md:tw-text-5xl 2xl:tw-text-6xl"
+        <h3
+          class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
         >
           {{ $t('contact.headline') }}
-        </h2>
+        </h3>
+
 
         <p class="tw-mb-2 tw-mt-8 tw-hyphens-auto tw-text-justify md:tw-mt-10 md:tw-text-center">
           {{ $t('contact.text') }}
@@ -32,7 +33,6 @@
 
         <CopyEmail class="tw-mt-10 tw-inline-block tw-text-center" />
         
-
         <p class="tw-mb-1 tw-mt-10 md:tw-mt-14">
           {{ $t('contact.socials') }}
         </p>
