@@ -43,7 +43,7 @@
         <div
           class="md:tw-text-justify"
         >
-          <p class="tw-text-m tw-my-6 tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
+          <p class="tw-text-m tw-my-6 tw-font-semibold tw-text-black dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
             {{ $t('about.tldr') }}
           </p>
 
@@ -107,7 +107,7 @@
       >
         <router-link
           to="/vita"
-          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-align-middle tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 dark:hover:tw-text-white md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:tw-text-indigo-800 xl:hover:tw-border-[90px] xl:hover:tw-border-amber-500 xl:hover:tw-bg-indigo-600 xl:hover:tw-text-white xl:dark:tw-border-indigo-900"
+          class="tw-flex-column tw-left-0 tw-top-0 tw-flex tw-h-full tw-flex-col tw-justify-end tw-rounded-full tw-border-4 tw-border-indigo-700 tw-bg-indigo-700 tw-px-10 tw-py-3 tw-align-middle tw-transition-all focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 dark:hover:tw-text-white md:tw-py-4 xl:tw-absolute xl:tw-w-full xl:tw-border-[240px] xl:tw-border-amber-500 xl:tw-bg-transparent xl:tw-px-0 xl:tw-text-indigo-800 xl:hover:tw-border-[90px] xl:hover:tw-border-indigo-950 xl:hover:tw-bg-indigo-950 xl:hover:tw-text-white xl:dark:tw-border-indigo-900"
         >
           <span
             class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-font-semibold xl:tw-block xl:tw-px-40 xl:tw-text-2xl xl:tw-font-bold xl:tw-uppercase xl:tw-leading-tight xl:tw-tracking-widest"

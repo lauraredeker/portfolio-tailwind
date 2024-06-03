@@ -31,7 +31,7 @@
           {{ $t('contact.text') }}
         </p>
 
-        <CopyEmail class="tw-mt-10 tw-inline-block tw-text-center" />
+        <CopyEmail class="tw-mt-5 tw-inline-block tw-text-center" />
         
         <p class="tw-mb-1 tw-mt-10 md:tw-mt-14">
           {{ $t('contact.socials') }}

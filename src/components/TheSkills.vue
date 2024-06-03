@@ -32,7 +32,7 @@
           <div class="tw-text-justify">
             <p>
               {{ $t('skills.design-text1') }}
-              <span class="tw-font-semibold dark:tw-text-orange-50">
+              <span class="tw-font-semibold">
                 {{ $t('skills.design-text2') }}
               </span>
               <br><br>
@@ -56,7 +56,7 @@
             Code
           </h3>
           <p class="tw-text-justify">
-            <span class="tw-font-semibold dark:tw-text-orange-50">
+            <span class="tw-font-semibold">
               {{ $t('skills.code-text1') }}
             </span>
             {{ $t('skills.code-text2') }}
@@ -80,7 +80,7 @@
             A11y
           </h3>
           <p class="tw-text-justify">
-            <span class="tw-font-semibold dark:tw-text-orange-50">
+            <span class="tw-font-semibold">
               {{ $t('skills.ally-text1') }}
             </span>
             {{ $t('skills.ally-text2') }}

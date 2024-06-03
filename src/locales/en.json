@@ -56,8 +56,6 @@
 		"author": "author of",
 		"pronouns": "she/her",
 		"headline": "A short introduction",
-		"tldr": "Ich bin Laura (sie/ihr) aus Leipzig. Seit Anfang 2024 unterstütze ich Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX-Fragen und erstelle komplette Design Systeme oder Living Style Guides.",
-
 		"tldr": "I'm Laura (she/her), from Leipzig, Germany. Since the beginning of 2024, I support companies and agencies in the design and implementation of web projects. I create custom prototypes and develop with modern frontend technologies. I also advise on design and UX issues and create design systems or living style guides.",
 		"text1": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor. Fast-forward to 2024 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
 		"text2": "Thanks to many years of ",
@@ -93,7 +91,7 @@
 		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
-		"headline": "Say hello!",
+		"headline": "Project Inquiry",
 		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
 		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. I'm looking forward to hearing from you!",
 		"copy": "Click to copy email",

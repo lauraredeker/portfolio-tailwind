@@ -69,6 +69,6 @@
 	}
 
 	.custom-icon-color {
-		@apply tw-bg-gradient-to-bl tw-from-purple-300 tw-to-indigo-500 dark:tw-from-indigo-700 dark:tw-to-purple-200;
+		@apply  tw-text-purple-300 dark:tw-from-purple-300;
 	}
 }

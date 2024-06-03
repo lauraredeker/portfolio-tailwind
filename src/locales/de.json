@@ -84,7 +84,7 @@
 		"headline": "Aktuelle Projekte",
 		"schauer-headline": "GenArt Portfolio",
 		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
-		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung und wird in Kürze online gehen."
+		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung."
 	},
 	"testimonials": {
 		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde Laura jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",
@@ -93,8 +93,9 @@
 		"lukas": "Laura hat die perfekte Mischung aus coolem Design und erstklassiger Funktionalität getroffen. Die von ihr erstellten Websites sind nicht nur nutzerfreundlich, sondern machen auch einfach Spaß."
 	},
 	"contact": {
-		"headline": "Say hi! 👋",
-		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder mir ein Projekt vorstellen möchtest. Ich freue mich darauf, von dir zu hören!",
+		"headline": "Projekt in Sicht?",
+		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
+		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder mir ein Projekt vorstellen möchtest.",
 		"copy": "E-Mail kopieren",
 		"copied": "E-Mail kopiert!",
 		"socials": "Hier kannst du mich ebenfalls finden:"
