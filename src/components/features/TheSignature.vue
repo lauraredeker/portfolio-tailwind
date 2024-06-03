@@ -50,7 +50,7 @@
             class="mask"
             stroke-dasharray="1000"
             stroke-dashoffset="1000"
-            d="m58.77.26s-1.19,18.55-8.96,41c-9,26-22,56-41,76-6.5,6.84-4.79-.18-4-2,2.75-6.34,10.55-18.39,32.13-18.39,37.24,0,65.17-39.9,63.87-38.61"
+            d="m58.77.24s-1.19,18.55-8.96,41c-9,26-22,56-41,76-6.5,6.84-4.79-.18-4-2,2.75-6.34,10.55-18.39,32.13-18.39,37.24,0,65.17-39.9,63.87-38.61"
           />
         </mask>
         <mask id="mask-laura-A">
@@ -68,7 +68,7 @@
             class="mask"
             stroke-dasharray="1000"
             stroke-dashoffset="1000"
-            d="m134.31,63.76s-22.2,42.99,11.24,4.42c0,0,2.08-2.4,3.17,8.71,0,0,14.13-6.89,16.36-10.01"
+            d="m134.31,63.74s-22.2,42.99,11.24,4.42c0,0,2.08-2.4,3.17,8.71,0,0,14.13-6.89,16.36-10.01"
           />
         </mask>
         <mask id="mask-laura-R">
@@ -203,18 +203,18 @@
 }
 
 #mask-L {
-	animation: strokeOffset .8s linear forwards 1s;
+	animation: strokeOffset .4s linear forwards 0.5s;
 }
 #mask-A {
-	animation: strokeOffset .6s linear forwards 2s;
+	animation: strokeOffset .4s linear forwards 1s;
 }
 #mask-U {
-	animation: strokeOffset .6s linear forwards 2.6s;
+	animation: strokeOffset .4s linear forwards 1.4s;
 }
 #mask-R {
-	animation: strokeOffset .6s linear forwards 3.2s;
+	animation: strokeOffset .4s linear forwards 1.8s;
 }
 #mask-AA {
-	animation: strokeOffset .6s linear forwards 3.8s;
+	animation: strokeOffset .4s linear forwards 2.2s;
 }
 </style>

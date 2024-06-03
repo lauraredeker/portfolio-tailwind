@@ -46,11 +46,9 @@
               rel="noopener noreferrer"
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
               href="//github.com/lauraredeker/portfolio-tailwind"
-            >GitHub</a>
-          </span>
-          <p class="tw-mt-2 tw-text-sm">
+            >GitHub</a> &middot; 
             {{ $t('general.last-update') }}: 02.06.2024
-          </p>
+          </span>
         </div>
         <div class="tw-mt-10 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link

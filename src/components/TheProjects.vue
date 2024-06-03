@@ -2,7 +2,6 @@
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
   //import { Image } from "@unpic/vue"
-  import TheTestimonials from '../components/TheTestimonials.vue'
 
   const [isSection1Visible, onSection1Visibility] = useVisibility()
   const [isSection2Visible, onSection2Visibility] = useVisibility()
@@ -75,8 +74,6 @@
       </div>
     </div>
   </section>
-
-  <TheTestimonials />
 </template>
 
 

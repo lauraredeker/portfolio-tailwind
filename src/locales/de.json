@@ -54,18 +54,18 @@
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
 		"author": "author of",
-		"headline": "Eine kurze Vorstellung",
+		"headline": "Ein paar Worte zu mir",
 		"from": "aus",
 		"years": "Jahre alt",
 		"pronouns": "sie/ihr",
-		"tldr": "Hallo noch mal, ich heiße Laura (sie/ihr), wohnhaft in Leipzig. Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
-		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
+		"tldr": "Ich bin Laura (sie/ihr) aus Leipzig. Seit Anfang 2024 unterstütze ich Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX-Fragen und erstelle Design-Systeme oder Living Style Guides.",
+		"text1": "Ursprünglich komme ich aus dem Design – irgendwann habe ich allerdings die Freude am Entwickeln entdeckt und gefühlt einen Moment später saß ich schon in der IT. Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
 		"text2": "Durch meine ",
 		"text3": "langjährige Erfahrung",
-		"text4": " kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
+		"text4": " kenne ich mich mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
 		"vita": "Was bisher so los war",
-		"read-more": "weiterlesen",
-		"read-less": "weiterlesen"
+		"read-more": "mehr erfahren",
+		"read-less": "weniger anzeigen"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
@@ -84,17 +84,18 @@
 		"headline": "Aktuelle Projekte",
 		"schauer-headline": "GenArt Portfolio",
 		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
-		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung und wird in Kürze online gehen."
+		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung."
 	},
 	"testimonials": {
-		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde Laura jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",
+		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde sie jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",
 		"michael": "Lauras Kreativität und technisches Geschick haben meine Vision für eine Website in ein interaktives Kunstwerk verwandelt. Sie präsentiert nicht nur meine Arbeit, sondern trägt auch zum künstlerischen Gesamterlebnis bei.",
 		"michael-job": "Fotograf und Künstler",
 		"lukas": "Laura hat die perfekte Mischung aus coolem Design und erstklassiger Funktionalität getroffen. Die von ihr erstellten Websites sind nicht nur nutzerfreundlich, sondern machen auch einfach Spaß."
 	},
 	"contact": {
-		"headline": "Say hi! 👋",
-		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder mir ein Projekt vorstellen möchtest. Ich freue mich darauf, von dir zu hören!",
+		"headline": "Projekt in Sicht?",
+		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
+		"text": "Schreib mir gerne eine Nachricht, wenn du mehr über mich und meine Arbeit erfahren oder mir ein Projekt vorstellen möchtest.",
 		"copy": "E-Mail kopieren",
 		"copied": "E-Mail kopiert!",
 		"socials": "Hier kannst du mich ebenfalls finden:"
@@ -106,7 +107,7 @@
 	},
 	"vita": {
 		"freelance_title": "Freelance Frontend Designerin & Entwicklerin",
-		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle komplette Designsysteme und Komponentenbibliotheken.",
+		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle Design-Systeme und Living Style Guides.",
 		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",

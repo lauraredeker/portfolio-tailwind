@@ -70,7 +70,7 @@
       ref="refNav"
       role="dialog"
       aria-modal="true"
-      class="animate__animated animate__slideInRight tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-gradient-to-br tw-from-indigo-100 tw-to-indigo-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950"
+      class="animate__animated animate__slideInRight tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-gradient-to-br tw-from-gray-100 tw-to-gray-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950"
     >
       <div>
         <span
@@ -79,13 +79,13 @@
         >
           Navigation
         </span>
-        <hr class="tw-mx-6 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
+        <hr class="tw-mx-6 tw-border-t-2 tw-border-black dark:tw-border-indigo-700">
       </div>
       <TheNav
         id="mobile-nav"
         @link-click="toggleNav()"
       />
-      <hr class="tw-mx-6 tw-mt-2 tw-border-t-2 tw-border-indigo-200 dark:tw-border-indigo-700">
+      <hr class="tw-mx-6 tw-mt-2 tw-border-t-2 tw-border-black dark:tw-border-indigo-700">
 
       <div class="tw-mx-auto tw-mt-6 tw-flex tw-max-w-lg tw-flex-row tw-justify-between tw-px-6">
         <TheDarkBtn
