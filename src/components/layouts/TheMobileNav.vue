@@ -35,7 +35,7 @@
       id="theme-toggle"
       type="button"
       aria-label="settings"
-      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-h-16 tw-w-16 tw-flex-row tw-items-center tw-justify-center tw-rounded-full tw-bg-blue-500 tw-align-middle tw-text-white tw-transition focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-blue-700 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
+      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-h-16 tw-w-16 tw-flex-row tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-500 tw-align-middle tw-text-white tw-transition focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-indigo-700 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
       @click="toggleNav()"
     >
       <div>

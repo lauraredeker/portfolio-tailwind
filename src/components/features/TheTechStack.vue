@@ -25,7 +25,7 @@
         class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-indigo-900 dark:tw-border-indigo-700 md:tw-rounded-lg"
       >
         <button 
-          class="tw-flex tw-w-full tw-items-center tw-justify-between tw-px-4 tw-py-5 tw-align-middle tw-text-purple-400 tw-ring-inset tw-transition-all hover:tw-text-purple-600 focus:tw-outline-none focus-visible:tw-ring-8 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 hover:dark:tw-text-purple-50 dark:focus-visible:tw-ring-purple-400 md:tw-px-10 md:tw-py-8"
+          class="tw-flex tw-w-full tw-items-center tw-justify-between tw-px-4 tw-py-5 tw-align-middle tw-text-indigo-950 tw-ring-inset tw-transition-all hover:tw-text-purple-600 focus:tw-outline-none focus-visible:tw-ring-8 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 hover:dark:tw-text-purple-50 dark:focus-visible:tw-ring-purple-400 md:tw-px-10 md:tw-py-8"
           :class="{ 
             'hover:tw-bg-indigo-100 hover:dark:tw-bg-indigo-900': !isContentVisible,
             ' tw-border-b-2 tw-border-indigo-900 dark:tw-border-indigo-700': isContentVisible,
@@ -35,7 +35,7 @@
           <span class="tw-flex tw-flex-row tw-items-center tw-justify-start tw-align-middle">
             <span
               aria-hidden="true"
-              class="2xl:tw-mr-88 tw-i-ph-smiley-sticker-light tw-mr-4 tw-h-10 tw-w-10 tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-blue-900 dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-inline-block md:tw-h-12 md:tw-w-12 xl:tw-h-20 xl:tw-w-20"
+              class="2xl:tw-mr-88 custom-icon-color tw-i-ph-smiley-sticker-duotone tw-mr-4 tw-h-10 tw-w-10 md:tw-inline-block md:tw-h-12 md:tw-w-12 xl:tw-h-20 xl:tw-w-20"
             />
             <h3
               class="tw-inline-block tw-cursor-pointer tw-text-xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-text-3xl"

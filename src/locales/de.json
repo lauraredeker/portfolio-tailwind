@@ -1,7 +1,7 @@
 {
 	"general": {
 		"currentStatus": "verfügbar",
-		"location": "Leipzig (remote)",
+		"location": "Leipzig",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "und",
 		"today": "heute",
@@ -54,21 +54,25 @@
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
 		"author": "author of",
+		"headline": "Eine kurze Vorstellung",
+		"from": "aus",
+		"years": "Jahre alt",
 		"pronouns": "sie/ihr",
-		"heading": "Eine kurze Vorstellung",
-		"tldr": "Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
+		"tldr": "Hallo noch mal, ich heiße Laura (sie/ihr), wohnhaft in Leipzig. Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
 		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
 		"text2": "Durch meine ",
 		"text3": "langjährige Erfahrung",
 		"text4": " kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
-		"vita": "Was bisher so los war"
+		"vita": "Was bisher so los war",
+		"read-more": "weiterlesen",
+		"read-less": "weiterlesen"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
 		"headline-additional": "– die mir vertraut sind",
 		"design-text1": "Bei der Gestaltung von Webseiten und Apps habe ich immer das Nutzererlebnis im Fokus.",
 		"design-text2": "Ästhetik und Funktionalität sollten sich dabei nicht gegenseitig ausschließen, sondern ergänzen.",
-		"design-text3": "Zur Ideenfindung und zum Wireframing verwende ich gerne Figma, aber auch um interaktive Prototypen zu erstellen, mit deren Hilfe die Nutzererfahrung schon frühzeitig getestet werden kann. Bei größeren Projekten können aber auch Design Systeme (oder sogar Living Style Guides) sinnvoll sein, um die UI konsistent und skalierbar zu halten.",
+		"design-text3": "Zur Ideenfindung und zum Wireframing verwende ich gerne Figma, aber auch um interaktive Prototypen zu erstellen, mit deren Hilfe die Nutzererfahrung schon frühzeitig getestet werden kann. Bei größeren Projekten können aber auch Design Systeme sinnvoll sein, um die UI konsistent und skalierbar zu halten.",
 		"code-text1": "JavaScript, HTML und CSS sind meine täglichen Begleiter:",
 		"code-text2": "Ich kümmere mich darum, dass jeder Button-Klick, jede Animation und jedes einzelne Designelement an der richtigen Stelle sitzt und sich intuitiv verhält.",
 		"code-text3": "In den letzten 10 Jahren habe ich Erfahrungen mit vielen Frameworks und Bibliotheken sammeln können und finde mich erfahrungsgemäß schnell in neuen Projekten zurecht. Meine aktuellen Favoriten sind Vue.js und TailwindCSS.",

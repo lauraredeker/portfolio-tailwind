@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-relative"
   >
-    <div class="tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60 tw-py-36 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
+    <div class="tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-80 tw-py-36 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
@@ -113,10 +113,10 @@
 }
 
 .carousel__pagination-button::after {
-  @apply tw-bg-indigo-950  dark:tw-bg-indigo-200;
+  @apply tw-bg-white dark:tw-bg-indigo-200;
 }
 .carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
-  @apply tw-bg-indigo-600 dark:tw-bg-purple-200;
+  @apply tw-bg-purple-600 dark:tw-bg-purple-200;
 }
 
 .carousel__prev,

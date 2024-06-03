@@ -1,6 +1,9 @@
 {
 	"general": {
 		"currentStatus": "available",
+		"iam": "I am",
+		"from": "living in",
+		"years": "years old",
 		"location": "Leipzig, Germany",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "and",
@@ -52,22 +55,25 @@
 		"intro4": "I understand both the visual and functional aspects of creating websites."
 	},
 	"about": {
+		"headline": "A short introduction",
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
 		"author": "author of",
 		"pronouns": "she/her",
-		"tldr": "I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor.",
+		"tldr": "Hello again, I'm Laura (she/her) from Leipzig, Germany. I'm a designer, who eventually discovered the joy of coding and somehow ended up sitting full-time on the engineer's and back-end developer's floor.",
 		"text1": "Fast-forward to 2024 – I have successfully recovered from my identity crisis and found myself the exact right spot: Somewhere between design and development - as a frontend designer according to Brad Frost.",
 		"text2": "Thanks to many years of ",
 		"text3": "work experience",
 		"text4": ", I am familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
-		"vita": "my work experience"
+		"vita": "my work experience",
+		"read-more": "Read more",
+		"read-less": "Read less"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
 		"headline-additional": "– I'm familiar with",
 		"design-text1": "With a keen eye for design and a focus on user experience, I'm great at creating",
 		"design-text2": "delightful interfaces that seamlessly blend aesthetics with functionality.",
-		"design-text3": "I like to use tools like Figma for ideation and sketching, and to create wireframes and interactive (high-fidelity) prototypes, which ensure that my designs can be tested and validated early on. Further on, it can make sense to develop Design Systems - or even Living Style Guides, that make it easier to maintain scalable and consistent UIs.",
+		"design-text3": "I like to use tools like Figma for ideation and sketching, and to create wireframes and interactive (high-fidelity) prototypes, which ensure that my designs can be tested and validated early on. Further on, it can make sense to develop Design Systems that make it easier to maintain scalable and consistent UIs.",
 		"code-text1": "Writing code is my favorite way to bring designs to life:",
 		"code-text2": "As an architect of user interfaces, I make sure that every button click, every animation and UI element responds intuitively.",
 		"code-text3": "By now, I've got a versatile technical skill set and I'm experienced in different frontend frameworks and libraries. Currently, my favorite tools are TailwindCSS and Vue.js.",
@@ -79,7 +85,7 @@
 		"headline": "Recent Projects",
 		"schauer-headline": "GenArt Portfolio Website",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
-		"schauer-text2": "The website is currently in development and will be launched soon."
+		"schauer-text2": "The website is currently in development."
 	},
 	"testimonials": {
 		"nicole": "In our collaboration, Laura has always carefully thought through projects, provided valuable input and proved to be an indispensable team member. I would hire her as a freelancer, as a permanent team member or welcome her back as a colleague at any time.",
@@ -102,7 +108,7 @@
 	},
 	"vita": {
 		"freelance_title": "Freelance Frontend Designer & Developer",
-		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position. I create custom design prototypes and develop websites with modern frontend technologies such as Vue.js, SvelteKit and TailwindCSS. I also advise on design and UX/UI issues and create full design systems and component libraries.",
+		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position. I create custom design prototypes and develop websites with modern frontend technologies. I also advise on design and UX/UI issues and create full design systems and component libraries.",
 		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
 		"pharma4u_text2": "Most recently, I designed a learning app for pharmacy students and developed a high-fidelity prototype in Figma. The prototype is currently being validated with user tests and then transferred to development.",

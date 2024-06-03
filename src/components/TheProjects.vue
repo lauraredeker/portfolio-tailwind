@@ -63,7 +63,7 @@
           >
             {{ $t('projects.schauer-headline') }}
           </h3>
-          <div class="tw-text-justify">
+          <div class="md:tw-text-justify">
             <p>
               {{ $t('projects.schauer-text1') }}
             </p>
@@ -76,7 +76,7 @@
     </div>
   </section>
 
-  <TheTestimonials id="testimonials" />
+  <TheTestimonials />
 </template>
 
 

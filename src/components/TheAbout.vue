@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 // Components
+  import { ref } from 'vue'
   import { vElementVisibility } from '@vueuse/components'
   import BaseNextSection from './common/BaseNextSection.vue'
   import BaseBtn from './common/BaseBtn.vue'
@@ -12,14 +13,11 @@
   const [isTextBlockVisible, onTextBlockVisibility] = useVisibility()
   const [isLinkVisible, onLinkVisibility] = useVisibility()
 
-  // calculate current age
-  const birthDate = new Date('1990-04-21') 
-  const currentDate = new Date()
-  const diffInMilliseconds = currentDate.getTime() - birthDate.getTime()
-  const ageInMilliseconds = new Date(diffInMilliseconds)
+  const isContentVisible = ref(false)
 
-  // Subtract 1970 since that's the epoch year
-  const currentAge = Math.abs(ageInMilliseconds.getUTCFullYear() - 1970)
+  function toggleContent() {
+    isContentVisible.value = !isContentVisible.value
+  }
 </script>
 
 <template>
@@ -35,34 +33,55 @@
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
       <div class="tw-my-20 tw-max-w-screen-xl md:tw-my-10 xl:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
-        <p
-          class="tw-text-sm tw-font-semibold tw-uppercase tw-text-indigo-400 dark:tw-text-indigo-400 xl:tw-text-l"
+        <h3
+          class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
         >
-          {{ $t('about.pronouns') }}
-          &middot; {{ currentAge }} &middot;
-          {{ $t('general.location') }}
-        </p>
-        <div class="tw-hyphens-auto tw-text-justify">
+          {{ $t('about.headline') }}
+        </h3>
+        <div class="tw-hyphens-auto md:tw-text-justify">
           <p class="tw-my-6">
             <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
               {{ $t('about.tldr') }}
             </span>
           </p>
-          <p>
-            {{ $t('about.text1') }}
-            <br><br>
-            {{ $t('about.text2') }}
-            <router-link
-              to="/vita"
-              class="tw-transition-color tw-mt-2 tw-inline-block tw-rounded-md tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-            >
-              {{ $t('about.text3') }}
-            </router-link>{{ $t('about.text4') }}
-          </p>
-          <TheSignature
-            id="signature"
-            class="tw-relative tw-inline-block tw-w-2/3 tw-fill-none tw-stroke-white tw-pt-10 sm:tw-w-1/3"
-          />
+
+          <div
+            v-show="isContentVisible"
+            id="more-text"
+            :aria-hidden="!isContentVisible"
+            class="tw-mt-6 md:tw-text-justify"
+          >
+            <p>
+              {{ $t('about.text1') }}
+              <br><br>
+              {{ $t('about.text2') }}
+              <router-link
+                to="/vita"
+                class="tw-transition-color tw-mt-2 tw-inline-block tw-rounded-md tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+              >
+                {{ $t('about.text3') }}
+              </router-link>{{ $t('about.text4') }}
+            </p>
+            <TheSignature
+              id="signature"
+              class="tw-relative tw-inline-block tw-w-2/3 tw-fill-none tw-stroke-white tw-pt-10 sm:tw-w-1/3"
+            />
+          </div>
+
+          <button
+            id="more-text-button"
+            aria-controls="more-text"
+            :aria-expanded="isContentVisible"
+            class="tw-flex tw-items-center tw-rounded-lg tw-px-2 tw-py-2 tw-font-semibold tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            @click="toggleContent"
+          >
+            {{ $t('about.read-more') }}
+            <i
+              class="tw-i-ph-caret-down tw-ml-2 tw-inline-block tw-h-6 tw-w-6 tw-transition-transform"
+              :class="isContentVisible ? 'tw-rotate-180' : ''"
+              aria-hidden="true"
+            />
+          </button>
         </div>
       </div>
     </div>
