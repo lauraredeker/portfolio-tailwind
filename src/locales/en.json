@@ -1,9 +1,6 @@
 {
 	"general": {
 		"currentStatus": "available",
-		"iam": "I am",
-		"from": "living in",
-		"years": "years old",
 		"location": "Leipzig, Germany",
 		"jobtitle": "Frontend Designer & Developer",
 		"and": "and",
