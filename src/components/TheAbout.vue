@@ -32,24 +32,26 @@
       }"
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
-      <div class="tw-my-20 tw-max-w-screen-xl md:tw-my-10 xl:tw-my-20 xl:tw-w-3/5 2xl:tw-w-1/2">
-        <h3
-          class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
+      <div
+        class="tw-mx-auto tw-my-20 md:tw-mb-10 md:tw-mt-0 md:tw-max-w-screen-md xl:tw-mx-0 xl:tw-my-20 xl:tw-w-3/5 xl:tw-max-w-screen-xl 2xl:tw-w-1/2"
+      >
+        <!-- <h3
+          class="tw-inline-block tw-text-xl tw-font-semibold tw-cursor-pointer tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-text-3xl"
         >
           {{ $t('about.headline') }}
-        </h3>
-        <div class="tw-hyphens-auto md:tw-text-justify">
-          <p class="tw-my-6">
-            <span class="tw-text-m tw-font-semibold dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
-              {{ $t('about.tldr') }}
-            </span>
+        </h3>-->
+        <div
+          class="md:tw-text-justify"
+        >
+          <p class="tw-text-m tw-my-6 tw-font-semibold tw-text-indigo-700 dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
+            {{ $t('about.tldr') }}
           </p>
 
           <div
             v-show="isContentVisible"
             id="more-text"
             :aria-hidden="!isContentVisible"
-            class="tw-mt-6 md:tw-text-justify"
+            class="tw-mt-6 tw-break-words md:tw-text-justify"
           >
             <p>
               {{ $t('about.text1') }}
@@ -64,7 +66,7 @@
             </p>
             <TheSignature
               id="signature"
-              class="tw-relative tw-inline-block tw-w-2/3 tw-fill-none tw-stroke-white tw-pt-10 sm:tw-w-1/3"
+              class="tw-relative tw-mb-4 tw-inline-block tw-w-2/3 tw-fill-none tw-stroke-white tw-pt-10 sm:tw-w-1/3"
             />
           </div>
 
@@ -72,10 +74,15 @@
             id="more-text-button"
             aria-controls="more-text"
             :aria-expanded="isContentVisible"
-            class="tw-flex tw-items-center tw-rounded-lg tw-px-2 tw-py-2 tw-font-semibold tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
+            class="tw-flex tw-items-center tw-rounded-lg tw-p-1 tw-font-semibold tw-text-purple-600 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-slate-200 hover:tw-text-purple focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black"
             @click="toggleContent"
           >
-            {{ $t('about.read-more') }}
+            <template v-if="isContentVisible">
+              {{ $t('about.read-less') }}
+            </template>
+            <template v-else>
+              {{ $t('about.read-more') }}
+            </template>
             <i
               class="tw-i-ph-caret-down tw-ml-2 tw-inline-block tw-h-6 tw-w-6 tw-transition-transform"
               :class="isContentVisible ? 'tw-rotate-180' : ''"
@@ -89,11 +96,11 @@
     <div
       ref="link"
       v-element-visibility="onLinkVisibility"
-      :class="{
+      :class="[{
         'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible,
         'tw-will-change': isLinkVisible,
-      }"
-      class="tw-container tw-mb-20 tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-bottom-10 xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
+      }, isContentVisible ? 'xl:tw-bottom-96' : 'xl:-tw-bottom-44']"
+      class="tw-container tw-mb-20 tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
     >
       <div
         class="tw-hidden tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-flex xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"

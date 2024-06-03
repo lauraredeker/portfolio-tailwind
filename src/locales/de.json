@@ -54,18 +54,18 @@
 	"about": {
 		"quote": "Somewhere between design – a world of personas, pixels, and polish – and engineering – a world of logic, loops, and Linux – lies",
 		"author": "author of",
-		"headline": "Eine kurze Vorstellung",
+		"headline": "Ein paar Worte zu mir",
 		"from": "aus",
 		"years": "Jahre alt",
 		"pronouns": "sie/ihr",
-		"tldr": "Hallo noch mal, ich heiße Laura (sie/ihr), wohnhaft in Leipzig. Meine Ursprünge liegen im Design – irgendwann habe ich jedoch die Freude am Coden entdeckt und gefühlt einen Moment später saß ich schon in der IT. ",
-		"text1": "Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
+		"tldr": "Ich bin Laura (sie/ihr) aus Leipzig. Seit Anfang 2024 unterstütze ich Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX-Fragen und erstelle Design-Systeme oder Living Style Guides.",
+		"text1": "Ursprünglich komme ich aus dem Design – irgendwann habe ich allerdings die Freude am Entwickeln entdeckt und gefühlt einen Moment später saß ich schon in der IT. Mittlerweile habe ich mich aber von meiner Identitätskrise erholt und meinen Platz gefunden: Irgendwo zwischen Design und Entwicklung – als Frontend Designerin nach Definition von Brad Frost.",
 		"text2": "Durch meine ",
 		"text3": "langjährige Erfahrung",
-		"text4": " kenne ich mich bestens mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
+		"text4": " kenne ich mich mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
 		"vita": "Was bisher so los war",
-		"read-more": "weiterlesen",
-		"read-less": "weiterlesen"
+		"read-more": "mehr erfahren",
+		"read-less": "weniger anzeigen"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
@@ -106,7 +106,7 @@
 	},
 	"vita": {
 		"freelance_title": "Freelance Frontend Designerin & Entwicklerin",
-		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle komplette Designsysteme und Komponentenbibliotheken.",
+		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle Design-Systeme und Living Style Guides.",
 		"pharma4u_title": "Frontend Developer & Designer",
 		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",
