@@ -181,7 +181,7 @@
 
 <style scoped>
 .font {
-	@apply tw-fill-indigo-400;
+	@apply tw-fill-indigo-800 dark:tw-fill-indigo-200;
 	stroke: none;
 }
 
@@ -203,18 +203,18 @@
 }
 
 #mask-L {
-	animation: strokeOffset .8s linear forwards 6s;
+	animation: strokeOffset .8s linear forwards 1s;
 }
 #mask-A {
-	animation: strokeOffset .6s linear forwards 7s;
+	animation: strokeOffset .6s linear forwards 2s;
 }
 #mask-U {
-	animation: strokeOffset .6s linear forwards 7.6s;
+	animation: strokeOffset .6s linear forwards 2.6s;
 }
 #mask-R {
-	animation: strokeOffset .6s linear forwards 8.2s;
+	animation: strokeOffset .6s linear forwards 3.2s;
 }
 #mask-AA {
-	animation: strokeOffset .6s linear forwards 8.8s;
+	animation: strokeOffset .6s linear forwards 3.8s;
 }
 </style>

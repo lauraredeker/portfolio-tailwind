@@ -3,7 +3,7 @@
 
   const subheadingClasses = "tw-mb-2 tw-block tw-font-semibold tw-text-indigo-400"
   const headlineClasses = "tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl"
-  const tagClasses = "tw-mb-1 tw-mr-2 tw-inline-block tw-rounded-full tw-bg-blue-100/55 tw-px-4 tw-py-1 tw-text-sm tw-font-semibold tw-text-blue-800 dark:tw-bg-blue-700/50 dark:tw-text-blue-200"
+  const tagClasses = "tw-mb-1 tw-mr-2 tw-inline-block tw-rounded-full tw-bg-indigo-100/55 tw-px-4 tw-py-1 tw-text-sm tw-font-semibold tw-text-indigo-700 dark:tw-bg-indigo-700/50 dark:tw-text-indigo-200"
 
   const fun_skills = [
     "Interface Design",
@@ -140,7 +140,7 @@
         {{ $t('vita.kumu_text') }}
       </p>
       <p class="tw-mt-5">
-        <strong>{{ $t('vita.kumu_exhibition') }}:</strong>
+        <strong>{{ $t('vita.kumu_exhibition') }}: </strong>
         <a
           href="http://www.senseven.net"
           rel="noopener noreferrer"

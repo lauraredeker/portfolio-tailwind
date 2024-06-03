@@ -88,7 +88,7 @@
       :class="{
         'custom-circle-animation-3': isSectionVisible,
       }"
-      class="tw-absolute tw-left-[2%] tw-top-[-5%] tw-z-0 tw-h-[37rem] tw-w-[37rem] tw-rounded-full tw-bg-indigo-100 tw-opacity-50 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-left-[6vmin] 2xl:-tw-top-20  2xl:tw-h-[124vmin] 2xl:tw-w-[124vmin] 3xl:-tw-left-[11vmin]"
+      class="tw-absolute tw-left-[2%] tw-top-[-5%] tw-z-0 tw-h-[37rem] tw-w-[37rem] tw-rounded-full tw-bg-gray-100 tw-opacity-80 tw-will-change-transform dark:tw-bg-black dark:tw-opacity-20 md:tw-h-[55rem] md:tw-w-[55rem] 2xl:-tw-left-[6vmin] 2xl:-tw-top-20  2xl:tw-h-[124vmin] 2xl:tw-w-[124vmin] 3xl:-tw-left-[11vmin]"
     />
 
     <!-- small bg circle -->

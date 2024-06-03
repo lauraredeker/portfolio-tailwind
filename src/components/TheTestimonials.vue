@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="custom-parallax tw-relative"
   >
-    <div class="tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-60 tw-py-36 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
+    <div class="tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-80 tw-py-36 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
@@ -45,7 +45,7 @@
                     href="https://neverdone.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-rounded-lg tw-text-black tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors hover:tw-text-purple-200 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-rounded-lg tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
                   >
                     neverdone
                   </a>
@@ -64,7 +64,7 @@
                     href="https://www.linkedin.com/in/nicole-reiter-1601129a/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-rounded-lg tw-text-black tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors hover:tw-text-purple-200 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-rounded-lg tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
                   >
                     Nicole Reiter
                   </a>, 
@@ -84,7 +84,7 @@
                     href="https://www.michaelschauer.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-rounded-lg tw-text-black tw-underline tw-underline-offset-4 tw-drop-shadow-md tw-transition-colors hover:tw-text-purple-200 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-rounded-lg tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
                   >Michael Schauer
                   </a>, 
                   {{ $t('testimonials.michael-job') }}
@@ -113,10 +113,10 @@
 }
 
 .carousel__pagination-button::after {
-  @apply tw-bg-gray-300;
+  @apply tw-bg-white dark:tw-bg-indigo-200;
 }
 .carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
-  @apply tw-bg-purple-200;
+  @apply tw-bg-purple-600 dark:tw-bg-purple-200;
 }
 
 .carousel__prev,

@@ -11,7 +11,7 @@
 <template>
   <div
     v-element-visibility="onQuoteVisibility"
-    class="tw-relative tw-z-0 tw-mx-auto -tw-mt-48 tw-flex tw-max-w-screen-2xl tw-flex-row md:tw-mt-0 md:tw-p-8 xl:tw-mt-80 2xl:tw-mt-80"
+    class="tw-relative tw-z-0 tw-mx-auto -tw-mt-48 tw-flex tw-max-w-screen-2xl tw-flex-row md:tw-mt-0 md:tw-p-12 xl:tw-mt-80 2xl:tw-mt-80"
   >
     <blockquote
       lang="en"
