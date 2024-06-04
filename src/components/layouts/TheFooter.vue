@@ -18,7 +18,7 @@
             </router-link>
           </p>
         </div>
-        <div class="tw-w-full tw-text-center lg:tw-w-6/12">
+        <div class="tw-w-full tw-text-center tw-text-sm lg:tw-w-6/12 ">
           {{ $t('footer.info1') }}
           <a
             class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
@@ -46,7 +46,9 @@
               rel="noopener noreferrer"
               class="tw-rounded-md tw-bg-opacity-50 tw-px-1 tw-py-1 tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-white focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-300 dark:tw-text-indigo-100 dark:hover:tw-bg-black"
               href="//github.com/lauraredeker/portfolio-tailwind"
-            >GitHub</a> &middot; 
+            >GitHub</a>
+          </span>
+          <span class="tw-mt-3 tw-block">
             {{ $t('general.last-update') }}: 02.06.2024
           </span>
         </div>

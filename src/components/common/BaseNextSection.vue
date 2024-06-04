@@ -32,7 +32,7 @@
         </span>
       </Transition>
       <span
-        :class="arrowClass ? arrowClass : 'tw-text-indigo-950 hover:tw-text-indigo-800 dark:tw-text-indigo-300 hover:dark:tw-text-purple-300'"
+        :class="arrowClass ? arrowClass : 'tw-text-indigo-950 dark:tw-text-indigo-300 hover:motion-safe:tw-animate-ping'"
         class="tw-i-ph-arrow-down-bold tw-inline-block tw-h-10 tw-w-10 tw-transition motion-safe:tw-animate-bounce lg:tw-h-14 lg:tw-w-14"
       />
     </RouterLink>
