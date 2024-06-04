@@ -9,12 +9,8 @@
 
 <template>
   <section class="tw-container tw-relative tw-min-h-[100vh] tw-max-w-screen-3xl tw-py-36 tw-text-center md:tw-pb-64 md:tw-pt-20">
-    <span
-      aria-hidden="true"
-      class="custom-icon-color tw-i-ph-stairs-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
-    />
     <h3
-      class="tw-mb-8 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-16 md:tw-text-5xl"
+      class="tw-sr-only tw-mb-8 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-16 md:tw-text-5xl"
     >
       {{ $t('projects.headline') }}
     </h3>
@@ -32,7 +28,7 @@
             alt="Website Portfolio for Michael Schauer"
           />--> 
 
-        <div class="tw-rounded-md tw-border-2 tw-border-black tw-bg-black dark:tw-border-black">
+        <div class="tw-overflow-hidden tw-rounded-xl tw-border-2 tw-border-black tw-bg-black dark:tw-border-black md:tw-rounded-4xl">
           <video
             autoplay
             muted

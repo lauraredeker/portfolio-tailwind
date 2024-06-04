@@ -41,7 +41,7 @@
           {{ $t('about.headline') }}
         </h3>-->
         <div
-          class="md:tw-text-justify"
+          class="tw-text-justify"
         >
           <p class="tw-text-m custom-selectable-text tw-my-6 tw-font-semibold tw-text-black dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
             {{ $t('about.tldr') }}
@@ -51,7 +51,7 @@
             v-show="isContentVisible"
             id="more-text"
             :aria-hidden="!isContentVisible"
-            class="tw-mt-6 tw-break-words md:tw-text-justify"
+            class="tw-mt-6 tw-break-words tw-text-justify"
           >
             <p class="custom-selectable-text">
               {{ $t('about.text1') }}
