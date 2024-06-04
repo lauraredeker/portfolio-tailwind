@@ -18,7 +18,7 @@
         <div
           v-element-visibility="onSection1Visibility"
           :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
-          class="tw-text-center"
+          class="tw-max-w-screen-md tw-text-center md:tw-mx-auto"
         >
           <span
             aria-hidden="true"
@@ -30,7 +30,7 @@
             Design
           </h3>
           <div class="tw-text-justify">
-            <p>
+            <p class="custom-selectable-text">
               {{ $t('skills.design-text1') }}
               <span class="tw-font-semibold">
                 {{ $t('skills.design-text2') }}
@@ -44,7 +44,7 @@
         <div
           v-element-visibility="onSection2Visibility"
           :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
-          class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
+          class="tw-mt-10 tw-max-w-screen-md tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
         >
           <span
             aria-hidden="true"
@@ -55,7 +55,7 @@
           >
             Code
           </h3>
-          <p class="tw-text-justify">
+          <p class="custom-selectable-text tw-text-justify">
             <span class="tw-font-semibold">
               {{ $t('skills.code-text1') }}
             </span>
@@ -68,7 +68,7 @@
         <div
           v-element-visibility="onSection3Visibility"
           :class="{ 'animate__animated animate__slideInUp  animate__delay-3s': isSection3Visible }"
-          class="tw-mt-10 tw-text-center sm:tw-mt-20 xl:tw-mt-0"
+          class="tw-mt-10 tw-max-w-screen-md tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
         >
           <span
             aria-hidden="true"
@@ -79,7 +79,7 @@
           >
             A11y
           </h3>
-          <p class="tw-text-justify">
+          <p class="custom-selectable-text tw-text-justify">
             <span class="tw-font-semibold">
               {{ $t('skills.ally-text1') }}
             </span>

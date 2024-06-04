@@ -15,11 +15,11 @@
 </script>
 
 <template>
-  <div class="tw-mb-32 tw-mt-16 tw-text-center xl:tw-mb-20 xl:tw-mt-20 2xl:tw-mb-48">
+  <div class="tw-container tw-mb-32 tw-mt-16 tw-text-center xl:tw-mb-20 xl:tw-mt-20 2xl:tw-mb-48">
     <div
       v-element-visibility="onSectionVisibility" 
       :class="{ 'animate__animated animate__fadeIn animate__delay-5s': isSectionVisible }"
-      class="tw-container"
+      class="tw-mx-auto tw-max-w-screen-md xl:tw-max-w-full"
     >
       <div
         class="tw-mx-auto tw-overflow-hidden tw-rounded-md tw-border-2 tw-border-solid tw-border-indigo-900 dark:tw-border-indigo-700 md:tw-rounded-lg"
@@ -105,7 +105,7 @@
               :class="{ 'animate__animated animate__fadeIn': isSectionVisible }"
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
-              <p>
+              <p class="custom-selectable-text tw-select-all">
                 TailwindCSS, UI Design, UX Design, Figma, (High-Fidelity) Prototyping, Web &amp; App Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
                 Responsive Design, Git, GitHub, Sketch, Cross-Browser Development
               </p>
@@ -143,7 +143,7 @@
               :class="{ 'animate__animated animate__fadeIn animate__delay-1s': isSectionVisible }"
               class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
-              <p>
+              <p class="custom-selectable-text tw-select-all">
                 Web Accessibility, WCAG, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
                 Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), SVG
               </p>
@@ -182,7 +182,9 @@
               :class="{ 'animate__animated animate__fadeIn animate__delay-2s': isSectionVisible }"
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
-              <p>Svelte, SvelteKit, Builder.io, Vuetify, Vuex, TypeScript, Node.js, NPM, Grunt, Gulp</p>
+              <p class="custom-selectable-text tw-select-all">
+                Svelte/SvelteKit, Builder.io, Vuetify, Vuex, TypeScript, Node.js, NPM, Grunt, Gulp
+              </p>
             </div>
           </div>
         </div>

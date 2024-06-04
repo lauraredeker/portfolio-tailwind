@@ -43,7 +43,7 @@
         <div
           class="md:tw-text-justify"
         >
-          <p class="tw-text-m tw-my-6 tw-font-semibold tw-text-black dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
+          <p class="tw-text-m custom-selectable-text tw-my-6 tw-font-semibold tw-text-black dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
             {{ $t('about.tldr') }}
           </p>
 
@@ -53,7 +53,7 @@
             :aria-hidden="!isContentVisible"
             class="tw-mt-6 tw-break-words md:tw-text-justify"
           >
-            <p>
+            <p class="custom-selectable-text">
               {{ $t('about.text1') }}
               <br><br>
               {{ $t('about.text2') }}
@@ -100,7 +100,7 @@
         'animate__animated animate__fadeInUp animate__delay-2s': isLinkVisible,
         'tw-will-change': isLinkVisible,
       }, isContentVisible ? 'xl:tw-bottom-96' : 'xl:-tw-bottom-44']"
-      class="tw-container tw-mb-20 tw-text-center md:tw-mb-32 xl:tw-absolute xl:-tw-left-40 xl:tw-mx-5 xl:tw-w-auto xl:tw-px-0"
+      class="tw-container tw-hidden tw-text-center xl:tw-absolute xl:-tw-left-40 xl:tw-mx-5 xl:tw-block xl:tw-w-auto xl:tw-px-0"
     >
       <div
         class="tw-hidden tw-justify-center tw-rounded-full tw-py-4 tw-align-middle tw-transition-all xl:tw-m-16 xl:tw-flex xl:tw-h-96 xl:tw-w-96 2xl:tw-px-16"
