@@ -106,8 +106,8 @@
               class="tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p class="tw-select-all custom-selectable-text">
-                TailwindCSS, UI Design, UX Design, Figma, (High-Fidelity) Prototyping, Web &amp; App Design, Vue.js, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
-                Responsive Design, Git, GitHub, Sketch, Cross-Browser Development
+                TailwindCSS, UI Design, UX Design, Figma, (High-Fidelity) Prototyping, Web &amp; App Design, HTML5, CSS3, SCSS/SASS, JavaScript, jQuery, Bootstrap, Foundation,
+                Responsive Design, Git, GitHub
               </p>
             </div>
           </div>
@@ -144,8 +144,8 @@
               class="tw-col-span-9 tw-text-base md:tw-text-l xl:tw-mt-10 3xl:tw-text-xl"
             >
               <p class="tw-select-all custom-selectable-text">
-                Web Accessibility, WCAG, Unit Testing (Jest), E2E Testing (Cypress.io), PostCSS,
-                Ajax, Adobe CC (Photoshop, Lightroom, Illustrator, InDesign), SVG
+                Vue.js, Web Accessibility, WCAG, Unit Testing, E2E Testing (Cypress.io), PostCSS,
+                Ajax, Adobe CC (Photoshop, Lightroom, Illustrator), SVG, Sketch
               </p>
             </div>
           </div>

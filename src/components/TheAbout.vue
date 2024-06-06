@@ -33,7 +33,7 @@
       class="tw-container tw-flex tw-flex-row xl:tw-mx-0 xl:tw-max-w-none xl:tw-justify-end xl:tw-pr-20 2xl:tw-pr-[15%]"
     >
       <div
-        class="tw-mx-auto tw-my-20 md:tw-mb-10 md:tw-mt-0 md:tw-max-w-screen-md xl:tw-mx-0 xl:tw-my-20 xl:tw-w-3/5 xl:tw-max-w-screen-xl 2xl:tw-w-1/2"
+        class="tw-mx-auto tw-mt-10 tw-mb-20 md:tw-mb-10 md:tw-mt-0 md:tw-max-w-screen-md xl:tw-mx-0 xl:tw-my-20 xl:tw-w-3/5 xl:tw-max-w-screen-xl 2xl:tw-w-1/2"
       >
         <!-- <h3
           class="tw-inline-block tw-text-xl tw-font-semibold tw-cursor-pointer tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-text-3xl"
@@ -46,30 +46,6 @@
           <p class="tw-my-6 tw-font-semibold tw-text-black tw-text-m custom-selectable-text dark:tw-text-indigo-100 sm:tw-text-l md:tw-text-xl">
             {{ $t('about.tldr') }}
           </p>
-
-          <div
-            v-show="isContentVisible"
-            id="more-text"
-            :aria-hidden="!isContentVisible"
-            class="tw-mt-6 tw-text-justify tw-break-words"
-          >
-            <p class="custom-selectable-text">
-              {{ $t('about.text1') }}
-              <br><br>
-              {{ $t('about.text2') }}
-              <router-link
-                to="/vita"
-                class="tw-inline-block tw-mt-2 tw-font-semibold tw-text-purple-500 tw-underline tw-rounded-md tw-transition-color tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-              >
-                {{ $t('about.text3') }}
-              </router-link>{{ $t('about.text4') }}
-            </p>
-            <TheSignature
-              id="signature"
-              class="tw-relative tw-inline-block tw-w-2/3 tw-pt-10 tw-mb-4 tw-fill-none tw-stroke-white sm:tw-w-1/3"
-            />
-          </div>
-
           <button 
             id="more-text-button"
             aria-controls="more-text"
@@ -111,6 +87,29 @@
               />
             </span>
           </button>
+        
+          <div
+            v-show="isContentVisible"
+            id="more-text"
+            :aria-hidden="!isContentVisible"
+            class="tw-mt-6 tw-text-justify tw-break-words"
+          >
+            <p class="custom-selectable-text">
+              {{ $t('about.text1') }}
+              <br><br>
+              {{ $t('about.text2') }}
+              <router-link
+                to="/vita"
+                class="tw-inline-block tw-mt-2 tw-font-semibold tw-text-purple-500 tw-underline tw-rounded-md tw-transition-color tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+              >
+                {{ $t('about.text3') }}
+              </router-link>{{ $t('about.text4') }}
+            </p>
+            <TheSignature
+              id="signature"
+              class="tw-relative tw-inline-block tw-w-2/3 tw-pt-10 tw-mb-4 tw-fill-none tw-stroke-white sm:tw-w-1/3"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -156,7 +155,7 @@
     </div>
 
     <BaseNextSection
-      container-class="tw-block tw-my-24 md:tw-mt-40"
+      container-class="tw-block tw-mb-16 md:tw-mt-40 md:tw-mb-40"
       target="#expertise"
       :title="$t('nav.skills-long')"
     />

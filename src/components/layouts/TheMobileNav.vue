@@ -35,7 +35,7 @@
       id="theme-toggle"
       type="button"
       aria-label="settings"
-      class="tw-fixed tw-z-50 tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-16 tw-h-16 tw-align-middle tw-transition tw-bg-white tw-rounded-full tw-right-2 tw-top-2 tw-text-indigo-950 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-indigo-700 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
+      class="tw-fixed tw-z-50 tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-16 tw-h-16 tw-align-middle tw-transition tw-bg-white tw-rounded-full tw-bg-opacity-40 tw-backdrop-blur-sm tw-right-2 tw-top-2 tw-text-indigo-950 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-indigo-200 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
       @click="toggleNav()"
     >
       <div>
@@ -70,7 +70,7 @@
       ref="refNav"
       role="dialog"
       aria-modal="true"
-      class="tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-flex-col tw-justify-between tw-w-screen tw-h-full animate__animated animate__slideInRight tw-bg-gradient-to-br tw-from-gray-100 tw-to-gray-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950"
+      class="tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-flex-col tw-justify-between tw-w-screen tw-h-full tw-bg-gray-50 tw-bg-opacity-70 animate__animated animate__slideInRight dark:tw-bg-gradient-to-br tw-backdrop-blur-md dark:tw-from-indigo-900 dark:tw-to-indigo-950"
     >
       <div>
         <span
