@@ -35,7 +35,7 @@
       id="theme-toggle"
       type="button"
       aria-label="settings"
-      class="tw-fixed tw-right-2 tw-top-2 tw-z-50 tw-flex tw-h-16 tw-w-16 tw-flex-row tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-500 tw-align-middle tw-text-white tw-transition focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-indigo-700 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
+      class="tw-fixed tw-z-50 tw-flex tw-flex-row tw-items-center tw-justify-center tw-w-16 tw-h-16 tw-align-middle tw-transition tw-bg-white tw-rounded-full tw-right-2 tw-top-2 tw-text-indigo-950 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 active:tw-bg-indigo-700 dark:tw-bg-indigo-900 dark:tw-text-indigo-100 dark:focus:tw-bg-indigo-900 dark:active:tw-bg-indigo-700"
       @click="toggleNav()"
     >
       <div>
@@ -47,11 +47,11 @@
         </span>
         <span
           v-show="!store.isMobileNavVisible"
-          class="tw-i-ph-list tw-h-8 tw-w-8"
+          class="tw-w-8 tw-h-8 tw-i-ph-list"
         />
         <span
           v-show="store.isMobileNavVisible"
-          class="tw-i-ph-x tw-h-8 tw-w-8"
+          class="tw-w-8 tw-h-8 tw-i-ph-x"
         />
         <span
           v-show="store.isMobileNavVisible"
@@ -59,7 +59,7 @@
         >
           {{ $t('nav.menu-close') }}
         </span>
-        <span class="-tw-mt-2 tw-block tw-text-xxs tw-font-semibold tw-uppercase">
+        <span class="tw-block tw-font-semibold tw-uppercase -tw-mt-2 tw-text-xxs">
           {{ $t('nav.menu') }}
         </span>
       </div>
@@ -70,11 +70,11 @@
       ref="refNav"
       role="dialog"
       aria-modal="true"
-      class="animate__animated animate__slideInRight tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-h-full tw-w-screen tw-flex-col tw-justify-between tw-bg-gradient-to-br tw-from-gray-100 tw-to-gray-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950"
+      class="tw-fixed tw-inset-x-0 tw-inset-y-0 tw-z-40 tw-flex tw-flex-col tw-justify-between tw-w-screen tw-h-full animate__animated animate__slideInRight tw-bg-gradient-to-br tw-from-gray-100 tw-to-gray-200 dark:tw-from-indigo-900 dark:tw-to-indigo-950"
     >
       <div>
         <span
-          class="tw-mx-6 tw-mb-1 tw-mt-20 tw-block tw-text-sm tw-font-semibold lg:tw-hidden"
+          class="tw-block tw-mx-6 tw-mt-20 tw-mb-1 tw-text-sm tw-font-semibold lg:tw-hidden"
           for="mobile-nav"
         >
           Navigation
@@ -87,7 +87,7 @@
       />
       <hr class="tw-mx-6 tw-mt-2 tw-border-t-2 tw-border-black dark:tw-border-indigo-700">
 
-      <div class="tw-mx-auto tw-mt-6 tw-flex tw-max-w-lg tw-flex-row tw-justify-between tw-px-6">
+      <div class="tw-flex tw-flex-row tw-justify-between tw-max-w-lg tw-px-6 tw-mx-auto tw-mt-6">
         <TheDarkBtn
           class="tw-mr-2 md:tw-mr-5"
           @click="toggleNav()"
@@ -99,17 +99,17 @@
       </div>
 
       <div>
-        <div class="tw-mb-5 tw-mt-6 tw-w-full tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
+        <div class="tw-w-full tw-mt-6 tw-mb-5 tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
           <router-link
             to="/impressum"
-            class="tw-mr-5 tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-font-semibold tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
+            class="tw-px-2 tw-py-2 tw-mr-5 tw-font-semibold tw-text-indigo-800 tw-underline tw-transition-colors tw-bg-opacity-50 tw-rounded-md tw-underline-offset-4 hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
             @click="toggleNav()"
           >
             {{ $t('footer.imprint') }}
           </router-link>
           <router-link
             to="/datenschutz"
-            class="tw-rounded-md tw-bg-opacity-50 tw-px-2 tw-py-2 tw-font-semibold tw-text-indigo-800 tw-underline tw-underline-offset-4 tw-transition-colors hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
+            class="tw-px-2 tw-py-2 tw-font-semibold tw-text-indigo-800 tw-underline tw-transition-colors tw-bg-opacity-50 tw-rounded-md tw-underline-offset-4 hover:tw-bg-black hover:tw-text-purple-50 dark:tw-text-indigo-400"
             @click="toggleNav()"
           >
             {{ $t('footer.privacy') }}
