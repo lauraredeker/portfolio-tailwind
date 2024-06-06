@@ -58,7 +58,7 @@ module.exports = {
 				ignores: [],
 			},
 		],
-		'tailwindcss/classnames-order': 'warn',
+		'tailwindcss/classnames-order': 'off',
 		'tailwindcss/no-contradicting-classname': 'error',
 		'no-unused-vars': 'warn',
 		'vue/multi-word-component-names': 'off',

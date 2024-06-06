@@ -3,7 +3,6 @@
 
   const subheadingClasses = "tw-mb-2 tw-block tw-font-semibold tw-text-indigo-400"
   const headlineClasses = "tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl"
-  const tagClasses = "tw-mb-1 tw-mr-2 tw-inline-block tw-rounded-full tw-bg-indigo-100/55 tw-px-4 tw-py-1 tw-text-sm tw-font-semibold tw-text-indigo-700 dark:tw-bg-indigo-700/50 dark:tw-text-indigo-200"
 
   const fun_skills = [
     "Interface Design",
@@ -60,7 +59,7 @@
     </h1>
 
     <section class="tw-mt-16 md:tw-mt-24">
-      <h5 class="tw-mb-2 tw-mt-10 tw-block tw-font-semibold tw-text-indigo-400">
+      <h5 class="tw-block tw-mt-10 tw-mb-2 tw-font-semibold tw-text-indigo-400">
         2024 - {{ $t('general.today') }}<span class="tw-mx-2">&middot;</span>
         {{ $t('general.location') }}
       </h5>
@@ -70,9 +69,9 @@
       <p class="md:tw-hyphens-auto md:tw-text-justify">
         {{ $t('vita.freelance_text1') }}
       </p>
-      <div class="tw-mt-10 tw-rounded-lg tw-border-4 tw-border-purple-300 tw-px-2 tw-py-5 tw-text-center md:tw-px-5">
+      <div class="tw-px-2 tw-py-5 tw-mt-10 tw-text-center tw-border-4 tw-border-purple-300 tw-rounded-lg md:tw-px-5">
         <p>{{ $t('general.contact-text') }}</p>
-        <CopyEmail class="tw-mb-5 tw-mt-5 2xl:tw-px-20" />
+        <CopyEmail class="tw-mt-5 tw-mb-5 2xl:tw-px-20" />
       </div>
       <!--<ul class="tw-mt-10">
         <li
@@ -100,7 +99,7 @@
         <li
           v-for="(item, index) in pharma4u_skills" 
           :key="index"
-          :class="tagClasses"
+          class="custom-tag"
         >
           {{ item }}
         </li>
@@ -121,7 +120,7 @@
         <li
           v-for="(item, index) in interone_skills" 
           :key="index"
-          :class="tagClasses"
+          class="custom-tag"
         >
           {{ item }}
         </li>
@@ -144,7 +143,7 @@
         <a
           href="http://www.senseven.net"
           rel="noopener noreferrer"
-          class="tw-transition-color tw-mt-10 tw-rounded-md tw-px-1 tw-py-1 tw-font-semibold tw-text-purple-500 tw-underline tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+          class="tw-px-1 tw-py-1 tw-mt-10 tw-font-semibold tw-text-purple-500 tw-underline tw-rounded-md tw-transition-color tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
           target="_blank"
         >senseven.net</a>
       </p>

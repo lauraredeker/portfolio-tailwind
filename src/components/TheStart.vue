@@ -22,7 +22,7 @@
             'animate__animated animate__slideInDown': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-indigo-900 tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 lg:tw-text-8xl 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9] 3xl:tw-text-10xl 3xl:tw-leading-[0.875]"
+          class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-indigo-900 tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-max-w-screen-md lg:tw-text-8xl xl:tw-max-w-screen-lg 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9] 3xl:tw-text-10xl 3xl:tw-leading-[0.875]"
         >
           <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t('start.hello1') }}
@@ -37,7 +37,7 @@
             'animate__animated animate__bounceInLeft': isSectionVisible,
             'tw-will-change': !isSectionVisible,
           }"
-          class="tw-mt-5  tw-select-none tw-text-pretty tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
+          class="tw-mt-5 tw-select-none tw-text-pretty tw-text-[5vmin] tw-font-semibold sm:tw-text-xl md:tw-mt-10 md:tw-max-w-2xl xl:tw-max-w-4xl xl:tw-text-3xl 3xl:tw-max-w-6xl 3xl:tw-text-4xl"
         >
           {{ $t('start.intro1') }}
           <RouterLink
@@ -60,7 +60,7 @@
           'animate__animated animate__fadeIn': isSectionVisible,
           'tw-will-change': !isSectionVisible,
         }"
-        container-class="tw-mt-10 tw-mb-6 xl:tw-hidden"
+        container-class="tw-z-20 tw-mt-10 tw-mb-6 xl:tw-hidden"
         target="#about"
         :title="$t('nav.about-long')"
       />
@@ -86,7 +86,7 @@
               'animate__animated animate__fadeInBottomRight': isSectionVisible
             }"
             loading="lazy"
-            class="custom-image tw-relative tw-z-30 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-all sm:tw-h-96 sm:tw-w-96 xl:tw-absolute xl:-tw-bottom-[20%] xl:-tw-right-[6%] xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 3xl:-tw-right-[16%] 3xl:tw-h-144 3xl:tw-w-144 4xl:-tw-right-[22%]"
+            class="custom-image tw-relative tw-z-30 tw-h-[60vmin] tw-w-[60vmin] tw-translate-x-0 tw-transform tw-transition-transform  sm:tw-h-96 sm:tw-w-96 xl:tw-absolute xl:-tw-bottom-[20%] xl:-tw-right-[6%] xl:tw-h-128 xl:tw-w-128 2xl:-tw-bottom-[20%] 3xl:-tw-right-[16%] 3xl:tw-h-144 3xl:tw-w-144 4xl:-tw-right-[22%]"
             alt="Picture of Laura sneaking around the corner."
             src="/img/pictures/moi.jpg"
           >

@@ -29,7 +29,7 @@
 		"theme-dark": "Dunkles Theme",
 		"switch-language": "Sprache wechseln",
 		"about": "über mich",
-		"about-long": "mehr über mich",
+		"about-long": "über mich",
 		"skills": "expertise",
 		"skills-long": "meine skills",
 		"projects": "projekte",
@@ -65,7 +65,7 @@
 		"text4": " kenne ich mich mit den Designaspekten der modernen Webentwicklung aus. Ich verstehe UX-Prinzipien und weiß, wie man sie anwendet. Als Entwicklerin lege ich Wert auf sauberen und modularen Frontend-Code und intuitive Benutzeroberflächen, die nicht nur performant und barrierefrei sind, sondern auch eine spielerische und kreative Handschrift haben. ✨",
 		"vita": "Was bisher so los war",
 		"read-more": "mehr erfahren",
-		"read-less": "weniger anzeigen"
+		"read-less": "ok, reicht jetzt aber"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
@@ -81,9 +81,9 @@
 		"ally-text3": "Mit Hilfe von UI-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
 	},
 	"projects": {
-		"headline": "Aktuelle Projekte",
+		"headline": "Projekte",
 		"schauer-headline": "GenArt Portfolio",
-		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Für dieses Projekt habe ich einen Design-Prototypen in Figma erstellt und die Website mit SvelteKit, GSAP und TailwindCSS umgesetzt. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
+		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
 		"schauer-text2": "Die Website befindet sich derzeit in der Entwicklung."
 	},
 	"testimonials": {

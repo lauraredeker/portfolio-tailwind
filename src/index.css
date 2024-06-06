@@ -17,13 +17,20 @@
 @layer components {
 	.tw-container {
 		@apply tw-max-w-screen-3xl;
-	  }
+	}
 }
 
 @layer base {
 	/* All delay classes will take half the time to start */
 	:root {
 		--animate-delay: 0.2s;
+	}
+
+	* {
+		cursor: url(../img/cursor-dark.png), none;
+		.tw-dark & {
+			cursor: url(../img/cursor-light.png), none;
+		}
 	}
 
 	/* bungee-shade-regular - latin */
@@ -69,6 +76,10 @@
 	}
 
 	.custom-icon-color {
-		@apply  tw-text-purple-300 dark:tw-from-purple-300;
+		@apply tw-text-purple-300 dark:tw-from-purple-300;
+	}
+
+	.custom-tag {
+		@apply tw-inline-block tw-px-4 tw-py-1 tw-mb-1 tw-mr-2 tw-text-sm tw-font-semibold tw-text-indigo-700 tw-rounded-full tw-bg-indigo-100/55 dark:tw-bg-indigo-700/50 dark:tw-text-indigo-200;
 	}
 }

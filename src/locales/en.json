@@ -29,7 +29,7 @@
 		"theme-dark": "Dark Theme",
 		"switch-language": "Switch language",
 		"about": "about",
-		"about-long": "more about me",
+		"about-long": "about me",
 		"skills": "expertise",
 		"skills-long": "my skills",
 		"projects": "projects",
@@ -63,7 +63,7 @@
 		"text4": ", I am familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
 		"vita": "my work experience",
 		"read-more": "Read more",
-		"read-less": "Read less"
+		"read-less": "changed my mind"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
@@ -79,7 +79,7 @@
 		"ally-text3": "Using end-to-end testing tools I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
 	"projects": {
-		"headline": "Recent Projects",
+		"headline": "Projects",
 		"schauer-headline": "GenArt Portfolio Website",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
 		"schauer-text2": "The website is currently in development."
