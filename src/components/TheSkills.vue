@@ -14,7 +14,7 @@
     <div
       class="tw-container tw-hyphens-auto md:tw-pt-20"
     >
-      <div class="tw-mx-auto tw-mt-10 tw-grid xl:tw-grid-cols-3 xl:tw-gap-16 3xl:tw-gap-20">
+      <div class="tw-grid tw-mx-auto tw-mt-10 xl:tw-grid-cols-3 xl:tw-gap-16 3xl:tw-gap-20">
         <div
           v-element-visibility="onSection1Visibility"
           :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
@@ -22,7 +22,7 @@
         >
           <span
             aria-hidden="true"
-            class="custom-icon-color tw-i-ph-paint-brush-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
+            class="tw-inline-block tw-w-16 tw-h-16 custom-icon-color tw-i-ph-paint-brush-light md:tw-h-28 md:tw-w-28"
           />
           <h3
             class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
@@ -44,18 +44,18 @@
         <div
           v-element-visibility="onSection2Visibility"
           :class="{ 'animate__animated animate__slideInUp animate__delay-2s': isSection2Visible }"
-          class="tw-mt-10 tw-max-w-screen-md tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
+          class="tw-max-w-screen-md tw-mt-10 tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
         >
           <span
             aria-hidden="true"
-            class="custom-icon-color tw-i-ph-magic-wand-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
+            class="tw-inline-block tw-w-16 tw-h-16 custom-icon-color tw-i-ph-magic-wand-light md:tw-h-28 md:tw-w-28"
           />
           <h3
             class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
           >
             Code
           </h3>
-          <p class="custom-selectable-text tw-text-justify">
+          <p class="tw-text-justify custom-selectable-text">
             <span class="tw-font-semibold">
               {{ $t('skills.code-text1') }}
             </span>
@@ -68,18 +68,18 @@
         <div
           v-element-visibility="onSection3Visibility"
           :class="{ 'animate__animated animate__slideInUp  animate__delay-3s': isSection3Visible }"
-          class="tw-mt-10 tw-max-w-screen-md tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
+          class="tw-max-w-screen-md tw-mt-10 tw-text-center sm:tw-mt-20 md:tw-mx-auto xl:tw-mt-0"
         >
           <span
             aria-hidden="true"
-            class="custom-icon-color tw-i-ph-hand-heart-light tw-inline-block tw-h-16 tw-w-16 md:tw-h-28 md:tw-w-28"
+            class="tw-inline-block tw-w-16 tw-h-16 custom-icon-color tw-i-ph-hand-heart-light md:tw-h-28 md:tw-w-28"
           />
           <h3
             class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
           >
             A11y
           </h3>
-          <p class="custom-selectable-text tw-text-justify">
+          <p class="tw-text-justify custom-selectable-text">
             <span class="tw-font-semibold">
               {{ $t('skills.ally-text1') }}
             </span>
@@ -98,7 +98,7 @@
         'animate__animated animate__slideInUp  animate__delay-5s': isSection3Visible,
         'tw-will-change': !isSection3Visible,
       }"
-      container-class="tw-block md:tw-mt-40 md:tw-mb-40"
+      container-class="tw-block tw-mb-16 md:tw-mt-40 md:tw-mb-40"
       target="#projects"
       :title="$t('nav.projects')"
     />
