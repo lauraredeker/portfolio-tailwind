@@ -24,7 +24,7 @@
           }"
           class="tw-select-none tw-bg-gradient-to-bl tw-from-amber-600 tw-via-purple-500 tw-to-indigo-900 tw-bg-clip-text tw-py-5 tw-font-display tw-text-[16vmin] tw-leading-[0.9] tw-text-transparent tw-transition-all dark:tw-from-indigo-800 dark:tw-via-purple-400 dark:tw-to-amber-300 md:tw-max-w-screen-md lg:tw-text-8xl xl:tw-max-w-screen-lg 2xl:-tw-mt-20 2xl:tw-text-9xl 2xl:tw-leading-[0.9] 3xl:tw-text-10xl 3xl:tw-leading-[0.875]"
         >
-          <span class="tw-ml-10 tw-block md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
+          <span class="tw-block tw-ml-10 md:tw-ml-20 2xl:tw-ml-32 2xl:tw-mt-20 3xl:tw-mt-32">
             {{ $t('start.hello1') }}
           </span>
           <span class="tw-inline-block xl:tw-max-w-[70%] 3xl:tw-max-w-[60%]">
@@ -42,7 +42,7 @@
           {{ $t('start.intro1') }}
           <RouterLink
             to="/#about"
-            class="tw-rounded-lg tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors hover:tw-bg-slate-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
+            class="tw-px-1 tw-py-2 tw-text-purple-500 tw-transition-colors tw-rounded-lg hover:tw-bg-slate-200 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-400 dark:tw-text-indigo-300 dark:hover:tw-bg-black dark:hover:tw-text-purple-300"
           >
             <span class="tw-underline tw-underline-offset-4 md:tw-underline-offset-8">
               {{ $t('start.intro2') }}

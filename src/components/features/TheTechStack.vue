@@ -28,7 +28,7 @@
           class="tw-flex tw-items-center tw-justify-between tw-w-full tw-px-4 tw-py-5 tw-align-middle tw-transition-all tw-text-indigo-950 tw-ring-inset hover:tw-text-purple-600 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500 dark:tw-text-purple-200 hover:dark:tw-text-purple-50 dark:focus-visible:tw-ring-purple-400 md:tw-px-10 md:tw-py-8"
           :class="{ 
             'hover:tw-bg-indigo-100 hover:dark:tw-bg-indigo-900': !isContentVisible,
-            ' tw-border-b-2 tw-border-indigo-900 dark:tw-border-indigo-700': isContentVisible,
+            ' tw-border-b-2 tw-border-indigo-900 dark:tw-border-indigo-300': isContentVisible,
           }"
           @click="toggleContent"
         >
