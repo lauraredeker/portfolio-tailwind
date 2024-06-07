@@ -79,7 +79,7 @@
       ref="circle"
       aria-hidden="true"
       :style="`transform: translate(${translateX}px, ${translateY}px)`"
-      class="tw-absolute -tw-left-[15%] -tw-top-[5%] tw-z-10 tw-h-128 tw-w-128 tw-rounded-full tw-border-2 tw-border-amber-300 tw-bg-opacity-30 tw-transition-transform dark:tw-border-indigo-800 md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] md:tw-border-4 lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:-tw-left-[2%] 2xl:-tw-top-[10%] 2xl:tw-h-[126vmin] 2xl:tw-w-[126vmin]"
+      class="tw-absolute -tw-left-[15%] -tw-top-[5%] -tw-z-10 tw-h-128 tw-w-128 tw-rounded-full tw-border-2 tw-border-amber-300 tw-bg-opacity-30 tw-transition-transform dark:tw-border-indigo-800 md:-tw-left-[15%] md:-tw-top-[5%] md:tw-h-[800px] md:tw-w-[800px] md:tw-border-4 lg:-tw-top-[10%] lg:tw-h-[1000px] lg:tw-w-[1000px] 2xl:-tw-left-[2%] 2xl:-tw-top-[10%] 2xl:tw-h-[126vmin] 2xl:tw-w-[126vmin]"
     />
 
     <!-- dark big bg circle -->

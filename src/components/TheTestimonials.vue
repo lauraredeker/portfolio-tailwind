@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="tw-relative custom-parallax"
   >
-    <div class="tw-flex tw-h-[90vh] tw-flex-row tw-items-center tw-bg-indigo-200 tw-bg-opacity-80 tw-py-36 tw-text-black dark:tw-bg-black dark:tw-bg-opacity-50 md:tw-h-screen md:tw-py-52">
+    <div class="tw-flex tw-h-[90vh] tw-relative tw-flex-row tw-items-center tw-bg-white dark:tw-bg-opacity-10 tw-bg-opacity-40 tw-py-36 tw-text-black  md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
@@ -45,7 +45,7 @@
                     href="https://neverdone.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white dark:hover:tw-text-purple-50"
                   >
                     neverdone
                   </a>
@@ -64,7 +64,7 @@
                     href="https://www.linkedin.com/in/nicole-reiter-1601129a/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white dark:hover:tw-text-purple-50"
                   >
                     Nicole Reiter
                   </a>, 
@@ -84,7 +84,7 @@
                     href="https://www.michaelschauer.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-text-purple-50"
+                    class="tw-inline-block tw-underline tw-transition-colors tw-rounded-lg tw-underline-offset-4 hover:tw-text-purple-500 focus-visible:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-white dark:hover:tw-text-purple-50"
                   >Michael Schauer
                   </a>, 
                   {{ $t('testimonials.michael-job') }}
@@ -121,7 +121,7 @@
 
 .carousel__prev,
 .carousel__next {
-  @apply dark:tw-text-purple-200 hover:dark:tw-text-purple-50 tw-rounded-full tw-h-16 tw-w-16 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500;
+  @apply dark:tw-text-white hover:dark:tw-text-purple-50 tw-rounded-full tw-h-16 tw-w-16 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-purple-500;
 }
 
 .carousel__icon {
@@ -134,18 +134,15 @@
   min-height: 70vh;
   background-size: cover;
   background-attachment: scroll;
-  background-image: image-set(
-    url("../img/pictures/banner-moi_mobile.webp") type("image/webp"),
-    url("../img/pictures/banner-moi_mobile.jpg") type("image/jpeg")
-  );
+  background-image: url('/img/gradient.svg');
   
   @screen md {
     min-height: 100vh;
     background-attachment: fixed;
-    background-image: image-set(
-      url("../img/pictures/banner-moi.webp") type("image/webp"),
-      url("../img/pictures/banner-moi.jpg") type("image/jpeg")
-    );
+  }
+
+  .tw-dark & {
+    background-image: url('/img/gradient-dark.svg');
   }
 }
 
