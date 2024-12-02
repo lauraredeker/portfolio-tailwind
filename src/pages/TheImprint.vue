@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // Utilities
-  import defaults from '../utils/config'
+  import defaults from '../utils/defaults'
 </script>
 
 <template>
