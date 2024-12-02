@@ -3,7 +3,6 @@
   import { useVisibility } from '../composables/useVisibility'
   import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
   import 'vue3-carousel/dist/carousel.css'
-  import { Image } from "@unpic/vue"
 
   const [isSection1Visible, onSection1Visibility] = useVisibility()
 </script>
@@ -17,6 +16,9 @@
     >
       <Carousel
         class="tw-w-full focus:tw-outline-none"
+        :class="{
+          'animate__animated animate__fadeIn animate__slow animate__delay-2s': isSection1Visible,
+        }"
         :i18n="{
           'ariaNextSlide': 'Zum nächsten Slide',
           'ariaPreviousSlide': 'Zur vorherigen Slide',
@@ -34,14 +36,21 @@
             key="one"
           >
             <div class="tw-flex tw-flex-col tw-w-full tw-gap-6 md:tw-px-24 3xl:tw-px-44">
-              <Image
-                src="/img/projects/flipcards_mockup_01.jpg"
-                layout="constrained"
-                width="1600"
-                aspect-ratio="16/9"
-                class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
-                :alt="$t('projects.flipcards-headline')"
-              />
+              <picture>
+                <source
+                  srcset="/img/projects/flipcards_mockup_01.webp"
+                  type="image/webp"
+                >
+                <source
+                  srcset="/img/projects/flipcards_mockup_01.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  src="/img/projects/flipcards_mockup_01.jpg"
+                  :alt="$t('projects.flipcards-headline')"
+                  class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
+                >
+              </picture>
               <div
                 class="tw-flex tw-items-center tw-text-left tw-col-span-full 3xl:tw-col-span-3"
               >
@@ -96,7 +105,7 @@
                   muted
                   webkit-playsinline
                   playsinline
-                  poster="/img/projects/schauer-poster.png"
+                  poster="/img/projects/schauer-poster.webp"
                   preload="none"
                   loop
                 >
