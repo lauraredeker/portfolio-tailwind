@@ -84,7 +84,10 @@
 		"headline": "Projekte",
 		"schauer-headline": "GenArt Portfolio",
 		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
-		"schauer-text2": "Die Website befindet sich derzeit in Entwicklung."
+		"schauer-text2": "Die Website befindet sich derzeit in Entwicklung.",
+		"flipcards-headline": "Flipcards App Prototyp",
+		"flipcards-text1": "Für pharma4u habe ich einen App-Prototypen für einen Karteikartentrainer entwickelt. Die App ermöglicht Student*innen der Pharmazie, sich spielerisch auf Prüfungen vorzubereiten. Der Prototyp wurde mit Figma erstellt und beinhaltet alle notwendigen Interaktionen und Animationen und dient somit als Grundlage für die Entwicklung der App.",
+		"flipcards-text2": "Der Prototyp wird derzeit mit Nutzertests validiert und anschließend in die Entwicklung überführt."
 	},
 	"testimonials": {
 		"nicole": "In unserer Zusammenarbeit hat Laura Projekte stets sorgfältig durchdacht, wertvolle Inputs eingebracht und sich als unverzichtbares Teammitglied erwiesen. Ich würde sie jederzeit als Freelancer engagieren, als festes Teammitglied einstellen oder gerne wieder als Kollegin begrüßen.",

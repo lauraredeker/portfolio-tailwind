@@ -26,12 +26,13 @@
 		--animate-delay: 0.2s;
 	}
 
+	/*
 	* {
 		cursor: url(../img/cursor-dark.png), none;
 		.tw-dark & {
 			cursor: url(../img/cursor-light.png), none;
 		}
-	}
+	}*/
 
 	/* bungee-shade-regular - latin */
 	@font-face {
