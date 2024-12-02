@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 // Components
   // Utilities
-  import defaults from '../../utils/config'
+  import defaults from '../../utils/defaults'
   import { useVisibility } from '../../composables/useVisibility'
   import { useClipboard } from '@vueuse/core'
 
@@ -20,10 +20,10 @@
     />
     <div
       v-if="isSupported"
-      class="tw-relative tw-flex tw-grow-0 tw-flex-row tw-items-center tw-justify-center"
+      class="tw-relative tw-flex tw-flex-row tw-items-center tw-justify-center tw-grow-0"
     >
       <button
-        class="tw-mt-6 tw-flex tw-flex-row tw-items-center tw-rounded-full tw-border-2 tw-border-indigo-200 tw-px-4 tw-py-1 tw-text-indigo-600 tw-transition hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
+        class="tw-flex tw-flex-row tw-items-center tw-px-4 tw-py-1 tw-mt-6 tw-text-indigo-600 tw-transition tw-border-2 tw-border-indigo-200 tw-rounded-full hover:tw-text-purple-500 focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-indigo-300 dark:hover:tw-text-purple-200"
         :class="{
           'animate__animated animate__fadeInUp animate__delay-1s': isSectionVisible,
           'tw-text-green-500 dark:tw-text-green-300': copied,
@@ -39,7 +39,7 @@
           class="tw-text-l"
         />
 
-        <div class="tw-ml-2 tw-rounded-lg tw-px-1 tw-py-1">
+        <div class="tw-px-1 tw-py-1 tw-ml-2 tw-rounded-lg">
           <span
             :class="{
               'tw-text-green-500 dark:tw-text-green-300': copied,

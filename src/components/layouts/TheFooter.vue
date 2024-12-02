@@ -44,7 +44,7 @@
             >GitHub</a>
           </span>
           <span class="tw-block tw-mt-3">
-            {{ $t('general.last-update') }}: 16.09.2024
+            {{ $t('general.last-update') }}: 02.12.2024
           </span>
         </div>
         <div class="tw-w-full tw-mt-10 tw-text-center lg:tw-mt-0 lg:tw-w-4/12 lg:tw-text-right">
