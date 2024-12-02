@@ -23,7 +23,7 @@
         <h3
           class="tw-mb-5 tw-text-2xl tw-font-semibold tw-text-indigo-950 dark:tw-text-indigo-200 md:tw-mb-10 md:tw-text-5xl"
         >
-          {{ $t('contact.headline') }}
+          {{ $t('contact.headline') }} 👀
         </h3>
 
 
