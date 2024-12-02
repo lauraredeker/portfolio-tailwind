@@ -82,7 +82,10 @@
 		"headline": "Projects",
 		"schauer-headline": "GenArt Portfolio Website",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
-		"schauer-text2": "The website is currently in development."
+		"schauer-text2": "The website is currently in development.",
+		"flipcards-headline": "Flipcards App Prototype",
+		"flipcards-text1": "I developed an app prototype for a flashcard trainer in Figma for pharma4u. The app enables pharmacy students to prepare for exams in a playful way. The prototype was created with Figma and contains all the necessary interactions and animations and thus serves as the basis for the development of the app.",
+		"flipcards-text2": "The prototype is currently being validated with user tests and then transferred to development."
 	},
 	"testimonials": {
 		"nicole": "In our collaboration, Laura has always carefully thought through projects, provided valuable input and proved to be an indispensable team member. I would hire her as a freelancer, as a permanent team member or welcome her back as a colleague at any time.",
