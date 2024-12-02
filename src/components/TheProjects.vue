@@ -48,6 +48,7 @@
                 <img
                   src="/img/projects/flipcards_mockup_01.jpg"
                   :alt="$t('projects.flipcards-headline')"
+                  loading="lazy"
                   class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
                 >
               </picture>
