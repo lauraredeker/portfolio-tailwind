@@ -15,7 +15,7 @@
     v-element-visibility="onQuoteVisibility"
     class="tw-relative custom-parallax"
   >
-    <div class="tw-flex tw-h-[90vh] tw-relative tw-flex-row tw-items-center tw-bg-white dark:tw-bg-opacity-10 tw-bg-opacity-40 tw-py-36 tw-text-black  md:tw-h-screen md:tw-py-52">
+    <div class="tw-relative tw-flex tw-flex-row tw-items-center tw-h-auto tw-py-24 tw-text-black tw-bg-white dark:tw-bg-black dark:tw-bg-opacity-20 tw-bg-opacity-40 md:tw-h-screen md:tw-py-52">
       <Carousel
         :class="{
           'animate__animated animate__fadeIn animate__slow animate__delay-2s': isQuoteVisible,
