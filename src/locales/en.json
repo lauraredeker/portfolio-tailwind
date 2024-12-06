@@ -63,7 +63,7 @@
 		"text4": ", I am familiar with the design aspects of modern web development. I understand UX principles and know how to apply them. As a developer, I value clean, modular front-end code. I strive to create user interfaces that are intuitive and performant and have a playful and creative touch. ✨",
 		"vita": "my work experience",
 		"read-more": "Read more",
-		"read-less": "changed my mind"
+		"read-less": "Ok, that's enough"
 	},
 	"skills": {
 		"headline": "Skills & Tools",
@@ -79,12 +79,12 @@
 		"ally-text3": "Using end-to-end testing tools I furthermore ensure that the frontend functions correctly and meets high-quality standards."
 	},
 	"projects": {
-		"headline": "Projects",
+		"headline": "Recent Projects",
 		"schauer-headline": "GenArt Portfolio Website",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
 		"schauer-text2": "The website is currently in development.",
 		"flipcards-headline": "Flipcards App Prototype",
-		"flipcards-text1": "I developed an app prototype for a flashcard trainer in Figma for pharma4u. The app enables pharmacy students to prepare for exams in a playful way. The prototype was created with Figma and contains all the necessary interactions and animations and thus serves as the basis for the development of the app.",
+		"flipcards-text1": "For pharma4u, I developed a high-fidelity app prototype for a flashcard trainer in Figma. The mobile app enables pharmacy students to prepare for exams in a playful way.",
 		"flipcards-text2": "The prototype is currently being validated with user tests and then transferred to development."
 	},
 	"testimonials": {
@@ -94,9 +94,9 @@
 		"lukas": "Laura strikes the perfect balance between cool design and top-notch functionality. The websites she creates are not just user-friendly – they're downright fun to explore."
 	},
 	"contact": {
-		"headline": "Get in touch",
+		"headline": "Let's connect ",
 		"text2": "I'm currently taking on new clients, and would love to hear about your project! Please include as much information as possible about the scope, your timelines, and your budget.",
-		"text": "Write me if you want to know more about me or my work – or if you have a project in mind. I'm looking forward to hearing from you!",
+		"text": "Do you have a project in mind? I'm looking forward to hearing from you!",
 		"copy": "Click to copy email",
 		"copied": "Copied to clipboard!",
 		"socials": "Feel free to connect with me:"

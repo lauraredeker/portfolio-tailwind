@@ -13,7 +13,7 @@
 <template>
   <section class="tw-flex tw-flex-col tw-justify-between dark:tw-bg-opacity-40 3xl:tw-h-screen">
     <section
-      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pb-16 tw-pt-24 tw-text-center lg:tw-pb-28 3xl:tw-pt-40"
+      class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-pt-24 tw-pb-16 tw-text-center lg:tw-pb-28 3xl:tw-pt-40"
     >
       <div
         v-element-visibility="onSectionVisibility"
@@ -27,39 +27,36 @@
         </h3>
 
 
-        <p class="tw-mb-2 tw-mt-8 tw-hyphens-auto tw-text-justify md:tw-mt-10 md:tw-text-center">
+        <p class="tw-mt-8 tw-mb-2 tw-text-justify tw-hyphens-auto md:tw-mt-10 md:tw-text-center">
           {{ $t('contact.text') }}
         </p>
 
-        <CopyEmail class="tw-mt-5 tw-inline-block tw-text-center" />
-        
-        <p class="tw-mb-1 tw-mt-10 md:tw-mt-14">
-          {{ $t('contact.socials') }}
-        </p>
-        <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-font-semibold">
+        <CopyEmail class="tw-inline-block tw-mt-5 tw-text-center" />
+
+        <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-mt-10 tw-font-semibold md:tw-mt-14">
           <a
             target="_blank"
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-            href="//www.linkedin.com/in/laura-a-redeker/"
-          >
-            <span>linkedin</span>
-            <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
-          </a>
-          <a
-            target="_blank"
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.malt.de/profile/lauraredeker"
           >
             <span>malt</span>
-            <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
+            <span class="tw-ml-1 tw-i-ph-arrow-right-bold" />
           </a>
           <a
             target="_blank"
-            class="tw-flex tw-flex-row tw-items-center tw-rounded-lg tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-underline-offset-4 tw-transition hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.junico.de/freelancer/laura-131"
           >
             <span>junico</span>
-            <span class="tw-i-ph-arrow-right-bold tw-ml-1" />
+            <span class="tw-ml-1 tw-i-ph-arrow-right-bold" />
+          </a>
+          <a
+            target="_blank"
+            class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
+            href="//www.linkedin.com/in/laura-a-redeker/"
+          >
+            <span>linkedin</span>
+            <span class="tw-ml-1 tw-i-ph-arrow-right-bold" />
           </a>
         </div>
       </div>
