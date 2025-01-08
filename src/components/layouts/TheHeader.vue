@@ -59,7 +59,7 @@
     >
       Status &dash; 
       {{ $t('general.currentStatus') }}
-      <i class="tw-inline-block tw-w-5 tw-ml-2 tw-text-green-300 tw-i-ph-circle-fill md:tw-ml-4" />
+      <i class="tw-inline-block tw-w-5 tw-ml-2 tw-text-orange-300 tw-i-ph-circle-fill md:tw-ml-4" />
     </div>
   </Transition>
   <header
