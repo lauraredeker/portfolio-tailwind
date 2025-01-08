@@ -21,7 +21,7 @@
 </script>
 
 <template>
-  <section class="tw-relative tw-z-10 tw-mx-auto">
+  <section class="tw-relative md:tw-z-10 tw-mx-auto">
     <TheQuote />
 
     <div
