@@ -8,7 +8,7 @@ This is the source code for my (Laura A. Redeker) personal portfolio.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4963c89b-99fa-4617-8c49-483c5a6714b4/deploy-status)](https://app.netlify.com/sites/laura-redeker-portfolio/deploys)
 
-> Hi, I'm Laura, Frontend Designer & Developer based in Munich, Germany. As a designer-developer hybrid 👾 I understand both the visual & functional aspects of creating for the web.
+> Hi, I'm Laura, Frontend Designer & Developer based in Leipzig, Germany. As a designer-developer hybrid 👾 I understand both the visual & functional aspects of creating for the web.
 
 ## Source Information
 
