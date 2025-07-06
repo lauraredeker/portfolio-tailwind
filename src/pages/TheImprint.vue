@@ -19,9 +19,6 @@
       </p>
     
       <div class="tw-px-4 tw-py-5 tw-mt-10 tw-border-4 tw-border-indigo-300 tw-rounded-lg dark:tw-border-indigo-800 md:tw-px-10 md:tw-py-10">
-        <h4 class="tw-mb-2 tw-font-semibold tw-text-pretty tw-text-l">
-          {{ $t('imprint.tgm') }}
-        </h4>
         <p>
           {{ defaults.COMPANY_NAME }}<br>
           {{ defaults.COMPANY_NAME2 }}<br>
@@ -49,48 +46,14 @@
         <p class="tw-mb-5">
           {{ $t('imprint.vat_text') }}
         </p>
+
+        <h4 class="tw-mt-10 tw-mb-2 tw-font-semibold tw-text-l">
+          {{ $t('imprint.design') }}
+        </h4>
+        <p class="tw-mb-5">
+          {{ defaults.COMPANY_NAME }}
+        </p>
       </div>
-    </section>
-
-    <section class="tw-mt-10 md:tw-mt-16">
-      <h4 class="tw-mb-2 tw-font-semibold tw-text-l md:tw-text-xl">
-        {{ $t('imprint.eu-settlement') }}
-      </h4>
-      <p>
-        {{ $t('imprint.eu-settlement-text1') }}
-        <a
-          href="http://ec.europa.eu/consumers/odr"
-          data-wpel-link="external"
-          target="_blank"
-          class="tw-px-1 tw-font-semibold tw-text-purple-500 tw-underline tw-rounded-md tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          rel="external noopener noreferrer"
-        >ec.europa.eu/consumers/odr</a>. 
-        {{ $t('imprint.eu-settlement-text2') }}
-      </p>
-    </section>
-
-    <section class="tw-mt-10 md:tw-mt-16">
-      <h4 class="tw-mb-2 tw-font-semibold tw-text-l md:tw-text-xl">
-        {{ $t('imprint.liability') }}
-      </h4>
-      <p>
-        {{ $t('imprint.liability_text1') }}
-      </p>
-      <p>
-        {{ $t('imprint.liability_text2') }}
-      </p>
-    </section>
-
-    <section class="tw-mt-10 md:tw-mt-16">
-      <h4 class="tw-mb-2 tw-font-semibold tw-text-l md:tw-text-xl">
-        {{ $t('imprint.liability_links') }}
-      </h4>
-      <p>
-        {{ $t('imprint.liability_links_text1') }}
-      </p>
-      <p>
-        {{ $t('imprint.liability_links_text2') }}
-      </p>
     </section>
 
     <section class="tw-mt-10 md:tw-mt-16">
