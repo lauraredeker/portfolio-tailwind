@@ -14,20 +14,20 @@
     "App Design",
     "Frontend Development",
     "Vue.js",
+    "Vuetify",
     "JavaScript",
     "HTML5",
     "CSS",
   ]
 
   const pharma4u_skills = [
-    "UI Design",
+    "Product Design",
     "Figma",
     "Prototyping",
     "Design System",
     "Vue.js",
     "Cypress.io",
     "JavaScript",
-    "ES6",
     "jQuery",
     "CSS3/SCSS",
     "HTML5",
@@ -137,15 +137,6 @@
       </h4>
       <p class="md:tw-text-justify">
         {{ $t('vita.kumu_text') }}
-      </p>
-      <p class="tw-mt-5">
-        <strong>{{ $t('vita.kumu_exhibition') }}: </strong>
-        <a
-          href="http://www.senseven.net"
-          rel="noopener noreferrer"
-          class="tw-px-1 tw-py-1 tw-mt-10 tw-font-semibold tw-text-purple-500 tw-underline tw-rounded-md tw-transition-color tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
-          target="_blank"
-        >senseven.net</a>
       </p>
     </section>
     
