@@ -19,6 +19,10 @@
       </p>
     
       <div class="tw-px-4 tw-py-5 tw-mt-10 tw-border-4 tw-border-indigo-300 tw-rounded-lg dark:tw-border-indigo-800 md:tw-px-10 md:tw-py-10">
+        
+        <h4 class="tw-mb-2 tw-font-semibold tw-text-l">
+          {{ $t('general.contact') }}
+        </h4>
         <p>
           {{ defaults.COMPANY_NAME }}<br>
           {{ defaults.COMPANY_NAME2 }}<br>
@@ -27,9 +31,6 @@
           {{ $t('general.germany') }}<br><br>
         </p>
 
-        <h4 class="tw-mb-2 tw-font-semibold tw-text-l">
-          {{ $t('general.contact') }}
-        </h4>
         <p>
           Email:
           <a
