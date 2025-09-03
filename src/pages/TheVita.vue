@@ -70,16 +70,7 @@
       <div class="tw-px-2 tw-py-5 tw-mt-10 tw-text-center tw-border-4 tw-border-purple-300 tw-rounded-lg md:tw-px-5">
         <p>{{ $t('general.contact-text') }}</p>
         <CopyEmail class="tw-mt-5 tw-mb-5 2xl:tw-px-20" />
-      </div>
-     <ul class="tw-mt-10">
-        <li
-          v-for="(item, index) in fun_skills" 
-          :key="index"
-          :class="tagClasses"
-        >
-          {{ item }}
-        </li>
-      </ul>-->
+      </div>-->
     </section>
 
 
