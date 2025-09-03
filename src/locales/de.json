@@ -82,6 +82,9 @@
 	},
 	"projects": {
 		"headline": "Letzte Projekte",
+		"astramentumarts-headline": "Astramentum Arts Website Redesign",
+		"astramentumarts-text1": "Für das Tattoo-Atelier Astramentum Arts in Leipzig habe ich ein komplettes Redesign der bestehenden Website durchgeführt. In erster Linie wollte ich hier die besondere Atmosphäre des Studios wiederspiegeln und Lias einzigartigen Illustrationen und Arbeiten (dark, dreamy, nature-inspired) bestmöglich an potentielle Kund*innen präsentieren. Danke für dein Vertrauen, Lia!",
+		"astramentumarts-url": "astramentumarts.com",
 		"schauer-headline": "GenArt Portfolio",
 		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
 		"schauer-text2": "Die Website befindet sich derzeit in Entwicklung.",
@@ -111,8 +114,10 @@
 	"vita": {
 		"freelance_title": "Freelance Frontend Designerin & Entwicklerin",
 		"freelance_text1": "Seit Anfang 2024 unterstütze ich neben meiner Festanstellung Unternehmen und Agenturen bei der Konzeption und Umsetzung von Webprojekten. Ich berate auch in Design- und UX/UI-Fragen und erstelle Design-Systeme und Living Style Guides.",
+		"pharma4u_title_new": "Senior UX Engineer",
+		"pharma4u_text1_new": "Seit 2025 arbeite ich als Senior UX Engineer bei pharma4u. In dieser Rolle bin ich verantwortlich für das UX/UI-Design und die Entwicklung neuer Funktionen und Module für Webanwendungen im Gesundheitswesen. Ich arbeite eng mit funktionsübergreifenden Teams zusammen, um sicherzustellen, dass die Bedürfnisse der Nutzer erfüllt werden und die Anwendung sowohl visuell ansprechend, barrierefrei als auch benutzerfreundlich ist. Darüber hinaus trage ich zur kontinuierlichen Verbesserung unserer Design- und Entwicklungsprozesse bei.",
 		"pharma4u_title": "Frontend Developer & Designer",
-		"pharma4u_text1": "Bei Pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
+		"pharma4u_text1": "Bei pharma4u bin ich verantwortlich für Design und unterstütze bei der Konzeption neuer Funktionen mit visueller Darstellung durch Mockups und Prototypen. Desweiteren entwickle und teste ich neue Frontend-Module, pflege die hauseigenene Komponenten-Library und integriere neue Designs oder Komponenten in die umfangreiche Webanwendung LabXpert. Ich führe Refactorings durch, um die Codequalität zu verbessern und die Wartbarkeit zu erleichtern, beteilige mich an der Entwicklung von automatisierten Tests und der Implementierung von Accessibility-Standards.",
 		"pharma4u_text2": "Zuletzt habe ich eine Lernapp für Pharmazie-Studierende mitkonzipiert und einen High-Fidelity Prototypen in Figma entwickelt. Aktuell wird der Prototyp mit Nutzertests validiert und anschließend in die Entwicklung überführt.",
 		"pharma4u_skills": "Vue.js · Figma · Vuex · Cypress.io · JavaScript · ES6 · jQuery · CSS3/SCSS · HTML5 · SCRUM · Git · Jira · Confluence · Bitbucket · UX/UI Design · App Design · Web Design · Accessibility · Responsive Design",
 		"interone_title": "Junior Web Developer",
