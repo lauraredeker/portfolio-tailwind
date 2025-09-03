@@ -36,6 +36,7 @@
         <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center tw-mt-10 tw-font-semibold md:tw-mt-14">
           <a
             target="_blank"
+            rel="noopener noreferrer"
             class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.malt.de/profile/lauraredeker"
           >
@@ -44,6 +45,7 @@
           </a>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="https://www.junico.de/freelancer/laura-131"
           >
@@ -52,6 +54,7 @@
           </a>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             class="tw-flex tw-flex-row tw-items-center tw-px-5 tw-py-2 tw-text-purple-500 tw-underline tw-transition tw-rounded-lg tw-underline-offset-4 hover:tw-bg-gray-200 hover:tw-text-black focus:tw-outline-none focus-visible:tw-ring-4 focus-visible:tw-ring-indigo-500 dark:tw-text-purple-200 dark:hover:tw-bg-black dark:hover:tw-text-white"
             href="//www.linkedin.com/in/laura-a-redeker/"
           >

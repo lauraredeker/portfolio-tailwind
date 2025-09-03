@@ -1,8 +1,11 @@
 <script lang="ts" setup>
+  import { ref } from 'vue'
+
   import { vElementVisibility } from '@vueuse/components'
   import { useVisibility } from '../composables/useVisibility'
   import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
   import 'vue3-carousel/dist/carousel.css'
+  const isHovered = ref(false)
 
   const [isSection1Visible, onSection1Visibility] = useVisibility()
 </script>
@@ -52,22 +55,102 @@
             key="one"
           >
             <div class="tw-flex tw-flex-col tw-w-full tw-gap-6 tw-px-4 md:tw-px-24 3xl:tw-px-44">
-              <picture>
-                <source
-                  srcset="/img/projects/flipcards_mockup_01.webp"
-                  type="image/webp"
+               <a
+                  href="https://astramentumarts.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  @mouseover="isHovered = true"
+                  @mouseleave="isHovered = false"
+                  @focusin="isHovered = true"
+                  @focusout="isHovered = false"
+                  class="tw-relative tw-inline-block focus-visible:tw-ring-4 focus:tw-outline-none focus-visible:tw-ring-purple-500 dark:focus-visible:tw-ring-purple-400"
                 >
-                <source
-                  srcset="/img/projects/flipcards_mockup_01.jpg"
-                  type="image/jpeg"
+                <div
+                  class="tw-absolute tw-top-0 tw-left-0 tw-right-0 tw-grid tw-items-center tw-justify-center tw-w-full tw-h-full tw-overflow-hidden tw-transition-all tw-bg-black tw-rounded-xl md:tw-rounded-4xl"
+                  :class="{
+                    'tw-bg-opacity-80': isHovered,
+                    'tw-bg-opacity-10': !isHovered
+                  }"
                 >
+                <span
+                    :class="{
+                      'tw-opacity-100': isHovered,
+                      'tw-opacity-0': !isHovered
+                    }"
+                    class="tw-text-xl tw-font-semibold tw-text-center tw-text-purple-300 tw-transition-opacity tw-duration-300 tw-text-shadow-md"
+                  >
+                    <i
+                      class="tw-w-12 tw-h-12 tw-ml-2 tw-text-purple-300 tw-i-ph-arrow-square-out"
+                      aria-hidden="true"
+                    /><br/>
+                    {{ $t('projects.astramentumarts-url') }}
+                  </span>
+              
+                </div>
                 <img
-                  src="/img/projects/flipcards_mockup_01.jpg"
-                  :alt="$t('projects.flipcards-headline')"
+                  src="/img/projects/astramentumarts_mockup_01.jpg"
+                  :alt="$t('projects.astramentumarts-headline')"
                   loading="lazy"
-                  class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
-                >
-              </picture>
+                    class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
+                  >
+                </a>
+              <div
+                class="tw-text-left"
+              >
+                <div class="tw-hyphens-auto">
+                  <div class="md:tw-text-justify">
+                    <p>
+                      {{ $t('projects.astramentumarts-text1') }}
+                    </p>
+                  </div>
+                   
+                  <ul class="tw-mt-5">
+                    <li
+                      class="custom-tag"
+                    >
+                      2025
+                    </li>
+                    <li
+                      class="custom-tag"
+                    >
+                      Website Redesign
+                    </li>
+                    <li
+                      class="custom-tag"
+                    >
+                      Small Business
+                    </li>
+                    <li
+                      class="custom-tag"
+                    >
+                      Vue3
+                    </li>
+                    <li
+                      class="custom-tag"
+                    >
+                      TailwindCSS
+                    </li>
+                    <li
+                      class="custom-tag"
+                    >
+                     Figma 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </Slide>
+
+          <Slide
+            key="two"
+          >
+            <div class="tw-flex tw-flex-col tw-w-full tw-gap-6 tw-px-4 md:tw-px-24 3xl:tw-px-44">
+              <img
+                src="/img/projects/flipcards_mockup_01.jpg"
+                :alt="$t('projects.flipcards-headline')"
+                loading="lazy"
+                class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl"
+              >
               <div
                 class="tw-text-left"
               >
@@ -84,7 +167,7 @@
                     <li
                       class="custom-tag"
                     >
-                      2024
+                      ongoing
                     </li>
                     <li
                       class="custom-tag"
@@ -99,7 +182,7 @@
                     <li
                       class="custom-tag"
                     >
-                      UI/UX-Design
+                      Product Design
                     </li>
                     <li
                       class="custom-tag"
@@ -113,7 +196,7 @@
           </Slide>
             
           <Slide
-            key="two"
+            key="three"
           >
             <div class="tw-flex tw-flex-col tw-w-full tw-gap-6 tw-px-4 md:tw-px-24 3xl:tw-px-44">
               <div class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-4xl">
@@ -150,7 +233,7 @@
                     <li
                       class="custom-tag"
                     >
-                      2024
+                      ongoing
                     </li>
                     <li
                       class="custom-tag"

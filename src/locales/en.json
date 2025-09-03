@@ -80,6 +80,9 @@
 	},
 	"projects": {
 		"headline": "Recent Projects",
+		"astramentumarts-headline": "Astramentum Arts Website Relaunch",
+		"astramentumarts-text1": "For the tattoo studio Astramentum Arts in Leipzig, I carried out a complete redesign of the existing website. Primarily, I wanted to reflect the atmosphere of the studio and present Lia's unique illustrations and works (dark, dreamy, nature-inspired) in the best possible way to potential clients. Thank you for your trust, Lia!",
+		"astramentumarts-url": "astramentumarts.com",
 		"schauer-headline": "GenArt Portfolio Website",
 		"schauer-text1": "A portfolio website for the photographer and artist Michael Schauer that showcases his generative art. My goal was to create a website that is as unique as the art it presents.",
 		"schauer-text2": "The website is currently in development.",
@@ -109,8 +112,10 @@
 	"vita": {
 		"freelance_title": "Freelance Frontend Designer & Developer",
 		"freelance_text1": "Since the beginning of 2024, I have been supporting companies and agencies in the design and implementation of web projects in addition to my permanent position. I create custom design prototypes and develop websites with modern frontend technologies. I also advise on design and UX issues and create full design systems and component libraries.",
+		"pharma4u_title_new": "Senior UX Engineer",
+		"pharma4u_text1_new": "Since 2025, I have been working as a Senior UX Engineer at pharma4u. In this role, I am responsible for leading the UX/UI design and development of new features and modules for web applications in the healthcare sector. I collaborate closely with cross-functional teams to ensure that user needs are met and that the application is both visually appealing, accessible and easy to use. Additionally, I contribute to the continuous improvement of our design and development processes.",
 		"pharma4u_title": "Frontend Developer & Designer",
-		"pharma4u_text1": "At Pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
+		"pharma4u_text1": "At pharma4u I am responsible for the UX/UI design and support the conception of new functions with visual representation through mock-ups and prototypes. Furthermore, I develop and test new frontend modules, maintain the in-house component library and integrate new designs or components into the extensive web application LabXpert. I carry out refactorings to improve code quality and facilitate maintainability. I am also working on the development of automated tests and the implementation of accessibility standards.",
 		"pharma4u_text2": "Most recently, I designed a learning app for pharmacy students and developed a high-fidelity prototype in Figma. The prototype is currently being validated with user tests and then transferred to development.",
 		"interone_title": "Junior Web Developer",
 		"interone_text": "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, SCSS, JavaScript, and jQuery. Clients included BMW, SOS Kinderdorf, ProSiebenSat.1 Media and E.ON.",

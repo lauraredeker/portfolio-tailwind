@@ -4,20 +4,17 @@
   const subheadingClasses = "tw-mb-2 tw-block tw-font-semibold tw-text-indigo-400"
   const headlineClasses = "tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl"
 
-  const fun_skills = [
-    "Interface Design",
-    "UI Design",
-    "Figma",
-    "(High-Fidelity) Prototyping",
-    "Design System",
-    "Web Design",
-    "App Design",
+  const pharma4u_skills_new = [
+    "Product Design",
+    "UX Engineering",
     "Frontend Development",
-    "Vue.js",
-    "Vuetify",
-    "JavaScript",
-    "HTML5",
-    "CSS",
+    "Figma",
+    "Design System",
+    "Design Prototyping",
+    "User Flows",
+    "A11Y",
+    "Accessibility",
+    ".."
   ]
 
   const pharma4u_skills = [
@@ -26,12 +23,12 @@
     "Prototyping",
     "Design System",
     "Vue.js",
-    "Cypress.io",
+    "e2e Testing",
     "JavaScript",
     "jQuery",
     "CSS3/SCSS",
     "HTML5",
-    "Accessibility",
+    "A11Y",
   ]
 
   const interone_skills = [
@@ -69,11 +66,12 @@
       <p class="md:tw-hyphens-auto md:tw-text-justify">
         {{ $t('vita.freelance_text1') }}
       </p>
+       <!--
       <div class="tw-px-2 tw-py-5 tw-mt-10 tw-text-center tw-border-4 tw-border-purple-300 tw-rounded-lg md:tw-px-5">
         <p>{{ $t('general.contact-text') }}</p>
         <CopyEmail class="tw-mt-5 tw-mb-5 2xl:tw-px-20" />
       </div>
-      <!--<ul class="tw-mt-10">
+     <ul class="tw-mt-10">
         <li
           v-for="(item, index) in fun_skills" 
           :key="index"
@@ -84,9 +82,32 @@
       </ul>-->
     </section>
 
+
     <section class="tw-mt-16 md:tw-mt-24">
       <h5 :class="subheadingClasses">
-        2019 - {{ $t('general.today') }}<span class="tw-mx-2">&middot;</span> Pharma4u
+        2025 - {{ $t('general.today') }}<span class="tw-mx-2">&middot;</span> Pharma4u
+        GmbH
+      </h5>
+      <h4 :class="headlineClasses">
+        {{ $t('vita.pharma4u_title_new') }}
+      </h4>
+      <p class="md:tw-text-justify">
+        ...
+      </p>
+      <ul class="tw-mt-5">
+        <li
+          v-for="(item, index) in pharma4u_skills_new" 
+          :key="index"
+          class="custom-tag"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </section>
+
+    <section class="tw-mt-16 md:tw-mt-24">
+      <h5 :class="subheadingClasses">
+        2019 - 2025 <span class="tw-mx-2">&middot;</span> Pharma4u
         GmbH
       </h5>
       <h4 :class="headlineClasses">
