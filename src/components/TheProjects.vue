@@ -133,7 +133,7 @@
                     <li
                       class="custom-tag"
                     >
-                     Figma 
+                    Figma
                     </li>
                   </ul>
                 </div>
