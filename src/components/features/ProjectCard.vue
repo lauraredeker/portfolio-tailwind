@@ -1,6 +1,11 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 const isHovered = ref(false)
+const prefersReducedMotion = ref(false)
+
+onMounted(() => {
+  prefersReducedMotion.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+})
 
 const props = defineProps<{
     tags: string[],
@@ -59,12 +64,12 @@ const props = defineProps<{
         <template v-if="props.video">
             <div class="tw-overflow-hidden tw-bg-black tw-border-2 tw-border-black tw-rounded-xl dark:tw-border-black md:tw-rounded-2xl">
                 <video
-                    autoplay
+                    v-bind:autoplay="!prefersReducedMotion"
                     muted
                     webkit-playsinline
                     playsinline
                     :poster="props.image"
-                    preload="none"
+                    preload="auto"
                     loop
                 >
                     <source

@@ -37,7 +37,7 @@ const projectTagsSchauer = [
     <div
       v-element-visibility="onSection1Visibility"
       :class="{ 'animate__animated animate__slideInUp  animate__delay-1s': isSection1Visible }"
-      class="tw-container tw-text-center 2xl:tw-max-w-screen-2xltw-max-w-screen-md md:tw-mx-auto"
+      class="tw-container tw-text-center 2xl:tw-max-w-screen-2xl md:tw-mx-auto"
     >
       <span
         aria-hidden="true"

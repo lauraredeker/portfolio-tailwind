@@ -40,19 +40,6 @@ const onScroll = () => {
     }
   }
 }
-
-const movingHandler = () => {
-  // Hide both buttons while dragging
-  showScrollLeftButton.value = false
-  showScrollRightButton.value = false
-
-  // Show buttons again after a short delay
-  setTimeout(() => {
-    showScrollLeftButton.value = true
-    showScrollRightButton.value = true
-  }, 100)
-}
-
 </script>
 
 <template>
