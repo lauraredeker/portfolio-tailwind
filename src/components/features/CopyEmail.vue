@@ -38,7 +38,9 @@
           aria-hidden="true"
           class="tw-text-l"
         />
-
+        <span class="tw-sr-only">
+          {{ copied ? $t('contact.copied') : $t('contact.copy') }}
+        </span>
         <div class="tw-px-1 tw-py-1 tw-ml-2 tw-rounded-lg">
           <span
             :class="{
