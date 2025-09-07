@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-  import CopyEmail from '../components/features/CopyEmail.vue'
-
   const subheadingClasses = "tw-mb-2 tw-block tw-font-semibold tw-text-indigo-400"
   const headlineClasses = "tw-mb-2 tw-text-l tw-font-semibold md:tw-text-2xl"
 

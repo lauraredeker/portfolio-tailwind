@@ -81,15 +81,15 @@
 		"ally-text3": "Mit Hilfe von UI-Testing Tools stelle ich außerdem sicher, dass die Nutzeroberfläche zu jedem Zeitpunkt korrekt funktioniert und allen Qualitätsstandards entspricht."
 	},
 	"projects": {
-		"headline": "Letzte Projekte",
-		"astramentumarts-headline": "Astramentum Arts Website Redesign",
-		"astramentumarts-text1": "Für das Tattoo-Atelier Astramentum Arts in Leipzig habe ich ein komplettes Redesign der bestehenden Website durchgeführt. In erster Linie wollte ich hier die besondere Atmosphäre des Studios wiederspiegeln und Lias einzigartigen Illustrationen und Arbeiten (dark, dreamy, nature-inspired) bestmöglich an potentielle Kund*innen präsentieren. Danke für dein Vertrauen, Lia!",
+		"headline": "Projekte",
+		"astramentumarts-headline": "Tatoostudio Website Relaunch",
+		"astramentumarts-text1": "Für das Tattoo-Atelier Astramentum Arts in Leipzig habe ich ein komplettes Redesign der bestehenden Website durchgeführt. In erster Linie wollte ich hier die besondere Atmosphäre des Studios wiederspiegeln und Lias einzigartigen Illustrationen und Arbeiten (\"dark, dreamy, nature-inspired\") bestmöglich an potentielle Kund*innen präsentieren. Danke für dein Vertrauen, Lia!",
 		"astramentumarts-url": "astramentumarts.com",
 		"schauer-headline": "GenArt Portfolio",
-		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative Kunst präsentiert. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
+		"schauer-text1": "Eine Portfolio-Website für den Fotografen und Künstler Michael Schauer, die seine generative, mit TouchDesigner erstellte, Kunst präsentiert. Mein Ziel war es, eine Website zu entwickeln, die auffällt und dennoch die künstlerische Arbeit in den Vordergrund stellt.",
 		"schauer-text2": "Die Website befindet sich derzeit in Entwicklung.",
 		"flipcards-headline": "Flipcards App Prototyp",
-		"flipcards-text1": "Für pharma4u habe ich einen High-Fidelity-Prototypen für ein Karteikartentrainer-App in Figma entwickelt. Die mobile App ermöglicht Student*innen der Pharmazie, sich spielerisch auf Prüfungen vorzubereiten.",
+		"flipcards-text1": "Für pharma4u habe ich einen High-Fidelity-Prototypen für eine mobile App in Figma entwickelt. Der Karteikartentrainer soll es Student*innen der Pharmazie ermöglichen, sich spielerisch auf ihre Staatsexamen vorzubereiten. Das App-Design wird derzeit mit Nutzer*innen getestet und anschließend in die Entwicklung überführt.",
 		"flipcards-text2": "Der Prototyp wird derzeit mit Nutzertests validiert und anschließend in die Entwicklung überführt."
 	},
 	"testimonials": {
